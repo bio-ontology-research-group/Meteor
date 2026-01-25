@@ -1,0 +1,23 @@
+# --- 核心生物信息学与优化建模 ---
+cobra==0.29.1
+optlang==1.8.1
+PuLP==3.2.2
+swiglpk==5.0.10
+diskcache==5.6.3
+biopython==1.86
+
+# --- 科学计算与数据处理 (针对 Ibex 优化版本) ---
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.15.3
+networkx==3.4.2
+xarray==2025.6.1
+torch==2.6.0
+scikit-learn==1.1.2
+
+# --- 辅助工具与可视化 ---
+tqdm==4.67.1
+matplotlib==3.10.3
+seaborn==0.13.2
+rich==13.7.0
+memote

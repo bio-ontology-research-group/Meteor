@@ -21,18 +21,10 @@ parser.add_argument('--gap', type=float, default=0.05, help='Maximum gap in opti
 parser.add_argument('--gram', type=str, default='none', help='Type of Gram classificiation (positive or negative)')
 parser.add_argument('--outmodel', type=str, default='default', help='Name of output GENRE file')
 parser.add_argument('--cpu', type=int, default=1, help='Number of processors to use')
-# parser.add_argument('--exchange', type=int, default=1, help='open exchange: 1, shut down exchange: 0')
-# parser.add_argument('--transport', type=int, default=0, help='shut down transport: 0 in universal model add transport reaction or not')
 parser.add_argument('--buildcobra', type=bool, default=False, help='use fbc package: 1, do not use fbc package: 0')
-# parser.add_argument('--check_essentiail', type=bool, default=False, help='use fbc package: 1, do not use fbc package: 0')
-# parser.add_argument('--onlydf', type=bool, default=False, help='use fbc package: 1, do not use fbc package: 0')
 # parser.add_argument('--seed',type=int, default=17)
 parser.add_argument('--k',type=int, default=1)
 # parser.add_argument('--remove_ratio',type=float, default=0)
-# parser.add_argument('--binary_test',type=int, default=0)
-# parser.add_argument('--discrete_test',type=int, default=0)
-# parser.add_argument('--exclusive',type=float, default=0)
-# parser.add_argument('--mappinggpf',type=str, default="data/gppmapping.pkl")
 
 
 args = parser.parse_args()
@@ -42,7 +34,7 @@ args = parser.parse_args()
 #----------------------------------------------------------------------------------------------------------------------#
 if __name__ == "__main__":
     ## load data
-    datap='../data'
+    datap='data'
     seedr2ec,seedec2r=load_refmapping(datap)
     # check if seedr2ec contain val as None just simply remove them
     none_ec = [k for k, v in seedr2ec.items() if v is None]
@@ -52,8 +44,8 @@ if __name__ == "__main__":
         
     device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
     universal, allrxns, allmet = load_universal()
-    ancestorsec = load_ec(f'../data/raw/all_ancestors.txt')
-    fourecs = load_ec(f'../data/raw/all_ec.txt')
+    ancestorsec = load_ec(f'data/all_ancestors.txt')
+    fourecs = load_ec(f'data/all_ec.txt')
     
     pred_df = extract_pred(args.input_file, ancestorsec)
     rxn_ec_mask = build_rxn_ec_mask(allrxns, seedr2ec, ancestorsec)
@@ -79,9 +71,7 @@ if __name__ == "__main__":
     for i, val in enumerate(r0):
         if rmedia[i] == 1:
             r0[i] = 1
-    # print('Original number of reactions:', sum(r0), flush=True)
-    # print('preview of the distribution of c_add:',max(c_add), min(c_add), sum(c_add)/len(c_add), '>0.5:', sum(i>0.5 for i in c_add), '==0:', sum(i==0 for i in c_add), flush=True)
-    # print('preview of the distribution of c_remove:',max(c_remove), min(c_remove), sum(c_remove)/len(c_remove), '>0.5:', sum(i>0.5 for i in c_remove), '==0:', sum(i==0 for i in c_remove), flush=True)
+    
     ## build model 
     biomass_idx = allmet.index('cpd11416_c')
     
@@ -103,8 +93,10 @@ if __name__ == "__main__":
                             "heuristics on","cuts on","presolve on" ]
                         
         cbc_options = " ".join(solver_options)
-        solver = PULP_CBC_CMD(msg=True, warmStart=True, timeLimit=args.timelimit, options=[cbc_options])
+        # if you want to see the solver output, set msg=True
+        # solver = PULP_CBC_CMD(msg=True, warmStart=True, timeLimit=args.timelimit, options=[cbc_options])
         # model.writeLP("v5coin_model.lp")
+        solver = PULP_CBC_CMD(msg=False, warmStart=True, timeLimit=args.timelimit, options=[cbc_options])
         status = model.solve(solver)
         # check solution status
         if LpStatus[status] == 'Optimal':

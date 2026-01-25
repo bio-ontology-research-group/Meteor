@@ -14,7 +14,6 @@ from pulp import LpProblem, LpVariable, lpSum, LpMinimize, LpBinary, PULP_CBC_CM
 
 
 def load_ec(file):
-    print('load ec from:',file)
     with open(file,'r') as f:
         ecs = f.read().splitlines()
     return ecs
@@ -32,12 +31,10 @@ def load_universal(with_transport=False):
     print('[INFO] load_universal',flush=True)
     
     if with_transport:
-        uni_tranf='../data/universal_model_with_transport_rxns.pickle'
-        print('[INFO] load universal model from Reconstructor[plus transport reactions]',flush=True)
+        uni_tranf='data/universal_model_with_transport_rxns.pickle'
     else:
-        filename = '../data/universal.pickle'
+        filename = 'data/universal.pickle'
         uni_tranf = filename
-        print('[INFO] load universal model from Reconstructor',flush=True)
     print('load universal model from:',uni_tranf)
     if os.path.exists(uni_tranf):
         universal = pickle.load(open(uni_tranf, 'rb'))
@@ -53,47 +50,7 @@ def _invert_mapping(ec2r):
             rxn_to_ec[rxn].append(ec)
     return rxn_to_ec
 
-def maximum_separation(dist_lst, first_grad, use_max_grad):
-    opt = 0 if first_grad else -1
-    gamma = np.append(dist_lst[1:], np.repeat(dist_lst[-1], 10))
-    sep_lst = np.abs(dist_lst - np.mean(gamma))
-    sep_grad = np.abs(sep_lst[:-1]-sep_lst[1:])
-    if use_max_grad:
-        # max separation index determined by largest grad
-        max_sep_i = np.argmax(sep_grad)
-    else:
-        # max separation index determined by first or the last grad
-        large_grads = np.where(sep_grad > np.mean(sep_grad))
-        if len(large_grads[0]) == 0:
-            max_sep_i = 0
-        else:
-            max_sep_i = large_grads[-1][opt]
-    # if no large grad is found, just call first EC
-    if max_sep_i >= 5:
-        max_sep_i = 0
-    return max_sep_i
-
-def maximum_separation_all(dist_lst, first_grad, use_max_grad):
-    opt = 0 if first_grad else -1
-    gamma = np.append(dist_lst[1:], np.repeat(dist_lst[-1], len(dist_lst)))
-    sep_lst = np.abs(dist_lst - np.mean(gamma))
-    sep_grad = np.abs(sep_lst[:-1]-sep_lst[1:])
-    if use_max_grad:
-        # max separation index determined by largest grad
-        max_sep_i = np.argmax(sep_grad)
-    else:
-        # max separation index determined by first or the last grad
-        large_grads = np.where(sep_grad > np.mean(sep_grad))
-        if len(large_grads[0]) == 0:
-            max_sep_i = 0
-        else:
-            max_sep_i = large_grads[-1][opt]
-    # if no large grad is found, just call first EC
-    if max_sep_i >= 5:
-        max_sep_i = 0
-    return max_sep_i
-
-def get_media(mediainput,mediaf='../data/medium.pkl'):
+def get_media(mediainput,mediaf='data/medium.pkl'):
     mediainfo = pd.read_pickle(mediaf)
     with open(mediaf,'rb') as f:
         mediainfo = pickle.load(f)
@@ -140,7 +97,7 @@ def build_rxn_ec_mask(rxn_ids, rxn_to_ec, allecs):
 def extract_fba_matrices(model, rxn_ids,reversed_trans=True, device='cpu'):
     if reversed_trans:
         reformate = 'RE'
-    svpath = f'../data/fba_matrices_v5{reformate}.pkl'
+    svpath = f'data/fba_matrices_v5{reformate}.pkl'
     if os.path.exists(svpath):
         with open(svpath, 'rb') as f:
             data = pickle.load(f)
@@ -151,7 +108,7 @@ def extract_fba_matrices(model, rxn_ids,reversed_trans=True, device='cpu'):
            S = scipy.sparse.csr_matrix(S)  
            with open(svpath, 'wb') as f:
                pickle.dump({'S': S, 'lb': lb, 'ub': ub}, f)
-        print(f'Loaded FBA matrices from {svpath}.', flush=True)
+        # print(f'Loaded FBA matrices from {svpath}.', flush=True)
         return S, lb, ub
     # Create stoichiometric matrix
     S_df = create_stoichiometric_matrix(model, array_type="DataFrame")
@@ -159,13 +116,13 @@ def extract_fba_matrices(model, rxn_ids,reversed_trans=True, device='cpu'):
     ub = np.array([model.reactions.get_by_id(r).upper_bound for r in rxn_ids])
 
     S = S_df.to_numpy()
-    S = scipy.sparse.csr_matrix(S)  # 若原本是 numpy array
+    S = scipy.sparse.csr_matrix(S)  
     # reverse ex——reaction
     if reversed_trans:
         print('Reversing exchange reactions...', flush=True)
         for index, r in enumerate(rxn_ids):
             if r.startswith('EX_'):
-                S[:, index] = -S[:, index]  # 取反即 reverse
+                S[:, index] = -S[:, index] 
     # SAVE
     with open(svpath, 'wb') as f:
         pickle.dump({'S': S, 'lb': lb, 'ub': ub}, f)
@@ -301,10 +258,9 @@ def compute_uncertainty(pred_df, rxn_ec_mask, c_add, c_remove, theta):
             else:
                 c_remove[i] = np.sum(above_theta - theta)
             r0[i] = 1
-    print('Number of reactions with no EC mapping:', noecmappingr, flush=True)
     return r0, c_add, c_remove
 
-def build_model(S, lb, ub, r0, c_add, c_remove, obj_idx, biomass_met_id, excludes):
+def build_model(S, lb, ub, r0, c_add, c_remove, obj_idx, biomass_met_id, excludes,eps=1e-3):
     M,R = S.shape
     model = LpProblem("Metabolic_opt", LpMinimize)
     v = LpVariable.dicts("v", range(R), cat='Continuous')
@@ -331,10 +287,10 @@ def build_model(S, lb, ub, r0, c_add, c_remove, obj_idx, biomass_met_id, exclude
             model += v[j] >= 1.0, f"biomass_production"
  
     total_cost = LpVariable("total_cost", lowBound=0)
-    eps = 1e-3
+    # eps = 1e-3
     cost_expr = lpSum( (c_add[j]+eps) * rfinal[j] for j in range(R) if r0[j] == 0
                 )+ lpSum((c_remove[j]+eps) * (1 - rfinal[j]) for j in range(R) if r0[j] == 1)
-    model += cost_expr + 1e-6 * lpSum(v[j] for j in range(R))+ lpSum(1e-3 * rfinal[j] for j in range(R))
+    model += cost_expr + eps*eps * lpSum(v[j] for j in range(R))+ lpSum(eps * rfinal[j] for j in range(R))
     
     model += total_cost == cost_expr, "total_cost_definition"
     model += total_cost
@@ -399,9 +355,8 @@ def get_probs_df(df, fourecs, threshold):
         
     return pred_label, pred_probs, pred_scores
                
-def update_topk(active_ecs, mutated_ecs, pred_df, ancestorsec,fourecs,theta,k=1):
-    eps= 0.1
-    with open('../data/enzymeobsolete.pkl', 'rb') as f:
+def update_topk(active_ecs, mutated_ecs, pred_df, ancestorsec,fourecs,theta,k=1, delta=0.01):
+    with open('data/enzymeobsolete.pkl', 'rb') as f:
         ecobselect = pickle.load(f)
     opt_df = pred_df.copy().astype(np.float64) 
     pred_preds, pred_probs, pred_scores = get_probs_df(pred_df, fourecs, threshold=theta)
@@ -415,31 +370,36 @@ def update_topk(active_ecs, mutated_ecs, pred_df, ancestorsec,fourecs,theta,k=1)
        
     # Part1: activate ecs
     for ec in active_ecs: 
-        new_value = theta + eps
+        new_value = theta + delta
         if ec in ori_active_ecs:
             continue
-        # else:
+        def normalize_ec(ec):
+            """Remove trailing undefined EC levels."""
+            parts = ec.split('.')
+            while parts and parts[-1] == '-':
+                parts.pop()
+            return '.'.join(parts) 
         s = re.sub(r'^EC[-:]', '', ec.strip())
         match = re.search(r'(\d+\.\d+\.\d+\.[\w]+)', s)
         if match:
             ec = match.group(1)
         if '-' in ec or ec not in ancestorsec:
-            if ec.count('-')==1:
-                ec = ec.replace('.-','')
-            elif ec.count('-')==2:
-                ec = ec.replace('.-.-','')
-            elif ec.count('-')==3:
-                ec = ec.replace('.-.-.-','')               
-            if ec not in ecobselect.keys() and ec not in ancestorsec:
+            newec = normalize_ec(ec) 
+            # validation
+            if ec not in ecobselect and ec not in ancestorsec:
+                print(' ec, skip:', ec, flush=True)
                 continue
-            else:
-                if ec in ecobselect.keys():
-                    ec = ecobselect[ec]
+            # explicit override has priority
+            if ec in ecobselect:
+                newec = ecobselect[ec]
+                while newec in ecobselect.keys():
+                    newec = ecobselect[newec]
+            ec = newec
         maxval = opt_df[ec].max()
         if maxval != 0 :
             if ec in ori_active_ecs: # support the original val 
                 maxp = opt_df[ec].idxmax()
-                opt_df.loc[maxp, ec] = maxval + eps
+                opt_df.loc[maxp, ec] = maxval + delta
                 idx_array = np.where(opt_df.index == maxp)[0]
                 if len(idx_array) > 0:
                     idx = idx_array[0]    
@@ -478,12 +438,12 @@ def update_topk(active_ecs, mutated_ecs, pred_df, ancestorsec,fourecs,theta,k=1)
                 idx_array = np.where(opt_df.index == currp)[0]
                 if len(idx_array) > 0:
                     idx = idx_array[0]
-                opt_scores[idx].append(theta + eps)
+                opt_scores[idx].append(theta + delta)
                 opt_preds[idx].append(ec)
                 
     # Part2: mute ecs
     for ec in mutated_ecs:
-        new_value = theta - eps
+        new_value = theta - delta
         if ec in ori_mutated_ecs:
             continue
         else:

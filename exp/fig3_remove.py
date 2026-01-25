@@ -10,7 +10,7 @@ import matplotlib as mpl
 import ast
 
 
-df = pd.read_pickle('data/fig3_metainfo.pkl')
+df = pd.read_pickle('data/metainfo.pkl')
 
 
 def safe_eval(val):
@@ -43,24 +43,24 @@ plt.rcParams.update({
     'font.family': 'serif',
     'font.serif': ['Times New Roman', 'DejaVu Serif'],
     'legend.fontsize': 10,
-    'figure.dpi': 300  # 高分辨率输出
+    'figure.dpi': 300 
 })
 
 def plot_ec_fingerprint_clustered_oxford(df, output_root="ec_fingerprints"):
     if not os.path.exists(output_root): os.makedirs(output_root)
     
-    # 预处理数据 (使用已有的函数)
+
     df['changed_pairs'] = df['changed_pairs'].apply(safe_eval)
     df['removed_proteins'] = df['removed_proteins'].apply(safe_eval)
     
     palette = sns.color_palette("muted")
     colors = [
         "#ffffff", # 0: Not Updated
-        "#A7C7E7", # 1: Consistent Lock (参考你满意的 Optimized 蓝色)
+        "#A7C7E7", # 1: Consistent Lock 
         "#7FADDC", # 2: Normal Substitution (Muted Yellow)
         "#7A2929", # 3: Substitution Error A_ (Muted Red)
         "#E2AFA7", # 4: Substitution Error A3_ (Pale Red/Coral)
-        "#7f8c8d"  # 5: Loss / Inactive (参考你满意的 Original 灰色)
+        "#7f8c8d"  # 5: Loss / Inactive 
     ]
     custom_cmap = ListedColormap(colors)
 
@@ -99,7 +99,6 @@ def plot_ec_fingerprint_clustered_oxford(df, output_root="ec_fingerprints"):
                             if is_orig_removed: matrix[ec_idx, r_idx] = 2
                             else: matrix[ec_idx, r_idx] = 4 if prefix == 'A3' else 3
 
-            # --- [逻辑保持] 排序 ---
             def get_sort_key(row):
                 first_change = np.where(row != 1)[0]
                 first_change_idx = first_change[0] if len(first_change) > 0 else len(row)
@@ -128,7 +127,7 @@ def plot_ec_fingerprint_clustered_oxford(df, output_root="ec_fingerprints"):
             
 
             ax.set_xticks(np.arange(len(ratios)))
-            ax.set_xticklabels(ratios, rotation=0) # 比例尺较少时不需要旋转，更整洁
+            ax.set_xticklabels(ratios, rotation=0)
             
             ax.set_yticks([])
             sns.despine(top=True, right=True)
@@ -157,16 +156,15 @@ def plot_ec_fingerprint_clustered_oxford(df, output_root="ec_fingerprints"):
     print(f"[SUCCESS] {len(unique_seeds)} 个 Seed 的指纹图已按照 Oxford 双栏标准生成。")
 
 
-# plot_ec_fingerprint_clustered_oxford(df,'fig/fig3_all')
+# plot_ec_fingerprint_clustered_oxford(df,'fig/S2_all')
 
 
 
 ############################################################
 
-# 5. 绘图
 
 df = df[df['remove_ratio'] > 0]
-# # 4. 计算均值（用于绘图展示趋势）
+
 df_avg = df.groupby('remove_ratio').agg({
     'changed_reactions': ['mean', 'std'],
     'active_ECs': ['mean', 'std'],
@@ -183,7 +181,7 @@ df_avg.columns = ['remove_ratio',
                     'rn_mean', 'rn_std'
                   ]
 
-# 1. 全局学术风格设置 (对齐 Oxford Serif 风格)
+
 plt.rcParams.update({
     'font.size': 8,
     'axes.labelsize': 10,
@@ -212,18 +210,18 @@ metrics = [
     ('changed_protein_count', 'cpc_mean', 'cpc_std', 'Refined Proteins', 'D')
 ]
 
-# 3. 开始绘图
+
 fig, ax = plt.subplots(figsize=(4, 3.5)) # 适合单栏展示
 
 for i, (raw_col, mean_col, std_col, label, marker) in enumerate(metrics):
     color = palette[i]
     errorcolor = erropalette[i]
-    # 绘制 Raw Data: 极小 (s=1.5) 且极透明 (alpha=0.05) 以防遮挡主要趋势
+
     
     # ax.scatter(df['remove_ratio'], df[raw_col], 
     #             alpha=0.2, color=color, rasterized=True)
     
-    # 绘制 Mean + Std: 使用带有误差棒的折线
+
     ax.errorbar(df_avg['remove_ratio'], df_avg[mean_col],# yerr=df_avg[std_col], 
                 fmt=marker + '-', color=errorcolor, label=label,
                 markersize=2, linewidth=1, capsize=2, elinewidth=0.8)
@@ -239,17 +237,14 @@ ax.set_xlabel('Genome Removal Ratio ($R_{remove}$)', fontweight='bold')
 ax.set_ylabel('Number Count', fontweight='bold')
 ax.set_title('Global Refinements Trends', fontweight='bold', loc='center')
 
-# 移除上方和右方的边框
+
 for spine in ax.spines.values():
     spine.set_linewidth(0.8)
 ax.spines['top'].set_visible(False)
 ax.spines['right'].set_visible(False)
 
-# 设置图例：放在图内或图外。由于指标较多，放在图内左上角较好
 ax.legend(frameon=True, facecolor='white', framealpha=0.8, edgecolor='none')
 
 plt.tight_layout()
-
-# 保存高质量图像 (PDF 矢量图用于投稿)
 plt.savefig('fig/fig3.pdf', bbox_inches='tight')
 plt.savefig('fig/fig3.png', bbox_inches='tight', dpi=300)
