@@ -21,7 +21,7 @@ METEOR requires two separate environments: one for the METEOR reconstruction fra
 ### 1. Install METEOR
 ```bash
 # Clone the repository
-git clone [https://github.com/bio-ontology-research-group/Meteor.git](https://github.com/bio-ontology-research-group/Meteor.git)
+git clone https://github.com/bio-ontology-research-group/Meteor.git
 cd meteor
 
 # Create and activate the METEOR environment
@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 ```bash
 # Clone the DeepProZyme repository
-git clone [https://github.com/kaistsystemsbiology/DeepProZyme.git](https://github.com/kaistsystemsbiology/DeepProZyme.git)
+git clone https://github.com/kaistsystemsbiology/DeepProZyme.git
 cd DeepProZyme
 
 # Create the environment for enzyme prediction
