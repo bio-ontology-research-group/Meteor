@@ -79,7 +79,7 @@ python v5main.py \
     --input_file test/GCF_000236665_DeepECv2_t5.pkl \
     --media default \
     --svfolder test \
-    --cpu 10 \
+    --cpu 8 \
     --gram negative \
     --name testgenome \
     --buildcobra 1 
@@ -97,7 +97,7 @@ The code used to reproduce the benchmarks and figures in the paper (including co
 ### External Data & Genomes
 
 Additional data and pre-processed files are available on **Zenodo**:
-[Link to Zenodo Dataset]
+[[Link to Zenodo Dataset](https://doi.org/10.5281/zenodo.18367730)]
 
 To reproduce the benchmarks using the **Price dataset**:
 
