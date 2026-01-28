@@ -14,11 +14,13 @@ from pulp import LpProblem, LpVariable, lpSum, LpMinimize, LpBinary, PULP_CBC_CM
 
 
 def load_ec(file):
+    """Load EC numbers from a file."""
     with open(file,'r') as f:
         ecs = f.read().splitlines()
     return ecs
 
 def load_refmapping(datap):
+    """Load reference mapping dictionaries."""
     with open(f'{datap}/seedr2ec.pkl', 'rb') as f:
         seedr2ec = pickle.load(f)
     with open(f'{datap}/seedec2r.pkl', 'rb') as f:
@@ -28,6 +30,7 @@ def load_refmapping(datap):
     return seedr2ec,seedec2r
 
 def load_universal(with_transport=False):
+    """Load the universal metabolic model and extract all reactions and metabolites."""
     print('[INFO] load_universal',flush=True)
     
     if with_transport:
@@ -44,6 +47,7 @@ def load_universal(with_transport=False):
     return universal, allrxns, allmet
 
 def _invert_mapping(ec2r):
+    """Invert the EC-to-reaction mapping to create a reaction-to-EC mapping."""
     rxn_to_ec = defaultdict(list)
     for ec, rxns in ec2r.items():
         for rxn in rxns:
@@ -51,6 +55,7 @@ def _invert_mapping(ec2r):
     return rxn_to_ec
 
 def get_media(mediainput,mediaf='data/medium.pkl'):
+    """Get media composition."""
     mediainfo = pd.read_pickle(mediaf)
     with open(mediaf,'rb') as f:
         mediainfo = pickle.load(f)
@@ -63,6 +68,7 @@ def get_media(mediainput,mediaf='data/medium.pkl'):
     return media
     
 def extract_pred(pred_fpath, ancestorsec,remove_ratio=0):
+        """Load and format enzyme prediction probabilities from a pickle file."""
         df = pd.read_pickle(pred_fpath)
         if df.index[0].count('.') == 3:  # if x.x.x.x format x can be any string
             df = df.T
@@ -75,9 +81,7 @@ def extract_pred(pred_fpath, ancestorsec,remove_ratio=0):
         return df
 
 def build_rxn_ec_mask(rxn_ids, rxn_to_ec, allecs): 
-    """
-    构建 [n_rxns, n_ecs] 的稀疏掩码，1 表示该 reaction 关联该 EC。
-    """
+    """Construct a sparse mask matrix mapping reactions to their associated EC numbers."""
     n_rxns = len(rxn_ids)
     n_ecs = len(allecs)
     ec_to_index = {ec: i for i, ec in enumerate(allecs)}
@@ -95,6 +99,7 @@ def build_rxn_ec_mask(rxn_ids, rxn_to_ec, allecs):
     return mask
 
 def extract_fba_matrices(model, rxn_ids,reversed_trans=True, device='cpu'):
+    """Extract or load Flux Balance Analysis matrices (Stoichiometric matrix S, lower bounds lb, upper bounds ub)."""
     if reversed_trans:
         reformate = 'RE'
     svpath = f'data/fba_matrices_v5{reformate}.pkl'
@@ -130,6 +135,7 @@ def extract_fba_matrices(model, rxn_ids,reversed_trans=True, device='cpu'):
     return S, lb, ub
 
 def metabolite_blocked(S, lb, ub, allrxns, universal_obj):
+    """Identify blocked metabolites and reactions that cannot carry flux based on topology and bounds."""
     S_sparse = csr_matrix(S)
     excludes = []
     if 'GmNeg' in universal_obj:
@@ -179,6 +185,7 @@ def metabolite_blocked(S, lb, ub, allrxns, universal_obj):
     return excludes
 
 def tasks_media_bound(tasks, media, allrxns, lb, ub, min_frac=0.01):
+    """Adjust reaction bounds based on defined metabolic tasks and media conditions."""
     r2id = {r: i for i, r in enumerate(allrxns)}
     n_rxns = len(allrxns)
     c_add = np.zeros(n_rxns, dtype=np.float16)
@@ -226,10 +233,14 @@ def tasks_media_bound(tasks, media, allrxns, lb, ub, min_frac=0.01):
 
 def compute_uncertainty(pred_df, rxn_ec_mask, c_add, c_remove, theta):
     """
-    Calculate reaction uncertaint: r0, c_add, c_remove。
-    pred_df: DataFrame, shape [n_samples, n_ecs]
-    rxn_ec_mask: np.array, shape [n_rxns, n_ecs]
-    theta: float, threshold
+    Compute reaction uncertainty parameters (r0, c_add, c_remove) based on predictions.
+    
+    Args:
+        pred_df: DataFrame of shape [n_samples, n_ecs] containing prediction scores.
+        rxn_ec_mask: Binary matrix of shape [n_rxns, n_ecs] mapping reactions to ECs.
+        c_add: Array of costs for adding reactions.
+        c_remove: Array of costs for removing reactions.
+        theta: Threshold for prediction scores.
     """
     pred_values = pred_df.values  # shape [n_samples, n_ecs]
     n_rxns = rxn_ec_mask.shape[0]
@@ -261,6 +272,7 @@ def compute_uncertainty(pred_df, rxn_ec_mask, c_add, c_remove, theta):
     return r0, c_add, c_remove
 
 def build_model(S, lb, ub, r0, c_add, c_remove, obj_idx, biomass_met_id, excludes,eps=1e-3):
+    """Construct the Mixed-Integer Linear Programming (MILP) model for network reconstruction."""
     M,R = S.shape
     model = LpProblem("Metabolic_opt", LpMinimize)
     v = LpVariable.dicts("v", range(R), cat='Continuous')
@@ -300,6 +312,7 @@ def build_model(S, lb, ub, r0, c_add, c_remove, obj_idx, biomass_met_id, exclude
     return model, v, rfinal
 
 def rfinal2ec(rfinal_values, rxn_to_ec, ancestorsec, allrxns):
+    """Identify active and mutated EC numbers based on the final reaction presence variables."""
     active_ecs = set()
     mutated_ecs = set(ancestorsec)
     for i in range(len(rfinal_values)):
@@ -314,6 +327,7 @@ def rfinal2ec(rfinal_values, rxn_to_ec, ancestorsec, allrxns):
     return active_ecs, mutated_ecs
 
 def get_probs_df(df, fourecs, threshold):
+    """Get probabilities dataframe."""
     df = df[df.columns[df.columns.isin(fourecs)]]
     filtered_columns = df.columns
     pred_label = []
@@ -356,6 +370,7 @@ def get_probs_df(df, fourecs, threshold):
     return pred_label, pred_probs, pred_scores
                
 def update_topk(active_ecs, mutated_ecs, pred_df, ancestorsec,fourecs,theta,k=1, delta=0.01):
+    """Update the top-k predictions and scores based on the optimization results (active and mutated ECs)."""
     with open('data/enzymeobsolete.pkl', 'rb') as f:
         ecobselect = pickle.load(f)
     opt_df = pred_df.copy().astype(np.float64) 
@@ -473,7 +488,7 @@ def update_topk(active_ecs, mutated_ecs, pred_df, ancestorsec,fourecs,theta,k=1,
     return opt_df, opt_preds, opt_probs, opt_scores
           
 def add_annotation(model, gram, obj='built'):
-    ''' Add gene, metabolite, reaction ,biomass reaction annotations '''
+    """Add SBO terms and other annotations to genes, metabolites, and reactions in the model."""
     # Genes
     for gene in model.genes:
         gene._annotation = {}
@@ -523,6 +538,7 @@ import time
 from tqdm import tqdm
 from multiprocessing import cpu_count
 def check_essentiality_fast(S, lb, ub, active_to_test, obj_idx, biomass_met_id):
+    """Perform a fast check for reaction essentiality using linear programming."""
     essential_results = {}
     M, R = S.shape
     S_sparse = csr_matrix(S)
@@ -559,6 +575,7 @@ from cobra import Model, Reaction, Metabolite
 import numpy as np
 from scipy.sparse import issparse
 def build_cobra_from_pulp_sol(args, allrxns, allmets, S, lb, ub, rfinal_values, v_values, obj_idx, universal):
+    """Construct a COBRApy model object from the solution of the PuLP optimization."""
     print(f"\n>>> Converting PuLP model to COBRA model: {args.name}", flush=True)
     cobra_config = cobra.Configuration()
     cobra_config.solver = "glpk"
