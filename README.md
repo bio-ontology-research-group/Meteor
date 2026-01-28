@@ -21,7 +21,7 @@ METEOR requires two separate environments: one for the METEOR reconstruction fra
 ### 1. Install METEOR
 ```bash
 # Clone the repository
-git clone [https://github.com/bio-ontology-research-group/Meteor.git](https://github.com/bio-ontology-research-group/Meteor.git)
+git clone https://github.com/bio-ontology-research-group/Meteor.git
 cd meteor
 
 # Create and activate the METEOR environment
@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 ```bash
 # Clone the DeepProZyme repository
-git clone [https://github.com/kaistsystemsbiology/DeepProZyme.git](https://github.com/kaistsystemsbiology/DeepProZyme.git)
+git clone https://github.com/kaistsystemsbiology/DeepProZyme.git
 cd DeepProZyme
 
 # Create the environment for enzyme prediction
@@ -79,7 +79,7 @@ python v5main.py \
     --input_file test/GCF_000236665_DeepECv2_t5.pkl \
     --media default \
     --svfolder test \
-    --cpu 10 \
+    --cpu 8 \
     --gram negative \
     --name testgenome \
     --buildcobra 1 
@@ -97,7 +97,7 @@ The code used to reproduce the benchmarks and figures in the paper (including co
 ### External Data & Genomes
 
 Additional data and pre-processed files are available on **Zenodo**:
-[Link to Zenodo Dataset]
+[[Link to Zenodo Dataset](https://doi.org/10.5281/zenodo.18367730)]
 
 To reproduce the benchmarks using the **Price dataset**:
 
