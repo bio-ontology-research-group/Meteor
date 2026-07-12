@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meteor-thetafree"
+version = "1.0.0"
+description = "Model-agnostic metabolic-constraint MILP post-processing for bacterial EC prediction"
+readme = "README.md"
+authors = [
+    { name = "Kexin Niu", email = "kexin.niu@kaust.edu.sa" },
+    { name = "Robert Hoehndorf", email = "robert.hoehndorf@kaust.edu.sa" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.21",
+    "pandas>=1.5",
+    "scipy>=1.7",
+    "cobra>=0.26",
+    "pulp>=2.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+meteor = "meteor.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/bio-ontology-research-group/Meteor"
+
+[tool.setuptools.packages.find]
+where = ["src"]

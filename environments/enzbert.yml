@@ -1,0 +1,19 @@
+name: enzbert
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.7
+  - pytorch=1.7.0
+  - cudatoolkit=10.2   # V100 only; A100 will fail
+  - pip
+  - pip:
+    - transformers==3.0.0
+    - "pykeops<2.0"    # >= 2.0 requires Python 3.8+
+    - biopython
+    - tqdm
+    - numpy
+    - pandas
+# Plus EnzBERT repo:
+#   git clone https://gitlab.inria.fr/nbuton/tfpc.git
+#   cd tfpc && pip install -e .

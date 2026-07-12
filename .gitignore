@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+*.pkl
+*.pickle
+*.xml
+*.sbml
+*.h5
+*.pt
+*.pth
+logs/
+*.log
+.DS_Store
+*.swp
+*~
+.env
+
+# Allow sample data
+!examples/*.pkl

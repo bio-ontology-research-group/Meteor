@@ -1,0 +1,18 @@
+name: clean
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.10
+  - pytorch=1.11.0
+  - cudatoolkit=11.3   # change to cpuonly if no GPU
+  - scikit-learn=1.0.1   # match the version used to fit the bundled GMM
+  - pip
+  - pip:
+    - fair-esm
+    - tqdm
+    - numpy
+    - pandas
+# Plus CLEAN's own package: install separately via
+#   git clone https://github.com/tttianhao/CLEAN.git
+#   cd CLEAN/app && python build.py install

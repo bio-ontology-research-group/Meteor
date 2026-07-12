@@ -1,0 +1,19 @@
+name: meteor
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - numpy>=1.21
+  - pandas>=1.5
+  - scipy>=1.7
+  - scikit-learn>=1.0
+  - cobra>=0.26
+  - pulp>=2.7
+  - tqdm
+  - pyyaml
+  - matplotlib>=3.5
+  - seaborn
+  - pip
+  - pip:
+    - meteor-thetafree   # this package
