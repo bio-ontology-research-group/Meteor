@@ -1,7 +1,8 @@
-# METEOR — network-consistent metabolic reconstruction with evidence-weighted costs
+# METEOR — evidence-weighted reaction selection reconciles enzyme prediction with metabolic feasibility
 
 Code and deposited results for the PSB 2027 submission *METEOR:
-Network-consistent metabolic reconstruction with evidence-weighted costs*.
+Evidence-weighted reaction selection reconciles enzyme prediction with
+metabolic feasibility*.
 
 METEOR takes a per-protein EC confidence matrix, aggregates it into
 reaction-level evidence, selects a biomass-feasible reaction set from the SEED
