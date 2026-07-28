@@ -1,12 +1,19 @@
-# METEOR — evidence-weighted parsimony for network-consistent enzyme annotation
+# METEOR — network-consistent metabolic reconstruction with evidence-weighted costs
 
 Code and deposited results for the PSB 2027 submission *METEOR:
-Network-consistent enzyme annotation while preserving per-protein predictions*.
+Network-consistent metabolic reconstruction with evidence-weighted costs*.
 
 METEOR takes a per-protein EC confidence matrix, aggregates it into
-reaction-level evidence, selects a biomass-feasible reaction set with a MILP
-whose cost carries an evidence-weighted parsimony penalty, and writes the result
-back to the protein score matrix through a ranking-preserving update.
+reaction-level evidence, selects a biomass-feasible reaction set from the SEED
+universal database with a MILP, and writes the result back to the protein score
+matrix through a ranking-preserving update. The cost grades each reaction by the
+confidence behind it, `mu*(1-w_j)^p`, rather than charging every reaction the
+same: a uniform penalty prunes by count and discards genuine isozymes with the
+noise.
+
+This is not weighted gap-filling. There is no thresholded draft and no
+gap-filling stage; every reaction in the universal database competes on the same
+evidence-derived cost and the whole set is chosen in one optimisation.
 
 ## Contents
 
