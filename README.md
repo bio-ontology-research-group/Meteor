@@ -51,12 +51,17 @@ which is a different optimisation problem.
 | Table 2 (KEGG detection) | `eval/kegg_detect.py` | `results/toolcompare/kegg_pathway_108_detection.json` |
 | §3.2 selectivity | `eval/kegg_select.py` | `results/toolcompare/kegg_pathway_108_selectivity.json` |
 | §3.2 Price-149 | `eval/kegg_price.py` | `results/toolcompare/kegg_price_matched_detect.json` |
-| Figure 2, §3.3 | `eval/recovery_ablation.py` → `eval/agg_decoy.py` | `results/recovery_abl/` |
+| Figure 2, §3.3 | `eval/recovery_ablation.py` → `eval/agg_decoy.py`; figure drawn by `eval/gen_fig_decoy.py` | `results/recovery_abl/` |
 | §3.4 holdout | `eval/holdout_cfg.py` | `results/holdout_cfg/` |
 | §3.4 full proteome | `eval/net_seqident.py` | `results/toolcompare/net_seqident.json` |
 | §3.4 CarveMe | `eval/toolcompare_ec.py` | `results/toolcompare/panelB_ec.json` |
 | §3.4 threshold baseline | `eval/baseline_thresh_gapfill.py` | `results/toolcompare/ablation_thresh_vs_evw_ec.json` |
-| Figure S1 | `eval/gen_fig_massimbal.py` | `results/table1/` |
+| Figure S1 | `eval/gen_fig_massimbal.py` (draws the figure) | `results/table1/` |
+| S8 MEMOTE | `eval/memote_evw.py` | per-genome MEMOTE JSONs (not deposited, see below) |
+
+Scripts whose name starts with `gen_fig_` draw a figure in the paper and say
+so in their docstring; `gen_table1.py` and the two `agg_` scripts produce
+tables.
 
 `src/meteor_v8/` contains no absolute paths. The analysis scripts under `eval/`
 are deposited as they were run and reference input locations on our cluster; to

@@ -1,8 +1,16 @@
 #!/usr/bin/env python3
-"""Generate fig_decoy.pdf: spurious reactions under true/uniform/shuffled cost.
+"""FIGURE-GENERATING SCRIPT --- produces Figure 2 of the main text.
 
-Data: eval/recovery_ablation.py -> results/recovery_abl/*.json
-Output: paper/paper_main/figures/fig_decoy.pdf
+Draws figures/fig_decoy.pdf: the number of spurious reactions introduced
+when the evidence for 60 reactions is deleted and the MILP is re-solved
+under the true, uniform and shuffled cost regimes (108 genomes,
+logarithmic axis).
+
+Reads:  results/recovery_abl/*.json   (one record per genome, produced by
+        eval/recovery_ablation.py)
+Writes: figures/fig_decoy.pdf
+Numbers: 34.5 / 142.4 / 2007.7 mean spurious reactions; 4.13x and 58.3x.
+        Run eval/agg_decoy.py to print them without redrawing the figure.
 """
 import json, glob, os
 import numpy as np
