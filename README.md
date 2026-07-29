@@ -1,8 +1,8 @@
-# METEOR — evidence-weighted reaction selection reconciles enzyme prediction with metabolic feasibility
+# METEOR — evidence-weighted reaction selection reconciles enzyme prediction with growth feasibility
 
 Code and deposited results for the PSB 2027 submission *METEOR:
 Evidence-weighted reaction selection reconciles enzyme prediction with
-metabolic feasibility*.
+growth feasibility*.
 
 METEOR takes a per-protein EC confidence matrix, aggregates it into
 reaction-level evidence, selects a biomass-feasible reaction set from the SEED
