@@ -36,6 +36,8 @@ conda env create -f env/meteor_cobra.yml && conda activate cobra
 python eval/agg_table1.py    # Table 1; dead-end reduction 75.8-90.6%
 python eval/agg_decoy.py     # Figure 2; 34.5 / 142.4 / 2007.7 spurious
                              # reactions, 4.13x and 58.3x, p=1.9e-19
+python eval/agg_fva.py       # Section 3.1; 54.5% of selected reactions
+                             # flux-consistent vs 40.5% for the baseline
 ```
 
 ## Reconstructing a genome
@@ -65,6 +67,8 @@ which is a different optimisation problem.
 | §3.4 CarveMe | `eval/toolcompare_ec.py` | `results/toolcompare/panelB_ec.json` |
 | §3.4 threshold baseline | `eval/baseline_thresh_gapfill.py` | `results/toolcompare/ablation_thresh_vs_evw_ec.json` |
 | Figure S1 | `eval/gen_fig_massimbal.py` (draws the figure) | `results/table1/` |
+| §3.1 flux consistency | `eval/fva_selected.py` → `eval/agg_fva.py` | `results/fva_selected/`, `results/fva_baseline/` |
+| S8.4 weak-signal ECs | `eval/weakreal.py` | `results/toolcompare/weakreal.json` |
 | S8 MEMOTE | `eval/memote_evw.py` | per-genome MEMOTE JSONs (not deposited, see below) |
 
 Scripts whose name starts with `gen_fig_` draw a figure in the paper and say
