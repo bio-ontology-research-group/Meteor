@@ -38,6 +38,8 @@ python eval/agg_decoy.py     # Figure 2; 34.5 / 142.4 / 2007.7 spurious
                              # reactions, 4.13x and 58.3x, p=1.9e-19
 python eval/agg_fva.py       # Section 3.1; 54.5% of selected reactions
                              # flux-consistent vs 40.5% for the baseline
+python eval/agg_4arm.py      # Section 3.3; 34.6 / 78.2 / 142.9 / 2006.6
+                             # spurious reactions across the four arms
 ```
 
 ## Reconstructing a genome
@@ -61,7 +63,8 @@ which is a different optimisation problem.
 | Table 2 (KEGG detection) | `eval/kegg_detect.py` | `results/toolcompare/kegg_pathway_108_detection.json` |
 | §3.2 selectivity | `eval/kegg_select.py` | `results/toolcompare/kegg_pathway_108_selectivity.json` |
 | §3.2 Price-149 | `eval/kegg_price.py` | `results/toolcompare/kegg_price_matched_detect.json` |
-| Figure 2, §3.3 | `eval/recovery_ablation.py` → `eval/agg_decoy.py`; figure drawn by `eval/gen_fig_decoy.py` | `results/recovery_abl/` |
+| Figure 2, §3.3 | `eval/recovery_ablation.py` → `eval/agg_4arm.py`; figure drawn by `eval/gen_fig_decoy.py` | `results/recovery_4arm/` |
+| §3.3 two-stage arm | `eval/twostage.py` (called by `recovery_ablation.py`) | `results/recovery_4arm/` |
 | §3.4 holdout | `eval/holdout_cfg.py` | `results/holdout_cfg/` |
 | §3.4 full proteome | `eval/net_seqident.py` | `results/toolcompare/net_seqident.json` |
 | §3.4 CarveMe | `eval/toolcompare_ec.py` | `results/toolcompare/panelB_ec.json` |
