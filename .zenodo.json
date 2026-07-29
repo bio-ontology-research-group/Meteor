@@ -1,0 +1,19 @@
+{
+  "title": "METEOR v8.0: evidence-weighted reaction selection reconciles enzyme prediction with metabolic feasibility",
+  "description": "<p>Code and deposited results for the PSB 2027 submission <em>METEOR: Evidence-weighted reaction selection reconciles enzyme prediction with metabolic feasibility</em>.</p><p>METEOR takes a per-protein EC confidence matrix, aggregates it into reaction-level evidence, and selects a biomass-feasible reaction set from the ModelSEED universal database with a mixed-integer linear program, then maps the result back onto the protein score matrix through a ranking-preserving update. The cost grades each reaction by the confidence behind it rather than charging every reaction the same: a uniform penalty prunes by count and discards genuine isozymes along with the noise, whereas grading by confidence removes the weak tail and keeps the redundancy the evidence supports.</p><p>This is not weighted gap-filling. There is no thresholded draft and no gap-filling stage; every reaction in the universal database competes on the same evidence-derived cost and the whole set is chosen in one optimisation.</p><p>The deposit carries the per-genome records behind every reported number, including the 108 MILP solutions the main-text tables are computed from, and three aggregation scripts that regenerate the published figures from the deposit alone.</p>",
+  "upload_type": "software",
+  "license": "MIT",
+  "version": "v8.0-psb2027",
+  "creators": [
+    {"name": "Niu, Kexin", "affiliation": "King Abdullah University of Science and Technology"},
+    {"name": "Hoehndorf, Robert", "affiliation": "King Abdullah University of Science and Technology"}
+  ],
+  "keywords": [
+    "enzyme function prediction",
+    "genome-scale metabolic reconstruction",
+    "constraint-based modelling",
+    "mixed-integer linear programming",
+    "ModelSEED",
+    "EC number"
+  ]
+}
