@@ -91,8 +91,9 @@ re-run one, point the path constants at your own copies of the inputs below.
 ## Parameters
 
 `p=2`, `mu=3`, `k=5` (score truncation), `w_min=0.01` (candidate mask),
-`gamma_min=0.1`, `gamma_max=2.5`, `lambda=1e-4`, `epsilon=0` (log-odds
-smoothing), `delta=0` (forced-flux floor, disabled), `alpha=0.4` (score update).
+`gamma_min=0.1`, `gamma_max=2.5`, `lambda=1e-4`, `epsilon=1e-6` (log-odds
+smoothing, `utils.EPS_SMOOTH`), `delta=0` (forced-flux floor, disabled),
+`alpha=0.4` (score update).
 CBC via PuLP 3.3.1, four threads, 600 s limit, `gapRel=0.05`. The manuscript
 calls the forced-flux floor `delta`; the flag is `--eps`.
 
