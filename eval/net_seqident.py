@@ -2,6 +2,10 @@
 """NET-ONLY seqident (fair T15): per-protein top-1 correction/regression binned by max identity to the DPZ
 training set. Base loaded via extract_pred (net-only, same vocab as meteor_df). Answers: under the fair
 comparison, is the <30%-identity bin still net-positive (corrections>regressions)?"""
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import os,json,pickle,sys,numpy as np,pandas as pd
 W="/ibex/scratch/projects/c2014/kexin/funcarve/paperA_2026"
 V7="/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v7_run"
@@ -9,8 +13,8 @@ CACHE=f"{V7}/downstream_results/ncbi_ec_cache"
 MDIR="/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8_evw_p2mu3_run/meteor_out/dpz_vanilla"
 OUT="/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/results/toolcompare"
 sys.path.insert(0,"/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/eval"); from baseline_io import resolve_baseline_pkl
-sys.path.insert(0,"/ibex/user/niuk0a/funcarve/cobra/v6"); from src.v6utils import extract_pred as XP, load_ec as LE
-ANC=LE("/ibex/user/niuk0a/funcarve/cobra/v6/data/all_ancestors.txt")
+from meteor_v8.utils import extract_pred as XP, load_ec as LE
+ANC=LE(data_path('all_ancestors.txt'))
 # per-protein max identity to training
 pid2id={}
 for ln in open(f"{V7}/downstream_results/seq_identity_dpz/diamond_hits.tsv"):

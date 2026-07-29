@@ -1,8 +1,11 @@
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import sys,os,json,pickle,argparse,numpy as np,pandas as pd
 from collections import defaultdict
-sys.path.insert(0,'/ibex/user/niuk0a/funcarve/cobra/v6'); os.chdir('/ibex/user/niuk0a/funcarve/cobra/v6')
-from src.v6utils import extract_pred, load_ec
-sys.path.insert(0,'/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/eval')
+from meteor_v8.utils import extract_pred, load_ec
+
 from baseline_io import resolve_baseline_pkl, BASELINE_SUFFIX
 from scipy.stats import binomtest
 ap=argparse.ArgumentParser()
@@ -10,7 +13,7 @@ ap.add_argument('--baseline',required=True); ap.add_argument('--variant',require
 ap.add_argument('--mo',required=True); ap.add_argument('--tag',required=True)
 ap.add_argument('--alpha',type=float,default=0.4)
 a=ap.parse_args()
-anc=load_ec('/ibex/user/niuk0a/funcarve/cobra/v6/data/all_ancestors.txt'); A=a.alpha
+anc=load_ec(data_path('all_ancestors.txt')); A=a.alpha
 hc=json.load(open('/ibex/scratch/projects/c2014/kexin/funcarve/meteor_diag/holdout_clean.json'))['holdout_clean']
 OUT='/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/results/holdout_cfg'; os.makedirs(OUT,exist_ok=True)
 

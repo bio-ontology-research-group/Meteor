@@ -2,17 +2,20 @@
 """KEGG pathway completion on panel108 (GCF), v8 evw. Replicates eval_pathway_gc_dpz.py logic but on the
 GCF panel108 and v8 meteor_preds. Baseline coverage = fraction of a pathway's SEED-representable ECs scored
 >=0.5 in the proteome; METEOR coverage = fraction whose ECs are in v8 active_ecs. delta = meteor - baseline.
-Pathways restricted to >=5 SEED-representable 4-digit ECs (matches the paper's 152-pathway denominator)."""
+Pathways restricted to >=5 SEED-representable 4-digit ECs (matches the paper's 151-pathway denominator)."""
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import sys,os,re,json,pickle,numpy as np
-V6='/ibex/user/niuk0a/funcarve/cobra/v6'; sys.path.insert(0,V6); os.chdir(V6)
-sys.path.insert(0,'/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/src')
-from src.v6utils import extract_pred,load_refmapping,load_ec
-sys.path.insert(0,'/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/eval')
+
+from meteor_v8.utils import extract_pred,load_refmapping,load_ec
+
 from baseline_io import resolve_baseline_pkl,BASELINE_SUFFIX
 B='/ibex/scratch/projects/c2014/kexin/funcarve'; FULL=re.compile(r'^\d+\.\d+\.\d+\.\d+$')
 V8ROOT=f'{B}/meteor_v8_evw_p2mu3_run/meteor_out'; OUT=f'{B}/meteor_v8/results/toolcompare'
-anc=load_ec(f'{V6}/data/all_ancestors.txt')
-seedr2ec,_=load_refmapping(f'{V6}/data'); seedr2ec={k:v for k,v in seedr2ec.items() if v}
+anc=load_ec(data_path('all_ancestors.txt'))
+seedr2ec,_=load_refmapping(data_dir()); seedr2ec={k:v for k,v in seedr2ec.items() if v}
 # SEED EC universe (4-digit ECs represented by >=1 SEED reaction)
 seed_ec=set()
 for ecs in seedr2ec.values():

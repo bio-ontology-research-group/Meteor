@@ -3,15 +3,17 @@
 MILP + v6 posterior and saves v6_sol / v6_df / v6_preds(active_ecs) per genome,
 in the format the downstream evals (pathway/bgc/capability/per-protein) read.
 Same MILP as build_grow_memote.py; just skips the model build + MEMOTE."""
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import sys, os, pickle, json, argparse, time
 import numpy as np
 import pandas as pd
 
-V6 = "/ibex/user/niuk0a/funcarve/cobra/v6"
 PA = "/ibex/scratch/projects/c2014/kexin/funcarve/paperA_2026"
-sys.path.insert(0, V6); os.chdir(V6)
-sys.path.insert(0, "/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/src")
-from src.v6utils import (load_universal, extract_fba_matrices, load_tight_bounds,
+
+from meteor_v8.utils import (load_universal, extract_fba_matrices, load_tight_bounds,
                          apply_media, find_excluded_reactions, aggregate_confidence,
                          compute_costs, build_candidate_mask, build_rxn_ec_mask,
                          extract_pred, load_refmapping, load_ec, _detect_solver,
@@ -42,11 +44,10 @@ if os.path.exists(f"{MOUT}/meteor_preds_{a.gca}.pkl"):
     print(f"skip {a.gca}", flush=True); sys.exit(0)
 biomass_id = "biomass_GmPos" if a.gram == "positive" else "biomass_GmNeg"
 
-seedr2ec, _ = load_refmapping(f"{V6}/data"); seedr2ec = {k: v for k, v in seedr2ec.items() if v}
+seedr2ec, _ = load_refmapping(data_dir()); seedr2ec = {k: v for k, v in seedr2ec.items() if v}
 universal, allrxns, allmet = load_universal()
-anc = load_ec(f"{V6}/data/all_ancestors.txt")
+anc = load_ec(data_path('all_ancestors.txt'))
 
-sys.path.insert(0, "/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/eval")
 from baseline_io import resolve_baseline_pkl, BASELINE_SUFFIX
 _SUF = BASELINE_SUFFIX[a.baseline]
 pred_path = resolve_baseline_pkl(a.baseline, a.variant, a.gca, _SUF)
@@ -60,7 +61,7 @@ if _ref and pred.shape[0] < a.min_frac * _ref:
 
 mask = build_rxn_ec_mask(allrxns, seedr2ec, anc)
 S, lb, ub = extract_fba_matrices(universal, allrxns, reversed_trans=True)
-lb_t, ub_t = load_tight_bounds(f"{V6}/data/tight_bounds_v6_{a.gram[:3]}.pkl")
+lb_t, ub_t = load_tight_bounds(data_path(f'tight_bounds_v6_{a.gram[:3]}.pkl'))
 if lb_t is not None: lb = np.maximum(lb, lb_t); ub = np.minimum(ub, ub_t)
 obj_idx = allrxns.index(biomass_id)
 excludes = find_excluded_reactions(S, lb, ub, allrxns, biomass_id)

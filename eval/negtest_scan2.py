@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Scan candidate negative tests: check DPZ coverage + METEOR status."""
 import os,pickle,glob,sys,collections
-sys.path.insert(0,"/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/eval")
+
 from baseline_io import resolve_baseline_pkl, BASELINE_SUFFIX
 
 OUTROOT = "/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8_evw_p2mu3_run/meteor_out_bacdive/dpz_vanilla"

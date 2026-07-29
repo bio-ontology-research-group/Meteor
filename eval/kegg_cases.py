@@ -7,11 +7,14 @@ For each missed weak-real EC e (0<dpz<0.5, in curated GEM, not in METEOR model),
   genuine_miss : has pathway + signal + no alternative -> real evw failure
 Compare the miss breakdown across predictors (dpz/clean/enzbert). Hypothesis: clean/enzbert have MORE
 case2_deadpath (their weak signal sits on signal-poor pathways), explaining the null weak-real advantage."""
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import sys,os,re,json,pickle,numpy as np
-sys.path.insert(0,'/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/src')
-V6='/ibex/user/niuk0a/funcarve/cobra/v6'; sys.path.insert(0,V6); os.chdir(V6)
-from src.v6utils import load_universal,build_rxn_ec_mask,extract_pred,load_refmapping,load_ec
-sys.path.insert(0,'/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/eval')
+
+from meteor_v8.utils import load_universal,build_rxn_ec_mask,extract_pred,load_refmapping,load_ec
+
 from baseline_io import resolve_baseline_pkl,BASELINE_SUFFIX
 import cobra,warnings,logging; warnings.filterwarnings('ignore'); logging.getLogger('cobra').setLevel(logging.ERROR)
 B='/ibex/scratch/projects/c2014/kexin/funcarve'; FULL=re.compile(r'^\d+\.\d+\.\d+\.\d+$')

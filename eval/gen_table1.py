@@ -10,11 +10,12 @@ Submodel construction, bound handling, medium inference and the MEMOTE calls are
 copied verbatim from diag/memote_evw.py so the new columns are comparable with
 the ones already published.
 """
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import sys, os, json, pickle, argparse, numpy as np
-V6 = "/ibex/user/niuk0a/funcarve/cobra/v6"
-sys.path.insert(0, V6); os.chdir(V6)
 sys.path.insert(0, "/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v7/src")
-sys.path.insert(0, "/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/eval")
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--gca", required=True)
@@ -28,7 +29,7 @@ OUT = os.path.join(a.outdir, "table1_%s.json" % a.gca)
 if os.path.exists(OUT):
     print("done", flush=True); sys.exit(0)
 
-from src.v6utils import (load_universal, extract_fba_matrices, load_tight_bounds,
+from meteor_v8.utils import (load_universal, extract_fba_matrices, load_tight_bounds,
                          apply_media, build_submodel, load_refmapping, load_ec,
                          extract_pred, build_rxn_ec_mask)
 from baseline_io import resolve_baseline_pkl, BASELINE_SUFFIX
@@ -42,14 +43,14 @@ for x in list(universal.reactions) + list(universal.metabolites) + list(universa
     if not hasattr(x, "_annotation"): x._annotation = {}
 biomass_id = "biomass_GmPos" if a.gram == "positive" else "biomass_GmNeg"
 S, lb, ub = extract_fba_matrices(universal, allrxns, reversed_trans=True)
-lt, ut = load_tight_bounds(V6 + "/data/tight_bounds_v6_%s.pkl" % a.gram[:3])
+lt, ut = load_tight_bounds(data_path('tight_bounds_v6_%s.pkl' % a.gram[:3]))
 if lt is not None: lb = np.maximum(lb, lt); ub = np.minimum(ub, ut)
 lb, ub, _, _ = apply_media(["default"], allrxns, lb, ub)
 ix = {rid: i for i, rid in enumerate(allrxns)}
 BND, UPTAKE_LB = 100.0, -10.0
 
-seedr2ec, _ = load_refmapping(V6 + "/data"); seedr2ec = {k: v for k, v in seedr2ec.items() if v}
-anc = load_ec(V6 + "/data/all_ancestors.txt")
+seedr2ec, _ = load_refmapping(data_dir()); seedr2ec = {k: v for k, v in seedr2ec.items() if v}
+anc = load_ec(data_path('all_ancestors.txt'))
 mask = build_rxn_ec_mask(allrxns, seedr2ec, anc)
 
 

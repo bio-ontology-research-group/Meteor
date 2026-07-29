@@ -2,12 +2,15 @@
 """Price-149 per-protein eval (v7): baseline vs METEOR top-1 / Fmax for all 6
 predictors, on the shared (both-scored) protein set. Reads v7 METEOR outputs
 from meteor_out_price/{baseline}/meteor_df_{gca}.pkl."""
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import os, glob
 from pathlib import Path
 import pandas as pd
-import sys as _s2; _s2.path.insert(0,"/ibex/user/niuk0a/funcarve/cobra/v6")
-from src.v6utils import extract_pred as _XP, load_ec as _LE
-_ANC=_LE("/ibex/user/niuk0a/funcarve/cobra/v6/data/all_ancestors.txt")
+from meteor_v8.utils import extract_pred as _XP, load_ec as _LE
+_ANC=_LE(data_path('all_ancestors.txt'))
 
 
 F = "/ibex/scratch/projects/c2014/kexin/funcarve"

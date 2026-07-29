@@ -8,11 +8,12 @@ minimal medium, so catabolic capability is not pruned merely for being unused.
 
 Arms: METEOR (y > 0.5) vs the threshold baseline (any EC scored >= tau).
 """
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import sys, os, csv, glob, json, pickle, argparse, collections
 import numpy as np
-V6 = "/ibex/user/niuk0a/funcarve/cobra/v6"
-sys.path.insert(0, V6); os.chdir(V6)
-sys.path.insert(0, "/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/eval")
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--chunk", type=int, required=True)
@@ -26,7 +27,7 @@ OUT = os.path.join(a.outdir, "catab_%03d.json" % a.chunk)
 if os.path.exists(OUT):
     print("done"); sys.exit(0)
 
-from src.v6utils import (load_universal, extract_fba_matrices, load_refmapping,
+from meteor_v8.utils import (load_universal, extract_fba_matrices, load_refmapping,
                          load_ec, extract_pred, build_rxn_ec_mask)
 
 F = "/ibex/scratch/projects/c2014/kexin/funcarve"
@@ -37,8 +38,8 @@ FBA_KINDS = {"carbon source", "assimilation", "growth"}
 
 universal, allrxns, allmet = load_universal()
 S, lb, ub = extract_fba_matrices(universal, allrxns, reversed_trans=True)
-seedr2ec, _ = load_refmapping(f"{V6}/data"); seedr2ec = {k: v for k, v in seedr2ec.items() if v}
-anc = load_ec(f"{V6}/data/all_ancestors.txt")
+seedr2ec, _ = load_refmapping(data_dir()); seedr2ec = {k: v for k, v in seedr2ec.items() if v}
+anc = load_ec(data_path('all_ancestors.txt'))
 mask = build_rxn_ec_mask(allrxns, seedr2ec, anc)
 
 # metabolite id -> row index; a reaction "handles" a compound if it has a nonzero

@@ -6,15 +6,18 @@ score>0. Per baseline (mean over 108 genomes):
   wpath_avail    = # pathways baseline-missed (no EC>=0.5) but with >=1 weak EC (recoverable by weak signal)
   wpath_recov    = # of those METEOR detects (>=1 EC);  recov_rate = recov/avail
 """
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import sys,os,re,json,pickle,numpy as np
-V6='/ibex/user/niuk0a/funcarve/cobra/v6'; sys.path.insert(0,V6); os.chdir(V6)
-from src.v6utils import extract_pred,load_refmapping,load_ec
-sys.path.insert(0,'/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/eval')
+from meteor_v8.utils import extract_pred,load_refmapping,load_ec
+
 from baseline_io import resolve_baseline_pkl,BASELINE_SUFFIX
 B='/ibex/scratch/projects/c2014/kexin/funcarve'; FULL=re.compile(r'^\d+\.\d+\.\d+\.\d+$')
 V8ROOT=f'{B}/meteor_v8_evw_p2mu3_run/meteor_out'; OUT=f'{B}/meteor_v8/results/toolcompare'
-anc=load_ec(f'{V6}/data/all_ancestors.txt')
-seedr2ec,_=load_refmapping(f'{V6}/data'); seedr2ec={k:v for k,v in seedr2ec.items() if v}
+anc=load_ec(data_path('all_ancestors.txt'))
+seedr2ec,_=load_refmapping(data_dir()); seedr2ec={k:v for k,v in seedr2ec.items() if v}
 seed_ec=set()
 for ecs in seedr2ec.values():
     for e in ecs:

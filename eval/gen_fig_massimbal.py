@@ -1,16 +1,5 @@
-#!/usr/bin/env python3
-"""FIGURE-GENERATING SCRIPT --- produces Figure S1 of the supplement.
-
-Draws figures/fig_massimbal.pdf: per-genome counts of mass-imbalanced
-reactions for the threshold baseline and for METEOR, across the 108-genome
-panel, with medians marked.
-
-Reads:  results/table1/table1_*.json  (the same per-genome records as
-        main-text Table 1, produced by eval/gen_table1.py)
-Writes: figures/fig_massimbal.pdf
-Numbers: baseline medians 2092 / 2755 / 2342, METEOR medians 1858 / 2677 /
-        2154 for CLEAN / DeepProZyme / EnzBERT.
-"""
+"""Figure S1: per-genome mass-imbalanced reaction counts, baseline vs METEOR.
+Regenerated from the same deposited per-genome records as main Table 1 (K25)."""
 import json, glob, os
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt

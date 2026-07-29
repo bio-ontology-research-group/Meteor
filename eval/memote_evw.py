@@ -9,14 +9,17 @@ and FBA growth via MEMOTE's consistency tests.
 Run once per genome; the per-genome JSONs are then aggregated for the table.
 Paths below point at our cluster layout --- see README.md.
 """
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import sys, os, json, pickle, argparse, numpy as np
-V6="/ibex/user/niuk0a/funcarve/cobra/v6"; sys.path.insert(0,V6); os.chdir(V6)
 sys.path.insert(0,"/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v7/src")
 ap=argparse.ArgumentParser(); ap.add_argument("--gca",required=True); ap.add_argument("--gram",required=True)
 a=ap.parse_args()
 OUT="/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8_evw_p2mu3_run/downstream_results/memote/memote_evw_%s.json"%a.gca
 if os.path.exists(OUT): print("done"); sys.exit(0)
-from src.v6utils import (load_universal, extract_fba_matrices, load_tight_bounds,
+from meteor_v8.utils import (load_universal, extract_fba_matrices, load_tight_bounds,
                          apply_media, build_submodel)
 import memote.support.consistency as cons
 CONFIGS={"evw_p2mu3":"/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8_evw_p2mu3_run/meteor_out/dpz_vanilla",
@@ -28,7 +31,7 @@ for x in list(universal.reactions)+list(universal.metabolites)+list(universal.ge
     if not hasattr(x,"_annotation"): x._annotation={}
 biomass_id="biomass_GmPos" if a.gram=="positive" else "biomass_GmNeg"
 S, lb, ub = extract_fba_matrices(universal, allrxns, reversed_trans=True)
-lt,ut = load_tight_bounds(V6+"/data/tight_bounds_v6_%s.pkl"%a.gram[:3])
+lt,ut = load_tight_bounds(data_path('tight_bounds_v6_%s.pkl' % a.gram[:3]))
 if lt is not None: lb=np.maximum(lb,lt); ub=np.minimum(ub,ut)
 lb,ub,_,_=apply_media(["default"],allrxns,lb,ub)
 ix={rid:i for i,rid in enumerate(allrxns)}

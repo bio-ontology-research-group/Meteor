@@ -1,4 +1,4 @@
-"""METEOR v8 — evidence-weighted parsimony (evw) MILP.
+r"""METEOR v8 — evidence-weighted parsimony (evw) MILP.
 
 Extends the v7 hard-biomass MILP (``milp_hard.build_milp_hard``) with a
 cost vector ``c`` that the caller pre-loads with the evw penalty.
@@ -7,8 +7,10 @@ The MILP objective includes:
 
   * **Evidence-weighted parsimony** (main contribution, eq.~1 of paper).
     The caller (``emit_v8.py``) computes the per-reaction y-cost as
-    :math:`c_j = \log(w_j/(1-w_j)) + \mu(1-w_j)^p`, where ``w_j`` is the
-    noisy-OR confidence of reaction *j*.  Reactions with weak evidence
+    :math:`c_j = -\log\frac{w_j+\epsilon}{1-w_j+\epsilon} + \mu(1-w_j)^p`, where
+    ``w_j`` is the noisy-OR confidence of reaction *j* and
+    ``epsilon = 1e-6`` is the log-odds smoothing (``v6utils.EPS_SMOOTH``).
+    Reactions with weak evidence
     (low ``w``) incur a large penalty; high-confidence reactions incur
     almost none.  This is the paper's central mechanism.
 

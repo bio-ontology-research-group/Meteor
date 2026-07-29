@@ -2,13 +2,16 @@
 """Price-149 pathway matched-completeness (K12) + detection, for the 3 additional predictors
 (GraphEC, MAPred, TopEC) on the 22 Price genomes. Mirrors kegg_matched.py + kegg_detect.py but
 on the Price data layout (baseline via base_pred_path, METEOR via meteor_out_price active_ecs)."""
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import sys,os,re,glob,json,pickle,numpy as np
-V6='/ibex/user/niuk0a/funcarve/cobra/v6'; sys.path.insert(0,V6); os.chdir(V6)
-from src.v6utils import extract_pred,load_refmapping,load_ec
-anc=load_ec(f'{V6}/data/all_ancestors.txt')
+from meteor_v8.utils import extract_pred,load_refmapping,load_ec
+anc=load_ec(data_path('all_ancestors.txt'))
 F='/ibex/scratch/projects/c2014/kexin/funcarve'; FULL=re.compile(r'^\d+\.\d+\.\d+\.\d+$')
 MOP=f'{F}/meteor_v8_evw_p2mu3_run/meteor_out_price'; OUT=f'{F}/meteor_v8/results/toolcompare'
-seedr2ec,_=load_refmapping(f'{V6}/data'); seedr2ec={k:v for k,v in seedr2ec.items() if v}
+seedr2ec,_=load_refmapping(data_dir()); seedr2ec={k:v for k,v in seedr2ec.items() if v}
 seed_ec=set()
 for ecs in seedr2ec.values():
     for e in ecs:

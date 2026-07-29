@@ -4,15 +4,17 @@ Same hard-biomass MILP + v6 posterior as emit_meteor_out.py; only the baseline
 prediction path differs (per-baseline GCA-named price preds, scattered dirs).
 gram = negative for all Price genomes. Saves meteor_sol/df/preds per (baseline,gca)
 to meteor_out_price/{baseline}/."""
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import sys, os, pickle, argparse, time, glob
 import numpy as np
 import pandas as pd
 
-V6 = "/ibex/user/niuk0a/funcarve/cobra/v6"
 F = "/ibex/scratch/projects/c2014/kexin/funcarve"
-sys.path.insert(0, V6); os.chdir(V6)
-sys.path.insert(0, "/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/src")
-from src.v6utils import (load_universal, extract_fba_matrices, load_tight_bounds,
+
+from meteor_v8.utils import (load_universal, extract_fba_matrices, load_tight_bounds,
                          apply_media, find_excluded_reactions, aggregate_confidence,
                          compute_costs, build_candidate_mask, build_rxn_ec_mask,
                          extract_pred, load_refmapping, load_ec, _detect_solver,
@@ -70,9 +72,9 @@ pred_path = price_pred_path(a.baseline, a.gca)
 if not os.path.exists(pred_path):
     print(f"[ERR] no pred: {pred_path}", flush=True); sys.exit(3)
 
-seedr2ec, _ = load_refmapping(f"{V6}/data"); seedr2ec = {k: v for k, v in seedr2ec.items() if v}
+seedr2ec, _ = load_refmapping(data_dir()); seedr2ec = {k: v for k, v in seedr2ec.items() if v}
 universal, allrxns, allmet = load_universal()
-anc = load_ec(f"{V6}/data/all_ancestors.txt")
+anc = load_ec(data_path('all_ancestors.txt'))
 pred = extract_pred(pred_path, anc)
 _P = pred.values.astype(float).copy(); _ne=_P.shape[1]
 if 5 < _ne:
@@ -82,7 +84,7 @@ print(f"[emit_price] {a.baseline} {a.gca} pred={pred.shape} src={os.path.basenam
 
 mask = build_rxn_ec_mask(allrxns, seedr2ec, anc)
 S, lb, ub = extract_fba_matrices(universal, allrxns, reversed_trans=True)
-lb_t, ub_t = load_tight_bounds(f"{V6}/data/tight_bounds_v6_neg.pkl")
+lb_t, ub_t = load_tight_bounds(data_path('tight_bounds_v6_neg.pkl'))
 if lb_t is not None: lb = np.maximum(lb, lb_t); ub = np.minimum(ub, ub_t)
 obj_idx = allrxns.index(biomass_id)
 excludes = find_excluded_reactions(S, lb, ub, allrxns, biomass_id)

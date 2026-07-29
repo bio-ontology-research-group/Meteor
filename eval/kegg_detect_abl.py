@@ -1,17 +1,20 @@
 #!/usr/bin/env python3
 """Pathway detection for ONE ablation condition (dpz baseline, given meteor run dir).
 Same metric as kegg_detect.py; used for S3 system-level ablation (B2 nobio, uniform mu3e0, ...)."""
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import sys,os,re,json,pickle,argparse,numpy as np
-V6='/ibex/user/niuk0a/funcarve/cobra/v6'; sys.path.insert(0,V6); os.chdir(V6)
-from src.v6utils import extract_pred,load_refmapping,load_ec
-sys.path.insert(0,'/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/eval')
+from meteor_v8.utils import extract_pred,load_refmapping,load_ec
+
 from baseline_io import resolve_baseline_pkl,BASELINE_SUFFIX
 ap=argparse.ArgumentParser(); ap.add_argument('--mo',required=True); ap.add_argument('--tag',required=True)
 ap.add_argument('--baseline',default='dpz'); a=ap.parse_args()
 B='/ibex/scratch/projects/c2014/kexin/funcarve'; FULL=re.compile(r'^\d+\.\d+\.\d+\.\d+$')
 OUT=f'{B}/meteor_v8/results/toolcompare'
-anc=load_ec(f'{V6}/data/all_ancestors.txt')
-seedr2ec,_=load_refmapping(f'{V6}/data'); seedr2ec={k:v for k,v in seedr2ec.items() if v}
+anc=load_ec(data_path('all_ancestors.txt'))
+seedr2ec,_=load_refmapping(data_dir()); seedr2ec={k:v for k,v in seedr2ec.items() if v}
 seed_ec=set()
 for ecs in seedr2ec.values():
     for e in ecs:

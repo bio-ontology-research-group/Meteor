@@ -2,10 +2,13 @@
 """Price-149 predictor output-distribution characterization (net-only, shared set).
 For each of the 6 predictors: score sparsity/peakiness of the BASELINE preds, and
 how many ECs METEOR mutes vs boosts per protein -> explains heterogeneous Fmax effect."""
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import os, glob, numpy as np, pandas as pd
-import sys as _s2; _s2.path.insert(0,"/ibex/user/niuk0a/funcarve/cobra/v6")
-from src.v6utils import extract_pred as _XP, load_ec as _LE
-_ANC=_LE("/ibex/user/niuk0a/funcarve/cobra/v6/data/all_ancestors.txt")
+from meteor_v8.utils import extract_pred as _XP, load_ec as _LE
+_ANC=_LE(data_path('all_ancestors.txt'))
 F="/ibex/scratch/projects/c2014/kexin/funcarve"; ECONTO="/ibex/user/niuk0a/funcarve/econto"
 MOP=f"{F}/meteor_v8_evw_p2mu3_run/meteor_out_price"
 

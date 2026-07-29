@@ -1,8 +1,11 @@
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import sys,os,glob,pickle,numpy as np,pandas as pd
-sys.path.insert(0,'/ibex/user/niuk0a/funcarve/cobra/v6'); os.chdir('/ibex/user/niuk0a/funcarve/cobra/v6')
-from src.v6utils import extract_pred, load_ec
-sys.path.insert(0,'/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/eval')
-anc=load_ec('/ibex/user/niuk0a/funcarve/cobra/v6/data/all_ancestors.txt')
+from meteor_v8.utils import extract_pred, load_ec
+
+anc=load_ec(data_path('all_ancestors.txt'))
 F='/ibex/scratch/projects/c2014/kexin/funcarve'; ECONTO='/ibex/user/niuk0a/funcarve/econto'
 MOP=f'{F}/meteor_v8_evw_p2mu3_run/meteor_out_price'; A=0.4
 def base_pred_path(b,gca):

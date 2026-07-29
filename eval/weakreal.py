@@ -5,12 +5,15 @@ Q2 weak-but-real: ECs with 0<dpz<0.5 that ARE in the GEM (dropped from a hard-th
    how many does each FINAL model contain? METEOR(soft) should keep them; baseline/Reconstructor
    only recover the biomass-essential ones via gap-fill.
 EC-level, namespace-neutral, ground truth = curated GEM EC annotation."""
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import sys,os,re,json,pickle,numpy as np,pandas as pd,cobra
 import warnings,logging; warnings.filterwarnings('ignore'); logging.getLogger('cobra').setLevel(logging.ERROR)
-V6='/ibex/user/niuk0a/funcarve/cobra/v6'; sys.path.insert(0,V6); os.chdir(V6)
 B='/ibex/scratch/projects/c2014/kexin/funcarve'
 sys.path.insert(0,f'{B}/meteor_v8/src')
-from src.v6utils import (load_universal,extract_fba_matrices,load_tight_bounds,apply_media,
+from meteor_v8.utils import (load_universal,extract_fba_matrices,load_tight_bounds,apply_media,
     find_excluded_reactions,build_rxn_ec_mask,extract_pred,load_refmapping,load_ec,_detect_solver)
 from meteor_v8.repair import grow_support
 sys.path.insert(0,f'{B}/meteor_v8/eval')
@@ -46,7 +49,7 @@ def rxn_ecs(j):
 _gc={}
 def setup(gram):
     if gram in _gc: return _gc[gram]
-    lt,ut=load_tight_bounds(f'{V6}/data/tight_bounds_v6_{gram}.pkl')
+    lt,ut=load_tight_bounds(data_path(f'tight_bounds_v6_{gram}.pkl'))
     lb=np.maximum(lb0,lt); ub=np.minimum(ub0,ut)
     oi=allrxns.index('biomass_GmPos' if gram=='pos' else 'biomass_GmNeg')
     exc=find_excluded_reactions(S,lb,ub,allrxns,allrxns[oi]); lb,ub,_,_=apply_media(['default'],allrxns,lb,ub)

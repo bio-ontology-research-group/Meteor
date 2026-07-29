@@ -5,11 +5,14 @@ Stratify weak-real ECs W by whether any of the EC's reactions is flux-capable (n
 blocked (peripheral). Per predictor (dpz/clean/enzbert): capable-fraction of W + METEOR vs baseline recovery
 WITHIN each stratum. Prediction: (1) dpz W more capable than clean/enzbert; (2) in capable stratum METEOR>baseline
 for all predictors (=> benefit general, just differently distributed)."""
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import sys,os,re,json,pickle,numpy as np,pandas as pd,cobra
 import warnings,logging; warnings.filterwarnings('ignore'); logging.getLogger('cobra').setLevel(logging.ERROR)
-V6='/ibex/user/niuk0a/funcarve/cobra/v6'; sys.path.insert(0,V6); os.chdir(V6)
 B='/ibex/scratch/projects/c2014/kexin/funcarve'; sys.path.insert(0,f'{B}/meteor_v8/src')
-from src.v6utils import (load_universal,extract_fba_matrices,load_tight_bounds,apply_media,
+from meteor_v8.utils import (load_universal,extract_fba_matrices,load_tight_bounds,apply_media,
     find_excluded_reactions,build_rxn_ec_mask,extract_pred,load_refmapping,load_ec,_detect_solver)
 from meteor_v8.repair import grow_support
 sys.path.insert(0,f'{B}/meteor_v8/eval'); from baseline_io import resolve_baseline_pkl,BASELINE_SUFFIX
@@ -39,7 +42,7 @@ def build_ec2rxn():
 _gc={}
 def setup(gram):
     if gram in _gc: return _gc[gram]
-    lt,ut=load_tight_bounds(f'{V6}/data/tight_bounds_v6_{gram}.pkl'); lb=np.maximum(lb0,lt); ub=np.minimum(ub0,ut)
+    lt,ut=load_tight_bounds(data_path(f'tight_bounds_v6_{gram}.pkl')); lb=np.maximum(lb0,lt); ub=np.minimum(ub0,ut)
     oi=allrxns.index('biomass_GmPos' if gram=='pos' else 'biomass_GmNeg')
     exc=find_excluded_reactions(S,lb,ub,allrxns,allrxns[oi]); lb,ub,_,_=apply_media(['default'],allrxns,lb,ub)
     _gc[gram]=(lb,ub,oi,exc); return _gc[gram]

@@ -1,26 +1,29 @@
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import sys,os,json,pickle,argparse,numpy as np
-V6='/ibex/user/niuk0a/funcarve/cobra/v6'; sys.path.insert(0,V6); os.chdir(V6)
-sys.path.insert(0,'/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/src')
-from src.v6utils import (load_universal,extract_fba_matrices,load_tight_bounds,apply_media,
+
+from meteor_v8.utils import (load_universal,extract_fba_matrices,load_tight_bounds,apply_media,
     find_excluded_reactions,compute_costs,build_candidate_mask,build_rxn_ec_mask,extract_pred,
     load_refmapping,load_ec,_detect_solver)
 from meteor_v8.milp_hard import biomass_feasible_skeleton
 from meteor_v8.milp_v8 import build_milp_v8
 from meteor_v8.repair import verify_and_repair
-sys.path.insert(0,'/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/eval')
+
 from baseline_io import resolve_baseline_pkl, BASELINE_SUFFIX
 ap=argparse.ArgumentParser(); ap.add_argument('--gca',required=True); ap.add_argument('--gram',required=True); ap.add_argument('--kdel',type=int,default=60); ap.add_argument('--outdir',default=None)
 a=ap.parse_args()
 MO='/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8_evw_p2mu3_run/meteor_out/dpz_vanilla'
 OUT=a.outdir or '/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/results/recovery_abl'; os.makedirs(OUT,exist_ok=True)
 bid='biomass_GmPos' if a.gram=='positive' else 'biomass_GmNeg'
-seedr2ec,_=load_refmapping(f'{V6}/data'); seedr2ec={k:v for k,v in seedr2ec.items() if v}
-universal,allrxns,allmet=load_universal(); anc=load_ec(f'{V6}/data/all_ancestors.txt')
+seedr2ec,_=load_refmapping(data_dir()); seedr2ec={k:v for k,v in seedr2ec.items() if v}
+universal,allrxns,allmet=load_universal(); anc=load_ec(data_path('all_ancestors.txt'))
 mask=build_rxn_ec_mask(allrxns,seedr2ec,anc)
 pred0=extract_pred(resolve_baseline_pkl('dpz','vanilla',a.gca,BASELINE_SUFFIX['dpz']),anc)
 sol=pickle.load(open(f'{MO}/meteor_sol_{a.gca}.pkl','rb')); active0=set(np.where(np.array(sol['y_vals'])>0.5)[0])  # reaction indices = synthetic truth
 S,lb,ub=extract_fba_matrices(universal,allrxns,reversed_trans=True)
-lt,ut=load_tight_bounds(f'{V6}/data/tight_bounds_v6_{a.gram[:3]}.pkl'); lb=np.maximum(lb,lt); ub=np.minimum(ub,ut)
+lt,ut=load_tight_bounds(data_path(f'tight_bounds_v6_{a.gram[:3]}.pkl')); lb=np.maximum(lb,lt); ub=np.minimum(ub,ut)
 oi=allrxns.index(bid); exc=find_excluded_reactions(S,lb,ub,allrxns,bid)
 lb,ub,_,media=apply_media(['default'],allrxns,lb,ub); solver,_=_detect_solver(threads=4,time_limit=600)
 feas,skel,_=biomass_feasible_skeleton(S,lb,ub,oi,0.1,solver=solver)
@@ -42,7 +45,7 @@ for j in range(len(allrxns)):
     if len(ei): w[j]=1.0-np.exp(float(_l[:,ei].sum()))
 w=np.clip(np.nan_to_num(w,nan=0,posinf=1,neginf=0),1e-6,1-1e-6)
 c_true=np.asarray(compute_costs(w,mode='logodds')['c'],float)+3.0*np.power(np.clip(1.0-w,0,1),2)
-sys.path.insert(0,'/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/eval')
+
 from twostage import two_stage
 # candidate set = ablated candidates UNION D UNION original active (feasible repair set incl. originals + alternatives)
 cand=build_candidate_mask(w,allrxns,exc,media,essential_skeleton=skel,w_min=0.01)

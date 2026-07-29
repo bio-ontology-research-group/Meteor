@@ -1,6 +1,9 @@
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import sys,os,pickle,glob,numpy as np,cobra
-sys.path.insert(0,'/ibex/user/niuk0a/funcarve/cobra/v6'); os.chdir('/ibex/user/niuk0a/funcarve/cobra/v6')
-from src.v6utils import load_universal, load_refmapping, load_ec, build_rxn_ec_mask, extract_pred
+from meteor_v8.utils import load_universal, load_refmapping, load_ec, build_rxn_ec_mask, extract_pred
 bigg2mnxr={}; seed2mnxr={}
 for ln in open('/ibex/scratch/projects/c2014/kexin/funcarve/meteor_diag/reac_xref.tsv'):
     if ln.startswith('#'): continue

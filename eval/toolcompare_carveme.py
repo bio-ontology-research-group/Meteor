@@ -5,13 +5,16 @@ Panel B (6 curated-GEM genomes): + MNXR-space P/R vs curated GEM.
 All models mapped to MNXR for fair cross-namespace size/overlap (METEOR=SEED, CarveMe=BiGG).
 gap-fill = reactions with NO sequence evidence (METEOR: active rxn no predicted EC; CarveMe: empty GPR).
 """
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import sys,os,json,pickle,glob,numpy as np,cobra
 import warnings; warnings.filterwarnings('ignore')
 import logging; logging.getLogger('cobra').setLevel(logging.ERROR)
-V6='/ibex/user/niuk0a/funcarve/cobra/v6'; sys.path.insert(0,V6); os.chdir(V6)
 BASE='/ibex/scratch/projects/c2014/kexin/funcarve'
 sys.path.insert(0,f'{BASE}/meteor_v8/src')
-from src.v6utils import (load_universal,load_refmapping,load_ec,build_rxn_ec_mask,extract_pred,
+from meteor_v8.utils import (load_universal,load_refmapping,load_ec,build_rxn_ec_mask,extract_pred,
     extract_fba_matrices,load_tight_bounds,apply_media)
 sys.path.insert(0,f'{BASE}/meteor_v8/eval')
 from baseline_io import resolve_baseline_pkl, BASELINE_SUFFIX

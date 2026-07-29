@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 """BacDive proof-of-concept on Salmonella (GCF_000006945.2): do METEOR's active ECs match the
 enzyme-test phenotypes (+/-)? And are the '+' ECs weak-signal (dpz<0.5) recovered by METEOR?"""
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import sys,os,pickle,glob,numpy as np
-V6='/ibex/user/niuk0a/funcarve/cobra/v6'; sys.path.insert(0,V6); os.chdir(V6)
-from src.v6utils import extract_pred,load_ec
-sys.path.insert(0,'/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/eval')
+from meteor_v8.utils import extract_pred,load_ec
+
 from baseline_io import resolve_baseline_pkl,BASELINE_SUFFIX
-anc=load_ec(f'{V6}/data/all_ancestors.txt')
+anc=load_ec(data_path('all_ancestors.txt'))
 GCF='GCF_000006945.2'
 # curated (test, kind, BacDive ability) -> candidate ECs
 TESTS=[

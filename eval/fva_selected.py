@@ -6,9 +6,11 @@ reaction can enter the set at zero flux. This measures, per genome:
   - consistent  : |v| > tol somewhere in the feasible space (FVA), i.e. not blocked
 Same submodel construction as eval/gen_table1.py so the counts line up with Table 1.
 """
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import sys, os, json, pickle, argparse, numpy as np
-V6 = "/ibex/user/niuk0a/funcarve/cobra/v6"
-sys.path.insert(0, V6); os.chdir(V6)
 sys.path.insert(0, "/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v7/src")
 
 ap = argparse.ArgumentParser()
@@ -22,7 +24,7 @@ a = ap.parse_args(); os.makedirs(a.outdir, exist_ok=True)
 OUT = os.path.join(a.outdir, "fva_%s_%s.json" % (a.arm, a.gca))
 if os.path.exists(OUT): print("done"); sys.exit(0)
 
-from src.v6utils import (load_universal, extract_fba_matrices, load_tight_bounds,
+from meteor_v8.utils import (load_universal, extract_fba_matrices, load_tight_bounds,
                          apply_media, build_submodel)
 from cobra.flux_analysis import flux_variability_analysis
 
@@ -35,7 +37,7 @@ for x in list(universal.reactions) + list(universal.metabolites) + list(universa
     if not hasattr(x, "_annotation"): x._annotation = {}
 biomass_id = "biomass_GmPos" if a.gram == "positive" else "biomass_GmNeg"
 S, lb, ub = extract_fba_matrices(universal, allrxns, reversed_trans=True)
-lt, ut = load_tight_bounds(V6 + "/data/tight_bounds_v6_%s.pkl" % a.gram[:3])
+lt, ut = load_tight_bounds(data_path('tight_bounds_v6_%s.pkl' % a.gram[:3]))
 if lt is not None: lb = np.maximum(lb, lt); ub = np.minimum(ub, ut)
 lb, ub, _, _ = apply_media(["default"], allrxns, lb, ub)
 ix = {rid: i for i, rid in enumerate(allrxns)}
@@ -45,13 +47,13 @@ if a.arm == "meteor":
     yv = np.array(pickle.load(open(SOL, "rb")).get("y_vals", [])) > 0.5
 else:
     import glob as _g
-    sys.path.insert(0, "/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/eval")
+
     from baseline_io import resolve_baseline_pkl, BASELINE_SUFFIX
-    from src.v6utils import load_refmapping, load_ec, extract_pred, build_rxn_ec_mask
+    from meteor_v8.utils import load_refmapping, load_ec, extract_pred, build_rxn_ec_mask
     _p = resolve_baseline_pkl("dpz", "vanilla", a.gca, BASELINE_SUFFIX["dpz"])
     if not _p: print("no pred"); sys.exit(3)
-    _s2e, _ = load_refmapping(V6 + "/data"); _s2e = {k: v for k, v in _s2e.items() if v}
-    _anc = load_ec(V6 + "/data/all_ancestors.txt")
+    _s2e, _ = load_refmapping(data_dir()); _s2e = {k: v for k, v in _s2e.items() if v}
+    _anc = load_ec(data_path('all_ancestors.txt'))
     _mask = build_rxn_ec_mask(allrxns, _s2e, _anc)
     _pred = extract_pred(_p, _anc)
     _hit = (_pred.values >= a.tau).any(axis=0)

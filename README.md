@@ -22,6 +22,8 @@ evidence-derived cost and the whole set is chosen in one optimisation.
 src/meteor_v8/   method: milp_v8.py (MILP), repair.py (verify-and-repair),
                  milp_hard.py (biomass-feasible skeleton)
 eval/            one script per table or figure, plus the aggregators
+data/            reaction database, EC maps, media -- everything the code
+                 loads at run time (see data/README.md)
 cohorts/         COHORTS.json/tsv, panel108_gram.tsv, solver status
 results/         the records every reported number is computed from
 env/             conda environment
@@ -54,6 +56,10 @@ python eval/emit_v8.py --gca GCF_000006945.2 --gram negative \
 Pass the flags explicitly. The argparse defaults now match the paper, but
 earlier runs that omitted `--eps` silently used a forced-flux floor of 0.01,
 which is a different optimisation problem.
+
+That command needs nothing outside this directory.
+`meteor_v8.utils.data_path` resolves the reaction database and the EC maps
+from `data/`; set `$METEOR_DATA` to read them from somewhere else.
 
 ## Where each number comes from
 
@@ -92,13 +98,17 @@ calls the forced-flux floor `delta`; the flag is `--eps`.
 
 ## Inputs not deposited here
 
-The SEED universal database (47,880 reactions), the baseline EC prediction
-matrices (~5 GB per predictor-cutoff configuration), the genome proteomes, and
-the full 12-configuration MILP output (~336 GB). This repository carries the 108
-`dpz_vanilla` MILP solutions the main-text tables are computed from, plus every
-aggregated result. ModelSEED is available from the ModelSEED project and
-Reconstructor v1.1.0; assemblies are on NCBI RefSeq under the accessions in
+The baseline EC prediction matrices (~5 GB per predictor-cutoff
+configuration), the genome proteomes, and the full 12-configuration MILP
+output (~336 GB). This repository carries the 108 `dpz_vanilla` MILP solutions
+the main-text tables are computed from, plus every aggregated result.
+Assemblies are on NCBI RefSeq under the accessions in
 `cohorts/panel108_gram.tsv`.
+
+The SEED universal database is in `data/` and no longer has to be fetched
+separately. It and the Reconstructor-derived EC mappings carry their own
+licences, which govern that content rather than this repository's MIT
+licence; see `data/README.md`.
 
 ## Cohorts
 

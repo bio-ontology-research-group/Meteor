@@ -6,15 +6,22 @@ Reports, per baseline (mean over 108 genomes): pathways detected by baseline vs 
 detection thresholds {>=1 EC, >=25%, >=50%}, plus the METEOR-only breakdown: of pathways METEOR
 detects but baseline misses (at >=1 EC), how many are driven by a WEAK-real-signal EC (baseline
 score in (0,0.5)) vs a PURE-GAPFILL EC (baseline score == 0)."""
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import data_path, data_dir
 import sys,os,re,json,pickle,numpy as np
-V6='/ibex/user/niuk0a/funcarve/cobra/v6'; sys.path.insert(0,V6); os.chdir(V6)
-from src.v6utils import extract_pred,load_refmapping,load_ec
-sys.path.insert(0,'/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/eval')
+from meteor_v8.utils import extract_pred,load_refmapping,load_ec
+
 from baseline_io import resolve_baseline_pkl,BASELINE_SUFFIX
+import argparse as _ap
+_p=_ap.ArgumentParser(); _p.add_argument('--minec',type=int,default=5)
+_p.add_argument('--tag',default='')
+_a=_p.parse_args()
 B='/ibex/scratch/projects/c2014/kexin/funcarve'; FULL=re.compile(r'^\d+\.\d+\.\d+\.\d+$')
 V8ROOT=f'{B}/meteor_v8_evw_p2mu3_run/meteor_out'; OUT=f'{B}/meteor_v8/results/toolcompare'
-anc=load_ec(f'{V6}/data/all_ancestors.txt')
-seedr2ec,_=load_refmapping(f'{V6}/data'); seedr2ec={k:v for k,v in seedr2ec.items() if v}
+anc=load_ec(data_path('all_ancestors.txt'))
+seedr2ec,_=load_refmapping(data_dir()); seedr2ec={k:v for k,v in seedr2ec.items() if v}
 seed_ec=set()
 for ecs in seedr2ec.values():
     for e in ecs:
@@ -24,7 +31,7 @@ path2ec=json.load(open(f'{B}/meteor_v7_release/data/kegg_path2ec_metabolic.json'
 pw_denom={}
 for p,ecs in path2ec.items():
     d={str(e).split(':')[-1] for e in ecs if FULL.match(str(e).split(':')[-1])} & seed_ec
-    if len(d)>=5: pw_denom[p]=d
+    if len(d)>=_a.minec: pw_denom[p]=d
 NPW=len(pw_denom)
 panel108=[l.split()[0] for l in open(f'{B}/meteor_v7_run/downstream_results/panel108_gram.tsv') if l.strip()]
 print(f'pathways={NPW} genomes={len(panel108)}',flush=True)
@@ -69,5 +76,5 @@ for baseline in ['clean','dpz','enzbert']:
           f'{r["det25_B"]:.1f}/{r["det25_M"]:.1f}   {r["det50_B"]:.1f}/{r["det50_M"]:.1f}   '
           f'{r["meteor_only"]:.1f}   {r["weaksig"]:.1f}    {r["puregap"]:.1f}',flush=True)
 json.dump(dict(panel='panel108',n_pathways=NPW,results=res),
-          open(f'{OUT}/kegg_pathway_108_detection.json','w'),indent=1)
+          open(f'{OUT}/kegg_pathway_108_detection{_a.tag}.json','w'),indent=1)
 print('-> kegg_pathway_108_detection.json',flush=True)

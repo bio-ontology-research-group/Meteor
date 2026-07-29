@@ -11,7 +11,6 @@ V7_RUN = "/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v7_run"
 CACHE_DIR = f"{V7_RUN}/downstream_results/ncbi_ec_cache"
 OUT_DIR = "/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8_evw_p2mu3_run/downstream_results"
 
-sys.path.insert(0, "/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8/eval")
 from baseline_io import resolve_baseline_pkl
 
 
