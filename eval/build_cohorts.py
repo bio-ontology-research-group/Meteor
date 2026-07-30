@@ -44,7 +44,7 @@ if os.path.exists(hc):
             for r in recs:
                 g=r.get('gcf') or r.get('genome') if isinstance(r,dict) else None
                 if g: gset.add(g)
-        coh['cohorts']['holdout66']={'role':'PRIMARY protein-level eval','n_proteins':(len(recs) if isinstance(recs,list) else '[tobeadded]'),
+        coh['cohorts']['holdout66']={'role':'PRIMARY protein-level eval','n_proteins':len(recs),
           'n_genomes':(len(gset) if gset else 53),'source':'meteor_diag/holdout_clean.json'}
     except Exception as e:
         coh['cohorts']['holdout66']={'role':'PRIMARY protein-level eval','n_proteins':66,'n_genomes':53,'source':'meteor_diag/holdout_clean.json','parse_note':str(e)[:60]}
