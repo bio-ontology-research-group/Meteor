@@ -1,0 +1,271 @@
+{
+ "V_seed": 6598,
+ "V_bigg": 1234,
+ "intersection": 1234,
+ "per_organism": [
+  {
+   "organism": "E.coli",
+   "gem": "iML1515",
+   "gcf": "GCF_058436375.1",
+   "meteor": {
+    "full": {
+     "n": 1614,
+     "P": 0.4851,
+     "R": 0.9052,
+     "F1": 0.6317,
+     "J": 0.4617
+    },
+    "intersection": {
+     "n": 933,
+     "P": 0.8392,
+     "R": 0.9052,
+     "F1": 0.871,
+     "J": 0.7714
+    }
+   },
+   "carveme": {
+    "full": {
+     "n": 882,
+     "P": 0.8821,
+     "R": 0.8994,
+     "F1": 0.8907,
+     "J": 0.8029
+    },
+    "intersection": {
+     "n": 882,
+     "P": 0.8821,
+     "R": 0.8994,
+     "F1": 0.8907,
+     "J": 0.8029
+    }
+   },
+   "meteor_fp": {
+    "total": 831,
+    "outside_V_bigg": 681,
+    "inside_V_bigg": 150,
+    "frac_outside": 0.8195
+   },
+   "gem_ec_outside_V_seed": 0
+  },
+  {
+   "organism": "Salmonella",
+   "gem": "STM_v1_0",
+   "gcf": "GCF_000006945.2",
+   "meteor": {
+    "full": {
+     "n": 1577,
+     "P": 0.4819,
+     "R": 0.8983,
+     "F1": 0.6273,
+     "J": 0.457
+    },
+    "intersection": {
+     "n": 913,
+     "P": 0.8324,
+     "R": 0.8983,
+     "F1": 0.8641,
+     "J": 0.7608
+    }
+   },
+   "carveme": {
+    "full": {
+     "n": 872,
+     "P": 0.8521,
+     "R": 0.8783,
+     "F1": 0.865,
+     "J": 0.7621
+    },
+    "intersection": {
+     "n": 872,
+     "P": 0.8521,
+     "R": 0.8783,
+     "F1": 0.865,
+     "J": 0.7621
+    }
+   },
+   "meteor_fp": {
+    "total": 817,
+    "outside_V_bigg": 664,
+    "inside_V_bigg": 153,
+    "frac_outside": 0.8127
+   },
+   "gem_ec_outside_V_seed": 0
+  },
+  {
+   "organism": "K.pneumoniae",
+   "gem": "iYL1228",
+   "gcf": "GCF_058435815.1",
+   "meteor": {
+    "full": {
+     "n": 1673,
+     "P": 0.4728,
+     "R": 0.9092,
+     "F1": 0.6221,
+     "J": 0.4515
+    },
+    "intersection": {
+     "n": 978,
+     "P": 0.8088,
+     "R": 0.9092,
+     "F1": 0.8561,
+     "J": 0.7483
+    }
+   },
+   "carveme": {
+    "full": {
+     "n": 866,
+     "P": 0.8811,
+     "R": 0.877,
+     "F1": 0.879,
+     "J": 0.7842
+    },
+    "intersection": {
+     "n": 866,
+     "P": 0.8811,
+     "R": 0.877,
+     "F1": 0.879,
+     "J": 0.7842
+    }
+   },
+   "meteor_fp": {
+    "total": 882,
+    "outside_V_bigg": 695,
+    "inside_V_bigg": 187,
+    "frac_outside": 0.788
+   },
+   "gem_ec_outside_V_seed": 0
+  },
+  {
+   "organism": "P.putida",
+   "gem": "iJN1463",
+   "gcf": "GCF_045571375.1",
+   "meteor": {
+    "full": {
+     "n": 1625,
+     "P": 0.4363,
+     "R": 0.8689,
+     "F1": 0.5809,
+     "J": 0.4094
+    },
+    "intersection": {
+     "n": 908,
+     "P": 0.7808,
+     "R": 0.8689,
+     "F1": 0.8225,
+     "J": 0.6985
+    }
+   },
+   "carveme": {
+    "full": {
+     "n": 843,
+     "P": 0.8588,
+     "R": 0.8873,
+     "F1": 0.8728,
+     "J": 0.7743
+    },
+    "intersection": {
+     "n": 843,
+     "P": 0.8588,
+     "R": 0.8873,
+     "F1": 0.8728,
+     "J": 0.7743
+    }
+   },
+   "meteor_fp": {
+    "total": 916,
+    "outside_V_bigg": 717,
+    "inside_V_bigg": 199,
+    "frac_outside": 0.7828
+   },
+   "gem_ec_outside_V_seed": 0
+  },
+  {
+   "organism": "S.aureus",
+   "gem": "iYS854",
+   "gcf": "GCF_045348045.1",
+   "meteor": {
+    "full": {
+     "n": 1212,
+     "P": 0.3655,
+     "R": 0.8358,
+     "F1": 0.5086,
+     "J": 0.341
+    },
+    "intersection": {
+     "n": 707,
+     "P": 0.6266,
+     "R": 0.8358,
+     "F1": 0.7162,
+     "J": 0.5579
+    }
+   },
+   "carveme": {
+    "full": {
+     "n": 627,
+     "P": 0.7352,
+     "R": 0.8698,
+     "F1": 0.7969,
+     "J": 0.6624
+    },
+    "intersection": {
+     "n": 627,
+     "P": 0.7352,
+     "R": 0.8698,
+     "F1": 0.7969,
+     "J": 0.6624
+    }
+   },
+   "meteor_fp": {
+    "total": 769,
+    "outside_V_bigg": 505,
+    "inside_V_bigg": 264,
+    "frac_outside": 0.6567
+   },
+   "gem_ec_outside_V_seed": 0
+  },
+  {
+   "organism": "B.subtilis",
+   "gem": "iYO844",
+   "gcf": "GCF_058182495.1",
+   "meteor": {
+    "full": {
+     "n": 1424,
+     "P": 0.3883,
+     "R": 0.8876,
+     "F1": 0.5403,
+     "J": 0.3701
+    },
+    "intersection": {
+     "n": 814,
+     "P": 0.6794,
+     "R": 0.8876,
+     "F1": 0.7697,
+     "J": 0.6256
+    }
+   },
+   "carveme": {
+    "full": {
+     "n": 817,
+     "P": 0.7209,
+     "R": 0.9454,
+     "F1": 0.8181,
+     "J": 0.6921
+    },
+    "intersection": {
+     "n": 817,
+     "P": 0.7209,
+     "R": 0.9454,
+     "F1": 0.8181,
+     "J": 0.6921
+    }
+   },
+   "meteor_fp": {
+    "total": 871,
+    "outside_V_bigg": 610,
+    "inside_V_bigg": 261,
+    "frac_outside": 0.7003
+   },
+   "gem_ec_outside_V_seed": 0
+  }
+ ]
+}

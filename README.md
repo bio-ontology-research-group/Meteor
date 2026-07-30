@@ -53,9 +53,7 @@ python eval/emit_v8.py --gca GCF_000006945.2 --gram negative \
     --outroot <output directory>
 ```
 
-Pass the flags explicitly. The argparse defaults now match the paper, but
-earlier runs that omitted `--eps` silently used a forced-flux floor of 0.01,
-which is a different optimisation problem.
+Pass the flags explicitly; the argparse defaults match the paper.
 
 That command needs nothing outside this directory.
 `meteor_v8.utils.data_path` resolves the reaction database and the EC maps
@@ -66,18 +64,19 @@ from `data/`; set `$METEOR_DATA` to read them from somewhere else.
 | paper item | script | records |
 |---|---|---|
 | Table 1 (structural) | `eval/gen_table1.py` → `eval/agg_table1.py` | `results/table1/` |
-| Table 2 (KEGG detection) | `eval/kegg_detect.py` | `results/toolcompare/kegg_pathway_108_detection.json` |
-| §3.2 selectivity | `eval/kegg_select.py` | `results/toolcompare/kegg_pathway_108_selectivity.json` |
-| §3.2 Price-149 | `eval/kegg_price.py` | `results/toolcompare/kegg_price_matched_detect.json` |
-| Figure 2, §3.3 | `eval/recovery_ablation.py` → `eval/agg_4arm.py`; figure drawn by `eval/gen_fig_decoy.py` | `results/recovery_4arm/` |
-| §3.3 two-stage arm | `eval/twostage.py` (called by `recovery_ablation.py`) | `results/recovery_4arm/` |
-| §3.4 holdout | `eval/holdout_cfg.py` | `results/holdout_cfg/` |
-| §3.4 full proteome | `eval/net_seqident.py` | `results/toolcompare/net_seqident.json` |
-| §3.4 CarveMe | `eval/toolcompare_ec.py` | `results/toolcompare/panelB_ec.json` |
-| §3.4 threshold baseline | `eval/baseline_thresh_gapfill.py` | `results/toolcompare/ablation_thresh_vs_evw_ec.json` |
-| Figure S1 | `eval/gen_fig_massimbal.py` (draws the figure) | `results/table1/` |
 | §3.1 flux consistency | `eval/fva_selected.py` → `eval/agg_fva.py` | `results/fva_selected/`, `results/fva_baseline/` |
-| S8.4 weak-signal ECs | `eval/weakreal.py` | `results/toolcompare/weakreal.json` |
+| Table 2, §3.2 curated sub-threshold ECs | `eval/weakreal.py` | `results/toolcompare/weakreal.json` |
+| §3.3 size-matched pathway control | `eval/kegg_matched.py` | `results/toolcompare/kegg_pathway_108_matched.json` |
+| Figure 2, §3.4 | `eval/recovery_ablation.py` → `eval/agg_4arm.py`; figure drawn by `eval/gen_fig_decoy.py` | `results/recovery_4arm/` |
+| §3.4 two-stage arm | `eval/twostage.py` (called by `recovery_ablation.py`) | `results/recovery_4arm/` |
+| §3.5 holdout | `eval/holdout_cfg.py` | `results/holdout_cfg/` |
+| §3.5 full proteome | `eval/net_seqident.py` | `results/toolcompare/net_seqident.json` |
+| §3.5 CarveMe (Table 3) | `eval/toolcompare_ec.py`, `eval/toolcompare_ec_vocab.py` | `results/toolcompare/panelB_ec.json`, `panelB_ec_vocab.json` |
+| §3.5 EC vocabularies | `eval/export_ec_vocab.py` | `results/toolcompare/ec_vocabulary_map.tsv`, `ec_fp_by_organism.tsv` |
+| §3.5 threshold baseline | `eval/baseline_thresh_gapfill.py` | `results/toolcompare/ablation_thresh_vs_evw_ec.json` |
+| Figure S1 | `eval/gen_fig_massimbal.py` (draws the figure) | `results/table1/` |
+| S3.5 pathway detection | `eval/kegg_detect.py`, `eval/kegg_select.py`, `eval/kegg_price.py` | `results/toolcompare/kegg_pathway_108_*.json` |
+| S8.5 curated sub-threshold detail | `eval/weakreal.py` | `results/toolcompare/weakreal.json` |
 | S8 MEMOTE | `eval/memote_evw.py` | per-genome MEMOTE JSONs (not deposited, see below) |
 
 Scripts whose name starts with `gen_fig_` draw a figure in the paper and say
