@@ -11,11 +11,17 @@ Reads:  results/recovery_4arm/*.json   (eval/recovery_ablation.py, 108 genomes)
 Writes: figures/fig_decoy.pdf
 Numbers: 34.6 / 78.2 / 142.9 / 2006.6 mean spurious reactions.
 
-Label placement note: the mean annotations used to sit at each group's 88th
-percentile, which is inside the box, so they landed on top of the box, the
-whisker and the fliers, and the highest one ran into the axes edge. They now
-clear the topmost drawn element of their own group, and the y-limit is
-derived from those label positions rather than from the data.
+Orientation: horizontal. The measured quantity spans three decades, so the
+log axis wants the long side of the panel, and four regime names read as
+plain single-line labels on the category axis instead of wrapping onto two
+lines under a vertical one. The panel then fills the full text width for
+about the same height a half-width vertical panel cost.
+
+Label placement: the mean annotation for each regime sits to the right of
+whatever that regime draws furthest right --- upper cap or outermost flier
+--- so labels cannot land on the data, and the x-limit is derived from the
+label positions rather than from the data. The vertical version placed them
+at the 88th percentile, inside the box.
 """
 import json, glob, os, argparse
 import numpy as np
@@ -23,10 +29,11 @@ import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import scipy.stats as st
 
-BASE = "/ibex/scratch/projects/c2014/kexin/funcarve"
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(HERE)
 ap = argparse.ArgumentParser()
-ap.add_argument("--datadir", default=f"{BASE}/meteor_v8/results/recovery_4arm")
-ap.add_argument("--outdir", default=f"{BASE}/meteor_v8/paper/paper_main/figures")
+ap.add_argument("--datadir", default=os.path.join(ROOT, "results", "recovery_4arm"))
+ap.add_argument("--outdir", default=os.path.join(ROOT, "figures"))
 a = ap.parse_args()
 os.makedirs(a.outdir, exist_ok=True)
 
@@ -42,64 +49,66 @@ t, w, u, s = [np.array(cols[x]) for x in ARMS]
 n = len(t)
 
 # Categorical slots 1-4 of the validated palette. Identity is carried by the
-# x-axis labels, so colour only separates the groups; it encodes nothing extra.
+# category labels, so colour only separates the groups; it encodes nothing.
 COLORS = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100"]
 INK, MUTED, AXIS = "#52514e", "#898781", "#c3c2b7"
 
-fig, ax = plt.subplots(figsize=(5.2, 3.9))
+# Bottom-to-top on a horizontal boxplot, so reverse for top-to-bottom reading.
 data = [t, w, u, s]
-labs = ["METEOR\n(evw)", "Two-stage\n(evw gap-fill)", "Uniform\n($p{=}0$)", "Shuffled"]
+labs = ["METEOR (evw)", "Two-stage (evw gap-fill)", "Uniform ($p{=}0$)", "Shuffled"]
+order = list(range(len(data)))[::-1]
+data_p = [data[i] for i in order]
+labs_p = [labs[i] for i in order]
+cols_p = [COLORS[i] for i in order]
 
-bp = ax.boxplot(data, tick_labels=labs, patch_artist=True, widths=0.5,
+fig, ax = plt.subplots(figsize=(5.2, 2.15))
+bp = ax.boxplot(data_p, tick_labels=labs_p, patch_artist=True, widths=0.55,
+                orientation="horizontal",
                 showfliers=True, showmeans=True,
-                flierprops=dict(marker="o", ms=2.6, alpha=0.35,
+                flierprops=dict(marker="o", ms=2.4, alpha=0.35,
                                 markerfacecolor=MUTED, markeredgecolor="none"),
                 medianprops=dict(color=INK, lw=1.4),
                 whiskerprops=dict(color=INK, lw=1.0),
                 capprops=dict(color=INK, lw=1.0),
-                meanprops=dict(marker="D", ms=4.2, markerfacecolor="white",
+                meanprops=dict(marker="D", ms=4.0, markerfacecolor="white",
                                markeredgecolor=INK, markeredgewidth=1.0))
-for patch, c in zip(bp["boxes"], COLORS):
+for patch, c in zip(bp["boxes"], cols_p):
     patch.set_facecolor(c); patch.set_alpha(0.55); patch.set_edgecolor(INK)
     patch.set_linewidth(1.0)
 
-ax.set_yscale("log")
-ax.set_ylabel("Spurious reactions", fontsize=10, color=INK)
-ax.set_title(f"Deletion-recovery ({n} genomes)", fontsize=10.5, color=INK, pad=8)
-ax.yaxis.grid(True, alpha=0.25, color=AXIS, lw=0.7)
+ax.set_xscale("log")
+ax.set_xlabel("Spurious reactions (log scale)", fontsize=9.5, color=INK)
+ax.set_title(f"Perturbation stability ({n} genomes)", fontsize=10, color=INK, pad=6)
+ax.xaxis.grid(True, alpha=0.25, color=AXIS, lw=0.7)
 ax.set_axisbelow(True)
 for side in ("top", "right"):
     ax.spines[side].set_visible(False)
 for side in ("left", "bottom"):
     ax.spines[side].set_color(AXIS)
-ax.tick_params(axis="x", labelsize=8, colors=INK, length=0)
-ax.tick_params(axis="y", labelsize=8, colors=MUTED)
+ax.tick_params(axis="y", labelsize=8, colors=INK, length=0)
+ax.tick_params(axis="x", labelsize=8, colors=MUTED)
 
-# Each label clears its own group: above the upper cap and above any flier.
-means = [x.mean() for x in data]
-tops = []
-for i, x in enumerate(data):
-    cap = bp["caps"][2 * i + 1].get_ydata()[0]
-    fli = bp["fliers"][i].get_ydata()
-    tops.append(max(cap, fli.max() if len(fli) else cap))
-
-label_y = [tp * 1.45 for tp in tops]
-for i, (m, ly) in enumerate(zip(means, label_y), start=1):
-    ax.text(i, ly, f"$\\mu$={m:.0f}", ha="center", va="bottom",
+# Each label clears its own group: right of the upper cap and of any flier.
+rights = []
+for i, x in enumerate(data_p):
+    cap = bp["caps"][2 * i + 1].get_xdata()[0]
+    fli = bp["fliers"][i].get_xdata()
+    rights.append(max(cap, fli.max() if len(fli) else cap))
+label_x = [r * 1.35 for r in rights]
+for i, (x, lx) in enumerate(zip(data_p, label_x), start=1):
+    ax.text(lx, i, f"$\\mu$={x.mean():.0f}", ha="left", va="center",
             fontsize=8.5, color=INK)
 
-# Fit the range to the data plus the labels. A floor at 1 wasted the lower
-# third of the panel on empty decades and flattened every box.
 lo = min(float(x.min()) for x in data)
-ax.set_ylim(bottom=lo * 0.55, top=max(label_y) * 1.7)
+ax.set_xlim(left=lo * 0.6, right=max(label_x) * 2.6)
 
-tm = means[0]
-fig.text(0.5, 0.02,
+tm = t.mean()
+fig.text(0.5, 0.015,
          "relative to METEOR:   two-stage %.1f$\\times$    uniform %.1f$\\times$"
-         "    shuffled %.0f$\\times$" % (means[1]/tm, means[2]/tm, means[3]/tm),
+         "    shuffled %.0f$\\times$" % (w.mean()/tm, u.mean()/tm, s.mean()/tm),
          ha="center", fontsize=8, color=MUTED)
 
-plt.tight_layout(rect=[0, 0.055, 1, 1])
+plt.tight_layout(rect=[0, 0.075, 1, 1])
 out = f"{a.outdir}/fig_decoy.pdf"
 plt.savefig(out, dpi=300); plt.savefig(out.replace(".pdf", ".png"), dpi=200)
 print(f"-> {out}")
@@ -107,4 +116,4 @@ for x_, d_ in zip(ARMS, data):
     print(f"  {x_:10s} mean={d_.mean():7.1f}  ratio={d_.mean()/tm:6.2f}x")
 print(f"  two-stage vs METEOR: worse in "
       f"{int((w > t).sum())}/{n}  p={st.wilcoxon(w, t).pvalue:.3g}")
-print(f"  y range: {lo*0.55:.1f} to {max(label_y)*1.7:.0f}")
+print(f"  x range: {lo*0.6:.1f} to {max(label_x)*2.6:.0f}")
