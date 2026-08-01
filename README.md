@@ -31,18 +31,43 @@ env/             conda environment
 
 ## Reproducing the published numbers
 
-These run against this checkout with no further input:
+Four scripts recompute every main-text number from the deposited records. They
+need a Python 3.9 interpreter and nothing else — the standard library only, no
+environment to build, no input beyond this checkout:
 
 ```bash
-conda env create -f env/meteor_cobra.yml && conda activate cobra
 python eval/agg_table1.py    # Table 1; dead-end reduction 75.8-90.6%
 python eval/agg_decoy.py     # Figure 2; 34.5 / 142.4 / 2007.7 spurious
-                             # reactions, 4.13x and 58.3x, p=1.9e-19
+                             # reactions, 4.13x and 58.3x
 python eval/agg_fva.py       # Section 3.1; 54.5% of selected reactions
                              # flux-consistent vs 40.5% for the baseline
-python eval/agg_4arm.py      # Section 3.3; 34.6 / 78.2 / 142.9 / 2006.6
+python eval/agg_4arm.py      # Section 3.4; 34.6 / 78.2 / 142.9 / 2006.6
                              # spurious reactions across the four arms
 ```
+
+Install SciPy to get the paired Wilcoxon p-values as well; without it each
+script prints its counts and says the tests were skipped. The reported values
+are `p=1.9e-19` for uniform and for shuffled against METEOR in `agg_decoy.py`,
+`1.9e-19` for the flux-consistent fraction in `agg_fva.py`, and `9.0e-18`,
+`1.9e-19`, `1.9e-19` for the three comparison arms in `agg_4arm.py`.
+
+Verified from a fresh clone on macOS 15 (arm64) against the system
+`/usr/bin/python3` 3.9.6: all four exit 0 and print the values above.
+
+## Environments
+
+`env/environment.yml` is portable and solves on Linux, macOS and Windows. Build
+it to re-run the pipeline itself — `emit_v8.py`, the FVA and recovery scripts,
+the figures — which needs COBRApy, PuLP, NumPy, pandas, SciPy, Matplotlib and
+MEMOTE:
+
+```bash
+conda env create -f env/environment.yml && conda activate meteor
+```
+
+`env/meteor_cobra.yml` is the exact solve from our linux-64 cluster with build
+strings pinned. It reproduces our environment bit for bit and, being pinned to
+linux-64 builds, will not solve on another platform.
 
 ## Reconstructing a genome
 

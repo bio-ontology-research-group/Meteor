@@ -1,0 +1,25 @@
+# Portable environment: solves on linux-64, osx-64, osx-arm64 and win-64.
+# Versions are the ones the paper was run with; builds are left free so conda
+# can pick one for the host platform. Use this to re-run the pipeline.
+#
+# meteor_cobra.yml beside it is the exact solve from our linux-64 cluster,
+# build strings included. It reproduces our environment bit for bit and does
+# not solve anywhere else.
+#
+# Neither file is needed to reproduce the published numbers from the deposited
+# records -- the four aggregation scripts use only the standard library.
+name: meteor
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+      - cobra==0.31.1
+      - pulp==3.3.1
+      - numpy==1.23.4
+      - pandas==1.5.3
+      - scipy==1.13.1
+      - matplotlib==3.9.2
+      - memote==0.17.0
