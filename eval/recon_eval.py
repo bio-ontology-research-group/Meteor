@@ -2,12 +2,16 @@
 """Evaluate Reconstructor-with-dpz models: n_rxn, empty-GPR(unsupported) frac, EC-level P/R vs curated GEM.
 recon models = ModelSEED namespace; rxn->EC via the SAME Unique_ModelSEED_Reaction_ECs.txt (r2ecf).
 GEM ECs from BiGG annotation. EC-level = namespace-neutral."""
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import external_path
 import sys,os,re,json,numpy as np,pandas as pd,cobra
 import warnings,logging; warnings.filterwarnings('ignore'); logging.getLogger('cobra').setLevel(logging.ERROR)
 B='/ibex/scratch/projects/c2014/kexin/funcarve'
 MODELS=f'{B}/meteor_v8/results/toolcompare/recon_models'
-GEMDIR=f'{B}/meteor_diag/curated_gems'
-R2ECF='/ibex/user/niuk0a/funcarve/reconstructor/reconstructor/Unique_ModelSEED_Reaction_ECs.txt'
+GEMDIR=external_path('curated_gems')
+R2ECF=external_path('Unique_ModelSEED_Reaction_ECs.txt')
 OUT=f'{B}/meteor_v8/results/toolcompare'
 FULL=re.compile(r'^\d+\.\d+\.\d+\.\d+$')
 # rxn(ModelSEED) -> set(EC)

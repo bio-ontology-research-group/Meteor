@@ -8,7 +8,7 @@ gap-fill = reactions with NO sequence evidence (METEOR: active rxn no predicted 
 import os as _os, sys as _sys
 _sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
     _os.path.abspath(__file__))), "src"))
-from meteor_v8.utils import data_path, data_dir
+from meteor_v8.utils import data_path, external_path, data_dir
 import sys,os,json,pickle,glob,numpy as np,cobra
 import warnings; warnings.filterwarnings('ignore')
 import logging; logging.getLogger('cobra').setLevel(logging.ERROR)
@@ -21,12 +21,12 @@ from baseline_io import resolve_baseline_pkl, BASELINE_SUFFIX
 
 MO=f'{BASE}/meteor_v8_evw_p2mu3_run/meteor_out/dpz_vanilla'
 CV=f'{BASE}/paperA_2026/results/carveme_gc'
-GEMDIR=f'{BASE}/meteor_diag/curated_gems'
+GEMDIR=external_path('curated_gems')
 OUT=f'{BASE}/meteor_v8/results/toolcompare'; os.makedirs(OUT,exist_ok=True)
 
 # --- MNXR xref ---
 bigg2mnxr={}; seed2mnxr={}
-for ln in open(f'{BASE}/meteor_diag/reac_xref.tsv'):
+for ln in open(external_path('reac_xref.tsv')):
     if ln.startswith('#'): continue
     p=ln.rstrip().split('\t')
     if len(p)<2 or not p[1].startswith('MNXR'): continue

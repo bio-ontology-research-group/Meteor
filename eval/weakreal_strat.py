@@ -8,7 +8,7 @@ for all predictors (=> benefit general, just differently distributed)."""
 import os as _os, sys as _sys
 _sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
     _os.path.abspath(__file__))), "src"))
-from meteor_v8.utils import data_path, data_dir
+from meteor_v8.utils import data_path, external_path, data_dir
 import sys,os,re,json,pickle,numpy as np,pandas as pd,cobra
 import warnings,logging; warnings.filterwarnings('ignore'); logging.getLogger('cobra').setLevel(logging.ERROR)
 B='/ibex/scratch/projects/c2014/kexin/funcarve'; sys.path.insert(0,f'{B}/meteor_v8/src')
@@ -16,7 +16,7 @@ from meteor_v8.utils import (load_universal,extract_fba_matrices,load_tight_boun
     find_excluded_reactions,build_rxn_ec_mask,extract_pred,load_refmapping,load_ec,_detect_solver)
 from meteor_v8.repair import grow_support
 sys.path.insert(0,f'{B}/meteor_v8/eval'); from baseline_io import resolve_baseline_pkl,BASELINE_SUFFIX
-GEMDIR=f'{B}/meteor_diag/curated_gems'; OUT=f'{B}/meteor_v8/results/toolcompare'; FULL=re.compile(r'^\d+\.\d+\.\d+\.\d+$')
+GEMDIR=external_path('curated_gems'); OUT=f'{B}/meteor_v8/results/toolcompare'; FULL=re.compile(r'^\d+\.\d+\.\d+\.\d+$')
 universal,allrxns,allmet=load_universal()
 seedr2ec,_=load_refmapping('data'); seedr2ec={k:v for k,v in seedr2ec.items() if v}
 anc=load_ec('data/all_ancestors.txt'); mask=build_rxn_ec_mask(allrxns,seedr2ec,anc)

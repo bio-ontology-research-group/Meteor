@@ -1,17 +1,17 @@
 import os as _os, sys as _sys
 _sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
     _os.path.abspath(__file__))), "src"))
-from meteor_v8.utils import data_path, data_dir
+from meteor_v8.utils import data_path, external_path, data_dir
 import sys,os,pickle,json,glob,numpy as np,cobra
 from meteor_v8.utils import load_universal, load_refmapping, load_ec, build_rxn_ec_mask, extract_pred
 bigg2mnxr={}; seed2mnxr={}
-for ln in open('/ibex/scratch/projects/c2014/kexin/funcarve/meteor_diag/reac_xref.tsv'):
+for ln in open(external_path('reac_xref.tsv')):
     if ln.startswith('#'): continue
     p=ln.rstrip().split('\t')
     if len(p)<2 or not p[1].startswith('MNXR'): continue
     if p[0].startswith('bigg.reaction:'): bigg2mnxr.setdefault(p[0].split(':',1)[1],p[1])
     elif p[0].startswith('seed.reaction:'): seed2mnxr.setdefault(p[0].split(':',1)[1],p[1])
-GEMDIR='/ibex/scratch/projects/c2014/kexin/funcarve/meteor_diag/curated_gems'
+GEMDIR=external_path('curated_gems')
 universal,allrxns,allmet=load_universal()
 seedidx_mnxr={j:seed2mnxr.get(allrxns[j].split('_')[0]) for j in range(len(allrxns))}
 seedr2ec,_=load_refmapping('data'); seedr2ec={k:v for k,v in seedr2ec.items() if v}

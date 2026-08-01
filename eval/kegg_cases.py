@@ -10,7 +10,7 @@ case2_deadpath (their weak signal sits on signal-poor pathways), explaining the 
 import os as _os, sys as _sys
 _sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
     _os.path.abspath(__file__))), "src"))
-from meteor_v8.utils import data_path, data_dir
+from meteor_v8.utils import data_path, external_path, data_dir
 import sys,os,re,json,pickle,numpy as np
 
 from meteor_v8.utils import load_universal,build_rxn_ec_mask,extract_pred,load_refmapping,load_ec
@@ -18,7 +18,7 @@ from meteor_v8.utils import load_universal,build_rxn_ec_mask,extract_pred,load_r
 from baseline_io import resolve_baseline_pkl,BASELINE_SUFFIX
 import cobra,warnings,logging; warnings.filterwarnings('ignore'); logging.getLogger('cobra').setLevel(logging.ERROR)
 B='/ibex/scratch/projects/c2014/kexin/funcarve'; FULL=re.compile(r'^\d+\.\d+\.\d+\.\d+$')
-OUT=f'{B}/meteor_v8/results/toolcompare'; GEMDIR=f'{B}/meteor_diag/curated_gems'; V8ROOT=f'{B}/meteor_v8_evw_p2mu3_run/meteor_out'
+OUT=f'{B}/meteor_v8/results/toolcompare'; GEMDIR=external_path('curated_gems'); V8ROOT=f'{B}/meteor_v8_evw_p2mu3_run/meteor_out'
 path2ec=json.load(open(f'{B}/meteor_v7_release/data/kegg_path2ec_metabolic.json'))
 ec2path={}
 for p,ecs in path2ec.items():

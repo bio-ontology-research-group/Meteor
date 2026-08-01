@@ -14,7 +14,7 @@ W = ECs with 0<dpz<0.5 that ARE in the curated GEM), plus:
 import os as _os, sys as _sys
 _sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
     _os.path.abspath(__file__))), "src"))
-from meteor_v8.utils import data_path, data_dir
+from meteor_v8.utils import data_path, external_path, data_dir
 import sys, os, re, json, pickle, argparse, numpy as np, pandas as pd, cobra
 import warnings, logging; warnings.filterwarnings('ignore'); logging.getLogger('cobra').setLevel(logging.ERROR)
 
@@ -35,7 +35,7 @@ sys.path.insert(0, f'{B}/meteor_v8/eval')
 from baseline_io import resolve_baseline_pkl, BASELINE_SUFFIX
 
 MO = f'{B}/{a.run}/meteor_out/dpz_vanilla'
-GEMDIR = f'{B}/meteor_diag/curated_gems'
+GEMDIR = external_path('curated_gems')
 OUT = f'{B}/meteor_v8/results/toolcompare'
 TAG = a.out or ('weakreal_ids_' + a.run.replace('meteor_v8_evw_', '').replace('_run', ''))
 FULL = re.compile(r'^\d+\.\d+\.\d+\.\d+$')

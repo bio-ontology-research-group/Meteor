@@ -9,7 +9,7 @@ METEOR: the evw MILP solution (already computed).
 import os as _os, sys as _sys
 _sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
     _os.path.abspath(__file__))), "src"))
-from meteor_v8.utils import data_path, data_dir
+from meteor_v8.utils import data_path, external_path, data_dir
 import sys,os,json,pickle,re,numpy as np,cobra
 import warnings,logging; warnings.filterwarnings('ignore'); logging.getLogger('cobra').setLevel(logging.ERROR)
 B='/ibex/scratch/projects/c2014/kexin/funcarve'
@@ -20,7 +20,7 @@ from meteor_v8.repair import grow_support, maxbio_active
 sys.path.insert(0,f'{B}/meteor_v8/eval')
 from baseline_io import resolve_baseline_pkl, BASELINE_SUFFIX
 MO=f'{B}/meteor_v8_evw_p2mu3_run/meteor_out/dpz_vanilla'
-GEMDIR=f'{B}/meteor_diag/curated_gems'
+GEMDIR=external_path('curated_gems')
 OUT=f'{B}/meteor_v8/results/toolcompare'; os.makedirs(OUT,exist_ok=True)
 FULL=re.compile(r'^\d+\.\d+\.\d+\.\d+$')
 

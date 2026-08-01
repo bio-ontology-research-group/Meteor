@@ -76,6 +76,17 @@ def data_path(name):
     return os.path.join(roots[0], name)
 
 
+def external_path(name):
+    """Locate a third-party input under ``data/external``.
+
+    MetaNetX cross-references, the Reconstructor EC mapping and the curated
+    BiGG models are not ours; they live together under ``data/external`` with
+    their provenance recorded in the README there. Resolution follows
+    :func:`data_path`, so ``$METEOR_DATA`` overrides the bundled copy.
+    """
+    return data_path(os.path.join("external", name))
+
+
 def data_dir():
     """Directory the bundled data files resolve to.
 

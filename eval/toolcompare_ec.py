@@ -2,11 +2,15 @@
 """Panel B, namespace-NEUTRAL: EC-level P/R of METEOR vs CarveMe vs curated GEM.
 Avoids SEED<->BiGG reaction-id granularity confound by comparing EC number sets.
 Only complete 4-level ECs (X.X.X.X) counted."""
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
+    _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import external_path
 import sys,os,json,pickle,cobra,re,numpy as np
 import warnings,logging; warnings.filterwarnings('ignore'); logging.getLogger('cobra').setLevel(logging.ERROR)
 B='/ibex/scratch/projects/c2014/kexin/funcarve'
 MO=f'{B}/meteor_v8_evw_p2mu3_run/meteor_out/dpz_vanilla'
-CV=f'{B}/paperA_2026/results/carveme_gc'; GEMDIR=f'{B}/meteor_diag/curated_gems'
+CV=f'{B}/paperA_2026/results/carveme_gc'; GEMDIR=external_path('curated_gems')
 OUT=f'{B}/meteor_v8/results/toolcompare'
 FULL=re.compile(r'^\d+\.\d+\.\d+\.\d+$')
 def norm(s):

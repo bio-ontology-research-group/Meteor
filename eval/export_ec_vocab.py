@@ -10,15 +10,16 @@ Writes:
 import os as _os, sys as _sys
 _sys.path.insert(0, _os.path.join(_os.path.dirname(_os.path.dirname(
     _os.path.abspath(__file__))), "src"))
+from meteor_v8.utils import external_path
 import os, re, csv, pickle, cobra, pandas as pd
 import warnings, logging; warnings.filterwarnings('ignore'); logging.getLogger('cobra').setLevel(logging.ERROR)
 
 B  = '/ibex/scratch/projects/c2014/kexin/funcarve'
 MO = f'{B}/meteor_v8_evw_p2mu3_run/meteor_out/dpz_vanilla'
 CV = f'{B}/paperA_2026/results/carveme_gc'
-GEMDIR = f'{B}/meteor_diag/curated_gems'
+GEMDIR = external_path('curated_gems')
 OUT = f'{B}/meteor_v8/results/toolcompare'
-R2ECF = '/ibex/user/niuk0a/funcarve/reconstructor/reconstructor/Unique_ModelSEED_Reaction_ECs.txt'
+R2ECF = external_path('Unique_ModelSEED_Reaction_ECs.txt')
 FULL = re.compile(r'^\d+\.\d+\.\d+\.\d+$')
 
 def norm(s):
