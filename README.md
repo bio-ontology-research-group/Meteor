@@ -99,6 +99,7 @@ from `data/`; set `$METEOR_DATA` to read them from somewhere else.
 | §3.5 CarveMe (Table 3) | `eval/toolcompare_ec.py`, `eval/toolcompare_ec_vocab.py` | `results/toolcompare/panelB_ec.json`, `panelB_ec_vocab.json` |
 | §3.5 EC vocabularies | `eval/export_ec_vocab.py` | `results/toolcompare/ec_vocabulary_map.tsv`, `ec_fp_by_organism.tsv` |
 | §3.5 threshold baseline | `eval/baseline_thresh_gapfill.py` | `results/toolcompare/ablation_thresh_vs_evw_ec.json` |
+| S1.1 solver status, timings, repair counts | `eval/emit_v8.py` (rerun at the published flags) | `results/solver_status_dpz_vanilla.json` |
 | Figure S1 | `eval/gen_fig_massimbal.py` (draws the figure) | `results/table1/` |
 | S3.5 pathway detection | `eval/kegg_detect.py`, `eval/kegg_select.py`, `eval/kegg_price.py` | `results/toolcompare/kegg_pathway_108_*.json` |
 | S8.5 curated sub-threshold detail | `eval/weakreal.py` | `results/toolcompare/weakreal.json` |

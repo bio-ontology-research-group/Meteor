@@ -1,0 +1,997 @@
+{
+ "description": "Per-genome CBC solver status, wall time, and repair count for the DeepProZyme-vanilla configuration, from a rerun of eval/emit_v8.py at the published flags (--penalty evw --mu 3 --pexp 2 --eps 0.0 --gmin 0.1). The MILP solutions deposited in results/milp_solutions.tar.gz were written by an earlier revision that did not persist these fields; selected-set sizes agree with the deposited solutions in 107 of 108 genomes, the remaining genome differing by 6 reactions (CBC degeneracy).",
+ "config": "dpz_vanilla",
+ "n_genomes": 108,
+ "solver": "CBC via PuLP, 4 threads, 600 s limit, gapRel=0.05",
+ "status_counts": {
+  "Not Solved": 1,
+  "Optimal": 107
+ },
+ "solve_sec": {
+  "mean": 211.23,
+  "median": 136.9,
+  "max": 738.41
+ },
+ "n_repaired": {
+  "genomes_with_repair": 3,
+  "counts": [
+   59,
+   64,
+   88
+  ]
+ },
+ "per_genome": [
+  {
+   "gca": "GCA_003598085.1",
+   "status": "Optimal",
+   "solve_sec": 129.08,
+   "n_active": 2974,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.05129
+  },
+  {
+   "gca": "GCA_014873095.1",
+   "status": "Optimal",
+   "solve_sec": 126.54,
+   "n_active": 2838,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.963442
+  },
+  {
+   "gca": "GCA_022305115.1",
+   "status": "Optimal",
+   "solve_sec": 102.01,
+   "n_active": 3877,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.971313
+  },
+  {
+   "gca": "GCA_046479585.1",
+   "status": "Optimal",
+   "solve_sec": 216.24,
+   "n_active": 1775,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.127491
+  },
+  {
+   "gca": "GCA_050699075.1",
+   "status": "Optimal",
+   "solve_sec": 190.03,
+   "n_active": 2461,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.837362
+  },
+  {
+   "gca": "GCA_051904755.1",
+   "status": "Optimal",
+   "solve_sec": 89.51,
+   "n_active": 2750,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.777766
+  },
+  {
+   "gca": "GCA_057539575.1",
+   "status": "Optimal",
+   "solve_sec": 105.39,
+   "n_active": 3876,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.414668
+  },
+  {
+   "gca": "GCA_982345475.1",
+   "status": "Optimal",
+   "solve_sec": 700.63,
+   "n_active": 337,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 3.560575
+  },
+  {
+   "gca": "GCF_000006945.2",
+   "status": "Optimal",
+   "solve_sec": 103.26,
+   "n_active": 3294,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.963881
+  },
+  {
+   "gca": "GCF_000006965.1",
+   "status": "Optimal",
+   "solve_sec": 117.51,
+   "n_active": 3845,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.971313
+  },
+  {
+   "gca": "GCF_000008185.1",
+   "status": "Optimal",
+   "solve_sec": 652.48,
+   "n_active": 2052,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.892038
+  },
+  {
+   "gca": "GCF_000008805.1",
+   "status": "Optimal",
+   "solve_sec": 122.07,
+   "n_active": 2041,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.048112
+  },
+  {
+   "gca": "GCF_000009625.1",
+   "status": "Optimal",
+   "solve_sec": 113.32,
+   "n_active": 3975,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.971313
+  },
+  {
+   "gca": "GCF_000012685.1",
+   "status": "Optimal",
+   "solve_sec": 136.42,
+   "n_active": 3907,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.971313
+  },
+  {
+   "gca": "GCF_000013085.1",
+   "status": "Optimal",
+   "solve_sec": 109.52,
+   "n_active": 3150,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.241206
+  },
+  {
+   "gca": "GCF_000014565.1",
+   "status": "Optimal",
+   "solve_sec": 121.57,
+   "n_active": 4212,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.655228
+  },
+  {
+   "gca": "GCF_000014705.1",
+   "status": "Optimal",
+   "solve_sec": 109.88,
+   "n_active": 3289,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.047427
+  },
+  {
+   "gca": "GCF_000016425.1",
+   "status": "Optimal",
+   "solve_sec": 154.58,
+   "n_active": 3529,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.895666
+  },
+  {
+   "gca": "GCF_000017425.1",
+   "status": "Optimal",
+   "solve_sec": 71.98,
+   "n_active": 3123,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.846432
+  },
+  {
+   "gca": "GCF_000018345.1",
+   "status": "Optimal",
+   "solve_sec": 118.23,
+   "n_active": 3790,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.500318
+  },
+  {
+   "gca": "GCF_000018605.1",
+   "status": "Not Solved",
+   "solve_sec": 652.92,
+   "n_active": 1917,
+   "n_repaired": 59,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.0
+  },
+  {
+   "gca": "GCF_000021425.1",
+   "status": "Optimal",
+   "solve_sec": 664.36,
+   "n_active": 1717,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.648574
+  },
+  {
+   "gca": "GCF_000021865.1",
+   "status": "Optimal",
+   "solve_sec": 116.6,
+   "n_active": 3103,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.047867
+  },
+  {
+   "gca": "GCF_000023285.1",
+   "status": "Optimal",
+   "solve_sec": 157.98,
+   "n_active": 2008,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.12486
+  },
+  {
+   "gca": "GCF_000024385.1",
+   "status": "Optimal",
+   "solve_sec": 142.91,
+   "n_active": 3502,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.635445
+  },
+  {
+   "gca": "GCF_000026645.1",
+   "status": "Optimal",
+   "solve_sec": 160.94,
+   "n_active": 3853,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.963881
+  },
+  {
+   "gca": "GCF_000069185.1",
+   "status": "Optimal",
+   "solve_sec": 140.85,
+   "n_active": 3646,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.346617
+  },
+  {
+   "gca": "GCF_000091305.1",
+   "status": "Optimal",
+   "solve_sec": 114.92,
+   "n_active": 4120,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.66751
+  },
+  {
+   "gca": "GCF_000092025.1",
+   "status": "Optimal",
+   "solve_sec": 118.97,
+   "n_active": 3678,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.971313
+  },
+  {
+   "gca": "GCF_000146655.1",
+   "status": "Optimal",
+   "solve_sec": 159.93,
+   "n_active": 2006,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.963784
+  },
+  {
+   "gca": "GCF_000147055.1",
+   "status": "Optimal",
+   "solve_sec": 119.88,
+   "n_active": 3146,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.963881
+  },
+  {
+   "gca": "GCF_000158815.1",
+   "status": "Optimal",
+   "solve_sec": 117.36,
+   "n_active": 3201,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.272614
+  },
+  {
+   "gca": "GCF_000174395.2",
+   "status": "Optimal",
+   "solve_sec": 174.83,
+   "n_active": 2116,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.384623
+  },
+  {
+   "gca": "GCF_000195675.1",
+   "status": "Optimal",
+   "solve_sec": 122.23,
+   "n_active": 3532,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.048112
+  },
+  {
+   "gca": "GCF_000195955.2",
+   "status": "Optimal",
+   "solve_sec": 143.3,
+   "n_active": 3431,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.635869
+  },
+  {
+   "gca": "GCF_000237205.1",
+   "status": "Optimal",
+   "solve_sec": 653.6,
+   "n_active": 2126,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 3.16249
+  },
+  {
+   "gca": "GCF_000237305.1",
+   "status": "Optimal",
+   "solve_sec": 138.58,
+   "n_active": 3918,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.804039
+  },
+  {
+   "gca": "GCF_000258405.1",
+   "status": "Optimal",
+   "solve_sec": 169.17,
+   "n_active": 2556,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.963442
+  },
+  {
+   "gca": "GCF_000331005.1",
+   "status": "Optimal",
+   "solve_sec": 130.69,
+   "n_active": 4179,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.545297
+  },
+  {
+   "gca": "GCF_000758665.1",
+   "status": "Optimal",
+   "solve_sec": 130.7,
+   "n_active": 3388,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.780535
+  },
+  {
+   "gca": "GCF_000813125.1",
+   "status": "Optimal",
+   "solve_sec": 120.92,
+   "n_active": 2955,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.654143
+  },
+  {
+   "gca": "GCF_000816885.1",
+   "status": "Optimal",
+   "solve_sec": 150.65,
+   "n_active": 3374,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.236779
+  },
+  {
+   "gca": "GCF_000833375.1",
+   "status": "Optimal",
+   "solve_sec": 132.8,
+   "n_active": 2031,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 3.192374
+  },
+  {
+   "gca": "GCF_001189295.1",
+   "status": "Optimal",
+   "solve_sec": 131.91,
+   "n_active": 4010,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.963442
+  },
+  {
+   "gca": "GCF_001272835.1",
+   "status": "Optimal",
+   "solve_sec": 666.69,
+   "n_active": 755,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.932274
+  },
+  {
+   "gca": "GCF_001427935.1",
+   "status": "Optimal",
+   "solve_sec": 114.09,
+   "n_active": 3474,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.782206
+  },
+  {
+   "gca": "GCF_001544575.2",
+   "status": "Optimal",
+   "solve_sec": 113.94,
+   "n_active": 4175,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.241206
+  },
+  {
+   "gca": "GCF_001682855.1",
+   "status": "Optimal",
+   "solve_sec": 136.92,
+   "n_active": 3237,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.780445
+  },
+  {
+   "gca": "GCF_001721185.1",
+   "status": "Optimal",
+   "solve_sec": 115.26,
+   "n_active": 2988,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.971313
+  },
+  {
+   "gca": "GCF_002257695.2",
+   "status": "Optimal",
+   "solve_sec": 129.1,
+   "n_active": 3064,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.802395
+  },
+  {
+   "gca": "GCF_002260525.1",
+   "status": "Optimal",
+   "solve_sec": 111.92,
+   "n_active": 3840,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.971313
+  },
+  {
+   "gca": "GCF_003019295.1",
+   "status": "Optimal",
+   "solve_sec": 654.24,
+   "n_active": 1833,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.858405
+  },
+  {
+   "gca": "GCF_003121295.1",
+   "status": "Optimal",
+   "solve_sec": 151.05,
+   "n_active": 3825,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.411438
+  },
+  {
+   "gca": "GCF_003324715.1",
+   "status": "Optimal",
+   "solve_sec": 108.37,
+   "n_active": 3336,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.237594
+  },
+  {
+   "gca": "GCF_003605405.2",
+   "status": "Optimal",
+   "solve_sec": 122.64,
+   "n_active": 3293,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.780445
+  },
+  {
+   "gca": "GCF_003626845.1",
+   "status": "Optimal",
+   "solve_sec": 132.01,
+   "n_active": 3401,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.0506
+  },
+  {
+   "gca": "GCF_004307055.1",
+   "status": "Optimal",
+   "solve_sec": 152.66,
+   "n_active": 4080,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.367091
+  },
+  {
+   "gca": "GCF_006094295.1",
+   "status": "Optimal",
+   "solve_sec": 135.04,
+   "n_active": 3483,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.746257
+  },
+  {
+   "gca": "GCF_008152325.1",
+   "status": "Optimal",
+   "solve_sec": 206.72,
+   "n_active": 2135,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.648186
+  },
+  {
+   "gca": "GCF_008244845.1",
+   "status": "Optimal",
+   "solve_sec": 124.94,
+   "n_active": 3251,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.963881
+  },
+  {
+   "gca": "GCF_008639165.1",
+   "status": "Optimal",
+   "solve_sec": 122.18,
+   "n_active": 3905,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.414668
+  },
+  {
+   "gca": "GCF_008931305.1",
+   "status": "Optimal",
+   "solve_sec": 176.94,
+   "n_active": 3899,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.545297
+  },
+  {
+   "gca": "GCF_013365535.1",
+   "status": "Optimal",
+   "solve_sec": 116.19,
+   "n_active": 2991,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.971313
+  },
+  {
+   "gca": "GCF_015277775.1",
+   "status": "Optimal",
+   "solve_sec": 101.04,
+   "n_active": 3937,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.971313
+  },
+  {
+   "gca": "GCF_017916255.1",
+   "status": "Optimal",
+   "solve_sec": 135.25,
+   "n_active": 3872,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.927984
+  },
+  {
+   "gca": "GCF_018732145.1",
+   "status": "Optimal",
+   "solve_sec": 157.6,
+   "n_active": 3432,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.930893
+  },
+  {
+   "gca": "GCF_019856495.1",
+   "status": "Optimal",
+   "solve_sec": 112.56,
+   "n_active": 2793,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.654143
+  },
+  {
+   "gca": "GCF_021278985.1",
+   "status": "Optimal",
+   "solve_sec": 118.45,
+   "n_active": 3580,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.963881
+  },
+  {
+   "gca": "GCF_022406515.1",
+   "status": "Optimal",
+   "solve_sec": 136.3,
+   "n_active": 2292,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.654173
+  },
+  {
+   "gca": "GCF_024519395.1",
+   "status": "Optimal",
+   "solve_sec": 111.19,
+   "n_active": 3346,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.963881
+  },
+  {
+   "gca": "GCF_032924845.1",
+   "status": "Optimal",
+   "solve_sec": 146.84,
+   "n_active": 3382,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.963881
+  },
+  {
+   "gca": "GCF_039535865.1",
+   "status": "Optimal",
+   "solve_sec": 659.88,
+   "n_active": 2257,
+   "n_repaired": 88,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.0
+  },
+  {
+   "gca": "GCF_045039055.1",
+   "status": "Optimal",
+   "solve_sec": 144.24,
+   "n_active": 2316,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.654143
+  },
+  {
+   "gca": "GCF_045207185.1",
+   "status": "Optimal",
+   "solve_sec": 129.93,
+   "n_active": 3787,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.414668
+  },
+  {
+   "gca": "GCF_045286965.1",
+   "status": "Optimal",
+   "solve_sec": 127.03,
+   "n_active": 3949,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.414668
+  },
+  {
+   "gca": "GCF_045348045.1",
+   "status": "Optimal",
+   "solve_sec": 125.48,
+   "n_active": 2432,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.654404
+  },
+  {
+   "gca": "GCF_045571375.1",
+   "status": "Optimal",
+   "solve_sec": 104.97,
+   "n_active": 3675,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.963881
+  },
+  {
+   "gca": "GCF_045712965.1",
+   "status": "Optimal",
+   "solve_sec": 136.37,
+   "n_active": 2984,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.241206
+  },
+  {
+   "gca": "GCF_046591535.1",
+   "status": "Optimal",
+   "solve_sec": 127.08,
+   "n_active": 2953,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.047867
+  },
+  {
+   "gca": "GCF_047219265.1",
+   "status": "Optimal",
+   "solve_sec": 127.33,
+   "n_active": 3670,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.963881
+  },
+  {
+   "gca": "GCF_047301005.1",
+   "status": "Optimal",
+   "solve_sec": 136.89,
+   "n_active": 2010,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.215707
+  },
+  {
+   "gca": "GCF_047946945.1",
+   "status": "Optimal",
+   "solve_sec": 113.38,
+   "n_active": 3474,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.241206
+  },
+  {
+   "gca": "GCF_049860565.1",
+   "status": "Optimal",
+   "solve_sec": 90.68,
+   "n_active": 2673,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.744995
+  },
+  {
+   "gca": "GCF_050157305.1",
+   "status": "Optimal",
+   "solve_sec": 247.44,
+   "n_active": 2701,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.963345
+  },
+  {
+   "gca": "GCF_050233995.1",
+   "status": "Optimal",
+   "solve_sec": 722.17,
+   "n_active": 1839,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.90059
+  },
+  {
+   "gca": "GCF_051043275.1",
+   "status": "Optimal",
+   "solve_sec": 230.5,
+   "n_active": 3918,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.971313
+  },
+  {
+   "gca": "GCF_051903345.1",
+   "status": "Optimal",
+   "solve_sec": 290.09,
+   "n_active": 4031,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.241509
+  },
+  {
+   "gca": "GCF_051904065.1",
+   "status": "Optimal",
+   "solve_sec": 252.01,
+   "n_active": 2828,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.095226
+  },
+  {
+   "gca": "GCF_051904745.1",
+   "status": "Optimal",
+   "solve_sec": 203.57,
+   "n_active": 3200,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.963881
+  },
+  {
+   "gca": "GCF_051905015.1",
+   "status": "Optimal",
+   "solve_sec": 251.99,
+   "n_active": 2866,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.047427
+  },
+  {
+   "gca": "GCF_054027555.1",
+   "status": "Optimal",
+   "solve_sec": 339.83,
+   "n_active": 2628,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.048868
+  },
+  {
+   "gca": "GCF_055387645.1",
+   "status": "Optimal",
+   "solve_sec": 210.13,
+   "n_active": 2433,
+   "n_repaired": 64,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.0
+  },
+  {
+   "gca": "GCF_055390245.1",
+   "status": "Optimal",
+   "solve_sec": 738.41,
+   "n_active": 1725,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.624624
+  },
+  {
+   "gca": "GCF_055589305.1",
+   "status": "Optimal",
+   "solve_sec": 256.59,
+   "n_active": 4081,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.545297
+  },
+  {
+   "gca": "GCF_056489225.1",
+   "status": "Optimal",
+   "solve_sec": 230.3,
+   "n_active": 3194,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.963881
+  },
+  {
+   "gca": "GCF_057457595.1",
+   "status": "Optimal",
+   "solve_sec": 227.39,
+   "n_active": 3322,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.963442
+  },
+  {
+   "gca": "GCF_057838145.1",
+   "status": "Optimal",
+   "solve_sec": 365.36,
+   "n_active": 3242,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.802179
+  },
+  {
+   "gca": "GCF_058182495.1",
+   "status": "Optimal",
+   "solve_sec": 212.09,
+   "n_active": 3233,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.782557
+  },
+  {
+   "gca": "GCF_058435815.1",
+   "status": "Optimal",
+   "solve_sec": 205.52,
+   "n_active": 3835,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.971313
+  },
+  {
+   "gca": "GCF_058436375.1",
+   "status": "Optimal",
+   "solve_sec": 212.09,
+   "n_active": 3692,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.963881
+  },
+  {
+   "gca": "GCF_058448535.1",
+   "status": "Optimal",
+   "solve_sec": 272.78,
+   "n_active": 3868,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.963881
+  },
+  {
+   "gca": "GCF_058449135.1",
+   "status": "Optimal",
+   "solve_sec": 272.62,
+   "n_active": 3535,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.655379
+  },
+  {
+   "gca": "GCF_900105045.1",
+   "status": "Optimal",
+   "solve_sec": 257.55,
+   "n_active": 3253,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.802179
+  },
+  {
+   "gca": "GCF_900112135.1",
+   "status": "Optimal",
+   "solve_sec": 307.21,
+   "n_active": 3580,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.241206
+  },
+  {
+   "gca": "GCF_902859785.1",
+   "status": "Optimal",
+   "solve_sec": 228.99,
+   "n_active": 4057,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.241206
+  },
+  {
+   "gca": "GCF_963281165.1",
+   "status": "Optimal",
+   "solve_sec": 706.5,
+   "n_active": 1846,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 0.400701
+  },
+  {
+   "gca": "GCF_976997305.1",
+   "status": "Optimal",
+   "solve_sec": 257.8,
+   "n_active": 3853,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 2.971313
+  },
+  {
+   "gca": "GCF_978047615.1",
+   "status": "Optimal",
+   "solve_sec": 223.03,
+   "n_active": 1915,
+   "n_repaired": 0,
+   "biomass_flux": 0.1,
+   "maxbio_core": 1.138434
+  }
+ ]
+}
