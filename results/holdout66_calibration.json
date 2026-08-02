@@ -1,0 +1,300 @@
+{
+ "description": "Protein-level fidelity and calibration on the 66-protein holdout under the evidence-weighted cost reported throughout the paper (p=2, mu=3). ECE uses 15 bins; Fmax uses all ECs rather than the first. These are the numbers in Supplementary Table S2. This evaluation scores the raw score matrices; the net-only evaluation in results/holdout_cfg/, which maps both arms through the same EC-vocabulary normalisation, is the one the main text reports for top-1.",
+ "n_proteins": 66,
+ "n_configs": 12,
+ "ece_bins": 15,
+ "summary": {
+  "ece_improved": 6,
+  "brier_improved": 8
+ },
+ "per_config": [
+  {
+   "config": "clean-vanilla",
+   "n": 66,
+   "top1": {
+    "base": 26,
+    "meteor": 26
+   },
+   "top3": {
+    "base": 29,
+    "meteor": 29
+   },
+   "Fmax": {
+    "base": 0.413,
+    "meteor": 0.428
+   },
+   "ECE": {
+    "base": 0.14,
+    "meteor": 0.151
+   },
+   "Brier": {
+    "base": 0.129,
+    "meteor": 0.136
+   }
+  },
+  {
+   "config": "clean-filt30",
+   "n": 66,
+   "top1": {
+    "base": 22,
+    "meteor": 22
+   },
+   "top3": {
+    "base": 24,
+    "meteor": 24
+   },
+   "Fmax": {
+    "base": 0.349,
+    "meteor": 0.364
+   },
+   "ECE": {
+    "base": 0.301,
+    "meteor": 0.299
+   },
+   "Brier": {
+    "base": 0.279,
+    "meteor": 0.278
+   }
+  },
+  {
+   "config": "clean-filt50",
+   "n": 66,
+   "top1": {
+    "base": 25,
+    "meteor": 25
+   },
+   "top3": {
+    "base": 30,
+    "meteor": 30
+   },
+   "Fmax": {
+    "base": 0.405,
+    "meteor": 0.421
+   },
+   "ECE": {
+    "base": 0.319,
+    "meteor": 0.309
+   },
+   "Brier": {
+    "base": 0.275,
+    "meteor": 0.274
+   }
+  },
+  {
+   "config": "clean-filt70",
+   "n": 66,
+   "top1": {
+    "base": 28,
+    "meteor": 28
+   },
+   "top3": {
+    "base": 31,
+    "meteor": 31
+   },
+   "Fmax": {
+    "base": 0.437,
+    "meteor": 0.453
+   },
+   "ECE": {
+    "base": 0.333,
+    "meteor": 0.334
+   },
+   "Brier": {
+    "base": 0.307,
+    "meteor": 0.309
+   }
+  },
+  {
+   "config": "dpz-vanilla",
+   "n": 66,
+   "top1": {
+    "base": 14,
+    "meteor": 17
+   },
+   "top3": {
+    "base": 22,
+    "meteor": 22
+   },
+   "Fmax": {
+    "base": 0.285,
+    "meteor": 0.307
+   },
+   "ECE": {
+    "base": 0.436,
+    "meteor": 0.427
+   },
+   "Brier": {
+    "base": 0.358,
+    "meteor": 0.344
+   }
+  },
+  {
+   "config": "dpz-filt30",
+   "n": 66,
+   "top1": {
+    "base": 14,
+    "meteor": 17
+   },
+   "top3": {
+    "base": 22,
+    "meteor": 22
+   },
+   "Fmax": {
+    "base": 0.294,
+    "meteor": 0.317
+   },
+   "ECE": {
+    "base": 0.326,
+    "meteor": 0.271
+   },
+   "Brier": {
+    "base": 0.274,
+    "meteor": 0.248
+   }
+  },
+  {
+   "config": "dpz-filt50",
+   "n": 66,
+   "top1": {
+    "base": 14,
+    "meteor": 17
+   },
+   "top3": {
+    "base": 22,
+    "meteor": 22
+   },
+   "Fmax": {
+    "base": 0.295,
+    "meteor": 0.319
+   },
+   "ECE": {
+    "base": 0.332,
+    "meteor": 0.29
+   },
+   "Brier": {
+    "base": 0.289,
+    "meteor": 0.266
+   }
+  },
+  {
+   "config": "dpz-filt70",
+   "n": 66,
+   "top1": {
+    "base": 14,
+    "meteor": 17
+   },
+   "top3": {
+    "base": 22,
+    "meteor": 21
+   },
+   "Fmax": {
+    "base": 0.291,
+    "meteor": 0.314
+   },
+   "ECE": {
+    "base": 0.34,
+    "meteor": 0.296
+   },
+   "Brier": {
+    "base": 0.286,
+    "meteor": 0.261
+   }
+  },
+  {
+   "config": "enzbert-vanilla",
+   "n": 66,
+   "top1": {
+    "base": 24,
+    "meteor": 24
+   },
+   "top3": {
+    "base": 27,
+    "meteor": 27
+   },
+   "Fmax": {
+    "base": 0.37,
+    "meteor": 0.385
+   },
+   "ECE": {
+    "base": 0.283,
+    "meteor": 0.295
+   },
+   "Brier": {
+    "base": 0.257,
+    "meteor": 0.253
+   }
+  },
+  {
+   "config": "enzbert-filt30",
+   "n": 66,
+   "top1": {
+    "base": 16,
+    "meteor": 17
+   },
+   "top3": {
+    "base": 21,
+    "meteor": 20
+   },
+   "Fmax": {
+    "base": 0.277,
+    "meteor": 0.288
+   },
+   "ECE": {
+    "base": 0.13,
+    "meteor": 0.158
+   },
+   "Brier": {
+    "base": 0.143,
+    "meteor": 0.154
+   }
+  },
+  {
+   "config": "enzbert-filt50",
+   "n": 66,
+   "top1": {
+    "base": 21,
+    "meteor": 21
+   },
+   "top3": {
+    "base": 24,
+    "meteor": 24
+   },
+   "Fmax": {
+    "base": 0.324,
+    "meteor": 0.34
+   },
+   "ECE": {
+    "base": 0.199,
+    "meteor": 0.2
+   },
+   "Brier": {
+    "base": 0.199,
+    "meteor": 0.196
+   }
+  },
+  {
+   "config": "enzbert-filt70",
+   "n": 66,
+   "top1": {
+    "base": 23,
+    "meteor": 23
+   },
+   "top3": {
+    "base": 26,
+    "meteor": 26
+   },
+   "Fmax": {
+    "base": 0.364,
+    "meteor": 0.365
+   },
+   "ECE": {
+    "base": 0.305,
+    "meteor": 0.339
+   },
+   "Brier": {
+    "base": 0.291,
+    "meteor": 0.299
+   }
+  }
+ ]
+}
