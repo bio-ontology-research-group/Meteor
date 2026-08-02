@@ -51,6 +51,14 @@ WMIN_KEEP = 0.01           # reactions with w < WMIN_KEEP can be fix-zeroed
 # ---------- data files ----------
 _DATA_ENV = "METEOR_DATA"
 
+# Run directories live outside the repository: they hold the full
+# 12-configuration MILP output and the baseline prediction matrices, hundreds
+# of gigabytes that cannot be deposited.  The analysis scripts under ``eval/``
+# were written against our cluster layout; ``$METEOR_RUNS`` moves that layout
+# to a different machine without editing them.
+_RUNS_ENV = "METEOR_RUNS"
+_RUNS_DEFAULT = "/ibex/scratch/projects/c2014/kexin/funcarve"
+
 
 def data_path(name):
     """Locate a bundled data file (universal model, EC maps, media, ...).
@@ -85,6 +93,26 @@ def external_path(name):
     :func:`data_path`, so ``$METEOR_DATA`` overrides the bundled copy.
     """
     return data_path(os.path.join("external", name))
+
+
+def runs_root():
+    """Root of the run directories the ``eval/`` scripts read.
+
+    Defaults to the cluster path the deposited analyses were run against, so
+    behaviour is unchanged where that path exists.  Set ``$METEOR_RUNS`` to
+    point the scripts at a copy elsewhere.  Nothing under this root is
+    deposited; see the README.
+    """
+    return os.environ.get(_RUNS_ENV, _RUNS_DEFAULT)
+
+
+def run_path(*parts):
+    """Join ``parts`` onto :func:`runs_root`.
+
+    ``run_path("meteor_v8_evw_p2mu3_run", "meteor_out", "dpz_vanilla")``
+    replaces the equivalent absolute path written out in full.
+    """
+    return os.path.join(runs_root(), *parts)
 
 
 def data_dir():

@@ -110,8 +110,12 @@ so in their docstring; `gen_table1.py` and the two `agg_` scripts produce
 tables.
 
 `src/meteor_v8/` contains no absolute paths. The analysis scripts under `eval/`
-are deposited as they were run and reference input locations on our cluster; to
-re-run one, point the path constants at your own copies of the inputs below.
+are deposited as they were run and reference our cluster layout for the inputs
+listed below — 139 such paths across 69 scripts, all of them under one root.
+`meteor_v8.utils.run_path` joins onto that root and `$METEOR_RUNS` overrides
+it, so a copy of the inputs elsewhere needs one environment variable rather
+than an edit per script. The scripts that reproduce the published numbers do
+not use it: they read only `results/` and `data/` from this checkout.
 
 ## Parameters
 
