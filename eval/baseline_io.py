@@ -15,9 +15,17 @@ to READ.
 import os
 import glob
 
-PA = "/ibex/scratch/projects/c2014/kexin/funcarve/paperA_2026"
-REINFER_ROOT = "/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v7_run/reinfer"
-BACDIVE_ROOT = "/ibex/scratch/projects/c2014/kexin/funcarve/dpec2_result/result_bacdive"
+try:
+    from meteor_v8.utils import run_path
+except ImportError:                        # standalone use, outside the package
+    def run_path(*parts):
+        root = os.environ.get("METEOR_RUNS",
+                              "/ibex/scratch/projects/c2014/kexin/funcarve")
+        return os.path.join(root, *parts)
+
+PA = run_path("paperA_2026")
+REINFER_ROOT = run_path("meteor_v7_run", "reinfer")
+BACDIVE_ROOT = run_path("dpec2_result", "result_bacdive")
 
 BASELINE_SUFFIX = {"clean": "CLEAN_confidence", "dpz": "DPZ", "enzbert": "enzbert"}
 

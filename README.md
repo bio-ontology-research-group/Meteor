@@ -71,16 +71,28 @@ linux-64 builds, will not solve on another platform.
 
 ## Reconstructing a genome
 
+One genome's inputs are bundled so the pipeline can be run end to end from this
+checkout alone:
+
 ```bash
-python eval/emit_v8.py --gca GCF_000006945.2 --gram negative \
+conda env create -f env/environment.yml && conda activate meteor
+PYTHONPATH=src:eval python eval/emit_v8.py \
+    --gca GCF_000017425.1 --gram negative \
     --baseline dpz --variant vanilla \
     --penalty evw --pexp 2 --mu 3 --eps 0.0 --gmin 0.1 \
-    --outroot <output directory>
+    --preds data/demo/GCF_000017425.1_DPZ_top5.pkl.gz
 ```
 
-Pass the flags explicitly; the argparse defaults match the paper.
+About three minutes on four cores. It writes `meteor_sol_`, `meteor_df_` and
+`meteor_preds_` for that genome under `results/meteor_out/dpz_vanilla/` and
+reports `n_active=3119`. See `data/demo/README.md` for how that input was
+reduced from 43 MB to 0.27 MB without changing the result.
 
-That command needs nothing outside this directory.
+For any other genome, `--preds` takes the per-protein EC score matrix, a
+pickled proteins × ECs DataFrame. Without `--preds` the matrix is looked up in
+the run directories described below, which are not deposited.
+
+Pass the flags explicitly; the argparse defaults match the paper.
 `meteor_v8.utils.data_path` resolves the reaction database and the EC maps
 from `data/`; set `$METEOR_DATA` to read them from somewhere else.
 

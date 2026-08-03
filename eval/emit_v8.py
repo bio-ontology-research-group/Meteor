@@ -11,8 +11,6 @@ import sys, os, pickle, json, argparse, time
 import numpy as np
 import pandas as pd
 
-PA = "/ibex/scratch/projects/c2014/kexin/funcarve/paperA_2026"
-
 from meteor_v8.utils import (load_universal, extract_fba_matrices, load_tight_bounds,
                          apply_media, find_excluded_reactions, aggregate_confidence,
                          compute_costs, build_candidate_mask, build_rxn_ec_mask,
@@ -27,7 +25,14 @@ ap.add_argument("--gca", required=True)
 ap.add_argument("--gram", choices=["negative", "positive"], required=True)
 ap.add_argument("--baseline", choices=["clean", "dpz", "enzbert"], default="dpz")
 ap.add_argument("--variant", choices=["vanilla", "filt30", "filt50", "filt70"], default="vanilla")
-ap.add_argument("--outroot", default="/ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8_run/meteor_out")
+ap.add_argument("--preds", default=None,
+                help="per-protein EC score matrix for this genome (a pickled "
+                     "DataFrame, proteins x ECs). Without it the matrix is "
+                     "looked up in the run directories, which are not deposited; "
+                     "see data/demo/ for a runnable example.")
+ap.add_argument("--outroot",
+                default=os.path.join(os.path.dirname(os.path.dirname(
+                    os.path.abspath(__file__))), "results", "meteor_out"))
 ap.add_argument("--beta", type=float, default=1.0)
 ap.add_argument("--min_frac", type=float, default=0.9)
 ap.add_argument("--mu", type=float, default=3.0)          # PSB2027 paper config
@@ -50,11 +55,19 @@ anc = load_ec(data_path('all_ancestors.txt'))
 
 from baseline_io import resolve_baseline_pkl, BASELINE_SUFFIX
 _SUF = BASELINE_SUFFIX[a.baseline]
-pred_path = resolve_baseline_pkl(a.baseline, a.variant, a.gca, _SUF)
-if not pred_path:
-    print(f"[GUARD] no pred {a.gca}", flush=True); sys.exit(3)
+if a.preds:
+    pred_path = a.preds
+    if not os.path.exists(pred_path):
+        print(f"[GUARD] --preds not found: {pred_path}", flush=True); sys.exit(3)
+else:
+    pred_path = resolve_baseline_pkl(a.baseline, a.variant, a.gca, _SUF)
+    if not pred_path:
+        print(f"[GUARD] no pred {a.gca}", flush=True); sys.exit(3)
 pred = extract_pred(pred_path, anc)
-_ep = resolve_baseline_pkl("enzbert", "vanilla", a.gca, "enzbert")
+# Completeness guard: compare against the EnzBERT matrix for the same genome,
+# which comes from the same proteome. Skipped when --preds is given, since a
+# supplied matrix has no companion to compare against.
+_ep = None if a.preds else resolve_baseline_pkl("enzbert", "vanilla", a.gca, "enzbert")
 _ref = pd.read_pickle(_ep).shape[0] if _ep else None
 if _ref and pred.shape[0] < a.min_frac * _ref:
     print(f"[GUARD] incomplete {a.gca}: {pred.shape[0]}<{a.min_frac}*{_ref}", flush=True); sys.exit(3)
