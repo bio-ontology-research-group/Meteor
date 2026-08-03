@@ -61,7 +61,7 @@ data_p = [data[i] for i in order]
 labs_p = [labs[i] for i in order]
 cols_p = [COLORS[i] for i in order]
 
-fig, ax = plt.subplots(figsize=(5.2, 2.15))
+fig, ax = plt.subplots(figsize=(5.2, 1.85))
 bp = ax.boxplot(data_p, tick_labels=labs_p, patch_artist=True, widths=0.55,
                 orientation="horizontal",
                 showfliers=True, showmeans=True,
@@ -95,20 +95,20 @@ for i, x in enumerate(data_p):
     fli = bp["fliers"][i].get_xdata()
     rights.append(max(cap, fli.max() if len(fli) else cap))
 label_x = [r * 1.35 for r in rights]
+# The ratio to METEOR rides with each mean, so the panel carries it without a
+# separate footer line; the reference arm needs no ratio.
+tm = t.mean()
 for i, (x, lx) in enumerate(zip(data_p, label_x), start=1):
-    ax.text(lx, i, f"mean {x.mean():.0f}", ha="left", va="center",
-            fontsize=8.5, color=INK)
+    m = x.mean()
+    txt = f"mean {m:.0f}" if abs(m - tm) < 1e-9 else \
+          f"mean {m:.0f}   {m/tm:.1f}\u00d7" if m / tm < 10 else \
+          f"mean {m:.0f}   {m/tm:.0f}\u00d7"
+    ax.text(lx, i, txt, ha="left", va="center", fontsize=8.5, color=INK)
 
 lo = min(float(x.min()) for x in data)
-ax.set_xlim(left=lo * 0.6, right=max(label_x) * 2.6)
+ax.set_xlim(left=lo * 0.6, right=max(label_x) * 4.0)
 
-tm = t.mean()
-fig.text(0.5, 0.015,
-         "relative to METEOR:   two-stage %.1f$\\times$    uniform %.1f$\\times$"
-         "    shuffled %.0f$\\times$" % (w.mean()/tm, u.mean()/tm, s.mean()/tm),
-         ha="center", fontsize=8, color=MUTED)
-
-plt.tight_layout(rect=[0, 0.075, 1, 1])
+plt.tight_layout()
 out = f"{a.outdir}/fig_decoy.pdf"
 plt.savefig(out, dpi=300); plt.savefig(out.replace(".pdf", ".png"), dpi=200)
 print(f"-> {out}")
