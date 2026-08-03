@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """FIGURE-GENERATING SCRIPT --- produces Figure 2 of the main text.
 
-Draws figures/fig_decoy.pdf: spurious reactions introduced when the evidence
+Draws figures/fig_decoy.pdf: off-reference reactions introduced when the evidence
 for 60 reactions is deleted and the network is rebuilt under four regimes.
 The first three share METEOR's single-stage architecture and differ only in
 the cost; the fourth applies METEOR's own cost in the two-stage shape that
@@ -9,7 +9,7 @@ probabilistic gap-filling takes, isolating the architecture's contribution.
 
 Reads:  results/recovery_4arm/*.json   (eval/recovery_ablation.py, 108 genomes)
 Writes: figures/fig_decoy.pdf
-Numbers: 34.6 / 78.2 / 142.9 / 2006.6 mean spurious reactions.
+Numbers: 34.6 / 78.2 / 142.9 / 2006.6 mean off-reference reactions.
 
 Orientation: horizontal. The measured quantity spans three decades, so the
 log axis wants the long side of the panel, and four regime names read as
@@ -77,7 +77,7 @@ for patch, c in zip(bp["boxes"], cols_p):
     patch.set_linewidth(1.0)
 
 ax.set_xscale("log")
-ax.set_xlabel("Spurious reactions (log scale)", fontsize=9.5, color=INK)
+ax.set_xlabel("Off-reference reactions (log scale)", fontsize=9.5, color=INK)
 ax.set_title(f"Perturbation stability ({n} genomes)", fontsize=10, color=INK, pad=6)
 ax.xaxis.grid(True, alpha=0.25, color=AXIS, lw=0.7)
 ax.set_axisbelow(True)
@@ -96,7 +96,7 @@ for i, x in enumerate(data_p):
     rights.append(max(cap, fli.max() if len(fli) else cap))
 label_x = [r * 1.35 for r in rights]
 for i, (x, lx) in enumerate(zip(data_p, label_x), start=1):
-    ax.text(lx, i, f"$\\mu$={x.mean():.0f}", ha="left", va="center",
+    ax.text(lx, i, f"mean {x.mean():.0f}", ha="left", va="center",
             fontsize=8.5, color=INK)
 
 lo = min(float(x.min()) for x in data)

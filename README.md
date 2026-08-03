@@ -5,16 +5,20 @@ Evidence-weighted reaction selection reconciles enzyme prediction with
 growth feasibility*.
 
 METEOR takes a per-protein EC confidence matrix, aggregates it into
-reaction-level evidence, selects a biomass-feasible reaction set from the SEED
+reaction-level evidence, selects a growth-feasible reaction set from the SEED
 universal database with a MILP, and writes the result back to the protein score
-matrix through a ranking-preserving update. The cost grades each reaction by the
-confidence behind it, `mu*(1-w_j)^p`, rather than charging every reaction the
-same: a uniform penalty prunes by count and discards genuine isozymes with the
-noise.
+matrix through a bounded per-EC update that preserves protein ordering within
+each EC column. The cost grades each reaction by the confidence behind it,
+`mu*(1-w_j)^p`, rather than charging every reaction the same, so it can retain
+evidence-supported redundant reactions and alternative routes while
+discouraging unsupported ones. The optimisation contains no protein-level
+variables and makes no claim about isozymes.
 
-This is not weighted gap-filling. There is no thresholded draft and no
-gap-filling stage; every reaction in the universal database competes on the same
-evidence-derived cost and the whole set is chosen in one optimisation.
+This is not weighted gap-filling. There is no thresholded draft: candidate
+reactions -- those with reaction confidence >= 0.01, the medium, and a shared
+biomass-feasible skeleton -- compete on one evidence-derived cost in a single
+optimisation, followed by post-solve growth verification and, where needed, a
+parsimony repair.
 
 ## Contents
 
