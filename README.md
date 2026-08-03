@@ -35,18 +35,19 @@ env/             conda environment
 
 ## Reproducing the published numbers
 
-Four scripts recompute every main-text number from the deposited records. They
-need a Python 3.9 interpreter and nothing else — the standard library only, no
+Four scripts recompute the Table 1, Section 3.1, Section 3.4 and Figure 2
+numbers from the deposited records. They need a Python 3.9 interpreter and
+nothing else — the standard library only, no
 environment to build, no input beyond this checkout:
 
 ```bash
 python eval/agg_table1.py    # Table 1; dead-end reduction 75.8-90.6%
-python eval/agg_decoy.py     # Figure 2; 34.5 / 142.4 / 2007.7 spurious
-                             # reactions, 4.13x and 58.3x
+python eval/agg_decoy.py     # three-arm decoy summary (not a paper figure)
+                             # 34.5 / 142.4 / 2007.7, 4.13x and 58.3x
 python eval/agg_fva.py       # Section 3.1; 54.5% of selected reactions
                              # flux-consistent vs 40.5% for the baseline
-python eval/agg_4arm.py      # Section 3.4; 34.6 / 78.2 / 142.9 / 2006.6
-                             # spurious reactions across the four arms
+python eval/agg_4arm.py      # Figure 2 and Section 3.4; 34.6 / 78.2 / 142.9
+                             # / 2006.6 off-reference reactions, four arms
 ```
 
 Install SciPy to get the paired Wilcoxon p-values as well; without it each
@@ -117,9 +118,9 @@ from `data/`; set `$METEOR_DATA` to read them from somewhere else.
 | §3.5 threshold baseline | `eval/baseline_thresh_gapfill.py` | `results/toolcompare/ablation_thresh_vs_evw_ec.json` |
 | S1.1 solver status, timings, repair counts | `eval/emit_v8.py` (rerun at the published flags) | `results/solver_status_dpz_vanilla.json` |
 | Figure S1 | `eval/gen_fig_massimbal.py` (draws the figure) | `results/table1/` |
-| S3.5 pathway detection | `eval/kegg_detect.py`, `eval/kegg_select.py`, `eval/kegg_price.py` | `results/toolcompare/kegg_pathway_108_*.json` |
-| S8.5 curated sub-threshold detail | `eval/weakreal.py` | `results/toolcompare/weakreal.json` |
-| S8 MEMOTE | `eval/memote_evw.py` | per-genome MEMOTE JSONs (not deposited, see below) |
+| S3 pathway detection | `eval/kegg_detect.py`, `eval/kegg_select.py`, `eval/kegg_price.py` | `results/toolcompare/kegg_pathway_108_*.json` |
+| S7.5 curated sub-threshold detail | `eval/weakreal.py` | `results/toolcompare/weakreal.json` |
+| S7.1, S7.2 MEMOTE | `eval/memote_evw.py` | per-genome MEMOTE JSONs (not deposited, see below) |
 
 Scripts whose name starts with `gen_fig_` draw a figure in the paper and say
 so in their docstring; `gen_table1.py` and the two `agg_` scripts produce
