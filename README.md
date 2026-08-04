@@ -1,8 +1,14 @@
 # METEOR — evidence-weighted reaction selection reconciles enzyme prediction with growth feasibility
 
 Code and deposited results for the PSB 2027 submission *METEOR:
-Evidence-weighted reaction selection reconciles enzyme prediction with
-growth feasibility*.
+Evidence-weighted reaction selection reconciles enzyme prediction with growth
+feasibility*, Kexin Niu and Robert Hoehndorf, King Abdullah University of
+Science and Technology.
+
+The submitted version is tag `v8.2-psb2027`; the manuscript cites that tag and
+links `supplementary_v8.pdf` from it. Zenodo archives the repository at
+[10.5281/zenodo.21716682](https://doi.org/10.5281/zenodo.21716682), which
+resolves to the most recent deposited version.
 
 METEOR takes a per-protein EC confidence matrix, aggregates it into
 reaction-level evidence, selects a growth-feasible reaction set from the SEED
