@@ -5,7 +5,8 @@ Draws figures/fig_decoy.pdf: off-reference reactions introduced when the evidenc
 for 60 reactions is deleted and the network is rebuilt under four regimes.
 The first three share METEOR's single-stage architecture and differ only in
 the cost; the fourth applies METEOR's own cost in the two-stage shape that
-probabilistic gap-filling takes, isolating the architecture's contribution.
+probabilistic gap-filling takes. That fourth arm is descriptive, not an
+architecture-only control: its objective also differs (see Section 3.4).
 
 Reads:  results/recovery_4arm/*.json   (eval/recovery_ablation.py, 108 genomes)
 Writes: figures/fig_decoy.pdf
@@ -17,11 +18,11 @@ plain single-line labels on the category axis instead of wrapping onto two
 lines under a vertical one. The panel then fills the full text width for
 about the same height a half-width vertical panel cost.
 
-Label placement: the mean annotation for each regime sits to the right of
-whatever that regime draws furthest right --- upper cap or outermost flier
---- so labels cannot land on the data, and the x-limit is derived from the
-label positions rather than from the data. The vertical version placed them
-at the 88th percentile, inside the box.
+Label placement: each regime's mean sits to the right of whatever that regime
+draws furthest right, upper cap or outermost flier, so labels cannot land on
+the data, and the x-limit is derived from the label positions rather than from
+the data. The ratio to METEOR rides with the mean on the same row, which is why
+the panel carries no footer line; the reference arm shows no ratio.
 """
 import json, glob, os, argparse
 import numpy as np
