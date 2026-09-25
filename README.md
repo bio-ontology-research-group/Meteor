@@ -141,6 +141,24 @@ it, so a copy of the inputs elsewhere needs one environment variable rather
 than an edit per script. The scripts that reproduce the published numbers do
 not use it: they read only `results/` and `data/` from this checkout.
 
+### Camera-ready figures (in progress, not yet tagged)
+
+The table above follows the section numbering of the submitted version
+(tag `v8.2-psb2027`). The camera-ready figures are drawn by the scripts
+below; the full table will be renumbered when the camera-ready is tagged.
+
+| camera-ready item | script | records |
+|---|---|---|
+| Figure 1 (pipeline and toy example) | TikZ source `figures/fig1_pipeline.tex`; step-3 numbers from `eval/gen_fig_pipeline_partition.py` | `results/candidate_size_dpz_vanilla.json`, `results/candidate_partition_kx_evidence.json` |
+| Figure 2a, 2d (dead ends, ablations) | `eval/gen_fig_results.py` | `results/table1_v2/pergenome/`, `results/skeleton_ablation_summary.json` |
+| Figure 2b (sub-threshold recall vs precision) | `eval/gen_fig_results.py` | per-organism values from Supplementary Tables S18 and S19 |
+| Figure 2c (perturbation stability) | `eval/gen_fig_results.py` | `results/recovery_4arm/` |
+| Figure S1 | `eval/gen_fig_massimbal.py` | `results/table1/` |
+
+Run each from the repository root; outputs go to `figures/`. The figures use
+Arial (Liberation Sans is metric-compatible); with a wider fallback font the
+layout self-check in `gen_fig_results.py` flags the panel c note as touching data.
+
 ## Parameters
 
 `p=2`, `mu=3`, `k=5` (score truncation), `w_min=0.01` (candidate mask),

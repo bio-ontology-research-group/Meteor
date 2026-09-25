@@ -1,0 +1,278 @@
+% Figure 1 of the camera-ready manuscript, verbatim from the LaTeX source.
+% Requires \usepackage{tikz,pgfplots} and the manuscript's \ref labels (eq:*).
+\begin{figure}[t]
+\centering
+\definecolor{cBlue}{HTML}{0072B2}\definecolor{cRed}{HTML}{D55E00}%
+\definecolor{cOrg}{HTML}{E69F00}\definecolor{cOrgT}{HTML}{B07A00}%
+\definecolor{cGrey}{HTML}{BDBDBD}\definecolor{cGrey2}{HTML}{9CA3AF}%
+\definecolor{cDk}{HTML}{1F2933}\definecolor{cTxt}{HTML}{6B7280}%
+\definecolor{cGrn}{HTML}{009E73}\definecolor{cNavy}{HTML}{0B3C5D}%
+\definecolor{cBox}{HTML}{F3F5F7}\definecolor{cLine}{HTML}{E5E7EB}%
+\definecolor{cSegA}{HTML}{A7B1BA}\definecolor{cSegB}{HTML}{6FA8D6}%
+\newcommand{\fa}{\fontsize{6.5}{7.5}\selectfont}%
+\newcommand{\fb}{\fontsize{7}{8.2}\selectfont}%
+\newcommand{\fc}{\fontsize{7.5}{9}\selectfont}%
+\newcommand{\callout}[1]{\tikz[baseline=(n.base)]\node[circle, fill=cDk,
+  text=white, inner sep=0pt, minimum size=7.5pt, font=\fa\bfseries] (n) {#1};}%
+\begin{tikzpicture}[x=1cm, y=1cm, >={Stealth[length=3.2pt]},
+  met/.style={circle, draw=cDk, line width=0.6pt, fill=white,
+    minimum size=0.36cm, inner sep=0pt, font=\fb\bfseries, text=cDk},
+  metX/.style={met, draw=cRed, text=cRed},
+  metoff/.style={met, draw=cGrey, dashed, text=cTxt},
+  rx/.style={rectangle, rounded corners=1.5pt, minimum width=0.6cm,
+    minimum height=0.30cm, inner sep=0pt, line width=0.7pt, font=\fa\bfseries},
+  kept/.style={rx, fill=cBlue, draw=cBlue, text=white},
+  drop/.style={rx, fill=white, draw=cRed, dashed, text=cRed},
+  rep/.style={rx, fill=cOrg, draw=cOrg, text=white},
+  off/.style={rx, fill=white, draw=cGrey, dashed, text=cTxt},
+  bio/.style={rectangle, rounded corners=2pt, fill=cBox, draw=cDk,
+    line width=0.6pt, minimum width=1.2cm, minimum height=0.36cm,
+    inner sep=1pt, font=\fb\bfseries, text=cDk},
+  ek/.style={cBlue, line width=0.7pt},
+  ed/.style={cRed, line width=0.7pt, dashed},
+  er/.style={cOrg, line width=0.7pt},
+  eo/.style={cGrey, line width=0.7pt, dashed},
+  lb/.style={font=\fa, text=cTxt, inner sep=1pt},
+  hd/.style={font=\fb\bfseries, text=cDk, anchor=west, inner sep=0pt},
+  note/.style={anchor=north west, rectangle, rounded corners=2pt, fill=cBox,
+    draw=none, font=\fa, text=cDk, align=left, inner sep=3pt},
+  stepbox/.style={anchor=north west, rectangle, rounded corners=3pt,
+    fill=cBox, draw=none, inner sep=0pt},
+  flow/.style={->, cTxt, line width=0.8pt},
+  flowd/.style={->, cGrey2, line width=0.8pt, dashed},
+  check/.style={diamond, aspect=2.4, text width=1.75cm, draw=cGrey2, dashed, line width=0.6pt,
+    fill=white, font=\fa, text=cTxt, align=center, inner sep=0pt},
+  ystar/.style={rectangle, rounded corners=3pt, fill=cNavy, text=white,
+    align=center, inner sep=3pt, minimum height=1.1cm, font=\fa, text width=2.2cm},
+  repair/.style={rectangle, rounded corners=2pt, draw=cGrey2, dashed,
+    line width=0.6pt, fill=white, font=\fa, text=cTxt, align=center, inner sep=2.5pt},
+]
+%% ---- panel a: toy network, threshold + gap-fill vs METEOR ----
+\node[font=\normalsize\bfseries, anchor=west, inner sep=0pt] at (-0.05,1.72) {a};
+\node[font=\fc, text=cDk, anchor=west, inner sep=0pt] at (0.3,1.72) {Same scores, same network: a per-protein cut-off and a set-level cost select different reactions};
+\node[hd] at (0.05,1.18) {Threshold $\ge 0.5$, then gap-fill};
+\node[met] (tA) at (0.25,0.00) {A};
+\node[met] (tB) at (2.05,0.00) {B};
+\node[metoff] (tC) at (3.95,0.48) {C};
+\node[met] (tD) at (5.85,0.00) {D};
+\node[met] (tE) at (7.85,0.00) {E};
+\node[metX] (tX) at (9.85,0.48) {X};
+\node[met] (tF) at (10.45,0.00) {F};
+\node[kept] (tR1) at (1.15,0.00) {R1};
+\draw[ek] (tA) -- (tR1);
+\draw[ek, ->] (tR1) -- (tB);
+\node[lb, text=cTxt, below=0.5pt of tR1] {0.9 $\to$ kept};
+\node[drop] (tR2) at (2.95,0.48) {R2};
+\draw[ed] (tB) -- (tR2);
+\draw[ed, ->] (tR2) -- (tC);
+\node[lb, text=cRed, above=0.5pt of tR2,xshift=-0.3cm] {0.3, 0.2 $\to$ dropped};
+\node[drop] (tR3) at (4.95,0.48) {R3};
+\draw[ed] (tC) -- (tR3);
+\draw[ed, ->] (tR3) -- (tD);
+\node[lb, text=cRed, above=0.5pt of tR3,xshift=0.2cm] {0.4 $\to$ dropped};
+\node[rep] (tR4) at (3.95,-0.48) {R4};
+\draw[er] (tB) -- (tR4);
+\draw[er, ->] (tR4) -- (tD);
+\node[lb, text=cOrgT, below=0.5pt of tR4,xshift=-0.2cm] {\callout{1} added by gap-fill};
+\node[kept] (tR5) at (6.85,0.48) {R5};
+\draw[ek] (tD) -- (tR5);
+\draw[ek, ->] (tR5) -- (tE);
+\node[lb, text=cTxt, above=0.5pt of tR5] {0.9 $\to$ kept};
+\node[drop] (tR6) at (6.85,-0.48) {R6};
+\draw[ed] (tD) -- (tR6);
+\draw[ed, ->] (tR6) -- (tE);
+\node[lb, text=cRed, below=0.5pt of tR6,xshift=0.2cm] {\callout{2} 0.4, 0.4 $\to$ dropped};
+\node[kept] (tR8) at (8.85,0.48) {R8};
+\draw[ek] (tE) -- (tR8);
+\draw[ek, ->] (tR8) -- (tX);
+\node[lb, text=cTxt, above=0.5pt of tR8] {\callout{4} 0.55 $\to$ kept};
+\node[rep] (tR7) at (9.15,0.00) {R7};
+\draw[er] (tE) -- (tR7);
+\draw[er, ->] (tR7) -- (tF);
+\node[lb, text=cOrgT, below=0.5pt of tR7] {\callout{3} added by gap-fill};
+\node[bio] (tBio) at (11.75,0.00) {Biomass};
+\draw[cDk, line width=0.7pt, ->] (tF) -- (tBio);
+\node[lb, text=cGrn, font=\fa\bfseries, below=0.5pt of tBio] {grows after gap-fill};
+\node[lb, text=cRed, font=\fa\bfseries, right=0.5pt of tX] {dead end};
+\draw[cLine, line width=0.6pt] (0,-1.05) -- (12.6,-1.05);
+\node[hd] at (0.05,-1.27) {METEOR: one MILP over costs $c$};
+\node[met] (bA) at (0.25,-2.45) {A};
+\node[met] (bB) at (2.05,-2.45) {B};
+\node[met] (bC) at (3.95,-1.97) {C};
+\node[met] (bD) at (5.85,-2.45) {D};
+\node[met] (bE) at (7.85,-2.45) {E};
+\node[metoff] (bX) at (9.85,-1.97) {X};
+\node[met] (bF) at (10.45,-2.45) {F};
+\node[kept] (bR1) at (1.15,-2.45) {R1};
+\draw[ek] (bA) -- (bR1);
+\draw[ek, ->] (bR1) -- (bB);
+\node[lb, text=cTxt, below=0.5pt of bR1] {$c<0$};
+\node[kept] (bR2) at (2.95,-1.97) {R2};
+\draw[ek] (bB) -- (bR2);
+\draw[ek, ->] (bR2) -- (bC);
+\node[lb, text=cTxt, above=0.5pt of bR2] {weak, $c>0$};
+\node[kept] (bR3) at (4.95,-1.97) {R3};
+\draw[ek] (bC) -- (bR3);
+\draw[ek, ->] (bR3) -- (bD);
+\node[lb, text=cTxt, above=0.5pt of bR3] {weak, $c>0$};
+\node[off] (bR4) at (3.95,-2.93) {R4};
+\draw[eo] (bB) -- (bR4);
+\draw[eo, ->] (bR4) -- (bD);
+\node[lb, text=cTxt, below=0.5pt of bR4,xshift=-0.3cm] {\callout{1} no evidence, $c\approx16.1$};
+\node[kept] (bR5) at (6.85,-1.97) {R5};
+\draw[ek] (bD) -- (bR5);
+\draw[ek, ->] (bR5) -- (bE);
+\node[lb, text=cTxt, above=0.5pt of bR5] {$c<0$};
+\node[kept] (bR6) at (6.85,-2.93) {R6};
+\draw[ek] (bD) -- (bR6);
+\draw[ek, ->] (bR6) -- (bE);
+\node[lb, text=cTxt, below=0.5pt of bR6,xshift=0.25cm] {\callout{2} noisy-OR $w=0.64$, $c<0$};
+\node[off] (bR8) at (8.85,-1.97) {R8};
+\draw[eo] (bE) -- (bR8);
+\draw[eo, ->] (bR8) -- (bX);
+\node[lb, text=cTxt, above=0.5pt of bR8] {\callout{4} $c>0$, not needed};
+\node[kept] (bR7) at (9.15,-2.45) {R7};
+\draw[ek] (bE) -- (bR7);
+\draw[ek, ->] (bR7) -- (bF);
+\node[lb, text=cTxt, below=0.5pt of bR7] {\callout{3} $c\approx16.1$};
+\node[bio] (bBio) at (11.75,-2.45) {Biomass};
+\draw[cDk, line width=0.7pt, ->] (bF) -- (bBio);
+\node[lb, text=cGrn, font=\fa\bfseries, below=0.5pt of bBio] {grows};
+\node[kept, minimum width=0.42cm, minimum height=0.22cm] at (13.35,0.50) {};
+\node[lb, anchor=west] at (13.63,0.50) {kept / selected};
+\node[drop, minimum width=0.42cm, minimum height=0.22cm] at (13.35,0.14) {};
+\node[lb, anchor=west] at (13.63,0.14) {dropped by threshold};
+\node[rep, minimum width=0.42cm, minimum height=0.22cm] at (13.35,-0.22) {};
+\node[lb, anchor=west] at (13.63,-0.22) {added by gap-fill};
+\node[off, minimum width=0.42cm, minimum height=0.22cm] at (13.35,-0.58) {};
+\node[lb, anchor=west] at (13.63,-0.58) {not selected};
+\node[lb, anchor=north west, text width=3.3cm, align=left] at (13.1,-1.1) {Scores schematic; cost signs and cut-offs follow Eq.~\ref{eq:evw} at $\mu=3$, $p=2$.};
+\node[note, text width=7.95cm, minimum height=0.86cm] at (0.00,-3.53) {\callout{1}\ {\bfseries Weak multi-step route vs.\ unsupported shortcut}\\ Gap-fill takes R4 (fewer flux-carrying steps). METEOR takes R2\,+\,R3: each step with $w\ge0.01$ costs ${\le}\,7.6$, the unsupported one ${\approx}\,16.1$.};
+\node[note, text width=7.95cm, minimum height=0.86cm] at (8.51,-3.53) {\callout{2}\ {\bfseries Evidence split across paralogues}\\ Each protein is below 0.5; noisy-OR lifts R6 above $w\approx0.61$, where cost turns negative, so it is kept although growth does not need it.};
+\node[note, text width=7.95cm, minimum height=0.86cm] at (0.00,-4.49) {\callout{3}\ {\bfseries No evidence anywhere}\\ Both add R7: growth overrides cost. In real networks the shared skeleton supplies such reactions.};
+\node[note, text width=7.95cm, minimum height=0.86cm] at (8.51,-4.49) {\callout{4}\ {\bfseries Weak call that growth does not need}\\ For $0.5<w<0.61$ the threshold keeps R8 (dead end X); its cost is positive, so METEOR adds it only if growth needs it.};
+%% ---- panel b: pipeline ----
+\node[font=\normalsize\bfseries, anchor=west, inner sep=0pt] at (-0.05,-5.77) {b};
+\node[font=\fc, text=cDk, anchor=west, inner sep=0pt] at (0.3,-5.77) {METEOR pipeline};
+\node[stepbox, minimum width=5.2cm, minimum height=2.8cm] (s1) at (0.00,-6.07) {};
+\node[hd] at (0.15,-6.29) {1\enspace Reaction evidence (Eq.~\ref{eq:noisyOR})};
+\node[stepbox, minimum width=5.2cm, minimum height=2.8cm] (s2) at (5.78,-6.07) {};
+\node[hd] at (5.93,-6.29) {2\enspace Evidence-weighted cost (Eq.~\ref{eq:evw})};
+\node[stepbox, minimum width=5.2cm, minimum height=2.8cm] (s3) at (11.56,-6.07) {};
+\node[hd] at (11.71,-6.29) {3\enspace Candidate set};
+\node[lb, anchor=south west] at (0.57,-6.77) {$E$: proteins $\times$ ECs};
+\fill[fill={rgb,255:red,20;green,125;blue,184}, draw=white, line width=0.3pt] (0.620,-6.790) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,242;green,248;blue,251}, draw=white, line width=0.3pt] (0.810,-6.790) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,230;green,241;blue,247}, draw=white, line width=0.3pt] (1.000,-6.790) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,255;green,255;blue,255}, draw=white, line width=0.3pt] (1.190,-6.790) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,179;green,213;blue,232}, draw=white, line width=0.3pt] (1.380,-6.790) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,250;green,252;blue,253}, draw=white, line width=0.3pt] (1.570,-6.790) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,255;green,255;blue,255}, draw=white, line width=0.3pt] (1.760,-6.790) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,230;green,241;blue,247}, draw=white, line width=0.3pt] (0.620,-6.980) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,51;green,142;blue,193}, draw=white, line width=0.3pt] (0.810,-6.980) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,250;green,252;blue,253}, draw=white, line width=0.3pt] (1.000,-6.980) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,217;green,234;blue,243}, draw=white, line width=0.3pt] (1.190,-6.980) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,255;green,255;blue,255}, draw=white, line width=0.3pt] (1.380,-6.980) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,242;green,248;blue,251}, draw=white, line width=0.3pt] (1.570,-6.980) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,153;green,199;blue,224}, draw=white, line width=0.3pt] (1.760,-6.980) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,255;green,255;blue,255}, draw=white, line width=0.3pt] (0.620,-7.170) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,230;green,241;blue,247}, draw=white, line width=0.3pt] (0.810,-7.170) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,204;green,227;blue,240}, draw=white, line width=0.3pt] (1.000,-7.170) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,242;green,248;blue,251}, draw=white, line width=0.3pt] (1.190,-7.170) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,26;green,128;blue,186}, draw=white, line width=0.3pt] (1.380,-7.170) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,255;green,255;blue,255}, draw=white, line width=0.3pt] (1.570,-7.170) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,230;green,241;blue,247}, draw=white, line width=0.3pt] (1.760,-7.170) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,179;green,213;blue,232}, draw=white, line width=0.3pt] (0.620,-7.360) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,255;green,255;blue,255}, draw=white, line width=0.3pt] (0.810,-7.360) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,242;green,248;blue,251}, draw=white, line width=0.3pt] (1.000,-7.360) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,77;green,156;blue,201}, draw=white, line width=0.3pt] (1.190,-7.360) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,230;green,241;blue,247}, draw=white, line width=0.3pt] (1.380,-7.360) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,204;green,227;blue,240}, draw=white, line width=0.3pt] (1.570,-7.360) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,255;green,255;blue,255}, draw=white, line width=0.3pt] (1.760,-7.360) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,242;green,248;blue,251}, draw=white, line width=0.3pt] (0.620,-7.550) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,204;green,227;blue,240}, draw=white, line width=0.3pt] (0.810,-7.550) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,255;green,255;blue,255}, draw=white, line width=0.3pt] (1.000,-7.550) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,230;green,241;blue,247}, draw=white, line width=0.3pt] (1.190,-7.550) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,250;green,252;blue,253}, draw=white, line width=0.3pt] (1.380,-7.550) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,38;green,135;blue,190}, draw=white, line width=0.3pt] (1.570,-7.550) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,230;green,241;blue,247}, draw=white, line width=0.3pt] (1.760,-7.550) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,255;green,255;blue,255}, draw=white, line width=0.3pt] (0.620,-7.740) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,242;green,248;blue,251}, draw=white, line width=0.3pt] (0.810,-7.740) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,102;green,170;blue,209}, draw=white, line width=0.3pt] (1.000,-7.740) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,255;green,255;blue,255}, draw=white, line width=0.3pt] (1.190,-7.740) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,204;green,227;blue,240}, draw=white, line width=0.3pt] (1.380,-7.740) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,230;green,241;blue,247}, draw=white, line width=0.3pt] (1.570,-7.740) rectangle ++(0.19,-0.19);
+\fill[fill={rgb,255:red,242;green,248;blue,251}, draw=white, line width=0.3pt] (1.760,-7.740) rectangle ++(0.19,-0.19);
+\draw[cGrey, line width=0.3pt] (0.62,-6.79) rectangle ++(1.33,-1.14);
+\node[lb, anchor=south west] at (2.85,-6.77) {$w_j$};
+\node[lb, text=cDk, anchor=west] at (2.85,-6.99) {R1};
+\fill[cBlue] (3.30,-7.07) rectangle ++(1.350,0.16);
+\node[lb, anchor=west] at (4.67,-6.99) {0.90};
+\node[lb, text=cDk, anchor=west] at (2.85,-7.35) {R2};
+\fill[cBlue] (3.30,-7.43) rectangle ++(0.660,0.16);
+\node[lb, anchor=west] at (3.98,-7.35) {0.44};
+\node[lb, text=cDk, anchor=west] at (2.85,-7.71) {R3};
+\node[lb, anchor=west] at (3.32,-7.71) {0.00};
+\node[lb, anchor=north west, text width=4.9cm, align=left] at (0.12,-8.09) {top-5 ECs per protein, then noisy-OR:\\[2.5pt]$w_j=1-\prod_{p,\,e\in M(j)}(1-E_{p,e})$};
+\begin{axis}[at={(6.45cm,-7.97cm)}, anchor=south west,
+    width=4.3cm, height=1.3cm, scale only axis, xmin=0, xmax=1, ymin=-3, ymax=7.5,
+    xtick={0,0.5,1}, ytick={0,3,6}, tick label style={font=\fa},
+    tick style={line width=0.3pt}, axis line style={line width=0.4pt, cGrey2},
+    xlabel={$w_j$}, ylabel={$c_j$}, label style={font=\fa},
+    xlabel style={at={(0.75,0)}, anchor=north, inner sep=1pt, yshift=-1pt},
+    ylabel style={at={(0,0.5)}, anchor=east, rotate=-90, inner sep=1pt, xshift=-7pt},
+    legend style={font=\fa, draw=none, fill=none, at={(1,1)}, anchor=north east,
+      inner sep=0pt, row sep=-2pt}, legend cell align=left,
+    clip=true, axis background/.style={fill=white}]
+  \addplot[cBlue, line width=0.9pt, domain=0.02:0.98, samples=80]
+    {-ln((x+1e-6)/(1-x+1e-6)) + 3*(1-x)^2};
+  \addplot[cGrey2, line width=0.8pt, dashed, domain=0.02:0.98, samples=80]
+    {-ln((x+1e-6)/(1-x+1e-6)) + 3};
+  \draw[black!35, line width=0.3pt] (axis cs:0,0) -- (axis cs:1,0);
+  \node[font=\fa, text=cBlue, anchor=north west, inner sep=1pt] at (axis cs:0.04,-0.25) {$p=2$ (METEOR)};
+  \node[font=\fa, text=cGrey2, anchor=south west, inner sep=1pt] at (axis cs:0.5,4.2) {$p=0$ (uniform)};
+  \fill[cBlue] (axis cs:0.6114,0) circle (1.1pt);
+  \node[font=\fa, text=cBlue, anchor=south west, inner sep=1pt] at (axis cs:0.6114,0) {0.61};
+\end{axis}
+\node[lb, anchor=north west, text width=5.05cm, align=left] at (5.86,-8.33) {$c_j=-\log\bigl[(w_j{+}\epsilon)/(1{-}w_j{+}\epsilon)\bigr]+\mu(1-w_j)^p$\\default $p=2$, $\mu=3$; no evidence: $c\approx16.1$};
+\node[lb, anchor=west] at (11.72,-6.59) {108-genome mean, DeepProZyme-vanilla};
+\node[lb, text=cDk, anchor=south west] at (11.72,-7.09) {candidate set $17{,}545$ of $47{,}880$ SEED};
+\fill[cSegA] (11.740,-7.43) rectangle ++(3.485,0.32);
+\fill[cSegB] (15.225,-7.43) rectangle ++(0.776,0.32);
+\fill[cBlue] (16.001,-7.43) rectangle ++(0.539,0.32);
+\fill[cSegA] (11.74,-7.69) rectangle ++(0.14,0.14);
+\node[lb, anchor=west] at (11.90,-7.62) {skeleton, no evidence $12{,}737$ (36 medium)};
+\fill[cSegB] (11.74,-7.94) rectangle ++(0.14,0.14);
+\node[lb, anchor=west] at (11.90,-7.87) {skeleton with evidence $2{,}838$};
+\fill[cBlue] (11.74,-8.19) rectangle ++(0.14,0.14);
+\node[lb, anchor=west] at (11.90,-8.12) {evidence outside skeleton $1{,}970$};
+\fill[cNavy] (11.74,-8.70) rectangle ++(0.854,0.32);
+\node[lb, text=cDk, anchor=west] at (12.62,-8.54) {selected by METEOR $3{,}121$};
+\draw[flow] (5.2,-7.17) -- node[lb, above] {$w_j$} (5.78,-7.17);
+\draw[flow] (10.98,-7.17) -- node[lb, above] {$c_j$} (11.56,-7.17);
+\node[stepbox, minimum width=5.2cm, minimum height=1.5cm] (s4) at (11.56,-9.27) {};
+\node[hd] at (11.71,-9.49) {4\enspace MILP (Eq.~\ref{eq:obj})};
+\node[font=\fb, anchor=north west, align=left, inner sep=0pt] at (11.75,-9.74) {$\min\;\sum_j c_j y_j+\lambda\sum_j|v_j|$\\[1pt]s.t.\ $\mathbf{S}\mathbf{v}=\mathbf{0}$,\enspace $L_j y_j\le v_j\le U_j y_j$\\[1pt]\phantom{s.t.\ }$\gamma_{\min}\le v_{\text{biomass}}\le\gamma_{\max}$};
+\draw[flow] (14.16,-8.87) -- (14.16,-9.27);
+\draw[cGrey2, dashed, line width=0.6pt, fill=white] (7.55,-10.02) -- (9.35,-9.27) -- (11.15,-10.02) -- (9.35,-10.77) -- cycle;
+\coordinate (chkE) at (11.15,-10.02); \coordinate (chkW) at (7.55,-10.02); \coordinate (chkS) at (9.35,-10.77);
+\node[font=\fa, text=cTxt, align=center, inner sep=0pt] at (9.35,-10.02) {{\bfseries Post-solve check}\\FBA on induced\\submodel: grows?};
+\draw[flow] (11.56,-10.02) -- (chkE);
+\node[ystar] (ys) at (5.55,-10.02) {{\fb\bfseries Selected set $y^\star$}\\[1pt]growth-feasible\\reaction repertoire;\\primary output};
+\draw[flow] (chkW) -- node[lb, above] {yes} (ys.east);
+\node[stepbox, minimum width=4.1cm, minimum height=1.5cm] (s5) at (0,-9.27) {};
+\node[hd] at (0.15,-9.49) {5\enspace Per-EC feedback (Eq.~\ref{eq:update})};
+\node[lb, text=cDk, anchor=north west, align=left, text width=4.0cm] at (0.1,-9.67) {$E^{\mathrm{new}}_{p,e}=E_{p,e}\pm\alpha E_{p,e}(1-E_{p,e})$\\[1pt]$+$ if EC $e$ has a selected reaction, $-$ otherwise; $\alpha=0.4$};
+\draw[flow] (ys.west) -- (4.1,-10.02);
+\node[lb, anchor=north west, text width=4.2cm, align=left] at (0,-10.82) {Output $E^{\mathrm{new}}\in[0,1]^{N\times C}$: same proteins and ECs as the input};
+\node[repair] (rep) at (9.35,-11.44) {LP repair: add flux-minimal bridging reactions\\77 of $1{,}296$ raw solutions ($5.9\%$)};
+\draw[flowd] (chkS) -- node[lb, right] {no} (rep.north);
+\draw[flowd] (rep.west) -| (ys.south);
+\end{tikzpicture}
+\caption{METEOR versus threshold-then-gap-fill. (a)~Toy network with invented
+scores: from the same evidence, a per-protein cut-off and a set-level cost select
+different reactions (cases 1--4). (b)~The pipeline; step~3 shows per-genome means on
+the DeepProZyme-vanilla panel. The selected set $y^\star$ is the primary output and is
+written back to $E^{\mathrm{new}}$.}
+\label{fig:pipeline}
+\end{figure}
