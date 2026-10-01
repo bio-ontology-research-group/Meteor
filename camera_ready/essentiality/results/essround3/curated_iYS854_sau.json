@@ -1,0 +1,20 @@
+{
+ "gem": "iYS854",
+ "n_rxn_model": 1455,
+ "n_genes": 866,
+ "wt_growth": 1.3602,
+ "medium": "model default (as shipped in BiGG)",
+ "arm": "iYS854",
+ "n_genes_model": 866,
+ "n_genes_mapped": 844,
+ "n_genes_with_ref": 206,
+ "n_pred_essential": 256,
+ "TP": 115,
+ "FP": 26,
+ "FN": 34,
+ "TN": 31,
+ "precision": 0.816,
+ "recall": 0.772,
+ "MCC": 0.304,
+ "accuracy": 0.709
+}

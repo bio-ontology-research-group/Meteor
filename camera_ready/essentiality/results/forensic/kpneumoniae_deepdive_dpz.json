@@ -1,0 +1,247 @@
+{
+ "group_a": [
+  {
+   "protein": "YFI97763.1",
+   "locus": "BN373_50031",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9999929666519165,
+   "score_bin": "[0.5,1]",
+   "product": "bifunctional phosphoribosylaminoimidazolecarboxamide formyltransferase/IMP cyclohydrolase"
+  },
+  {
+   "protein": "YFI97729.1",
+   "locus": "BN373_00361",
+   "ref_truth": true,
+   "meteor_call": false,
+   "thresh_call": true,
+   "max_score": 0.9971146583557129,
+   "score_bin": "[0.5,1]",
+   "product": "glycerol-3-phosphate 1-O-acyltransferase PlsB"
+  },
+  {
+   "protein": "YFI98508.1",
+   "locus": "BN373_42311",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9978077411651611,
+   "score_bin": "[0.5,1]",
+   "product": "argininosuccinate synthase"
+  },
+  {
+   "protein": "YFI99208.1",
+   "locus": "BN373_34831",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9995309114456177,
+   "score_bin": "[0.5,1]",
+   "product": "phosphoribosylformylglycinamidine cyclo-ligase"
+  },
+  {
+   "protein": "YFI99222.1",
+   "locus": "BN373_34691",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9995105266571045,
+   "score_bin": "[0.5,1]",
+   "product": "phosphoribosylaminoimidazolesuccinocarboxamide synthase"
+  },
+  {
+   "protein": "YFI97764.1",
+   "locus": "BN373_50021",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9999973177909851,
+   "score_bin": "[0.5,1]",
+   "product": "phosphoribosylamine--glycine ligase"
+  },
+  {
+   "protein": "YFI97914.1",
+   "locus": "BN373_48461",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9978505373001099,
+   "score_bin": "[0.5,1]",
+   "product": "rhamnulokinase"
+  },
+  {
+   "protein": "YFI99322.1",
+   "locus": "BN373_33121",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9994912147521973,
+   "score_bin": "[0.5,1]",
+   "product": "amidophosphoribosyltransferase"
+  },
+  {
+   "protein": "YFI99207.1",
+   "locus": "BN373_34841",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9999310374259949,
+   "score_bin": "[0.5,1]",
+   "product": "phosphoribosylglycinamide formyltransferase"
+  },
+  {
+   "protein": "YFI97916.1",
+   "locus": "BN373_48441",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9993132948875427,
+   "score_bin": "[0.5,1]",
+   "product": "rhamnulose-1-phosphate aldolase"
+  },
+  {
+   "protein": "YFI96149.1",
+   "locus": "BN373_17561",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9999299049377441,
+   "score_bin": "[0.5,1]",
+   "product": "adenylosuccinate lyase"
+  },
+  {
+   "protein": "YFI96010.1",
+   "locus": "BN373_19031",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9999951124191284,
+   "score_bin": "[0.5,1]",
+   "product": "orotidine-5'-phosphate decarboxylase"
+  },
+  {
+   "protein": "YFI98126.1",
+   "locus": "BN373_46261",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9998847246170044,
+   "score_bin": "[0.5,1]",
+   "product": "orotate phosphoribosyltransferase"
+  },
+  {
+   "protein": "YFI97878.1",
+   "locus": "BN373_48821",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9999951124191284,
+   "score_bin": "[0.5,1]",
+   "product": "argininosuccinate lyase"
+  }
+ ],
+ "score_bin_dist": {
+  "[0.5,1]": 14
+ },
+ "group_b": [
+  {
+   "protein": "YFI98875.1",
+   "locus": "BN373_38281",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "YFI98881.1",
+   "locus": "BN373_38221",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "YFI98880.1",
+   "locus": "BN373_38231",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "YFI98882.1",
+   "locus": "BN373_38211",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "YFI96588.1",
+   "locus": "BN373_12421",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "YFI98884.1",
+   "locus": "BN373_38191",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "YFI97888.1",
+   "locus": "BN373_48721",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "YFI97337.1",
+   "locus": "BN373_04661",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "YFI98876.1",
+   "locus": "BN373_38271",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "YFI98879.1",
+   "locus": "BN373_38241",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "YFI95898.1",
+   "locus": "BN373_20221",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "YFI96590.1",
+   "locus": "BN373_12401",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "YFI97894.1",
+   "locus": "BN373_48661",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "YFI98883.1",
+   "locus": "BN373_38201",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  }
+ ]
+}

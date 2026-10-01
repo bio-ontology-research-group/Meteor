@@ -1,0 +1,83 @@
+{
+ "carveme_panel108": {
+  "n": 108,
+  "n_internal": "2220.1 \u00b1 523.5",
+  "mi_int": "3.34 \u00b1 1.38",
+  "mi_int_genuine": "3.34 \u00b1 1.38",
+  "mi_int_missing_formula": "0.00 \u00b1 0.00",
+  "mi_frac_int": "0.00154 \u00b1 0.00067",
+  "mi_frac_old": "0.1318 \u00b1 0.0168",
+  "deadends": "0.00 \u00b1 0.00",
+  "n_rxn": "2548.2 \u00b1 594.6",
+  "met_formula_cov_min": 1.0,
+  "n_genomes_genuine_gt0": 107
+ },
+ "curated": {
+  "STM_v1_0": {
+   "n_rxn": 2545,
+   "n_internal": 2197,
+   "mass_imbal_internal": 13,
+   "mi_internal_due_to_missing_formula": 12,
+   "mi_internal_genuine": 1,
+   "mi_frac_internal": 0.0059,
+   "mi_frac": 0.1418,
+   "deadends": 57,
+   "n_met_noformula": 9
+  },
+  "iYS854": {
+   "n_rxn": 1455,
+   "n_internal": 1197,
+   "mass_imbal_internal": 224,
+   "mi_internal_due_to_missing_formula": 61,
+   "mi_internal_genuine": 163,
+   "mi_frac_internal": 0.1871,
+   "mi_frac": 0.3313,
+   "deadends": 63,
+   "n_met_noformula": 118
+  },
+  "iJN1463": {
+   "n_rxn": 2927,
+   "n_internal": 2544,
+   "mass_imbal_internal": 9,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 9,
+   "mi_frac_internal": 0.0035,
+   "mi_frac": 0.1339,
+   "deadends": 85,
+   "n_met_noformula": 0
+  },
+  "iYO844": {
+   "n_rxn": 1250,
+   "n_internal": 1020,
+   "mass_imbal_internal": 57,
+   "mi_internal_due_to_missing_formula": 47,
+   "mi_internal_genuine": 10,
+   "mi_frac_internal": 0.0559,
+   "mi_frac": 0.2296,
+   "deadends": 122,
+   "n_met_noformula": 51
+  },
+  "iYL1228": {
+   "n_rxn": 2262,
+   "n_internal": 1970,
+   "mass_imbal_internal": 1970,
+   "mi_internal_due_to_missing_formula": 1970,
+   "mi_internal_genuine": 0,
+   "mi_frac_internal": 1.0,
+   "mi_frac": 1.0,
+   "deadends": 87,
+   "n_met_noformula": 1658
+  },
+  "iML1515": {
+   "n_rxn": 2712,
+   "n_internal": 2373,
+   "mass_imbal_internal": 1,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 1,
+   "mi_frac_internal": 0.0004,
+   "mi_frac": 0.1254,
+   "deadends": 63,
+   "n_met_noformula": 0
+  }
+ }
+}

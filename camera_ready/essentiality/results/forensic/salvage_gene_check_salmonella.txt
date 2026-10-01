@@ -1,0 +1,25 @@
+Salvage-pathway gene presence check (Salmonella, dpz), read-only cross-reference
+of feature-table product annotations against saved sgd_salmonella_{meteor,thresh}_dpz.json.
+
+Salvage CATALYTIC enzymes (hpt/hypoxanthine-PRTase, gpt/xanthine-PRTase,
+apt/adenine-PRTase, upp/uracil-PRTase, deoD/purine-nucleoside-phosphorylase)
+are present with a GPR-assigned reaction in BOTH METEOR's and threshold's
+selected networks identically (in_METEOR=True, in_THRESH=True for all 6
+hits checked) -- ruling out simple 'salvage enzyme gene missing from
+METEOR' as the explanation.
+
+Salvage TRANSPORTERS (nucleoside permeases, NupC, PunC, xanthine/uracil
+permease, GhxP) are absent from BOTH models identically (in_METEOR=False,
+in_THRESH=False for all 11 transporter-like hits checked) -- so transporter
+absence, if relevant, applies equally to both arms and cannot itself explain
+the meteor-vs-threshold difference either.
+
+Conclusion: the differentiator is NOT simple gene/reaction presence-absence
+for the salvage pathway itself. It must lie in something not directly
+observable from the saved per-gene calls -- e.g. whether the salvage route
+is actually WIRED to carry flux to biomass under FBA in each arm's specific
+selected network (could differ even with identical gene-level GPR presence,
+depending on which OTHER connecting reactions/exchanges got selected), which
+requires the actual y-vector (selected reaction set) per arm to trace
+mechanically. NOT resolvable from saved data alone -- flagged as the
+concrete limit on point 3's finer mechanism distinction.

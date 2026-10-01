@@ -1,0 +1,49 @@
+S. aureus reference-medium provenance (verified from primary sources, 2026-09-20).
+
+1. Chaudhuri RR et al. "Comprehensive identification of essential Staphylococcus
+   aureus genes using Transposon-Mediated Differential Hybridisation (TMDH)."
+   BMC Genomics 2009;10:291. PMID 19570206, PMC2721850, DOI 10.1186/1471-2164-10-291.
+   Strain: SH1000 (derived from NCTC 8325). Medium, verbatim (Methods):
+   "cells were plated out onto Brain Heart Infusion (BHI) agar (Oxoid)"
+   and "inoculated into 600 ml of BHI broth" -- BHI (Brain Heart Infusion),
+   a standard rich peptone-based broth. 351 essential genes identified.
+
+2. Santiago M et al. "A new platform for ultra-high density Staphylococcus
+   aureus transposon libraries." BMC Genomics 2015;16:252. PMID 25888466,
+   PMC4389836, DOI 10.1186/s12864-015-1361-3. Strains: RN4220 and COL
+   (mapped to the NCTC8325 reference genome). Medium, verbatim:
+   "Library cultures were grown for 12-13 generations in tryptic soy broth
+   (TSB), harvested between an OD of 1 and 1.5" -- TSB (Tryptic Soy Broth),
+   another standard rich broth.
+
+Both source papers behind Koo et al. 2017's Table S3 sheet C S. aureus
+essentiality column used standard RICH media (BHI, TSB), consistent with
+the coordinator's expectation. No minimal-medium component.
+
+Medium chosen for METEOR/threshold-baseline scoring: METEOR's own built-in
+data/medium.pkl "TSB" entry (67 cpds) -- matches Santiago 2015's actual
+growth medium exactly, and is a reasonable standard-rich-broth proxy for
+Chaudhuri 2009's BHI. No gapseq media.tsv entry exists for S. aureus (the
+gapseq paper's 5-organism essentiality benchmark -- E. coli, B. subtilis,
+S. oneidensis, P. aeruginosa, M. genitalium -- did not include S. aureus),
+so this is the only readily available, already-vetted rich-medium
+composition in this codebase for this organism; built via the same
+apply_strict_medium() bypass of apply_media()'s minimal_uptake union bug
+used for GS_MM_glc/LB_marinos.
+
+Strain/mapping notes:
+- Panel genome: GCF_045348045.1 = S. aureus subsp. aureus RN4220 (per NCBI
+  datasets API) -- NOT NCTC 8325. RBH built: panel RN4220 protein ->
+  NCTC 8325 (GCF_000013425.1, SAOUHSC_##### locus tags) ->
+  ref/sau/rn4220_to_saouhsc.tsv (2467 mapped pairs).
+- Koo Table S3 sheet C reference is keyed by SAOUHSC_##### (NCTC 8325)
+  locus tags directly.
+- Curated GEM iYS854's own gene IDs are USA300HOU_RS##### (confirmed via
+  NCBI datasets API: this locus-tag prefix belongs to GCF_000017085.1 =
+  S. aureus USA300_TCH1516, "HOU" = Baylor College of Medicine, Houston,
+  the submitting institution) -- a THIRD strain space, distinct from both
+  the panel (RN4220) and the reference (NCTC 8325). Built a second RBH
+  chain: TCH1516 protein -> NCTC8325 protein (RBH) -> SAOUHSC locus tag
+  (via NCTC8325's own feature table) -> ref/sau/iys854_gene_to_saouhsc.tsv
+  (2530 mapped pairs), joined back to iYS854's USA300HOU_RS gene IDs via
+  TCH1516's own feature table (product_accession -> locus_tag).

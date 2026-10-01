@@ -1,0 +1,442 @@
+{
+ "salmonella_clean": {
+  "n_only_thresh": 56,
+  "n_high_conf_dropped_by_meteor": 23,
+  "n_low_conf": 2,
+  "n_zero_evidence": 31,
+  "pct_high_conf_dropped": 41.1,
+  "pct_zero_evidence": 55.4,
+  "sample_high_conf_dropped": [
+   [
+    "rxn00168_c",
+    0.56,
+    "Pyruvate Carboxy-Lyase (Acetaldehyde-Forming)"
+   ],
+   [
+    "rxn00500_c",
+    0.605,
+    "(R)-Lactate:Nad+ Oxidoreductase"
+   ],
+   [
+    "rxn00544_c",
+    0.56,
+    "R00755"
+   ],
+   [
+    "rxn01313_c",
+    0.531,
+    "5,6,7,8-Tetrahydrobiopterin:Nad+ Oxidoreductase"
+   ],
+   [
+    "rxn01314_c",
+    0.531,
+    "5,6,7,8-Tetrahydrobiopterin:Nadp+ Oxidoreductase"
+   ],
+   [
+    "rxn02473_c",
+    0.577,
+    "D-Erythro-1-(Imidazol-4-Yl)Glycerol 3-Phosphate Hydro-Lyase"
+   ],
+   [
+    "rxn03975_c",
+    0.528,
+    "Fmnh2:Nadp+ Oxidoreductase"
+   ],
+   [
+    "rxn05028_c",
+    0.518,
+    "(E)-Octaprenyl-Diphosphate:Isopentenyl-Diphosphate Octaprenyltranstransferase"
+   ]
+  ]
+ },
+ "salmonella_dpz": {
+  "n_only_thresh": 52,
+  "n_high_conf_dropped_by_meteor": 16,
+  "n_low_conf": 1,
+  "n_zero_evidence": 35,
+  "pct_high_conf_dropped": 30.8,
+  "pct_zero_evidence": 67.3,
+  "sample_high_conf_dropped": [
+   [
+    "rxn00668_c",
+    0.568,
+    "Propanoyl-Coa:Nadp+ 2-Oxidoreductase"
+   ],
+   [
+    "rxn02489_c",
+    0.593,
+    "Atp:1D-Myo-Inositol-1,3,4,6-Tetrakisphosphate 5-Phosphotransferase"
+   ],
+   [
+    "rxn02629_c",
+    0.607,
+    "S-Adenosyl-L-Methionine:Thiopurine S-Methyltransferase"
+   ],
+   [
+    "rxn04040_c",
+    0.593,
+    "Atp:1D-Myo-Inositol-1,4,5-Trisphosphate 6-Phosphotransferase"
+   ],
+   [
+    "rxn04041_c",
+    0.593,
+    "Atp:1D-Myo-Inositol-1,4,5-Trisphosphate 6-Phosphotransferase"
+   ],
+   [
+    "rxn05762_c",
+    0.527,
+    "Chloride:Hydrogen-Peroxide Oxidoreductase"
+   ],
+   [
+    "rxn07465_c",
+    0.506,
+    "L-2,4-Diaminobutanoate Carboxy-Lyase"
+   ],
+   [
+    "rxn11767_c",
+    0.607,
+    "S-Adenosyl-L-Methionine:6-Thioinosine 5'-Monophosphate S-Methyltransferase"
+   ]
+  ]
+ },
+ "salmonella_enzbert": {
+  "n_only_thresh": 50,
+  "n_high_conf_dropped_by_meteor": 6,
+  "n_low_conf": 6,
+  "n_zero_evidence": 38,
+  "pct_high_conf_dropped": 12.0,
+  "pct_zero_evidence": 76.0,
+  "sample_high_conf_dropped": [
+   [
+    "rxn00155_c",
+    0.534,
+    "Pyruvate:Nadp+ 2-Oxidoreductase (Coa-Acetylating)"
+   ],
+   [
+    "rxn02473_c",
+    0.534,
+    "D-Erythro-1-(Imidazol-4-Yl)Glycerol 3-Phosphate Hydro-Lyase"
+   ],
+   [
+    "rxn03990_c",
+    0.554,
+    "Nitric Oxide, Nad(P)H2:Oxygen Oxidoreductase"
+   ],
+   [
+    "rxn03991_c",
+    0.554,
+    "Nitric Oxide, Nadph2:Oxygen Oxidoreductase"
+   ],
+   [
+    "rxn20769_c",
+    0.554,
+    "Nitric Oxide,Nad(P)H:Oxygen Oxidoreductase"
+   ],
+   [
+    "rxn33998_c",
+    0.534,
+    "Imidazole Glycerol Phosphate Synthase"
+   ]
+  ]
+ },
+ "kpneumoniae_clean": {
+  "n_only_thresh": 73,
+  "n_high_conf_dropped_by_meteor": 30,
+  "n_low_conf": 3,
+  "n_zero_evidence": 40,
+  "pct_high_conf_dropped": 41.1,
+  "pct_zero_evidence": 54.8,
+  "sample_high_conf_dropped": [
+   [
+    "rxn00470_c",
+    0.586,
+    "L-Ornithine Carboxy-Lyase (Putrescine-Forming)"
+   ],
+   [
+    "rxn00782_c",
+    0.52,
+    "D-Glyceraldehyde-3-Phosphate:Nadp+ Oxidoreductase (Phosphorylating)"
+   ],
+   [
+    "rxn00852_c",
+    0.538,
+    "Putrescine:Oxygen Oxidoreductase (Deaminating)"
+   ],
+   [
+    "rxn01248_c",
+    0.509,
+    "Pyridoxal:Nad+ 4-Oxidoreductase"
+   ],
+   [
+    "rxn01313_c",
+    0.5,
+    "5,6,7,8-Tetrahydrobiopterin:Nad+ Oxidoreductase"
+   ],
+   [
+    "rxn01314_c",
+    0.5,
+    "5,6,7,8-Tetrahydrobiopterin:Nadp+ Oxidoreductase"
+   ],
+   [
+    "rxn01550_c",
+    0.538,
+    "1H-Imidazole-4-Ethanamine:Oxygen Oxidoreductase (Deaminating) (Copper-Containing)"
+   ],
+   [
+    "rxn01564_c",
+    0.538,
+    "Tryptamine:Oxygen Oxidoreductase(Deaminating)"
+   ]
+  ]
+ },
+ "kpneumoniae_dpz": {
+  "n_only_thresh": 60,
+  "n_high_conf_dropped_by_meteor": 24,
+  "n_low_conf": 1,
+  "n_zero_evidence": 35,
+  "pct_high_conf_dropped": 40.0,
+  "pct_zero_evidence": 58.3,
+  "sample_high_conf_dropped": [
+   [
+    "rxn01035_c",
+    0.6,
+    "Benzoate:Coa Ligase (Amp-Forming)"
+   ],
+   [
+    "rxn01426_c",
+    0.518,
+    "S-Adenosyl-L-Methionine:Caffeoyl-Coa 3-O-Methyltransferase"
+   ],
+   [
+    "rxn01894_c",
+    0.52,
+    "4-Oxalocrotonate Carboxy-Lyase"
+   ],
+   [
+    "rxn02375_c",
+    0.558,
+    "Atp:Pseudouridine 5'-Phosphotransferase"
+   ],
+   [
+    "rxn03492_c",
+    0.559,
+    "Precorrin-6Y:Nadp+ Oxidoreductase"
+   ],
+   [
+    "rxn03675_c",
+    0.52,
+    "2-Oxo-5-Methyl-Cis-Muconate Carboxy-Lyase"
+   ],
+   [
+    "rxn04050_c",
+    0.559,
+    "R05812"
+   ],
+   [
+    "rxn04432_c",
+    0.518,
+    "S-Adenosyl-L-Methionine:Caffeoyl-Coa 3-O-Methyltransferase"
+   ]
+  ]
+ },
+ "kpneumoniae_enzbert": {
+  "n_only_thresh": 54,
+  "n_high_conf_dropped_by_meteor": 8,
+  "n_low_conf": 7,
+  "n_zero_evidence": 39,
+  "pct_high_conf_dropped": 14.8,
+  "pct_zero_evidence": 72.2,
+  "sample_high_conf_dropped": [
+   [
+    "rxn00155_c",
+    0.519,
+    "Pyruvate:Nadp+ 2-Oxidoreductase (Coa-Acetylating)"
+   ],
+   [
+    "rxn03990_c",
+    0.597,
+    "Nitric Oxide, Nad(P)H2:Oxygen Oxidoreductase"
+   ],
+   [
+    "rxn03991_c",
+    0.597,
+    "Nitric Oxide, Nadph2:Oxygen Oxidoreductase"
+   ],
+   [
+    "rxn04992_c",
+    0.502,
+    "1-Aminocyclopropane-1-Carboxylate Oxygenase (Ethylene-Forming)"
+   ],
+   [
+    "rxn07745_c",
+    0.584,
+    "R07955"
+   ],
+   [
+    "rxn20769_c",
+    0.597,
+    "Nitric Oxide,Nad(P)H:Oxygen Oxidoreductase"
+   ],
+   [
+    "rxn22941_c",
+    0.584,
+    "Rxn-12485.C"
+   ],
+   [
+    "rxn43209_c",
+    0.592,
+    ""
+   ]
+  ]
+ },
+ "pputida_clean": {
+  "n_only_thresh": 62,
+  "n_high_conf_dropped_by_meteor": 21,
+  "n_low_conf": 4,
+  "n_zero_evidence": 37,
+  "pct_high_conf_dropped": 33.9,
+  "pct_zero_evidence": 59.7,
+  "sample_high_conf_dropped": [
+   [
+    "rxn00122_c",
+    0.582,
+    "Atp:Fmn Adenylyltransferase"
+   ],
+   [
+    "rxn00529_c",
+    0.56,
+    "L-Tyrosine Carboxy-Lyase (Tyramine-Forming)"
+   ],
+   [
+    "rxn00758_c",
+    0.52,
+    "Sn-Glycero-3-Phosphocholine Glycerophosphohydrolase"
+   ],
+   [
+    "rxn00889_c",
+    0.52,
+    "1-(Sn-Glycero-3-Phospho)-1D-Myo-Inositol Glycerophosphohydrolase"
+   ],
+   [
+    "rxn01073_c",
+    0.52,
+    "Sn-Glycero-3-Phosphoethanolamine Glycerophosphohydrolase"
+   ],
+   [
+    "rxn01122_c",
+    0.523,
+    "D-Altronate Hydro-Lyase (2-Dehydro-3-Deoxy-D-Gluconate-Forming)"
+   ],
+   [
+    "rxn01137_c",
+    0.555,
+    "Adenosine Aminohydrolase"
+   ],
+   [
+    "rxn01499_c",
+    0.56,
+    "3,4-Dihydroxy-L-Phenylalanine Carboxy-Lyase"
+   ]
+  ]
+ },
+ "pputida_dpz": {
+  "n_only_thresh": 43,
+  "n_high_conf_dropped_by_meteor": 13,
+  "n_low_conf": 0,
+  "n_zero_evidence": 30,
+  "pct_high_conf_dropped": 30.2,
+  "pct_zero_evidence": 69.8,
+  "sample_high_conf_dropped": [
+   [
+    "rxn01504_c",
+    0.525,
+    "(S)-3-Hydroxy-3-Methylglutaryl-Coa Hydro-Lyase (Trans-3-Methylglutaconyl-Coa-Forming)"
+   ],
+   [
+    "rxn01894_c",
+    0.542,
+    "4-Oxalocrotonate Carboxy-Lyase"
+   ],
+   [
+    "rxn01971_c",
+    0.535,
+    "Atp:D-Fructose-6-Phosphate 2-Phosphotransferase"
+   ],
+   [
+    "rxn03675_c",
+    0.542,
+    "2-Oxo-5-Methyl-Cis-Muconate Carboxy-Lyase"
+   ],
+   [
+    "rxn11728_c",
+    0.51,
+    "1,5-Anhydro-D-Mannitol:Nadp+ Oxidoreductase"
+   ],
+   [
+    "rxn16885_c",
+    0.51,
+    "1,5-Anhydro-D-Mannitol:Nadp+ Oxidoreductase"
+   ],
+   [
+    "rxn17253_c",
+    0.527,
+    "Trimethylamine Dehydrogenase"
+   ],
+   [
+    "rxn18926_c",
+    0.542,
+    "4-Oxalocrotonate Carboxy-Lyase"
+   ]
+  ]
+ },
+ "pputida_enzbert": {
+  "n_only_thresh": 80,
+  "n_high_conf_dropped_by_meteor": 34,
+  "n_low_conf": 7,
+  "n_zero_evidence": 39,
+  "pct_high_conf_dropped": 42.5,
+  "pct_zero_evidence": 48.8,
+  "sample_high_conf_dropped": [
+   [
+    "rxn00451_c",
+    0.519,
+    "S-Adenosyl-L-Methionine:L-Methionine S-Methyltransferase"
+   ],
+   [
+    "rxn00453_c",
+    0.572,
+    "O-Acetyl-L-Homoserine:Methanethiol 3-Amino-3-Carboxypropyltransferase"
+   ],
+   [
+    "rxn00569_c",
+    0.526,
+    "Nitrite Reductase (Nad(P)H)"
+   ],
+   [
+    "rxn00952_c",
+    0.572,
+    "O-Acetyl-L-Homoserine:Hydrogen Sulfide S-(3-Amino-3-Carboxypropyl)Transferase"
+   ],
+   [
+    "rxn01053_c",
+    0.5,
+    "(S)-Lactaldehyde:Nad+ Oxidoreductase"
+   ],
+   [
+    "rxn01887_c",
+    0.553,
+    "Coniferyl Alcohol:Nadp+ Oxidoreductase"
+   ],
+   [
+    "rxn02189_c",
+    0.553,
+    "Cinnamyl-Alcohol:Nadp+ Oxidoreductase"
+   ],
+   [
+    "rxn02758_c",
+    0.553,
+    "Sinapyl Alcohol:Nadp+ Oxidoreductase"
+   ]
+  ]
+ }
+}

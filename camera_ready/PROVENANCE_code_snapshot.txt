@@ -1,0 +1,38 @@
+snapshot taken: 2026-09-14T17:40:36+03:00
+source: /ibex/scratch/projects/c2014/kexin/funcarve/meteor_v8 @ ce37510b43f8149343c1643b2ed3c8cdeb96f478 (dirty tree)
+public tag Meteor_public @ v8.2-psb2027
+
+## md5
+867865ab19a7e51648ac72db530837f1  ./eval/baseline_io.py
+0ea55605b7fdf9bf5738f65904aab2c5  ./eval/emit_v8.py
+a4ea39ded34604c3c629adc40a63df27  ./eval/gen_table1.py
+3ec8677a45451c228943c1306235055c  ./eval/twostage.py
+025121d1ee7a79e5bf26cf26b8dd6299  ./eval/weakreal.py
+bdc9c3f82ebd7325e94180ed5da78483  ./panel108_gram.tsv
+affe60fa3129216a6c4f577ebe0e6f6b  ./PROVENANCE.txt
+d41d8cd98f00b204e9800998ecf8427e  ./src/meteor_v8/__init__.py
+e6d422770fba25df594eefa7d98fcd30  ./src/meteor_v8/milp_hard.py
+b95f3e61716f98205370b8fc6d427d56  ./src/meteor_v8/milp_v8.py
+c9c8d0aa21d32b11d8c97666ee8f0b6a  ./src/meteor_v8/repair.py
+f1f14f90efee1bad065fcedad3eb5afb  ./src/meteor_v8/utils.py
+pulp 3.3.1 cobra 0.31.1 memote 0.17.0
+
+## md5 after adding data/ 2026-09-14T17:44:25+03:00
+42bc7ac8cc75829d6b61715e3f4605dc  data/all_ancestors.txt
+276e774d5bdbacef58a581f2069ab583  data/all_ec.txt
+3ec02317949e9c82a078c1ccf283061f  data/enzymeobsolete.pkl
+2c1e0885b870a3edcecaeecff3201da3  data/external/curated_gems/iJN1463.xml
+9bf81d20cab5476700697ded95b716d1  data/external/curated_gems/iML1515.xml
+0221bcee3138f750ab0b5a1e45aab52a  data/external/curated_gems/iYL1228.xml
+82cf3377eb6402baab5cdea82ba3f376  data/external/curated_gems/iYO844.xml
+4bc7225b967ffc687f64f2bce16d17bf  data/external/curated_gems/iYS854.xml
+8fb5b1c0b09fae9fae54cea96b1590d1  data/external/curated_gems/STM_v1_0.xml
+fa30abb668ed21e96574ee9c9d21cf13  data/fba_matrices_v6RE.pkl
+8bab005a498a2733297746c448e06e46  data/medium_info.pkl
+6ed4c36d22495aa4f18cb7b6a68fa6b8  data/medium.pkl
+fac8154cb10028fd7d171b704d482dca  data/README.md
+839131f25740db109911e103118ddc70  data/seedec2r.pkl
+4492bb035c2b1cd492f9c8a3e59fe514  data/seedr2ec.pkl
+af4d4ec892360d43aefec4d4a4b9c42c  data/tight_bounds_v6_neg.pkl
+55eb2994434c84624cc6e2dcd9f95da8  data/tight_bounds_v6_pos.pkl
+37e59ddcec3fafadc5bce777ff61b5ca  data/universal.pickle

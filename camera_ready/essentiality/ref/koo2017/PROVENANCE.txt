@@ -1,0 +1,28 @@
+Koo BM et al. "Construction and Analysis of Two Genome-Scale Deletion Libraries
+for Bacillus subtilis." Cell Systems 2017;4(3):291-305.
+DOI: 10.1016/j.cels.2016.12.013, PMID: 28189581, PMCID: PMC5400513.
+
+Fetched 2026-09-17 from the PMC-rendered article page (curl, full HTML,
+325KB, genuine content -- article.html) and via the PubMed MCP tool's
+get_full_text_article (plaintext extraction -- koo2017_fulltext.json).
+
+NOT obtained: the actual binary supplementary files (Table S1-S6 as
+NIHMS851825-supplement-{3..8}.xlsx). PMC's /bin/ download endpoint now
+gates all binary downloads behind a client-side JavaScript proof-of-work
+challenge (cloudpmc-viewer-pow, visible in the served HTML as
+POW_CHALLENGE/POW_DIFFICULTY), which a plain HTTP client (curl, on ibex or
+locally) cannot solve -- every attempted supplement/PDF download returned
+the ~1.8KB "Preparing to download..." interstitial page instead of file
+content. Europe PMC's mirror (which sometimes bypasses this) also refused:
+its search index flags this record isOpenAccess=N (despite a displayed
+license of "cc by" on the PMC page itself -- an apparent metadata
+inconsistency), and its supplementaryFiles/fullTextXML endpoints both
+require isOpenAccess=Y. ScienceDirect (publisher) blocked WebFetch with a
+403 (bot detection). No paywall-bypass or unofficial mirror was attempted.
+
+Everything reported about Table S3/S4 content, the auxotroph criteria, and
+the minimal-medium recipe was recovered from figure/table CAPTIONS and
+in-text methods description in the freely-rendered article.html and
+full-text extraction -- not from opening the actual spreadsheets. Column
+headers of Table S3/S4 are therefore NOT confirmed; only their described
+contents (per the captions) are.

@@ -1,0 +1,917 @@
+{
+ "n_total_nobackup": 95,
+ "n_domain_flagged": 22,
+ "pct_domain_flagged": 23.2,
+ "category_counts": {
+  "eukaryotic_signaling": 6,
+  "eukaryote_organelle": 1,
+  "photosynthesis_plant_pigment": 7,
+  "archaeal_methanogenesis": 2,
+  "plant_secondary_metabolism": 7
+ },
+ "n_curated_match_true": 67,
+ "n_curated_match_false": 9,
+ "n_curated_match_none": 19,
+ "all_reactions": [
+  {
+   "combo": "salmonella_clean",
+   "org": "salmonella",
+   "rxn": "rxn01313_c",
+   "name": "5,6,7,8-Tetrahydrobiopterin:Nad+ Oxidoreductase",
+   "score": 0.531,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "salmonella_clean",
+   "org": "salmonella",
+   "rxn": "rxn01314_c",
+   "name": "5,6,7,8-Tetrahydrobiopterin:Nadp+ Oxidoreductase",
+   "score": 0.531,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "salmonella_clean",
+   "org": "salmonella",
+   "rxn": "rxn05087_c",
+   "name": "5,6,7,8-Tetrahydropteridine:Nad+ Oxidoreductase",
+   "score": 0.531,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "salmonella_clean",
+   "org": "salmonella",
+   "rxn": "rxn05088_c",
+   "name": "5,6,7,8-Tetrahydropteridine:Nadp+ Oxidoreductase",
+   "score": 0.531,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "salmonella_clean",
+   "org": "salmonella",
+   "rxn": "rxn16511_c",
+   "name": "S-Methyl-5'-Thioinosine:Phosphate S-Methyl-5-Thio-Alpha-D-Ribosyl-Transferase",
+   "score": 0.536,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "salmonella_clean",
+   "org": "salmonella",
+   "rxn": "rxn17245_c",
+   "name": "6,7-Dihydropteridine:Nad(P)H Oxidoreductase",
+   "score": 0.531,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "salmonella_clean",
+   "org": "salmonella",
+   "rxn": "rxn24516_c",
+   "name": "Rxn-7909.C",
+   "score": 0.531,
+   "domain_categories": [],
+   "in_curated_gem_by_name": null
+  },
+  {
+   "combo": "salmonella_clean",
+   "org": "salmonella",
+   "rxn": "rxn43215_c",
+   "name": "",
+   "score": 0.518,
+   "domain_categories": [],
+   "in_curated_gem_by_name": null
+  },
+  {
+   "combo": "salmonella_dpz",
+   "org": "salmonella",
+   "rxn": "rxn02489_c",
+   "name": "Atp:1D-Myo-Inositol-1,3,4,6-Tetrakisphosphate 5-Phosphotransferase",
+   "score": 0.593,
+   "domain_categories": [
+    "eukaryotic_signaling"
+   ],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "salmonella_dpz",
+   "org": "salmonella",
+   "rxn": "rxn02629_c",
+   "name": "S-Adenosyl-L-Methionine:Thiopurine S-Methyltransferase",
+   "score": 0.607,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "salmonella_dpz",
+   "org": "salmonella",
+   "rxn": "rxn04040_c",
+   "name": "Atp:1D-Myo-Inositol-1,4,5-Trisphosphate 6-Phosphotransferase",
+   "score": 0.593,
+   "domain_categories": [
+    "eukaryotic_signaling"
+   ],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "salmonella_dpz",
+   "org": "salmonella",
+   "rxn": "rxn04041_c",
+   "name": "Atp:1D-Myo-Inositol-1,4,5-Trisphosphate 6-Phosphotransferase",
+   "score": 0.593,
+   "domain_categories": [
+    "eukaryotic_signaling"
+   ],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "salmonella_dpz",
+   "org": "salmonella",
+   "rxn": "rxn05762_c",
+   "name": "Chloride:Hydrogen-Peroxide Oxidoreductase",
+   "score": 0.527,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "salmonella_dpz",
+   "org": "salmonella",
+   "rxn": "rxn07465_c",
+   "name": "L-2,4-Diaminobutanoate Carboxy-Lyase",
+   "score": 0.506,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "salmonella_dpz",
+   "org": "salmonella",
+   "rxn": "rxn13344_c",
+   "name": "Inositol-1,3,4,5-Triphosphate 6-Kinase, Nucleus",
+   "score": 0.593,
+   "domain_categories": [
+    "eukaryote_organelle",
+    "eukaryotic_signaling"
+   ],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "salmonella_dpz",
+   "org": "salmonella",
+   "rxn": "rxn13963_c",
+   "name": "Chloride:Hydrogen-Peroxide Oxidoreductase",
+   "score": 0.527,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "salmonella_dpz",
+   "org": "salmonella",
+   "rxn": "rxn19300_c",
+   "name": "Cpo",
+   "score": 0.527,
+   "domain_categories": [],
+   "in_curated_gem_by_name": null
+  },
+  {
+   "combo": "salmonella_dpz",
+   "org": "salmonella",
+   "rxn": "rxn21640_c",
+   "name": "Bromide Peroxidase",
+   "score": 0.525,
+   "domain_categories": [],
+   "in_curated_gem_by_name": false
+  },
+  {
+   "combo": "salmonella_dpz",
+   "org": "salmonella",
+   "rxn": "rxn23463_c",
+   "name": "Inositol-Polyphosphate Multikinase",
+   "score": 0.593,
+   "domain_categories": [
+    "eukaryotic_signaling"
+   ],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "salmonella_dpz",
+   "org": "salmonella",
+   "rxn": "rxn24255_c",
+   "name": "Rxn-7186.C",
+   "score": 0.593,
+   "domain_categories": [],
+   "in_curated_gem_by_name": null
+  },
+  {
+   "combo": "salmonella_dpz",
+   "org": "salmonella",
+   "rxn": "rxn40657_c",
+   "name": "",
+   "score": 0.525,
+   "domain_categories": [],
+   "in_curated_gem_by_name": null
+  },
+  {
+   "combo": "salmonella_dpz",
+   "org": "salmonella",
+   "rxn": "rxn46815_c",
+   "name": "",
+   "score": 0.527,
+   "domain_categories": [],
+   "in_curated_gem_by_name": null
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "org": "kpneumoniae",
+   "rxn": "rxn01248_c",
+   "name": "Pyridoxal:Nad+ 4-Oxidoreductase",
+   "score": 0.509,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "org": "kpneumoniae",
+   "rxn": "rxn01313_c",
+   "name": "5,6,7,8-Tetrahydrobiopterin:Nad+ Oxidoreductase",
+   "score": 0.5,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "org": "kpneumoniae",
+   "rxn": "rxn01314_c",
+   "name": "5,6,7,8-Tetrahydrobiopterin:Nadp+ Oxidoreductase",
+   "score": 0.5,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "org": "kpneumoniae",
+   "rxn": "rxn03852_c",
+   "name": "Udp-N-Acetyl-D-Mannosamine:N-Acetyl-Beta-D-Glucosaminyldiphosphoundecaprenol Beta-1,4-N-Acetylmannosaminyltransferase",
+   "score": 0.529,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "org": "kpneumoniae",
+   "rxn": "rxn04951_c",
+   "name": "Fluoroacetaldehyde:Nad+ Oxidoreductase",
+   "score": 0.528,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "org": "kpneumoniae",
+   "rxn": "rxn05087_c",
+   "name": "5,6,7,8-Tetrahydropteridine:Nad+ Oxidoreductase",
+   "score": 0.5,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "org": "kpneumoniae",
+   "rxn": "rxn05088_c",
+   "name": "5,6,7,8-Tetrahydropteridine:Nadp+ Oxidoreductase",
+   "score": 0.5,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "org": "kpneumoniae",
+   "rxn": "rxn05287_c",
+   "name": "Geranylgeranyl-Diphosphate:Isopentenyl-Diphosphate Transtransferase",
+   "score": 0.555,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "org": "kpneumoniae",
+   "rxn": "rxn06990_c",
+   "name": "Ferredoxin:Nad Oxidoreductase",
+   "score": 0.577,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "org": "kpneumoniae",
+   "rxn": "rxn17245_c",
+   "name": "6,7-Dihydropteridine:Nad(P)H Oxidoreductase",
+   "score": 0.5,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "org": "kpneumoniae",
+   "rxn": "rxn22825_c",
+   "name": "Nad+-Ferredoxin Reductase",
+   "score": 0.577,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "org": "kpneumoniae",
+   "rxn": "rxn24516_c",
+   "name": "Rxn-7909.C",
+   "score": 0.5,
+   "domain_categories": [],
+   "in_curated_gem_by_name": null
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "org": "kpneumoniae",
+   "rxn": "rxn33408_c",
+   "name": "N-Methyl-L-Alanine:Nadp+ Oxidoreductase (Demethylating, Deaminating)",
+   "score": 0.541,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "org": "kpneumoniae",
+   "rxn": "rxn40233_c",
+   "name": "Udp-N-Acetyl-Alpha-D-Galactosamine:N-Acetyl-Alpha-D-Galactosaminyl-Diphospho-Ditrans,Octacis-Undecaprenol Alpha-1,3-N-Acetyl-D-Galactosyltransferase",
+   "score": 0.582,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "org": "kpneumoniae",
+   "rxn": "rxn42570_c",
+   "name": "",
+   "score": 0.582,
+   "domain_categories": [],
+   "in_curated_gem_by_name": null
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "org": "kpneumoniae",
+   "rxn": "rxn42787_c",
+   "name": "",
+   "score": 0.576,
+   "domain_categories": [],
+   "in_curated_gem_by_name": null
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "org": "kpneumoniae",
+   "rxn": "rxn48419_c",
+   "name": "",
+   "score": 0.54,
+   "domain_categories": [],
+   "in_curated_gem_by_name": null
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "org": "kpneumoniae",
+   "rxn": "rxn02375_c",
+   "name": "Atp:Pseudouridine 5'-Phosphotransferase",
+   "score": 0.558,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "org": "kpneumoniae",
+   "rxn": "rxn03492_c",
+   "name": "Precorrin-6Y:Nadp+ Oxidoreductase",
+   "score": 0.559,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "org": "kpneumoniae",
+   "rxn": "rxn03675_c",
+   "name": "2-Oxo-5-Methyl-Cis-Muconate Carboxy-Lyase",
+   "score": 0.52,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "org": "kpneumoniae",
+   "rxn": "rxn04432_c",
+   "name": "S-Adenosyl-L-Methionine:Caffeoyl-Coa 3-O-Methyltransferase",
+   "score": 0.518,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "org": "kpneumoniae",
+   "rxn": "rxn04935_c",
+   "name": "(R)-2-Hydroxyacid:Nadp+ Oxidoreductase",
+   "score": 0.535,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "org": "kpneumoniae",
+   "rxn": "rxn16495_c",
+   "name": "15-Cis-Phytoene:Plastoquinone Oxidoreductase",
+   "score": 0.525,
+   "domain_categories": [
+    "photosynthesis_plant_pigment"
+   ],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "org": "kpneumoniae",
+   "rxn": "rxn16496_c",
+   "name": "15-Cis-Phytoene:Plastoquinone Oxidoreductase",
+   "score": 0.525,
+   "domain_categories": [
+    "photosynthesis_plant_pigment"
+   ],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "org": "kpneumoniae",
+   "rxn": "rxn16497_c",
+   "name": "15,9'-Dicis-Phytofluene:Plastoquinone Oxidoreductase",
+   "score": 0.525,
+   "domain_categories": [
+    "photosynthesis_plant_pigment"
+   ],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "org": "kpneumoniae",
+   "rxn": "rxn21666_c",
+   "name": "Phytoene Desaturase (Ambiguous)",
+   "score": 0.525,
+   "domain_categories": [
+    "photosynthesis_plant_pigment"
+   ],
+   "in_curated_gem_by_name": false
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "org": "kpneumoniae",
+   "rxn": "rxn25188_c",
+   "name": "Rxn-8841.C",
+   "score": 0.52,
+   "domain_categories": [],
+   "in_curated_gem_by_name": null
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "org": "kpneumoniae",
+   "rxn": "rxn28892_c",
+   "name": "Rxnbwi-477.D",
+   "score": 0.525,
+   "domain_categories": [],
+   "in_curated_gem_by_name": false
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "org": "kpneumoniae",
+   "rxn": "rxn28894_c",
+   "name": "Rxnbwi-480.D",
+   "score": 0.525,
+   "domain_categories": [],
+   "in_curated_gem_by_name": false
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "org": "kpneumoniae",
+   "rxn": "rxn37616_c",
+   "name": "15-Cis-Phytoene Desaturase",
+   "score": 0.525,
+   "domain_categories": [
+    "photosynthesis_plant_pigment"
+   ],
+   "in_curated_gem_by_name": false
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "org": "kpneumoniae",
+   "rxn": "rxn37621_c",
+   "name": "Phytoene Desaturase (Ambiguous)",
+   "score": 0.525,
+   "domain_categories": [
+    "photosynthesis_plant_pigment"
+   ],
+   "in_curated_gem_by_name": false
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "org": "kpneumoniae",
+   "rxn": "rxn37622_c",
+   "name": "Phytoene Desaturase (Ambiguous)",
+   "score": 0.525,
+   "domain_categories": [
+    "photosynthesis_plant_pigment"
+   ],
+   "in_curated_gem_by_name": false
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "org": "kpneumoniae",
+   "rxn": "rxn42742_c",
+   "name": "",
+   "score": 0.525,
+   "domain_categories": [],
+   "in_curated_gem_by_name": null
+  },
+  {
+   "combo": "kpneumoniae_enzbert",
+   "org": "kpneumoniae",
+   "rxn": "rxn04992_c",
+   "name": "1-Aminocyclopropane-1-Carboxylate Oxygenase (Ethylene-Forming)",
+   "score": 0.502,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "kpneumoniae_enzbert",
+   "org": "kpneumoniae",
+   "rxn": "rxn07745_c",
+   "name": "R07955",
+   "score": 0.584,
+   "domain_categories": [],
+   "in_curated_gem_by_name": false
+  },
+  {
+   "combo": "kpneumoniae_enzbert",
+   "org": "kpneumoniae",
+   "rxn": "rxn22941_c",
+   "name": "Rxn-12485.C",
+   "score": 0.584,
+   "domain_categories": [],
+   "in_curated_gem_by_name": null
+  },
+  {
+   "combo": "kpneumoniae_enzbert",
+   "org": "kpneumoniae",
+   "rxn": "rxn43209_c",
+   "name": "",
+   "score": 0.592,
+   "domain_categories": [],
+   "in_curated_gem_by_name": null
+  },
+  {
+   "combo": "pputida_clean",
+   "org": "pputida",
+   "rxn": "rxn00529_c",
+   "name": "L-Tyrosine Carboxy-Lyase (Tyramine-Forming)",
+   "score": 0.56,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_clean",
+   "org": "pputida",
+   "rxn": "rxn00758_c",
+   "name": "Sn-Glycero-3-Phosphocholine Glycerophosphohydrolase",
+   "score": 0.52,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_clean",
+   "org": "pputida",
+   "rxn": "rxn00889_c",
+   "name": "1-(Sn-Glycero-3-Phospho)-1D-Myo-Inositol Glycerophosphohydrolase",
+   "score": 0.52,
+   "domain_categories": [
+    "eukaryotic_signaling"
+   ],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_clean",
+   "org": "pputida",
+   "rxn": "rxn01073_c",
+   "name": "Sn-Glycero-3-Phosphoethanolamine Glycerophosphohydrolase",
+   "score": 0.52,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_clean",
+   "org": "pputida",
+   "rxn": "rxn01122_c",
+   "name": "D-Altronate Hydro-Lyase (2-Dehydro-3-Deoxy-D-Gluconate-Forming)",
+   "score": 0.523,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_clean",
+   "org": "pputida",
+   "rxn": "rxn01499_c",
+   "name": "3,4-Dihydroxy-L-Phenylalanine Carboxy-Lyase",
+   "score": 0.56,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_clean",
+   "org": "pputida",
+   "rxn": "rxn03126_c",
+   "name": "Coenzyme B:Coenzyme M:Methanophenazine Oxidoreductase",
+   "score": 0.55,
+   "domain_categories": [
+    "archaeal_methanogenesis"
+   ],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_clean",
+   "org": "pputida",
+   "rxn": "rxn08668_c",
+   "name": "Glycerophosphodiester Phosphodiesterase (Glycerophosphoserine)",
+   "score": 0.52,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_clean",
+   "org": "pputida",
+   "rxn": "rxn08669_c",
+   "name": "Glycerophosphodiester Phosphodiesterase",
+   "score": 0.52,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_clean",
+   "org": "pputida",
+   "rxn": "rxn15959_c",
+   "name": "Coenzyme B:Coenzyme M:Methanophenazine Oxidoreductase",
+   "score": 0.55,
+   "domain_categories": [
+    "archaeal_methanogenesis"
+   ],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_clean",
+   "org": "pputida",
+   "rxn": "rxn19868_c",
+   "name": "Glycerophosphodiester Phosphodiesterase",
+   "score": 0.52,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_clean",
+   "org": "pputida",
+   "rxn": "rxn40671_c",
+   "name": "",
+   "score": 0.558,
+   "domain_categories": [],
+   "in_curated_gem_by_name": null
+  },
+  {
+   "combo": "pputida_clean",
+   "org": "pputida",
+   "rxn": "rxn42527_c",
+   "name": "",
+   "score": 0.555,
+   "domain_categories": [],
+   "in_curated_gem_by_name": null
+  },
+  {
+   "combo": "pputida_clean",
+   "org": "pputida",
+   "rxn": "rxn45969_c",
+   "name": "",
+   "score": 0.604,
+   "domain_categories": [],
+   "in_curated_gem_by_name": null
+  },
+  {
+   "combo": "pputida_dpz",
+   "org": "pputida",
+   "rxn": "rxn01971_c",
+   "name": "Atp:D-Fructose-6-Phosphate 2-Phosphotransferase",
+   "score": 0.535,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_dpz",
+   "org": "pputida",
+   "rxn": "rxn03675_c",
+   "name": "2-Oxo-5-Methyl-Cis-Muconate Carboxy-Lyase",
+   "score": 0.542,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_dpz",
+   "org": "pputida",
+   "rxn": "rxn11728_c",
+   "name": "1,5-Anhydro-D-Mannitol:Nadp+ Oxidoreductase",
+   "score": 0.51,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_dpz",
+   "org": "pputida",
+   "rxn": "rxn16885_c",
+   "name": "1,5-Anhydro-D-Mannitol:Nadp+ Oxidoreductase",
+   "score": 0.51,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_dpz",
+   "org": "pputida",
+   "rxn": "rxn17253_c",
+   "name": "Trimethylamine Dehydrogenase",
+   "score": 0.527,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_dpz",
+   "org": "pputida",
+   "rxn": "rxn18926_c",
+   "name": "4-Oxalocrotonate Carboxy-Lyase",
+   "score": 0.542,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_dpz",
+   "org": "pputida",
+   "rxn": "rxn25188_c",
+   "name": "Rxn-8841.C",
+   "score": 0.542,
+   "domain_categories": [],
+   "in_curated_gem_by_name": null
+  },
+  {
+   "combo": "pputida_dpz",
+   "org": "pputida",
+   "rxn": "rxn25839_c",
+   "name": "Atp:[This] Adenylyltransferase",
+   "score": 0.508,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_dpz",
+   "org": "pputida",
+   "rxn": "rxn35591_c",
+   "name": "1,5-Anhydro-D-Mannitol:Nadp+ Oxidoreductase",
+   "score": 0.51,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_dpz",
+   "org": "pputida",
+   "rxn": "rxn39359_c",
+   "name": "Atp:D-Fructose-6-Phosphate 2-Phosphotransferase",
+   "score": 0.535,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_enzbert",
+   "org": "pputida",
+   "rxn": "rxn01887_c",
+   "name": "Coniferyl Alcohol:Nadp+ Oxidoreductase",
+   "score": 0.553,
+   "domain_categories": [
+    "plant_secondary_metabolism"
+   ],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_enzbert",
+   "org": "pputida",
+   "rxn": "rxn02189_c",
+   "name": "Cinnamyl-Alcohol:Nadp+ Oxidoreductase",
+   "score": 0.553,
+   "domain_categories": [
+    "plant_secondary_metabolism"
+   ],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_enzbert",
+   "org": "pputida",
+   "rxn": "rxn02758_c",
+   "name": "Sinapyl Alcohol:Nadp+ Oxidoreductase",
+   "score": 0.553,
+   "domain_categories": [
+    "plant_secondary_metabolism"
+   ],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_enzbert",
+   "org": "pputida",
+   "rxn": "rxn02814_c",
+   "name": "4-Coumaryl Alcohol:Nadp+ Oxidoreductase",
+   "score": 0.553,
+   "domain_categories": [
+    "plant_secondary_metabolism"
+   ],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_enzbert",
+   "org": "pputida",
+   "rxn": "rxn03265_c",
+   "name": "S-Adenosyl-L-Methionine:L-Methionine S-Methyltransferase",
+   "score": 0.519,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_enzbert",
+   "org": "pputida",
+   "rxn": "rxn03397_c",
+   "name": "Udp-L-Rhamnose:Flavonol-3-O-D-Glucoside L-Rhamnosyltransferase",
+   "score": 0.589,
+   "domain_categories": [
+    "plant_secondary_metabolism"
+   ],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_enzbert",
+   "org": "pputida",
+   "rxn": "rxn04424_c",
+   "name": "Cinnamyl-Alcohol:Nadp+ Oxidoreductase",
+   "score": 0.553,
+   "domain_categories": [
+    "plant_secondary_metabolism"
+   ],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_enzbert",
+   "org": "pputida",
+   "rxn": "rxn04425_c",
+   "name": "Cinnamyl-Alcohol:Nadp+ Oxidoreductase",
+   "score": 0.553,
+   "domain_categories": [
+    "plant_secondary_metabolism"
+   ],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_enzbert",
+   "org": "pputida",
+   "rxn": "rxn09039_c",
+   "name": "2-Octaprenyl-Methoxy-Benzoq-Meth-Rxn.C",
+   "score": 0.589,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_enzbert",
+   "org": "pputida",
+   "rxn": "rxn15783_c",
+   "name": "R08774",
+   "score": 0.589,
+   "domain_categories": [],
+   "in_curated_gem_by_name": false
+  },
+  {
+   "combo": "pputida_enzbert",
+   "org": "pputida",
+   "rxn": "rxn22109_c",
+   "name": "2-Heptaprenyl-6-Methoxy-1,4-Benzoquinone Methyltransferase",
+   "score": 0.589,
+   "domain_categories": [],
+   "in_curated_gem_by_name": true
+  },
+  {
+   "combo": "pputida_enzbert",
+   "org": "pputida",
+   "rxn": "rxn22111_c",
+   "name": "Rxn-9242.C",
+   "score": 0.589,
+   "domain_categories": [],
+   "in_curated_gem_by_name": null
+  }
+ ]
+}

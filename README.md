@@ -5,8 +5,9 @@ Evidence-weighted reaction selection reconciles enzyme prediction with growth
 feasibility*, Kexin Niu and Robert Hoehndorf, King Abdullah University of
 Science and Technology.
 
-The submitted version is tag `v8.2-psb2027`; the manuscript cites that tag and
-links `supplementary_v8.pdf` from it. Zenodo archives the repository at
+The submitted version is tag `v8.2-psb2027`; the camera-ready version is tag
+`v8.3-psb2027`, which the manuscript cites and from which it links
+`supplementary_v8.pdf`. Zenodo archives the repository at
 [10.5281/zenodo.21716682](https://doi.org/10.5281/zenodo.21716682), which
 resolves to the most recent deposited version.
 
@@ -36,6 +37,8 @@ data/            reaction database, EC maps, media -- everything the code
                  loads at run time (see data/README.md)
 cohorts/         COHORTS.json/tsv, panel108_gram.tsv, solver status
 results/         the records every reported number is computed from
+camera_ready/    scripts and records added for the camera-ready revision
+                 (see "Camera-ready additions" below)
 env/             conda environment
 ```
 
@@ -141,24 +144,43 @@ it, so a copy of the inputs elsewhere needs one environment variable rather
 than an edit per script. The scripts that reproduce the published numbers do
 not use it: they read only `results/` and `data/` from this checkout.
 
-### Camera-ready figures (in progress, not yet tagged)
+### Camera-ready additions (tag `v8.3-psb2027`)
 
 The table above follows the section numbering of the submitted version
-(tag `v8.2-psb2027`). The camera-ready figures are drawn by the scripts
-below; the full table will be renumbered when the camera-ready is tagged.
+(tag `v8.2-psb2027`). The camera-ready revision added experiments for the
+reviewers; their scripts and records are deposited under `camera_ready/`
+exactly as they were run (paths in `camera_ready/eval/_env.py`). The paper and
+supplement name no files; this table is the map from each camera-ready item
+to its script and records. Section numbers are those of the camera-ready.
 
 | camera-ready item | script | records |
 |---|---|---|
-| Figure 1 (pipeline and toy example) | TikZ source `figures/fig1_pipeline.tex`; step-3 numbers from `eval/gen_fig_pipeline_partition.py` | `results/candidate_size_dpz_vanilla.json`, `results/candidate_partition_kx_evidence.json` |
-| Figure 2a, 2d (dead ends, ablations) | `eval/gen_fig_results.py` | `results/table1_v2/pergenome/`, `results/skeleton_ablation_summary.json` |
-| Figure 2b (sub-threshold recall vs precision) | `eval/gen_fig_results.py` | per-organism values from Supplementary Tables S18 and S19 |
-| Figure 2c (perturbation stability) | `eval/gen_fig_results.py` | `results/recovery_4arm/` |
-| Figure S1 | `eval/gen_fig_massimbal.py` | `results/table1/` |
+| Figure 1 (toy example and pipeline; TikZ) | `figures/fig1_pipeline.tex`; step-3 numbers from `eval/gen_fig_pipeline_partition.py` | `results/candidate_size_dpz_vanilla.json`, `results/candidate_partition_kx_evidence.json` |
+| Figure 2a, 2d (dead ends; skeleton/candidate-mask ablation) | `eval/gen_fig_results.py` | `results/table1_v2/pergenome/`, `results/skeleton_ablation_summary.json` |
+| Figure 2b (sub-threshold recall vs precision, per organism) | `eval/gen_fig_results.py` | `results/toolcompare/weakreal.json` |
+| Figure 2c (deletion-recovery stability) | `eval/gen_fig_results.py` | `results/recovery_4arm/` |
+| Figure S1 | `eval/gen_fig_s1_panels.py` | `results/table1/` |
+| §2.2, S1.1 candidate-set size and composition (Figure 1b, step 3) | `camera_ready/eval/candidate_size.py`, `candidate_partition.py`, `kx_ids.py`, `kx_evidence.py` | `camera_ready/results/candidate_partition_sets.json`, `results/candidate_*.json` |
+| §2.2, S1.1, Table S1 repair counts and solve-call wall times, all twelve configurations | `camera_ready/eval/agg_repair_by_config.py`; wall-time recount `camera_ready/eval/recount_time_limit.py` | `camera_ready/results/repair_by_config.json`, `camera_ready/results/time_limit_recount.json` (per-genome wall times; the `not_optimal`/`time_limit` fields elsewhere are status-based and under-count, see the script docstring) |
+| §3.1 dead ends of a growing threshold+repair baseline (count and per-metabolite fraction) | `camera_ready/eval/thresh_gapfill_deadends.py`, `thresh_gapfill_deadends_met.py`, `agg_thresh_gapfill_deadends*.py` | `camera_ready/results/thresh_gapfill_deadends/`, `thresh_gapfill_deadends_met/`, `*_summary.json` |
+| §3.1, Figure 2a, S7.7 structural properties, mean ± s.d. | `camera_ready/eval/gen_table1_v2.py`, `agg_table1_v2.py` | `results/table1_v2/pergenome/`, `camera_ready/results/table1_v2_meansd.json` |
+| §3.3, S3, Table S7 skeleton-only / no-skeleton / candidate-mask ablation | `camera_ready/eval/skeleton_ablation.py`, `agg_skeleton_ablation.py` | `camera_ready/results/skeleton_abl/` (per-genome JSON and y vectors), `nomask_abl/`, `results/skeleton_ablation_summary.json` |
+| §3.2, S7.5 size-matched top-K control | `camera_ready/eval/weakreal_matched.py` | `camera_ready/results/weakreal_matched.json` |
+| §3.4, S7.4 recall denominators (0.884 vs 0.784) | `camera_ready/eval/diag_recall_denominators.py`; EC-version audit `camera_ready/strat/ecversion/ec_audit.py` | `camera_ready/results/recall_denominators.json`, `camera_ready/strat/ecversion/ec_audit.json` |
+| §3.4, S7.6 gene essentiality (eight organism–medium–reference combinations, 2×2 decomposition, eukaryotic-reaction sensitivity) | `camera_ready/essentiality/gene_essentiality_demo.py`, `medium_flip_analysis.py`, `rescoring_2x2.py`, `essentiality_domainfilter.py`, `forensic.py`, `joyce_crosscheck.py`; `run_*.sbatch` | `camera_ready/essentiality/results/{essround3,medflip,rescoring2x2,domainfilter,forensic,minmed}/`, references under `camera_ready/essentiality/ref/` (see its `README.md`) |
+| §4.1, S7.8, Table S26 recovery stratified by predictor vocabulary | `camera_ready/strat/strat_all.py --remap`, `aggregate.py` | `camera_ready/strat/results/strat_remap/`, `strat_remap_summary.json`; unmapped protocol in `strat/` and `strat_summary.json` |
+| S4 paired gap-filler timing (COBRApy MILP vs flux-parsimony LP) | `eval/cgf2.py`, `eval/agg_gapfill.py` | `results/gapfill_paired/` |
+| S7.1 CarveMe structural metrics on the 108-genome panel | `camera_ready/massimbal_baseline/carveme_structural_metrics.py`, `gate_table1_v2.py` | `results/table1_v2/carveme_panel108.json`, `carveme_reference_summary.json`, `camera_ready/massimbal_baseline/carveme_memote_panel108_summary.json` |
+| Batch launchers for the above | `camera_ready/sbatch/t*.sbatch` | |
 
-Run each from the repository root; outputs go to `figures/`. The figures use
-Arial (Liberation Sans is metric-compatible); with a wider fallback font the
-layout self-check in `gen_fig_results.py` flags the panel c note as touching data.
-
+`camera_ready/PROVENANCE_code_snapshot.txt` records the frozen copy of `src/`
+and `eval/` that the revision scripts import (identical to the tagged code in
+the MILP, repair and mapping logic); `camera_ready/conda_cobra_list.txt` is
+the environment they ran in. Run the figure scripts from the repository root;
+outputs go to `figures/`. The figures use Arial (Liberation Sans is
+metric-compatible); with a wider fallback font the layout self-check in
+`gen_fig_results.py` flags the panel c note as touching data.
+`supplementary_v8.pdf` at the repository root is the camera-ready supplement.
 ## Parameters
 
 `p=2`, `mu=3`, `k=5` (score truncation), `w_min=0.01` (candidate mask),

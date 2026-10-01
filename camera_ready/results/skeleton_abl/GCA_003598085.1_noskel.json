@@ -1,0 +1,1 @@
+{"gca": "GCA_003598085.1", "gram": "negative", "arm": "noskel", "status": "Infeasible", "solve_sec": 2.21, "n_candidate": 5089, "n_skeleton": 15580, "flags": {"mu": 3.0, "pexp": 2.0, "eps": 0.0, "gmin": 0.1, "wmin": 0.01, "gmax": 2.5, "lam": 0.0001}, "err": "Infeasible", "n_selected": 0}

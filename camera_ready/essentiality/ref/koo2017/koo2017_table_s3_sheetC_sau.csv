@@ -1,0 +1,393 @@
+Sau_locus_tag,Sau_gene,Sau_essentiality,Bsu_locus_tag,Bsu_gene,Bsu_essentiality,Eco_ECK,Eco_gene,Eco_essentiality
+SAOUHSC_00001,dnaA,essential,BSU00010,dnaA,essential,ECK3694,dnaA,essential
+SAOUHSC_00002,dnaN,essential,BSU00020,dnaN,essential,ECK3693,dnaN,essential
+SAOUHSC_00005,gyrB,essential,BSU00060,gyrB,essential,ECK3691,gyrB,essential
+SAOUHSC_00006,gyrA,essential,BSU00070,gyrA,essential,ECK2223,gyrA,essential
+SAOUHSC_00009,serS,essential,BSU00130,serS,essential,ECK0884,serS,essential
+SAOUHSC_00442,dnaX,essential,BSU00190,dnaX,essential,ECK0464,dnaX,essential
+SAOUHSC_00451,tmk,essential,BSU00280,tmk,essential,ECK1084,tmk,essential
+SAOUHSC_00454,holB,essential,BSU00310,holB,essential,ECK1085,holB,essential
+SAOUHSC_00461,metS,essential,BSU00380,metS,essential,ECK2107,metG,essential
+SAOUHSC_00466,,non-essential,BSU00460,ispE,essential,ECK1196,ispE,essential
+SAOUHSC_00471,gcaD,essential,BSU00500,gcaD,essential,ECK3723,glmU,essential
+SAOUHSC_00472,prs,essential,BSU00510,prs,essential,ECK1195,prsA,essential
+SAOUHSC_00475,pth,essential,BSU00530,pth,essential,ECK1192,pth,essential
+SAOUHSC_00482,MW0462,essential,BSU00620,divIC,essential,,,no ortholog
+SAOUHSC_00484,MW0464,essential,BSU00670,tilS,essential,ECK0187,tilS,essential
+SAOUHSC_00489,folP,essential,BSU00770,sul,essential,ECK3166,folP,essential**
+SAOUHSC_00490,folB,essential,BSU00780,folB,essential,ECK3048,folB,non-essential
+SAOUHSC_00491,folK,essential,BSU00790,folK,essential,ECK0141,folK,essential
+SAOUHSC_00493,lysS,essential,BSU00820,lysS,essential,ECK4123,lysU,non-essential
+SAOUHSC_00225,MW0231,essential,BSU00900,ispD,essential,ECK2742,ispD,essential
+SAOUHSC_00509,gltX,essential,BSU00920,gltX,essential,ECK2394,gltX,essential
+SAOUHSC_00511,cysS,essential,BSU00940,cysS,essential,ECK0519,cysS,essential
+SAOUHSC_00516,secE,essential,BSU01000,secE,essential,ECK3972,secE,essential
+SAOUHSC_00520,rplJ,essential,BSU01040,rplJ,essential,ECK3976,rplJ,essential
+SAOUHSC_00521,rplL,essential,BSU01050,rplL,essential,ECK3977,rplL,essential
+SAOUHSC_00524,rpoB,essential,BSU01070,rpoB,essential,ECK3978,rpoB,essential
+SAOUHSC_00525,rpoC,essential,BSU01080,rpoC,essential,ECK3979,rpoC,essential
+SAOUHSC_00527,rpsL,essential,BSU01100,rpsL,essential,ECK3329,rpsL,essential
+SAOUHSC_00528,rpsG,essential,BSU01110,rpsG,essential,ECK3328,rpsG,essential
+SAOUHSC_00529,fus,essential,BSU01120,fusA,essential,ECK3327,fusA,essential
+SAOUHSC_00530,tufA,essential,BSU01130,tufA,essential,ECK3326,tufA,non-essential
+SAOUHSC_02512a,rpsJ,essential,BSU01150,rpsJ,essential,ECK3308,rpsJ,essential
+SAOUHSC_02512,rplC,essential,BSU01160,rplC,essential,ECK3307,rplC,essential
+SAOUHSC_02511,rplD,essential,BSU01170,rplD,essential,ECK3306,rplD,essential
+SAOUHSC_02510,rplW,essential,BSU01180,rplW,essential,ECK3305,rplW,essential
+SAOUHSC_02509,rplB,essential,BSU01190,rplB,essential,ECK3304,rplB,essential
+SAOUHSC_02508,rpsS,essential,BSU01200,rpsS,essential,ECK3303,rpsS,essential
+SAOUHSC_02507,rplV,essential,BSU01210,rplV,essential,ECK3302,rplV,essential
+SAOUHSC_02506,rpsC,essential,BSU01220,rpsC,essential,ECK3301,rpsC,essential
+SAOUHSC_02505,rplP,essential,BSU01230,rplP,essential,ECK3300,rplP,essential
+SAOUHSC_02503,rpsQ,essential,BSU01250,rpsQ,essential,ECK3298,rpsQ,essential
+SAOUHSC_02502,rplN,essential,BSU01260,rplNA,essential,ECK3297,rplN,essential
+SAOUHSC_02501,rplX,essential,BSU01270,rplX,essential,ECK3296,rplX,essential
+SAOUHSC_02500,rplE,essential,BSU01280,rplE,essential,ECK3295,rplE,essential
+SAOUHSC_02499,rpsN,essential,BSU01290,rpsNA,essential,ECK3294,rpsN,essential
+SAOUHSC_02498,rpsH,essential,BSU01300,rpsH,essential,ECK3293,rpsH,essential
+SAOUHSC_02496,rplF,essential,BSU01310,rplF,essential,ECK3292,rplF,essential
+SAOUHSC_02495,rplR,essential,BSU01320,rplR,essential,ECK3291,rplR,essential
+SAOUHSC_02494,rpsE,essential,BSU01330,rpsE,essential,ECK3290,rpsE,essential
+SAOUHSC_02493,rpmD,essential,BSU01340,rpmD,essential,ECK3289,rpmD,essential
+SAOUHSC_02491,secY,essential,BSU01360,secY,essential,ECK3287,secY,essential
+SAOUHSC_02490,adk,essential,BSU01370,adk,essential,ECK0468,adk,essential
+SAOUHSC_02489,infA,essential,BSU01390,infA,essential,ECK0875,infA,essential
+SAOUHSC_02487,rpsM,essential,BSU01410,rpsM,essential,ECK3285,rpsM,essential
+SAOUHSC_02486,rpsK,essential,BSU01420,rpsK,essential,ECK3284,rpsK,essential
+SAOUHSC_02485,rpoA,essential,BSU01430,rpoA,essential,ECK3282,rpoA,essential
+SAOUHSC_02484,rplQ,essential,BSU01440,rplQ,essential,ECK3281,rplQ,essential
+SAOUHSC_02478,rplM,essential,BSU01490,rplM,essential,ECK3220,rplM,essential
+SAOUHSC_02477,rpsI,essential,BSU01500,rpsI,essential,ECK3219,rpsI,essential
+SAOUHSC_02405,glmM,essential,BSU01770,glmM,essential,ECK3165,glmM,essential
+SAOUHSC_02399,glmS,essential,BSU01780,glmS,essential,ECK3722,glmS,essential
+SAOUHSC_02132,nadE,essential,BSU03130,nadE,essential,ECK1738,nadE,essential
+SAOUHSC_01635,,non-essential,BSU03150,aroK,essential,ECK3377,aroK,non-essential
+SAOUHSC_02318,ddlA,essential,BSU04560,ddl,essential,ECK0376,ddlA,non-essential
+SAOUHSC_02317,murF,essential,BSU04570,murF,essential,ECK0087,murF,essential
+SAOUHSC_02306,dpj,essential,BSU04620,acpS,essential,ECK2561,acpS,essential
+SAOUHSC_02305,,non-essential,BSU04640,alrA,essential,ECK4045,alr,non-essential
+SAOUHSC_02279,MW1975,essential,BSU05920,ydiC,essential,ECK1805,yeaZ,essential
+SAOUHSC_02277,MW1973,essential,BSU05940,gcp,essential,ECK3054,gcp,essential
+SAOUHSC_02255,groES,essential,BSU06020,groES,essential,ECK4136,groS,essential
+SAOUHSC_02254,groEL,essential,BSU06030,groEL,essential,ECK4137,groL,essential
+SAOUHSC_02123,pcrA,essential,BSU06610,pcrA,essential,ECK3808,uvrD,non-essential
+SAOUHSC_02122,lig,essential,BSU06620,ligA,essential,ECK2406,ligA,essential
+SAOUHSC_02118,MW1842,essential,BSU06670,gatC,essential,,,no ortholog
+SAOUHSC_02117,MW1841,essential,BSU06680,gatA,essential,,,no ortholog
+SAOUHSC_02116,MW1840,essential,BSU06690,gatB,essential,,,no ortholog
+SAOUHSC_01837,MW1669,essential,BSU09540,plsC,essential,ECK3009,plsC,essential
+SAOUHSC_01972,,non-essential,BSU09950,prsA,essential,ECK3767,ppiC,non-essential
+SAOUHSC_00921,fab,essential,BSU11340,fabF,essential,ECK1081,fabF,non-essential
+SAOUHSC_00933,trpS,essential,BSU11420,trpS,essential,ECK3371,trpS,essential
+SAOUHSC_00943,MW0888,essential,BSU11610,ppnKA,essential,ECK2611,yfjB,essential
+SAOUHSC_00945,,non-essential,BSU13300,mgtE,essential,,,no ortholog
+SAOUHSC_00989,,non-essential,BSU14000,patA,essential,,,no ortholog
+SAOUHSC_01398,,non-essential,BSU14180,dapH,essential,ECK0164,dapD,essential
+SAOUHSC_01399,,non-essential,BSU14190,dapL,essential,,,no ortholog
+SAOUHSC_01035,MW0972,essential,BSU14530,rnjA,essential,,,no ortholog
+SAOUHSC_01062,,non-essential,BSU14840,ylaN,essential,,,no ortholog
+SAOUHSC_01063,MW0996,essential,BSU14850,ftsW,essential,ECK0090,ftsW,essential
+SAOUHSC_01075,MW1007,essential,BSU15020,coaD,essential,ECK3624,coaD,essential
+SAOUHSC_01144,ftsL,essential,BSU15150,ftsL,essential,,,no ortholog
+SAOUHSC_01145,pbpA,essential,BSU15160,pbpB,essential,ECK0085,ftsI,essential
+SAOUHSC_00954,murE,essential,BSU15180,murE,essential,ECK0086,murE,essential
+SAOUHSC_01146,mraY,essential,BSU15190,mraY,essential,ECK0088,mraY,essential
+SAOUHSC_01147,murD,essential,BSU15200,murD,essential,ECK0089,murD,essential
+SAOUHSC_01424,murG,essential,BSU15220,murG,essential,ECK0091,murG,essential
+SAOUHSC_00752,MW0700,essential,BSU15230,murB,essential,ECK3964,murB,essential
+SAOUHSC_01148,div1b,essential,BSU15240,divIB,essential,,,no ortholog
+SAOUHSC_01149,ftsA,essential,BSU15280,ftsA,essential,ECK0095,ftsA,essential
+SAOUHSC_01150,ftsZ,essential,BSU15290,ftsZ,essential,ECK0096,ftsZ,essential
+SAOUHSC_01159,ileS,essential,BSU15430,ileS,essential,ECK0027,ileS,essential
+SAOUHSC_01176,gmk,essential,BSU15680,gmk,essential,ECK3638,gmk,essential
+SAOUHSC_01178,MW1094,essential,BSU15700,coaBC,essential,ECK3629,dfp,essential
+SAOUHSC_01179,priA,essential,BSU15710,priA,essential,ECK3927,priA,non-essential
+SAOUHSC_01197,plsX,essential,BSU15890,plsX,essential,ECK1076,plsX,non-essential
+SAOUHSC_01198,fabD,essential,BSU15900,fabD,essential,ECK1078,fabD,essential
+SAOUHSC_01199,fabG,essential,BSU15910,fabG,essential,ECK1079,fabG,essential
+SAOUHSC_01201,hmrB,essential,BSU15920,acpA,essential,ECK1080,acpP,essential
+SAOUHSC_01203,,non-essential,BSU15930,rnc,essential,ECK2565,rnc,essential
+SAOUHSC_01204,,non-essential,BSU15940,smc,essential,,,no ortholog
+SAOUHSC_01205,MW1118,essential,BSU15950,ftsY,essential,ECK3448,ftsY,essential
+SAOUHSC_01207,ffh,essential,BSU15980,ffh,essential,ECK2607,ffh,essential
+SAOUHSC_01208,rpsP,essential,BSU15990,rpsP,essential,ECK2606,rpsP,essential
+SAOUHSC_01210,trmD,essential,BSU16030,trmD,essential,ECK2604,trmD,essential
+SAOUHSC_01211,rplS,essential,BSU16040,rplS,essential,ECK2603,rplS,essential
+SAOUHSC_01214,MW1126,essential,BSU16050,rbgA,essential,,,no ortholog
+SAOUHSC_01232,rpsB,non-essential,BSU16490,rpsB,essential,ECK0168,rpsB,essential
+SAOUHSC_01234,MW1140,essential,BSU16500,tsf,essential,ECK0169,tsf,essential
+SAOUHSC_01235,smbA,essential,BSU16510,pyrH,essential,ECK0170,pyrH,essential
+SAOUHSC_01236,frr,essential,BSU16520,frr,essential,ECK0171,frr,essential
+SAOUHSC_01237,uppS,essential,BSU16530,uppS,essential,ECK0173,ispU,essential
+SAOUHSC_01238,cdsA,essential,BSU16540,cdsA,essential,ECK0174,cdsA,essential
+SAOUHSC_01240,proS,essential,BSU16570,proS,essential,ECK0194,proS,essential
+SAOUHSC_01241,polC,essential,BSU16580,polC,essential,,,no ortholog
+SAOUHSC_01243,nusA,essential,BSU16600,nusA,essential,ECK3158,nusA,essential
+SAOUHSC_01246,infB,essential,BSU16630,infB,essential,ECK3157,infB,essential
+SAOUHSC_01249,ribC,essential,BSU16670,ribC,essential,ECK0026,ribF,essential
+SAOUHSC_01250,rpsO,essential,BSU16680,rpsO,essential,ECK3154,rpsO,essential**
+SAOUHSC_01395,,non-essential,BSU16750,asd,essential,ECK3419,asd,essential
+SAOUHSC_01394,,non-essential,BSU16760,dapG,essential,ECK0002,thrA,non-essential
+SAOUHSC_01396,,non-essential,BSU16770,dapA,essential,ECK2474,dapA,essential
+SAOUHSC_01260,pgsA,essential,BSU16920,pgsA,essential,ECK1911,pgsA,essential
+SAOUHSC_00741,nrdI,essential,BSU17370,nrdI,essential,ECK2668,nrdI,non-essential
+SAOUHSC_00742,nrdE,essential,BSU17380,nrdE,essential,ECK2669,nrdE,non-essential
+SAOUHSC_00743,nrdF,essential,BSU17390,nrdF,essential,ECK2670,nrdF,non-essential
+SAOUHSC_01338,,non-essential,BSU17910,yneF,essential,,,no ortholog
+SAOUHSC_01350,MW1240,essential,BSU18070,plsY,essential,ECK3049,plsY,non-essential
+SAOUHSC_01351,parE,essential,BSU18090,parE,essential,ECK3021,parE,essential
+SAOUHSC_01352,parC,essential,BSU18100,parC,essential,ECK3010,parC,essential
+SAOUHSC_01434,dfrA,essential,BSU21810,dfrA,essential,ECK0049,folA,essential
+SAOUHSC_01470,MW1343,essential,BSU22350,dnaD,essential,,,no ortholog
+SAOUHSC_01473,MW1346,essential,BSU22440,birA,essential,ECK3965,birA,essential
+SAOUHSC_01474,MW1347,essential,BSU22450,cca,essential,ECK3046,cca,essential
+SAOUHSC_01397,,non-essential,BSU22490,dapB,essential,ECK0032,dapB,essential
+SAOUHSC_01481,,non-essential,BSU22600,aroE,essential,ECK0899,aroA,non-essential
+SAOUHSC_01483,,non-essential,BSU22710,aroF,essential,ECK2323,aroC,non-essential
+SAOUHSC_01490,hu,non-essential,BSU22790,hbs,essential,ECK3992,hupA,non-essential
+SAOUHSC_01492,MW1364,essential,BSU22840,engA,essential,ECK2507,der,essential
+SAOUHSC_01496,cmk,essential,BSU22890,cmk,essential,ECK0901,cmk,non-essential
+SAOUHSC_01589,,non-essential,BSU23220,scpA,essential,,,no ortholog
+SAOUHSC_01598,MW1458,essential,BSU23840,rnz,essential,ECK2262,elaC,non-essential
+SAOUHSC_01623,accC,essential,BSU24340,accC,essential,ECK3243,accC,essential
+SAOUHSC_01624,accB,essential,BSU24350,accB,essential,ECK3242,accB,essential
+SAOUHSC_01662,sigA,essential,BSU25200,sigA,essential,ECK3057,rpoD,essential
+SAOUHSC_01663,dnaG,essential,BSU25210,dnaG,essential,ECK3056,dnaG,essential
+SAOUHSC_01668,bex,essential,BSU25290,era,essential,ECK2564,era,essential
+SAOUHSC_01690,MW1538,essential,BSU25560,holA,essential,ECK0633,holA,essential
+SAOUHSC_01697,MW1545,essential,BSU25640,nadD,essential,ECK0632,nadD,essential
+SAOUHSC_01701,MW1549,essential,BSU25680,yqeG,essential,,,no ortholog
+SAOUHSC_01722,alaS,essential,BSU27410,alaS,essential,ECK2692,alaS,essential
+SAOUHSC_01726,MW1571,essential,BSU27500,trmU,essential,ECK1119,trmU,non-essential
+SAOUHSC_01727,MW1572,essential,BSU27510,iscS,essential,ECK2527,iscS,non-essential
+SAOUHSC_01737,aspS,essential,BSU27550,aspS,essential,ECK1867,aspS,essential
+SAOUHSC_01738,hisS,essential,BSU27560,hisS,essential,ECK2510,hisS,essential
+SAOUHSC_01753,obg,essential,BSU27920,obg,essential,ECK3172,obgE,essential
+SAOUHSC_01755,rpmA,essential,BSU27940,rpmA,essential,ECK3174,rpmA,essential
+SAOUHSC_01756,MW1596,essential,BSU27950,ysxB,essential,,,no ortholog
+SAOUHSC_01757,rplU,essential,BSU27960,rplU,essential,ECK3175,rplU,essential
+SAOUHSC_01758,,non-essential,BSU28010,mreD,essential,ECK3237,mreD,essential
+SAOUHSC_01759,,non-essential,BSU28020,mreC,essential,ECK3238,mreC,essential
+SAOUHSC_01766,folC,essential,BSU28080,folC,essential,ECK2309,folC,essential
+SAOUHSC_01767,valS,essential,BSU28090,valS,essential,ECK4251,valS,essential
+SAOUHSC_01777,MW1617,essential,BSU28190,ysxC,essential,ECK3857,yihA,essential
+SAOUHSC_01106,murI,essential,BSU28390,racE,essential,ECK3959,murI,essential
+SAOUHSC_01100,trxA,essential,BSU28500,trxA,essential,ECK3773,trxA,non-essential
+SAOUHSC_01093,pheT,essential,BSU28630,pheT,essential,ECK1711,pheT,essential
+SAOUHSC_01092,pheS,essential,BSU28640,pheS,essential,ECK1712,pheS,essential
+SAOUHSC_01784,rplT,essential,BSU28850,rplT,essential,ECK1714,rplT,essential
+SAOUHSC_01786,infC,essential,BSU28870,infC,essential,ECK1716,infC,essential
+SAOUHSC_01791,dnaI,essential,BSU28980,dnaI,essential,ECK4351,dnaC,essential
+SAOUHSC_01792,dnaB,essential,BSU28990,dnaB,essential,,,no ortholog
+SAOUHSC_01795,MW1631,essential,BSU29060,coaE,essential,ECK0103,coaE,essential
+SAOUHSC_01808,accA,essential,BSU29200,accA,essential,ECK0184,accA,essential
+SAOUHSC_01809,MW1644,essential,BSU29210,accD,essential,ECK2310,accD,essential
+SAOUHSC_01811,dnaE,essential,BSU29230,dnaE,essential,ECK0183,dnaE,essential
+SAOUHSC_01829,rpsD,essential,BSU29660,rpsD,essential,ECK3283,rpsD,essential
+SAOUHSC_01839,tyrS,essential,BSU29670,tyrS,essential,ECK1633,tyrS,essential
+SAOUHSC_01856,murC,essential,BSU29790,murC,essential,ECK0092,murC,essential
+SAOUHSC_01875,leuS,essential,BSU30320,leuS,essential,ECK0635,leuS,essential
+SAOUHSC_01909,metK,essential,BSU30550,metK,essential,ECK2937,metK,essential
+SAOUHSC_01915,,non-essential,BSU30780,menC,essential,,,no ortholog
+SAOUHSC_01916,,non-essential,BSU30790,menE,essential,ECK2254,menE,non-essential
+SAOUHSC_00985,,non-essential,BSU30800,menB,essential,ECK2256,menB,non-essential
+SAOUHSC_00983,,non-essential,BSU30820,menD,essential,ECK2258,menD,non-essential
+SAOUHSC_00889,,non-essential,BSU31600,mrpA,essential,,,no ortholog
+SAOUHSC_00888,,non-essential,BSU31610,mrpB,essential,,,no ortholog
+SAOUHSC_00887,,non-essential,BSU31620,mrpC,essential,,,no ortholog
+SAOUHSC_00886,,non-essential,BSU31630,mrpD,essential,,,no ortholog
+SAOUHSC_00885,,non-essential,BSU31640,mrpE,essential,,,no ortholog
+SAOUHSC_00884,,non-essential,BSU31650,mrpF,essential,,,no ortholog
+SAOUHSC_00632,,non-essential,BSU31660,mrpG,essential,,,no ortholog
+SAOUHSC_02133,MW1854,essential,BSU31750,pncB,essential,ECK0922,pncB,non-essential
+SAOUHSC_00851,MW0799,essential,BSU32670,sufB,essential,ECK1679,sufB,non-essential
+SAOUHSC_00850,MW0798,essential,BSU32680,iscU,essential,ECK2526,iscU,non-essential
+SAOUHSC_00849,MW0797,essential,BSU32690,sufS,essential,ECK1676,sufS,non-essential
+SAOUHSC_00848,MW0796,essential,BSU32700,sufD,essential,ECK1679,sufB,non-essential
+SAOUHSC_00847,MW0795,essential,BSU32710,sufC,essential,ECK1678,sufC,non-essential
+SAOUHSC_00799,eno,essential,BSU33900,eno,essential,ECK2773,eno,essential
+SAOUHSC_00798,pgm,essential,BSU33910,pgm,essential,ECK3602,gpmM,non-essential
+SAOUHSC_00795,gap,essential,BSU33940,gapA,essential,ECK1777,gapA,essential
+SAOUHSC_00785,trxB,essential,BSU34790,trxB,essential,ECK0879,trxB,non-essential
+SAOUHSC_00771,prfB,essential,BSU35290,prfB,essential,ECK2886,prfB,essential
+SAOUHSC_00769,secA,essential,BSU35300,secA,essential,ECK0099,secA,essential
+SAOUHSC_00762,llm,essential,BSU35530,tagO,essential,ECK3776,,non-essential
+SAOUHSC_00092,,non-essential,BSU35600,tuaB,essential,ECK2040,wzxC,non-essential
+SAOUHSC_02352,,non-essential,BSU35660,mnaA,essential,ECK3778,rffE,non-essential
+SAOUHSC_00641,tagH,essential,BSU35700,tagH,essential,,,no ortholog
+SAOUHSC_00642,tagG,essential,BSU35710,tagG,essential,,,no ortholog
+SAOUHSC_00223,MW0230,essential,BSU35720,tagF,essential,,,no ortholog
+SAOUHSC_00645,tagD,essential,BSU35740,tagD,essential,,,no ortholog
+SAOUHSC_00640,tagA,essential,BSU35750,tagA,essential,,,no ortholog
+SAOUHSC_00643,tagB,essential,BSU35760,tagB,essential,,,no ortholog
+SAOUHSC_02336,MW2023,essential,BSU36370,fabZ,essential,ECK0179,fabZ,essential
+SAOUHSC_02337,murA,non-essential,BSU36760,murAA,essential,ECK3178,murA,essential
+SAOUHSC_02359,prfA,essential,BSU37010,prfA,essential,ECK1199,prfA,essential
+SAOUHSC_02368,pyrG,essential,BSU37150,pyrG,essential,ECK2774,pyrG,essential
+SAOUHSC_00611,argS,essential,BSU37330,argS,essential,ECK1877,argS,essential
+SAOUHSC_02319,,non-essential,BSU38120,rodA,essential,ECK0627,mrdB,essential
+SAOUHSC_00980,MW0925,essential,BSU38490,menA,essential,ECK3922,menA,non-essential
+SAOUHSC_00021,vicK,essential,BSU40400,walK,essential,,,no ortholog
+SAOUHSC_00020,vicR,essential,BSU40410,walR,essential,,,no ortholog
+SAOUHSC_00018,dnaC,essential,BSU40440,dnaC,essential,ECK4044,dnaB,essential
+SAOUHSC_02140,MW1860,essential,BSU40550,ppaC,essential,,,no ortholog
+SAOUHSC_00350,rpsR,essential,BSU40890,rpsR,essential,ECK4198,rpsR,essential
+SAOUHSC_00349,ssb,essential,BSU40900,ssbA,essential,ECK4051,ssb,essential
+SAOUHSC_03054,rnpA,essential,BSU41050,rnpA,essential,ECK3696,rnpA,essential
+SAOUHSC_00577,mvaK1,essential,,,no ortholog,,,no ortholog
+SAOUHSC_00578,mvaD,essential,,,no ortholog,,,no ortholog
+SAOUHSC_00579,mvaK2,essential,,,no ortholog,,,no ortholog
+SAOUHSC_02859,mvaA,essential,,,no ortholog,,,no ortholog
+SAOUHSC_02106,MW1832,essential,,,no ortholog,,,no ortholog
+SAOUHSC_02107,MW1833,essential,,,no ortholog,,,no ortholog
+SAOUHSC_01373,femA,essential,,,no ortholog,,,no ortholog
+SAOUHSC_01374,femB,essential,,,no ortholog,,,no ortholog
+SAOUHSC_00226,MW0232,essential,,,no ortholog,,,no ortholog
+SAOUHSC_00868,MW0813,essential,,,no ortholog,,,no ortholog
+SAOUHSC_01666,glyS,essential,,,no ortholog,,,no ortholog
+SAOUHSC_02151,MW1871,essential,,,no ortholog,,,no ortholog
+SAOUHSC_02152,MW1872,essential,,,no ortholog,,,no ortholog
+SAOUHSC_02371,,essential,,,no ortholog,,,no ortholog
+SAOUHSC_02407,,essential,,,no ortholog,,,no ortholog
+SAOUHSC_02527,,essential,,,no ortholog,,,no ortholog
+SAOUHSC_02612,MW2256,essential,,,no ortholog,ECK2910,rpiA,non-essential
+SAOUHSC_00541,,non-essential,BSU00180,tadA,non-essential,ECK2557,tadA,essential
+SAOUHSC_00444,MW0434,essential,BSU00200,yaaK,non-essential,ECK0465,,non-essential
+SAOUHSC_00459,,non-essential,BSU00360,yabC,non-essential,ECK3134,yraL,essential
+SAOUHSC_00474,,non-essential,BSU00520,ctc,non-essential,ECK2179,rplY,essential**
+SAOUHSC_00486,,non-essential,BSU00690,ftsH,non-essential,ECK3167,ftsH,essential
+SAOUHSC_00510,cysE,essential,BSU00930,cysE,non-essential,ECK3597,,non-essential
+SAOUHSC_00517,nusG,non-essential,BSU01010,nusG,non-essential,ECK3973,nusG,essential
+SAOUHSC_00518,rplK,essential,BSU01020,rplK,non-essential,ECK3974,rplK,essential**
+SAOUHSC_00519,rplA,essential,BSU01030,rplA,non-essential,ECK3975,,non-essential
+SAOUHSC_02504,rpmC,essential,BSU01240,rpmC,non-essential,ECK3299,rpmC,essential
+SAOUHSC_02492,rplO,essential,BSU01350,rplO,non-essential,ECK3288,rplO,essential
+SAOUHSC_02102,map,essential,BSU01380,mapA,non-essential,ECK0166,map,essential
+SAOUHSC_02488,rpmJ,essential,BSU01400,rpmJ,non-essential,ECK3286,,non-essential
+SAOUHSC_00549,MW0521,essential,BSU03340,folEB,non-essential,,,no ortholog
+SAOUHSC_02280,MW1976,essential,BSU05910,ydiB,non-essential,ECK4164,yjeE,essential
+SAOUHSC_00375,guaA,essential,BSU06360,guaA,non-essential,ECK2503,,non-essential
+SAOUHSC_02114,MW1839,essential,BSU06720,dagK,non-essential,ECK2082,yegS,non-essential
+SAOUHSC_00728,MW0681,essential,BSU07260,ltaSA,non-essential,,,no ortholog
+SAOUHSC_02003,,non-essential,BSU08690,ygaD,non-essential,ECK0905,msbA,essential
+SAOUHSC_01962,,non-essential,BSU10120,hemE,non-essential,ECK3989,hemE,essential**
+SAOUHSC_01961,,non-essential,BSU10130,hemH,non-essential,ECK0469,hemH,essential
+SAOUHSC_00904,,non-essential,BSU10620,addB,non-essential,,,no ortholog
+SAOUHSC_00920,FabH,essential,BSU11330,fabHA,non-essential,ECK1077,,non-essential
+SAOUHSC_00934,spxA,essential,BSU11500,spxA,non-essential,ECK2466,,non-essential
+SAOUHSC_00947,fabI,essential,BSU11720,fabI,non-essential,ECK1283,fabI,essential
+SAOUHSC_00957,MW0902,essential,BSU13440,ykoY,non-essential,,,no ortholog
+SAOUHSC_01028,ptsH,essential,BSU13900,ptsH,non-essential,,,no ortholog
+SAOUHSC_00903,spsB,essential,BSU14410,sipT,non-essential,ECK2566,lepB,essential
+SAOUHSC_01036,MW0973,essential,BSU14540,ykzG,non-essential,,,no ortholog
+SAOUHSC_01040,MW0976,essential,BSU14580,pdhA,non-essential,,,no ortholog
+SAOUHSC_01055,,non-essential,BSU14670,suhB,non-essential,ECK2530,suhB,essential
+SAOUHSC_01078,rpmF,essential,BSU15080,rpmF,non-essential,ECK1075,rpmF,non-essential
+SAOUHSC_01162,,non-essential,BSU15450,lspA,non-essential,ECK0028,lspA,essential
+SAOUHSC_01038,pdf1,essential,BSU15720,defA,non-essential,ECK3273,def,essential
+SAOUHSC_01183,MW1099,essential*,BSU15730,fmt,non-essential,ECK3274,fmt,essential
+SAOUHSC_01188,MW1104,essential,BSU15780,cpgA,non-essential,ECK4157,,non-essential
+SAOUHSC_01189,cfxE,essential,BSU15790,rpe,non-essential,ECK3373,,non-essential
+SAOUHSC_01190,MW1106,essential,BSU15800,thiN,non-essential,,,no ortholog
+SAOUHSC_01191,,non-essential,BSU15820,rpmB,non-essential,ECK3627,rpmB,essential
+SAOUHSC_01209,rimM,essential,BSU16020,rimM,non-essential,ECK2605,,non-essential
+SAOUHSC_01216,sucC,essential,BSU16090,sucC,non-essential,ECK0716,,non-essential
+SAOUHSC_01222,MW1133,essential,BSU16120,topA,non-essential,ECK1268,topA,essential
+SAOUHSC_01239,,non-essential,BSU16560,rasP,non-essential,ECK0175,yaeL,essential
+SAOUHSC_01244,MW1150,essential,BSU16610,ylxR,non-essential,,,no ortholog
+SAOUHSC_01245,MW1151,essential,BSU16620,rplGA,non-essential,,,no ortholog
+SAOUHSC_01252,MW1158,essential,BSU16780,rnjB,non-essential,,,no ortholog
+SAOUHSC_02860,mvaS,essential,BSU17150,pksG,non-essential,,,no ortholog
+SAOUHSC_01782,MW1621,essential,BSU17400,ymaB,non-essential,,,no ortholog
+SAOUHSC_01287,glnA,essential,BSU17460,glnA,non-essential,ECK3863,,non-essential
+SAOUHSC_02057,,non-essential,BSU17660,yncF,non-essential,ECK3630,dut,essential
+SAOUHSC_01333,lexA,essential,BSU17850,lexA,non-essential,ECK4035,lexA,essential
+SAOUHSC_01337,tkt,essential,BSU17890,tkt,non-essential,ECK2930,,non-essential
+SAOUHSC_01435,thyA,essential,BSU21820,thyB,non-essential,ECK2823,,non-essential
+SAOUHSC_01462,MW1335,essential,BSU22180,gpsB,non-essential,,,no ortholog
+SAOUHSC_01466,recU,essential,BSU22310,recU,non-essential,,,no ortholog
+SAOUHSC_01471,,non-essential,BSU22360,asnS,non-essential,ECK0921,asnS,essential
+SAOUHSC_01486,,non-essential,BSU22740,hepT,non-essential,ECK3176,ispB,essential
+SAOUHSC_01491,,non-essential,BSU22830,gpsA,non-essential,ECK3598,gpsA,essential
+SAOUHSC_02623,fni,essential,BSU22870,fni,non-essential,ECK3595,lldD,non-essential
+SAOUHSC_01493,,non-essential,BSU22880,ypfD,non-essential,ECK0902,rpsA,essential
+SAOUHSC_01501,ebpS,essential,BSU23000,ypbE,non-essential,,,no ortholog
+SAOUHSC_01886,,non-essential,BSU23250,ribH,non-essential,ECK0409,ribE,essential
+SAOUHSC_01887,,non-essential,BSU23260,ribA,non-essential,ECK1272,ribA,essential
+SAOUHSC_01887,ribA,non-essential,BSU23260,ribA,non-essential,ECK3032,ribB,essential
+SAOUHSC_01888,,non-essential,BSU23270,ribE,non-essential,ECK1658,ribC,essential
+SAOUHSC_01889,,non-essential,BSU23280,ribD,non-essential,ECK0408,ribD,essential
+SAOUHSC_01592,MW1452,essential,BSU23520,fur,non-essential,ECK0671,,non-essential
+SAOUHSC_01599,MW1459,essential,BSU23850,zwf,non-essential,ECK1853,,non-essential
+SAOUHSC_01605,gnd,essential,BSU23860,gndA,non-essential,ECK2024,,non-essential
+SAOUHSC_02327,MW2013,essential,BSU23890,oxaAB,non-essential,ECK3698,yidC,essential
+SAOUHSC_00336,MW0330,essential,BSU24170,mmgA,non-essential,ECK2217,,non-essential
+SAOUHSC_01618,,non-essential,BSU24280,ispA,non-essential,ECK0415,ispA,essential
+SAOUHSC_01007,,non-essential,BSU24310,folD,non-essential,ECK0522,folD,essential
+SAOUHSC_01385,,non-essential,BSU24960,pstBA,non-essential,ECK3718,,non-essential
+SAOUHSC_01386,,non-essential,BSU24970,pstA,non-essential,ECK3719,,non-essential
+SAOUHSC_01389,,non-essential,BSU24990,pstS,non-essential,ECK3721,,non-essential
+SAOUHSC_01661,MW1512,essential,BSU25180,trmK,non-essential,,,no ortholog
+SAOUHSC_01672,MW1522,essential,BSU25320,yqfG,non-essential,ECK0651,,non-essential
+SAOUHSC_01678,,non-essential,BSU25410,rpsU,non-essential,ECK3055,rpsU,essential**
+SAOUHSC_01682,,non-essential,BSU25460,dnaJ,non-essential,ECK0015,,non-essential
+SAOUHSC_01683,,non-essential,BSU25470,dnaK,non-essential,ECK0014,,non-essential
+SAOUHSC_01684,,non-essential,BSU25480,grpE,non-essential,ECK2610,grpE,essential
+SAOUHSC_01700,MW1548,essential,BSU25670,yqeH,non-essential,,,no ortholog
+SAOUHSC_01714,greA,essential,BSU27320,greA,non-essential,ECK3170,,non-essential
+SAOUHSC_01720,MW1566,essential,BSU27390,yrrK,non-essential,ECK2944,yqgF,essential
+SAOUHSC_01721,MW1567,essential,BSU27400,yrzL,non-essential,,,no ortholog
+SAOUHSC_01742,relA,essential,BSU27600,relA,non-essential,ECK3640,spoT,essential
+SAOUHSC_01746,secF,essential,BSU27650,secDF,non-essential,ECK0402,secD,essential
+SAOUHSC_01750,ruvB,essential,BSU27730,ruvB,non-essential,ECK1861,,non-essential
+SAOUHSC_01771,,non-essential,BSU28120,hemL,non-essential,ECK0153,hemL,essential
+SAOUHSC_01772,,non-essential,BSU28130,hemB,non-essential,ECK0366,hemB,essential
+SAOUHSC_01773,,non-essential,BSU28140,hemD,non-essential,ECK3798,hemD,essential
+SAOUHSC_01774,,non-essential,BSU28150,hemC,non-essential,ECK3799,hemC,essential
+SAOUHSC_01776,,non-essential,BSU28170,hemA,non-essential,ECK1198,hemA,essential
+SAOUHSC_01785,rpmI,essential,BSU28860,rpmI,non-essential,ECK1715,,non-essential
+SAOUHSC_01797,,non-essential,BSU29090,polA,non-essential,ECK3855,polA,essential
+SAOUHSC_01806,pykA,essential,BSU29180,pyk,non-essential,ECK1672,,non-essential
+SAOUHSC_01807,pfk,essential,BSU29190,pfkA,non-essential,ECK3908,,non-essential
+SAOUHSC_01866,MW1692,essential,BSU29920,ytmP,non-essential,,,no ortholog
+SAOUHSC_01871,murJ,essential,BSU30050,murJ,non-essential,ECK1054,murJ,essential
+SAOUHSC_02361,rpmE,essential,BSU30700,rpmEB,non-essential,ECK3928,,non-essential
+SAOUHSC_01477,MW1350,essential,BSU31310,yugP,non-essential,,,no ortholog
+SAOUHSC_00900,pgi,essential,BSU31350,pgi,non-essential,ECK4017,,non-essential
+SAOUHSC_00877,,non-essential,BSU32160,yutM,non-essential,ECK0155,yadR,essential
+SAOUHSC_00804,ssrP,essential,BSU33600,smpB,non-essential,ECK2616,,non-essential
+SAOUHSC_00801,,non-essential,BSU33630,secG,non-essential,ECK3164,,non-essential
+SAOUHSC_00797,tpi,essential,BSU33920,tpiA,non-essential,ECK3911,,non-essential
+SAOUHSC_00796,pgk,essential,BSU33930,pgk,non-essential,ECK2922,pgk,essential
+SAOUHSC_00790,clpP,essential,BSU34540,clpP,non-essential,ECK0431,,non-essential
+SAOUHSC_00788,MW0728,essential,BSU34760,yvcK,non-essential,ECK0769,,non-essential
+SAOUHSC_00782,,non-essential,BSU34990,lgt,non-essential,ECK2824,lgt,essential
+SAOUHSC_00781,hprK,essential,BSU35000,hprK,non-essential,,,no ortholog
+SAOUHSC_02801,,non-essential,BSU35670,gtaB,non-essential,ECK1231,,non-essential
+SAOUHSC_02340,,non-essential,BSU36800,atpC,non-essential,ECK3724,,non-essential
+SAOUHSC_02341,,non-essential,BSU36810,atpD,non-essential,ECK3725,,non-essential
+SAOUHSC_02343,,non-essential,BSU36820,atpG,non-essential,ECK3726,,non-essential
+SAOUHSC_02345,,non-essential,BSU36830,atpA,non-essential,ECK3727,,non-essential
+SAOUHSC_02346,,non-essential,BSU36840,atpH,non-essential,ECK3728,,non-essential
+SAOUHSC_02347,,non-essential,BSU36850,atpF,non-essential,ECK3729,,non-essential
+SAOUHSC_02349,,non-essential,BSU36860,atpE,non-essential,ECK3730,,non-essential
+SAOUHSC_02350,,non-essential,BSU36870,atpB,non-essential,ECK3731,,non-essential
+SAOUHSC_02357,MW2040,essential,BSU36950,ywlC,non-essential,ECK3269,yrdC,essential
+SAOUHSC_02358,,non-essential,BSU37000,prmC,non-essential,ECK1200,prmC,essential
+SAOUHSC_02362,,non-essential,BSU37080,rho,non-essential,ECK3775,rho,essential
+SAOUHSC_02366,fba,essential,BSU37120,fbaA,non-essential,ECK2921,fbaA,essential
+SAOUHSC_01467,pbp2,essential,BSU37510,pbpG,non-essential,ECK0148,mrcB,non-essential
+SAOUHSC_01788,thrS,essential,BSU37560,thrZ,non-essential,ECK1717,thrS,essential
+SAOUHSC_00575,MW0544,essential,BSU37640,ywfL,non-essential,,,no ortholog
+SAOUHSC_00574,pta,essential,BSU37660,pta,non-essential,ECK2291,,non-essential
+SAOUHSC_00869,dltA,essential,BSU38500,dltA,non-essential,,,no ortholog
+SAOUHSC_00870,dltB,essential,BSU38510,dltB,non-essential,,,no ortholog
+SAOUHSC_00871,dltC,essential,BSU38520,dltC,non-essential,,,no ortholog
+SAOUHSC_00872,dltD,essential,BSU38530,dltD,non-essential,,,no ortholog
+SAOUHSC_01787,lysP,essential,BSU40330,rocE,non-essential,ECK2149,lysP,non-essential
+SAOUHSC_00015,MW0014,essential,BSU40510,yybT,non-essential,,,no ortholog
+SAOUHSC_00348,rpsF,essential,BSU40910,rpsF,non-essential,ECK4196,rpsF,non-essential
+SAOUHSC_03049,MW2627,essential,BSU40990,noc,non-essential,,,no ortholog
+SAOUHSC_03052,gidA,essential,BSU41010,gidA,non-essential,ECK3734,,non-essential
+SAOUHSC_03053,thdF,essential,BSU41020,trmE,non-essential,ECK3699,,non-essential
+SAOUHSC_03055,rpmH,essential,BSU41060,rpmH,non-essential,ECK3695,rpmH,essential

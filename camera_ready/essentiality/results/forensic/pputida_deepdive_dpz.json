@@ -1,0 +1,197 @@
+{
+ "group_a": [
+  {
+   "protein": "WP_003252437.1",
+   "locus": "PP_1665",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9995625019073486,
+   "score_bin": "[0.5,1]",
+   "product": "Phosphoribosylformylglycinamidine cyclo-ligase"
+  },
+  {
+   "protein": "WP_003254941.1",
+   "locus": "PP_1088",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9997079372406006,
+   "score_bin": "[0.5,1]",
+   "product": "Argininosuccinate synthase"
+  },
+  {
+   "protein": "WP_003254733.1",
+   "locus": "PP_1240",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9955685138702393,
+   "score_bin": "[0.5,1]",
+   "product": "Phosphoribosylaminoimidazole-succinocarboxamide synthase"
+  },
+  {
+   "protein": "WP_010952214.1",
+   "locus": "PP_1037",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9951303005218506,
+   "score_bin": "[0.5,1]",
+   "product": "Phosphoribosylformylglycinamidine synthase"
+  },
+  {
+   "protein": "WP_003249687.1",
+   "locus": "PP_4822",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9999312162399292,
+   "score_bin": "[0.5,1]",
+   "product": "phosphoribosylaminoimidazolecarboxamide formyltransferase/IMP cyclohydrolase"
+  },
+  {
+   "protein": "WP_003252672.1",
+   "locus": "PP_1771",
+   "ref_truth": true,
+   "meteor_call": false,
+   "thresh_call": true,
+   "max_score": 0.9918859004974365,
+   "score_bin": "[0.5,1]",
+   "product": "Cytidylate kinase"
+  },
+  {
+   "protein": "WP_010955432.1",
+   "locus": "PP_4823",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9999983310699463,
+   "score_bin": "[0.5,1]",
+   "product": "Phosphoribosylamine--glycine ligase"
+  },
+  {
+   "protein": "WP_003247207.1",
+   "locus": "PP_2000",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9997321367263794,
+   "score_bin": "[0.5,1]",
+   "product": "amidophosphoribosyl transferase"
+  },
+  {
+   "protein": "WP_003249311.1",
+   "locus": "PP_4998",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9998680949211121,
+   "score_bin": "[0.5,1]",
+   "product": "Aspartate carbamoyltransferase"
+  },
+  {
+   "protein": "WP_049586623.1",
+   "locus": "PP_1997",
+   "ref_truth": true,
+   "meteor_call": false,
+   "thresh_call": true,
+   "max_score": 0.9785308837890625,
+   "score_bin": "[0.5,1]",
+   "product": "folypolyglutamate synthase/dihydrofolate synthase"
+  },
+  {
+   "protein": "WP_049588037.1",
+   "locus": "PP_0184",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9999951720237732,
+   "score_bin": "[0.5,1]",
+   "product": "Argininosuccinate lyase"
+  },
+  {
+   "protein": "WP_010952721.1",
+   "locus": "PP_1664",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9999901652336121,
+   "score_bin": "[0.5,1]",
+   "product": "phosphoribosylglycinamide formyltransferase 1"
+  },
+  {
+   "protein": "WP_010952676.1",
+   "locus": "PP_1596",
+   "ref_truth": true,
+   "meteor_call": false,
+   "thresh_call": true,
+   "max_score": 0.9998481273651123,
+   "score_bin": "[0.5,1]",
+   "product": "CTP:phosphatidate cytidyltransferase"
+  },
+  {
+   "protein": "WP_010955668.1",
+   "locus": "PP_5132",
+   "ref_truth": true,
+   "meteor_call": false,
+   "thresh_call": true,
+   "max_score": 0.9997903108596802,
+   "score_bin": "[0.5,1]",
+   "product": "dihydrofolate reductase"
+  },
+  {
+   "protein": "WP_010955677.1",
+   "locus": "PP_5141",
+   "ref_truth": true,
+   "meteor_call": false,
+   "thresh_call": true,
+   "max_score": 0.9971113204956055,
+   "score_bin": "[0.5,1]",
+   "product": "Thymidylate synthase"
+  },
+  {
+   "protein": "WP_010952851.1",
+   "locus": "PP_1815",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9996299743652344,
+   "score_bin": "[0.5,1]",
+   "product": "Orotidine 5'-phosphate decarboxylase"
+  }
+ ],
+ "score_bin_dist": {
+  "[0.5,1]": 16
+ },
+ "group_b": [
+  {
+   "protein": "WP_003252294.1",
+   "locus": "PP_1593",
+   "ref_truth": true,
+   "meteor_call": true,
+   "thresh_call": false
+  },
+  {
+   "protein": "WP_010953384.1",
+   "locus": "PP_2432",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "WP_061405675.1",
+   "locus": "PP_3849",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "WP_003254528.1",
+   "locus": "PP_4490",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  }
+ ]
+}

@@ -1,0 +1,7472 @@
+{
+ "GCA_003598085.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3496,
+    "deadends": 5,
+    "mass_imbal": 1833,
+    "mi_frac": 0.5243
+   },
+   "meteor_clean": {
+    "n_rxn": 3291,
+    "deadends": 1,
+    "mass_imbal": 1725,
+    "mi_frac": 0.5242
+   },
+   "baseline_dpz": {
+    "n_rxn": 5048,
+    "deadends": 3,
+    "mass_imbal": 2560,
+    "mi_frac": 0.5071
+   },
+   "meteor_dpz": {
+    "n_rxn": 5539,
+    "deadends": 1,
+    "mass_imbal": 2611,
+    "mi_frac": 0.4714
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4243,
+    "deadends": 4,
+    "mass_imbal": 2197,
+    "mi_frac": 0.5178
+   },
+   "meteor_enzbert": {
+    "n_rxn": 3997,
+    "deadends": 1,
+    "mass_imbal": 2044,
+    "mi_frac": 0.5114
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCA_003598085.1",
+   "n_rxn": 2657,
+   "n_internal": 2331,
+   "n_met": 1749,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 329,
+   "mi_frac": 0.1238,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0013,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0013,
+   "fba_growth_as_shipped": 105.5996,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.001287001287001287,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5105633802816901
+  }
+ },
+ "GCA_014873095.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 2971,
+    "deadends": 6,
+    "mass_imbal": 1559,
+    "mi_frac": 0.5247
+   },
+   "meteor_clean": {
+    "n_rxn": 2733,
+    "deadends": 0,
+    "mass_imbal": 1427,
+    "mi_frac": 0.5221
+   },
+   "baseline_dpz": {
+    "n_rxn": 4979,
+    "deadends": 5,
+    "mass_imbal": 2480,
+    "mi_frac": 0.4981
+   },
+   "meteor_dpz": {
+    "n_rxn": 5264,
+    "deadends": 1,
+    "mass_imbal": 2472,
+    "mi_frac": 0.4696
+   },
+   "baseline_enzbert": {
+    "n_rxn": 3579,
+    "deadends": 1,
+    "mass_imbal": 1859,
+    "mi_frac": 0.5194
+   },
+   "meteor_enzbert": {
+    "n_rxn": 3375,
+    "deadends": 0,
+    "mass_imbal": 1727,
+    "mi_frac": 0.5117
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCA_014873095.1",
+   "n_rxn": 2189,
+   "n_internal": 1909,
+   "n_met": 1453,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 284,
+   "mi_frac": 0.1297,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0021,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0021,
+   "fba_growth_as_shipped": 55.5073,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0020953378732320588,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6023391812865497
+  }
+ },
+ "GCA_022305115.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 5891,
+    "deadends": 8,
+    "mass_imbal": 2803,
+    "mi_frac": 0.4758
+   },
+   "meteor_clean": {
+    "n_rxn": 5251,
+    "deadends": 1,
+    "mass_imbal": 2432,
+    "mi_frac": 0.4631
+   },
+   "baseline_dpz": {
+    "n_rxn": 7048,
+    "deadends": 14,
+    "mass_imbal": 3173,
+    "mi_frac": 0.4502
+   },
+   "meteor_dpz": {
+    "n_rxn": 6802,
+    "deadends": 3,
+    "mass_imbal": 2970,
+    "mi_frac": 0.4366
+   },
+   "baseline_enzbert": {
+    "n_rxn": 6140,
+    "deadends": 5,
+    "mass_imbal": 2845,
+    "mi_frac": 0.4634
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5667,
+    "deadends": 1,
+    "mass_imbal": 2553,
+    "mi_frac": 0.4505
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCA_022305115.1",
+   "n_rxn": 3167,
+   "n_internal": 2739,
+   "n_met": 1913,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 432,
+   "mi_frac": 0.1364,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0015,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0015,
+   "fba_growth_as_shipped": 122.7527,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0014603870025556773,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.7614035087719299
+  }
+ },
+ "GCA_046479585.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 2513,
+    "deadends": 6,
+    "mass_imbal": 1345,
+    "mi_frac": 0.5352
+   },
+   "meteor_clean": {
+    "n_rxn": 2357,
+    "deadends": 1,
+    "mass_imbal": 1252,
+    "mi_frac": 0.5312
+   },
+   "baseline_dpz": {
+    "n_rxn": 3180,
+    "deadends": 4,
+    "mass_imbal": 1687,
+    "mi_frac": 0.5305
+   },
+   "meteor_dpz": {
+    "n_rxn": 3526,
+    "deadends": 1,
+    "mass_imbal": 1797,
+    "mi_frac": 0.5096
+   },
+   "baseline_enzbert": {
+    "n_rxn": 2719,
+    "deadends": 7,
+    "mass_imbal": 1456,
+    "mi_frac": 0.5355
+   },
+   "meteor_enzbert": {
+    "n_rxn": 2666,
+    "deadends": 1,
+    "mass_imbal": 1406,
+    "mi_frac": 0.5274
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCA_046479585.1",
+   "n_rxn": 1664,
+   "n_internal": 1414,
+   "n_met": 1205,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 252,
+   "mi_frac": 0.1514,
+   "mass_imbal_internal": 2,
+   "mi_frac_internal": 0.0014,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 2,
+   "mi_frac_internal_genuine": 0.0014,
+   "fba_growth_as_shipped": 52.9358,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0014144271570014145,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.4014285714285714
+  }
+ },
+ "GCA_050699075.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 2588,
+    "deadends": 4,
+    "mass_imbal": 1414,
+    "mi_frac": 0.5464
+   },
+   "meteor_clean": {
+    "n_rxn": 2564,
+    "deadends": 0,
+    "mass_imbal": 1376,
+    "mi_frac": 0.5367
+   },
+   "baseline_dpz": {
+    "n_rxn": 4529,
+    "deadends": 9,
+    "mass_imbal": 2328,
+    "mi_frac": 0.514
+   },
+   "meteor_dpz": {
+    "n_rxn": 4667,
+    "deadends": 3,
+    "mass_imbal": 2258,
+    "mi_frac": 0.4838
+   },
+   "baseline_enzbert": {
+    "n_rxn": 3294,
+    "deadends": 4,
+    "mass_imbal": 1771,
+    "mi_frac": 0.5376
+   },
+   "meteor_enzbert": {
+    "n_rxn": 3736,
+    "deadends": 0,
+    "mass_imbal": 1831,
+    "mi_frac": 0.4901
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCA_050699075.1",
+   "n_rxn": 2529,
+   "n_internal": 2202,
+   "n_met": 1691,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 331,
+   "mi_frac": 0.1309,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0018,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0018,
+   "fba_growth_as_shipped": 57.567,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0018165304268846503,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.48451053283767037
+  }
+ },
+ "GCA_051904755.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4136,
+    "deadends": 10,
+    "mass_imbal": 2044,
+    "mi_frac": 0.4942
+   },
+   "meteor_clean": {
+    "n_rxn": 3696,
+    "deadends": 1,
+    "mass_imbal": 1805,
+    "mi_frac": 0.4884
+   },
+   "baseline_dpz": {
+    "n_rxn": 5071,
+    "deadends": 9,
+    "mass_imbal": 2493,
+    "mi_frac": 0.4916
+   },
+   "meteor_dpz": {
+    "n_rxn": 5085,
+    "deadends": 3,
+    "mass_imbal": 2386,
+    "mi_frac": 0.4692
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4402,
+    "deadends": 7,
+    "mass_imbal": 2179,
+    "mi_frac": 0.495
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4258,
+    "deadends": 1,
+    "mass_imbal": 2096,
+    "mi_frac": 0.4922
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCA_051904755.1",
+   "n_rxn": 1745,
+   "n_internal": 1490,
+   "n_met": 1102,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 256,
+   "mi_frac": 0.1467,
+   "mass_imbal_internal": 1,
+   "mi_frac_internal": 0.0007,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 1,
+   "mi_frac_internal_genuine": 0.0007,
+   "fba_growth_as_shipped": 32.1851,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0006711409395973154,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.36334913112164297
+  }
+ },
+ "GCA_057539575.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3954,
+    "deadends": 8,
+    "mass_imbal": 2032,
+    "mi_frac": 0.5139
+   },
+   "meteor_clean": {
+    "n_rxn": 3654,
+    "deadends": 0,
+    "mass_imbal": 1854,
+    "mi_frac": 0.5074
+   },
+   "baseline_dpz": {
+    "n_rxn": 6323,
+    "deadends": 13,
+    "mass_imbal": 3064,
+    "mi_frac": 0.4846
+   },
+   "meteor_dpz": {
+    "n_rxn": 6877,
+    "deadends": 3,
+    "mass_imbal": 3050,
+    "mi_frac": 0.4435
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5063,
+    "deadends": 10,
+    "mass_imbal": 2498,
+    "mi_frac": 0.4934
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5201,
+    "deadends": 1,
+    "mass_imbal": 2392,
+    "mi_frac": 0.4599
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCA_057539575.1",
+   "n_rxn": 2946,
+   "n_internal": 2593,
+   "n_met": 1880,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 356,
+   "mi_frac": 0.1208,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0012,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0012,
+   "fba_growth_as_shipped": 106.3143,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0011569610489780178,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5291997116077866
+  }
+ },
+ "GCA_982345475.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 41,
+    "deadends": 0,
+    "mass_imbal": 30,
+    "mi_frac": 0.7317
+   },
+   "meteor_clean": {
+    "n_rxn": 515,
+    "deadends": 0,
+    "mass_imbal": 295,
+    "mi_frac": 0.5728
+   },
+   "baseline_dpz": {
+    "n_rxn": 221,
+    "deadends": 0,
+    "mass_imbal": 147,
+    "mi_frac": 0.6652
+   },
+   "meteor_dpz": {
+    "n_rxn": 715,
+    "deadends": 0,
+    "mass_imbal": 422,
+    "mi_frac": 0.5902
+   },
+   "baseline_enzbert": {
+    "n_rxn": 128,
+    "deadends": 0,
+    "mass_imbal": 88,
+    "mi_frac": 0.6875
+   },
+   "meteor_enzbert": {
+    "n_rxn": 547,
+    "deadends": 0,
+    "mass_imbal": 317,
+    "mi_frac": 0.5795
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCA_982345475.1",
+   "n_rxn": 231,
+   "n_internal": 170,
+   "n_met": 229,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 62,
+   "mi_frac": 0.2684,
+   "mass_imbal_internal": 1,
+   "mi_frac_internal": 0.0059,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 1,
+   "mi_frac_internal_genuine": 0.0059,
+   "fba_growth_as_shipped": 21.7554,
+   "seconds": 0.0
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0058823529411764705,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.05238095238095238
+  }
+ },
+ "GCF_000006945.2": {
+  "organism": "Salmonella",
+  "gem": "STM_v1_0",
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 5474,
+    "deadends": 7,
+    "mass_imbal": 2615,
+    "mi_frac": 0.4777
+   },
+   "meteor_clean": {
+    "n_rxn": 4928,
+    "deadends": 1,
+    "mass_imbal": 2310,
+    "mi_frac": 0.4688
+   },
+   "baseline_dpz": {
+    "n_rxn": 6164,
+    "deadends": 10,
+    "mass_imbal": 2882,
+    "mi_frac": 0.4676
+   },
+   "meteor_dpz": {
+    "n_rxn": 5923,
+    "deadends": 3,
+    "mass_imbal": 2674,
+    "mi_frac": 0.4515
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5219,
+    "deadends": 3,
+    "mass_imbal": 2512,
+    "mi_frac": 0.4813
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4790,
+    "deadends": 1,
+    "mass_imbal": 2258,
+    "mi_frac": 0.4714
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000006945.2",
+   "n_rxn": 2991,
+   "n_internal": 2566,
+   "n_met": 1877,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 429,
+   "mi_frac": 0.1434,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0016,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0016,
+   "fba_growth_as_shipped": 139.1392,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.001558846453624318,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6651524983776769
+  },
+  "curated_bigg": {
+   "label": "STM_v1_0",
+   "n_rxn": 2545,
+   "n_internal": 2197,
+   "n_met": 1802,
+   "objective_reaction_ids": [
+    "BIOMASS_iRR1083_metals"
+   ],
+   "n_met_noformula": 9,
+   "met_formula_cov": 0.995,
+   "deadends": 57,
+   "mass_imbal": 361,
+   "mi_frac": 0.1418,
+   "mass_imbal_internal": 13,
+   "mi_frac_internal": 0.0059,
+   "mi_internal_due_to_missing_formula": 12,
+   "mi_internal_genuine": 1,
+   "mi_frac_internal_genuine": 0.0005,
+   "fba_growth_as_shipped": 0.4778,
+   "seconds": 0.2
+  }
+ },
+ "GCF_000006965.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4741,
+    "deadends": 7,
+    "mass_imbal": 2393,
+    "mi_frac": 0.5047
+   },
+   "meteor_clean": {
+    "n_rxn": 4157,
+    "deadends": 0,
+    "mass_imbal": 2068,
+    "mi_frac": 0.4975
+   },
+   "baseline_dpz": {
+    "n_rxn": 6303,
+    "deadends": 13,
+    "mass_imbal": 3053,
+    "mi_frac": 0.4844
+   },
+   "meteor_dpz": {
+    "n_rxn": 6802,
+    "deadends": 3,
+    "mass_imbal": 3002,
+    "mi_frac": 0.4413
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5071,
+    "deadends": 6,
+    "mass_imbal": 2513,
+    "mi_frac": 0.4956
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5168,
+    "deadends": 1,
+    "mass_imbal": 2388,
+    "mi_frac": 0.4621
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000006965.1",
+   "n_rxn": 3217,
+   "n_internal": 2832,
+   "n_met": 2053,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 390,
+   "mi_frac": 0.1212,
+   "mass_imbal_internal": 5,
+   "mi_frac_internal": 0.0018,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 5,
+   "mi_frac_internal_genuine": 0.0018,
+   "fba_growth_as_shipped": 104.5914,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0017655367231638418,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5062789160608063
+  }
+ },
+ "GCF_000008185.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 2443,
+    "deadends": 5,
+    "mass_imbal": 1314,
+    "mi_frac": 0.5379
+   },
+   "meteor_clean": {
+    "n_rxn": 2147,
+    "deadends": 1,
+    "mass_imbal": 1136,
+    "mi_frac": 0.5291
+   },
+   "baseline_dpz": {
+    "n_rxn": 3274,
+    "deadends": 1,
+    "mass_imbal": 1748,
+    "mi_frac": 0.5339
+   },
+   "meteor_dpz": {
+    "n_rxn": 4057,
+    "deadends": 1,
+    "mass_imbal": 2051,
+    "mi_frac": 0.5055
+   },
+   "baseline_enzbert": {
+    "n_rxn": 2705,
+    "deadends": 1,
+    "mass_imbal": 1427,
+    "mi_frac": 0.5275
+   },
+   "meteor_enzbert": {
+    "n_rxn": 2575,
+    "deadends": 1,
+    "mass_imbal": 1339,
+    "mi_frac": 0.52
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000008185.1",
+   "n_rxn": 1812,
+   "n_internal": 1542,
+   "n_met": 1291,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 273,
+   "mi_frac": 0.1507,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0019,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0019,
+   "fba_growth_as_shipped": 61.3048,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0019455252918287938,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.3577512776831346
+  }
+ },
+ "GCF_000008805.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3205,
+    "deadends": 8,
+    "mass_imbal": 1702,
+    "mi_frac": 0.531
+   },
+   "meteor_clean": {
+    "n_rxn": 2874,
+    "deadends": 1,
+    "mass_imbal": 1511,
+    "mi_frac": 0.5257
+   },
+   "baseline_dpz": {
+    "n_rxn": 3853,
+    "deadends": 5,
+    "mass_imbal": 1969,
+    "mi_frac": 0.511
+   },
+   "meteor_dpz": {
+    "n_rxn": 3977,
+    "deadends": 1,
+    "mass_imbal": 1982,
+    "mi_frac": 0.4984
+   },
+   "baseline_enzbert": {
+    "n_rxn": 3212,
+    "deadends": 3,
+    "mass_imbal": 1694,
+    "mi_frac": 0.5274
+   },
+   "meteor_enzbert": {
+    "n_rxn": 2936,
+    "deadends": 1,
+    "mass_imbal": 1521,
+    "mi_frac": 0.5181
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000008805.1",
+   "n_rxn": 1723,
+   "n_internal": 1508,
+   "n_met": 1187,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 217,
+   "mi_frac": 0.1259,
+   "mass_imbal_internal": 2,
+   "mi_frac_internal": 0.0013,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 2,
+   "mi_frac_internal_genuine": 0.0013,
+   "fba_growth_as_shipped": 95.9001,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.001326259946949602,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.3470715835140998
+  }
+ },
+ "GCF_000009625.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4680,
+    "deadends": 7,
+    "mass_imbal": 2395,
+    "mi_frac": 0.5118
+   },
+   "meteor_clean": {
+    "n_rxn": 4103,
+    "deadends": 0,
+    "mass_imbal": 2077,
+    "mi_frac": 0.5062
+   },
+   "baseline_dpz": {
+    "n_rxn": 7343,
+    "deadends": 12,
+    "mass_imbal": 3397,
+    "mi_frac": 0.4626
+   },
+   "meteor_dpz": {
+    "n_rxn": 7037,
+    "deadends": 3,
+    "mass_imbal": 3107,
+    "mi_frac": 0.4415
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5134,
+    "deadends": 7,
+    "mass_imbal": 2593,
+    "mi_frac": 0.5051
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5234,
+    "deadends": 1,
+    "mass_imbal": 2452,
+    "mi_frac": 0.4685
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000009625.1",
+   "n_rxn": 3184,
+   "n_internal": 2807,
+   "n_met": 2034,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 382,
+   "mi_frac": 0.12,
+   "mass_imbal_internal": 5,
+   "mi_frac_internal": 0.0018,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 5,
+   "mi_frac_internal_genuine": 0.0018,
+   "fba_growth_as_shipped": 83.0086,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0017812611328820805,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5802770986145069
+  }
+ },
+ "GCF_000012685.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4123,
+    "deadends": 6,
+    "mass_imbal": 2135,
+    "mi_frac": 0.5178
+   },
+   "meteor_clean": {
+    "n_rxn": 3626,
+    "deadends": 0,
+    "mass_imbal": 1858,
+    "mi_frac": 0.5124
+   },
+   "baseline_dpz": {
+    "n_rxn": 5993,
+    "deadends": 12,
+    "mass_imbal": 2930,
+    "mi_frac": 0.4889
+   },
+   "meteor_dpz": {
+    "n_rxn": 6940,
+    "deadends": 3,
+    "mass_imbal": 3078,
+    "mi_frac": 0.4435
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4939,
+    "deadends": 4,
+    "mass_imbal": 2470,
+    "mi_frac": 0.5001
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4510,
+    "deadends": 1,
+    "mass_imbal": 2207,
+    "mi_frac": 0.4894
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000012685.1",
+   "n_rxn": 2962,
+   "n_internal": 2605,
+   "n_met": 1899,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 362,
+   "mi_frac": 0.1222,
+   "mass_imbal_internal": 5,
+   "mi_frac_internal": 0.0019,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 5,
+   "mi_frac_internal_genuine": 0.0019,
+   "fba_growth_as_shipped": 83.6257,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0019193857965451055,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5843660629170638
+  }
+ },
+ "GCF_000013085.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4001,
+    "deadends": 7,
+    "mass_imbal": 2043,
+    "mi_frac": 0.5106
+   },
+   "meteor_clean": {
+    "n_rxn": 3604,
+    "deadends": 0,
+    "mass_imbal": 1826,
+    "mi_frac": 0.5067
+   },
+   "baseline_dpz": {
+    "n_rxn": 5467,
+    "deadends": 13,
+    "mass_imbal": 2610,
+    "mi_frac": 0.4774
+   },
+   "meteor_dpz": {
+    "n_rxn": 5682,
+    "deadends": 3,
+    "mass_imbal": 2577,
+    "mi_frac": 0.4535
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4801,
+    "deadends": 5,
+    "mass_imbal": 2298,
+    "mi_frac": 0.4787
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4483,
+    "deadends": 0,
+    "mass_imbal": 2122,
+    "mi_frac": 0.4733
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000013085.1",
+   "n_rxn": 2494,
+   "n_internal": 2197,
+   "n_met": 1676,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 302,
+   "mi_frac": 0.1211,
+   "mass_imbal_internal": 5,
+   "mi_frac_internal": 0.0023,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 5,
+   "mi_frac_internal_genuine": 0.0023,
+   "fba_growth_as_shipped": 51.7056,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.002275830678197542,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5626168224299065
+  }
+ },
+ "GCF_000014565.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4997,
+    "deadends": 15,
+    "mass_imbal": 2509,
+    "mi_frac": 0.5021
+   },
+   "meteor_clean": {
+    "n_rxn": 4556,
+    "deadends": 3,
+    "mass_imbal": 2265,
+    "mi_frac": 0.4971
+   },
+   "baseline_dpz": {
+    "n_rxn": 7196,
+    "deadends": 14,
+    "mass_imbal": 3314,
+    "mi_frac": 0.4605
+   },
+   "meteor_dpz": {
+    "n_rxn": 7384,
+    "deadends": 3,
+    "mass_imbal": 3221,
+    "mi_frac": 0.4362
+   },
+   "baseline_enzbert": {
+    "n_rxn": 6051,
+    "deadends": 14,
+    "mass_imbal": 2849,
+    "mi_frac": 0.4708
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5684,
+    "deadends": 3,
+    "mass_imbal": 2623,
+    "mi_frac": 0.4615
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000014565.1",
+   "n_rxn": 3129,
+   "n_internal": 2758,
+   "n_met": 1973,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 375,
+   "mi_frac": 0.1198,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0015,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0015,
+   "fba_growth_as_shipped": 95.4701,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0014503263234227702,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6234119782214156
+  }
+ },
+ "GCF_000014705.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4619,
+    "deadends": 6,
+    "mass_imbal": 2324,
+    "mi_frac": 0.5031
+   },
+   "meteor_clean": {
+    "n_rxn": 4035,
+    "deadends": 1,
+    "mass_imbal": 1997,
+    "mi_frac": 0.4949
+   },
+   "baseline_dpz": {
+    "n_rxn": 5939,
+    "deadends": 11,
+    "mass_imbal": 2758,
+    "mi_frac": 0.4644
+   },
+   "meteor_dpz": {
+    "n_rxn": 5909,
+    "deadends": 1,
+    "mass_imbal": 2665,
+    "mi_frac": 0.451
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5021,
+    "deadends": 3,
+    "mass_imbal": 2415,
+    "mi_frac": 0.481
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4645,
+    "deadends": 1,
+    "mass_imbal": 2168,
+    "mi_frac": 0.4667
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000014705.1",
+   "n_rxn": 2442,
+   "n_internal": 2141,
+   "n_met": 1601,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 302,
+   "mi_frac": 0.1237,
+   "mass_imbal_internal": 1,
+   "mi_frac_internal": 0.0005,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 1,
+   "mi_frac_internal_genuine": 0.0005,
+   "fba_growth_as_shipped": 64.5246,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.00046707146193367583,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6809238665526091
+  }
+ },
+ "GCF_000016425.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3847,
+    "deadends": 9,
+    "mass_imbal": 2004,
+    "mi_frac": 0.5209
+   },
+   "meteor_clean": {
+    "n_rxn": 3532,
+    "deadends": 0,
+    "mass_imbal": 1822,
+    "mi_frac": 0.5159
+   },
+   "baseline_dpz": {
+    "n_rxn": 5527,
+    "deadends": 10,
+    "mass_imbal": 2771,
+    "mi_frac": 0.5014
+   },
+   "meteor_dpz": {
+    "n_rxn": 6342,
+    "deadends": 3,
+    "mass_imbal": 2865,
+    "mi_frac": 0.4518
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4310,
+    "deadends": 5,
+    "mass_imbal": 2219,
+    "mi_frac": 0.5148
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4468,
+    "deadends": 0,
+    "mass_imbal": 2130,
+    "mi_frac": 0.4767
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000016425.1",
+   "n_rxn": 2658,
+   "n_internal": 2343,
+   "n_met": 1753,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 320,
+   "mi_frac": 0.1204,
+   "mass_imbal_internal": 5,
+   "mi_frac_internal": 0.0021,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 5,
+   "mi_frac_internal_genuine": 0.0021,
+   "fba_growth_as_shipped": 79.9007,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.002134016218523261,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5991516436903499
+  }
+ },
+ "GCF_000017425.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4469,
+    "deadends": 10,
+    "mass_imbal": 2124,
+    "mi_frac": 0.4753
+   },
+   "meteor_clean": {
+    "n_rxn": 4182,
+    "deadends": 1,
+    "mass_imbal": 1967,
+    "mi_frac": 0.4703
+   },
+   "baseline_dpz": {
+    "n_rxn": 5064,
+    "deadends": 6,
+    "mass_imbal": 2490,
+    "mi_frac": 0.4917
+   },
+   "meteor_dpz": {
+    "n_rxn": 5601,
+    "deadends": 1,
+    "mass_imbal": 2530,
+    "mi_frac": 0.4517
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4280,
+    "deadends": 7,
+    "mass_imbal": 2176,
+    "mi_frac": 0.5084
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4477,
+    "deadends": 1,
+    "mass_imbal": 2124,
+    "mi_frac": 0.4744
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000017425.1",
+   "n_rxn": 2370,
+   "n_internal": 2046,
+   "n_met": 1546,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 327,
+   "mi_frac": 0.138,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0015,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0015,
+   "fba_growth_as_shipped": 96.3878,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.001466275659824047,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.4717948717948718
+  }
+ },
+ "GCF_000018345.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4677,
+    "deadends": 15,
+    "mass_imbal": 2322,
+    "mi_frac": 0.4965
+   },
+   "meteor_clean": {
+    "n_rxn": 4239,
+    "deadends": 3,
+    "mass_imbal": 2077,
+    "mi_frac": 0.49
+   },
+   "baseline_dpz": {
+    "n_rxn": 5957,
+    "deadends": 16,
+    "mass_imbal": 2911,
+    "mi_frac": 0.4887
+   },
+   "meteor_dpz": {
+    "n_rxn": 6754,
+    "deadends": 3,
+    "mass_imbal": 3012,
+    "mi_frac": 0.446
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5321,
+    "deadends": 14,
+    "mass_imbal": 2525,
+    "mi_frac": 0.4745
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5018,
+    "deadends": 3,
+    "mass_imbal": 2337,
+    "mi_frac": 0.4657
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000018345.1",
+   "n_rxn": 2353,
+   "n_internal": 2072,
+   "n_met": 1565,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 285,
+   "mi_frac": 0.1211,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0019,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0019,
+   "fba_growth_as_shipped": 53.305,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0019305019305019305,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5608228980322003
+  }
+ },
+ "GCF_000018605.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 2506,
+    "deadends": 5,
+    "mass_imbal": 1283,
+    "mi_frac": 0.512
+   },
+   "meteor_clean": {
+    "n_rxn": 2401,
+    "deadends": 1,
+    "mass_imbal": 1211,
+    "mi_frac": 0.5044
+   },
+   "baseline_dpz": {
+    "n_rxn": 3671,
+    "deadends": 2,
+    "mass_imbal": 1873,
+    "mi_frac": 0.5102
+   },
+   "meteor_dpz": {
+    "n_rxn": 3681,
+    "deadends": 1,
+    "mass_imbal": 1812,
+    "mi_frac": 0.4923
+   },
+   "baseline_enzbert": {
+    "n_rxn": 3047,
+    "deadends": 2,
+    "mass_imbal": 1548,
+    "mi_frac": 0.508
+   },
+   "meteor_enzbert": {
+    "n_rxn": 2913,
+    "deadends": 1,
+    "mass_imbal": 1462,
+    "mi_frac": 0.5019
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000018605.1",
+   "n_rxn": 1691,
+   "n_internal": 1473,
+   "n_met": 1161,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 221,
+   "mi_frac": 0.1307,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.002,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.002,
+   "fba_growth_as_shipped": 68.74,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.002036659877800407,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.31297709923664124
+  }
+ },
+ "GCF_000021425.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 1926,
+    "deadends": 5,
+    "mass_imbal": 1023,
+    "mi_frac": 0.5312
+   },
+   "meteor_clean": {
+    "n_rxn": 1878,
+    "deadends": 0,
+    "mass_imbal": 981,
+    "mi_frac": 0.5224
+   },
+   "baseline_dpz": {
+    "n_rxn": 3148,
+    "deadends": 10,
+    "mass_imbal": 1610,
+    "mi_frac": 0.5114
+   },
+   "meteor_dpz": {
+    "n_rxn": 3395,
+    "deadends": 1,
+    "mass_imbal": 1729,
+    "mi_frac": 0.5093
+   },
+   "baseline_enzbert": {
+    "n_rxn": 2578,
+    "deadends": 3,
+    "mass_imbal": 1332,
+    "mi_frac": 0.5167
+   },
+   "meteor_enzbert": {
+    "n_rxn": 2484,
+    "deadends": 1,
+    "mass_imbal": 1265,
+    "mi_frac": 0.5093
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000021425.1",
+   "n_rxn": 1650,
+   "n_internal": 1438,
+   "n_met": 1188,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 215,
+   "mi_frac": 0.1303,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0021,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0021,
+   "fba_growth_as_shipped": 61.1482,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.002086230876216968,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.4068522483940043
+  }
+ },
+ "GCF_000021865.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3900,
+    "deadends": 13,
+    "mass_imbal": 2024,
+    "mi_frac": 0.519
+   },
+   "meteor_clean": {
+    "n_rxn": 3515,
+    "deadends": 3,
+    "mass_imbal": 1811,
+    "mi_frac": 0.5152
+   },
+   "baseline_dpz": {
+    "n_rxn": 5095,
+    "deadends": 6,
+    "mass_imbal": 2560,
+    "mi_frac": 0.5025
+   },
+   "meteor_dpz": {
+    "n_rxn": 5662,
+    "deadends": 3,
+    "mass_imbal": 2605,
+    "mi_frac": 0.4601
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4840,
+    "deadends": 3,
+    "mass_imbal": 2338,
+    "mi_frac": 0.4831
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4497,
+    "deadends": 0,
+    "mass_imbal": 2129,
+    "mi_frac": 0.4734
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000021865.1",
+   "n_rxn": 2666,
+   "n_internal": 2370,
+   "n_met": 1761,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 301,
+   "mi_frac": 0.1129,
+   "mass_imbal_internal": 5,
+   "mi_frac_internal": 0.0021,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 5,
+   "mi_frac_internal_genuine": 0.0021,
+   "fba_growth_as_shipped": 78.3299,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.002109704641350211,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5929602888086642
+  }
+ },
+ "GCF_000023285.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 2617,
+    "deadends": 7,
+    "mass_imbal": 1392,
+    "mi_frac": 0.5319
+   },
+   "meteor_clean": {
+    "n_rxn": 2322,
+    "deadends": 1,
+    "mass_imbal": 1213,
+    "mi_frac": 0.5224
+   },
+   "baseline_dpz": {
+    "n_rxn": 3874,
+    "deadends": 11,
+    "mass_imbal": 1951,
+    "mi_frac": 0.5036
+   },
+   "meteor_dpz": {
+    "n_rxn": 3898,
+    "deadends": 1,
+    "mass_imbal": 1938,
+    "mi_frac": 0.4972
+   },
+   "baseline_enzbert": {
+    "n_rxn": 3034,
+    "deadends": 4,
+    "mass_imbal": 1617,
+    "mi_frac": 0.533
+   },
+   "meteor_enzbert": {
+    "n_rxn": 2820,
+    "deadends": 1,
+    "mass_imbal": 1484,
+    "mi_frac": 0.5262
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000023285.1",
+   "n_rxn": 1857,
+   "n_internal": 1596,
+   "n_met": 1247,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 262,
+   "mi_frac": 0.1411,
+   "mass_imbal_internal": 1,
+   "mi_frac_internal": 0.0006,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 1,
+   "mi_frac_internal_genuine": 0.0006,
+   "fba_growth_as_shipped": 79.7334,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0006265664160401002,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.43232044198895025
+  }
+ },
+ "GCF_000024385.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3615,
+    "deadends": 8,
+    "mass_imbal": 1846,
+    "mi_frac": 0.5107
+   },
+   "meteor_clean": {
+    "n_rxn": 3397,
+    "deadends": 0,
+    "mass_imbal": 1730,
+    "mi_frac": 0.5093
+   },
+   "baseline_dpz": {
+    "n_rxn": 5325,
+    "deadends": 11,
+    "mass_imbal": 2642,
+    "mi_frac": 0.4962
+   },
+   "meteor_dpz": {
+    "n_rxn": 6307,
+    "deadends": 3,
+    "mass_imbal": 2857,
+    "mi_frac": 0.453
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4052,
+    "deadends": 6,
+    "mass_imbal": 2084,
+    "mi_frac": 0.5143
+   },
+   "meteor_enzbert": {
+    "n_rxn": 3900,
+    "deadends": 0,
+    "mass_imbal": 1975,
+    "mi_frac": 0.5064
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000024385.1",
+   "n_rxn": 2622,
+   "n_internal": 2327,
+   "n_met": 1748,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 298,
+   "mi_frac": 0.1137,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0013,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0013,
+   "fba_growth_as_shipped": 83.2265,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.001289213579716373,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5435028248587571
+  }
+ },
+ "GCF_000026645.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 5127,
+    "deadends": 8,
+    "mass_imbal": 2589,
+    "mi_frac": 0.505
+   },
+   "meteor_clean": {
+    "n_rxn": 4519,
+    "deadends": 1,
+    "mass_imbal": 2242,
+    "mi_frac": 0.4961
+   },
+   "baseline_dpz": {
+    "n_rxn": 6822,
+    "deadends": 16,
+    "mass_imbal": 3173,
+    "mi_frac": 0.4651
+   },
+   "meteor_dpz": {
+    "n_rxn": 6834,
+    "deadends": 3,
+    "mass_imbal": 3026,
+    "mi_frac": 0.4428
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5838,
+    "deadends": 5,
+    "mass_imbal": 2775,
+    "mi_frac": 0.4753
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5280,
+    "deadends": 1,
+    "mass_imbal": 2442,
+    "mi_frac": 0.4625
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000026645.1",
+   "n_rxn": 3165,
+   "n_internal": 2777,
+   "n_met": 2015,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 393,
+   "mi_frac": 0.1242,
+   "mass_imbal_internal": 5,
+   "mi_frac_internal": 0.0018,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 5,
+   "mi_frac_internal_genuine": 0.0018,
+   "fba_growth_as_shipped": 87.7224,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0018005041411595247,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5584958217270195
+  }
+ },
+ "GCF_000069185.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4393,
+    "deadends": 9,
+    "mass_imbal": 2223,
+    "mi_frac": 0.506
+   },
+   "meteor_clean": {
+    "n_rxn": 3907,
+    "deadends": 1,
+    "mass_imbal": 1967,
+    "mi_frac": 0.5035
+   },
+   "baseline_dpz": {
+    "n_rxn": 6236,
+    "deadends": 14,
+    "mass_imbal": 2930,
+    "mi_frac": 0.4699
+   },
+   "meteor_dpz": {
+    "n_rxn": 6542,
+    "deadends": 3,
+    "mass_imbal": 2946,
+    "mi_frac": 0.4503
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4688,
+    "deadends": 12,
+    "mass_imbal": 2350,
+    "mi_frac": 0.5013
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4515,
+    "deadends": 3,
+    "mass_imbal": 2226,
+    "mi_frac": 0.493
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000069185.1",
+   "n_rxn": 2513,
+   "n_internal": 2192,
+   "n_met": 1675,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 324,
+   "mi_frac": 0.1289,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0014,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0014,
+   "fba_growth_as_shipped": 77.052,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0013686131386861315,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5222457627118644
+  }
+ },
+ "GCF_000091305.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4717,
+    "deadends": 11,
+    "mass_imbal": 2419,
+    "mi_frac": 0.5128
+   },
+   "meteor_clean": {
+    "n_rxn": 4212,
+    "deadends": 0,
+    "mass_imbal": 2141,
+    "mi_frac": 0.5083
+   },
+   "baseline_dpz": {
+    "n_rxn": 7070,
+    "deadends": 11,
+    "mass_imbal": 3282,
+    "mi_frac": 0.4642
+   },
+   "meteor_dpz": {
+    "n_rxn": 7243,
+    "deadends": 3,
+    "mass_imbal": 3173,
+    "mi_frac": 0.4381
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5762,
+    "deadends": 9,
+    "mass_imbal": 2731,
+    "mi_frac": 0.474
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5570,
+    "deadends": 1,
+    "mass_imbal": 2585,
+    "mi_frac": 0.4641
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000091305.1",
+   "n_rxn": 3144,
+   "n_internal": 2770,
+   "n_met": 1974,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 378,
+   "mi_frac": 0.1202,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0014,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0014,
+   "fba_growth_as_shipped": 106.4328,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.001444043321299639,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5848822800495663
+  }
+ },
+ "GCF_000092025.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4623,
+    "deadends": 6,
+    "mass_imbal": 2333,
+    "mi_frac": 0.5047
+   },
+   "meteor_clean": {
+    "n_rxn": 4059,
+    "deadends": 0,
+    "mass_imbal": 2028,
+    "mi_frac": 0.4996
+   },
+   "baseline_dpz": {
+    "n_rxn": 6708,
+    "deadends": 11,
+    "mass_imbal": 3140,
+    "mi_frac": 0.4681
+   },
+   "meteor_dpz": {
+    "n_rxn": 6573,
+    "deadends": 3,
+    "mass_imbal": 2940,
+    "mi_frac": 0.4473
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5365,
+    "deadends": 6,
+    "mass_imbal": 2546,
+    "mi_frac": 0.4746
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5014,
+    "deadends": 0,
+    "mass_imbal": 2328,
+    "mi_frac": 0.4643
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000092025.1",
+   "n_rxn": 3115,
+   "n_internal": 2739,
+   "n_met": 1984,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 381,
+   "mi_frac": 0.1223,
+   "mass_imbal_internal": 5,
+   "mi_frac_internal": 0.0018,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 5,
+   "mi_frac_internal_genuine": 0.0018,
+   "fba_growth_as_shipped": 102.7406,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0018254837531945967,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5849514563106796
+  }
+ },
+ "GCF_000146655.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3251,
+    "deadends": 8,
+    "mass_imbal": 1728,
+    "mi_frac": 0.5315
+   },
+   "meteor_clean": {
+    "n_rxn": 2927,
+    "deadends": 1,
+    "mass_imbal": 1538,
+    "mi_frac": 0.5255
+   },
+   "baseline_dpz": {
+    "n_rxn": 3746,
+    "deadends": 5,
+    "mass_imbal": 1917,
+    "mi_frac": 0.5117
+   },
+   "meteor_dpz": {
+    "n_rxn": 3927,
+    "deadends": 1,
+    "mass_imbal": 1967,
+    "mi_frac": 0.5009
+   },
+   "baseline_enzbert": {
+    "n_rxn": 3238,
+    "deadends": 4,
+    "mass_imbal": 1705,
+    "mi_frac": 0.5266
+   },
+   "meteor_enzbert": {
+    "n_rxn": 2975,
+    "deadends": 1,
+    "mass_imbal": 1542,
+    "mi_frac": 0.5183
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000146655.1",
+   "n_rxn": 1783,
+   "n_internal": 1555,
+   "n_met": 1224,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 230,
+   "mi_frac": 0.129,
+   "mass_imbal_internal": 2,
+   "mi_frac_internal": 0.0013,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 2,
+   "mi_frac_internal_genuine": 0.0013,
+   "fba_growth_as_shipped": 97.0543,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0012861736334405145,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.2605042016806723
+  }
+ },
+ "GCF_000147055.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 5139,
+    "deadends": 7,
+    "mass_imbal": 2492,
+    "mi_frac": 0.4849
+   },
+   "meteor_clean": {
+    "n_rxn": 4576,
+    "deadends": 1,
+    "mass_imbal": 2177,
+    "mi_frac": 0.4757
+   },
+   "baseline_dpz": {
+    "n_rxn": 6057,
+    "deadends": 15,
+    "mass_imbal": 2891,
+    "mi_frac": 0.4773
+   },
+   "meteor_dpz": {
+    "n_rxn": 5783,
+    "deadends": 3,
+    "mass_imbal": 2682,
+    "mi_frac": 0.4638
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4998,
+    "deadends": 4,
+    "mass_imbal": 2441,
+    "mi_frac": 0.4884
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4528,
+    "deadends": 1,
+    "mass_imbal": 2144,
+    "mi_frac": 0.4735
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000147055.1",
+   "n_rxn": 3016,
+   "n_internal": 2587,
+   "n_met": 1906,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 435,
+   "mi_frac": 0.1442,
+   "mass_imbal_internal": 6,
+   "mi_frac_internal": 0.0023,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 6,
+   "mi_frac_internal_genuine": 0.0023,
+   "fba_growth_as_shipped": 114.9001,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0023192887514495554,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6641841570751523
+  }
+ },
+ "GCF_000158815.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3578,
+    "deadends": 11,
+    "mass_imbal": 1843,
+    "mi_frac": 0.5151
+   },
+   "meteor_clean": {
+    "n_rxn": 3372,
+    "deadends": 0,
+    "mass_imbal": 1728,
+    "mi_frac": 0.5125
+   },
+   "baseline_dpz": {
+    "n_rxn": 5734,
+    "deadends": 15,
+    "mass_imbal": 2856,
+    "mi_frac": 0.4981
+   },
+   "meteor_dpz": {
+    "n_rxn": 5971,
+    "deadends": 3,
+    "mass_imbal": 2822,
+    "mi_frac": 0.4726
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4702,
+    "deadends": 6,
+    "mass_imbal": 2284,
+    "mi_frac": 0.4858
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4576,
+    "deadends": 0,
+    "mass_imbal": 2178,
+    "mi_frac": 0.476
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000158815.1",
+   "n_rxn": 2770,
+   "n_internal": 2427,
+   "n_met": 1831,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 346,
+   "mi_frac": 0.1249,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0012,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0012,
+   "fba_growth_as_shipped": 102.0689,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0012360939431396785,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5841300191204589
+  }
+ },
+ "GCF_000174395.2": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 2717,
+    "deadends": 5,
+    "mass_imbal": 1398,
+    "mi_frac": 0.5145
+   },
+   "meteor_clean": {
+    "n_rxn": 2499,
+    "deadends": 0,
+    "mass_imbal": 1266,
+    "mi_frac": 0.5066
+   },
+   "baseline_dpz": {
+    "n_rxn": 3665,
+    "deadends": 3,
+    "mass_imbal": 1860,
+    "mi_frac": 0.5075
+   },
+   "meteor_dpz": {
+    "n_rxn": 4056,
+    "deadends": 1,
+    "mass_imbal": 1991,
+    "mi_frac": 0.4909
+   },
+   "baseline_enzbert": {
+    "n_rxn": 3160,
+    "deadends": 3,
+    "mass_imbal": 1621,
+    "mi_frac": 0.513
+   },
+   "meteor_enzbert": {
+    "n_rxn": 3010,
+    "deadends": 0,
+    "mass_imbal": 1523,
+    "mi_frac": 0.506
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000174395.2",
+   "n_rxn": 1748,
+   "n_internal": 1507,
+   "n_met": 1188,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 243,
+   "mi_frac": 0.139,
+   "mass_imbal_internal": 2,
+   "mi_frac_internal": 0.0013,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 2,
+   "mi_frac_internal_genuine": 0.0013,
+   "fba_growth_as_shipped": 82.3012,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0013271400132714001,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.3333333333333333
+  }
+ },
+ "GCF_000195675.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4423,
+    "deadends": 6,
+    "mass_imbal": 2288,
+    "mi_frac": 0.5173
+   },
+   "meteor_clean": {
+    "n_rxn": 3835,
+    "deadends": 1,
+    "mass_imbal": 1958,
+    "mi_frac": 0.5106
+   },
+   "baseline_dpz": {
+    "n_rxn": 6244,
+    "deadends": 11,
+    "mass_imbal": 2938,
+    "mi_frac": 0.4705
+   },
+   "meteor_dpz": {
+    "n_rxn": 6326,
+    "deadends": 3,
+    "mass_imbal": 2840,
+    "mi_frac": 0.4489
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4858,
+    "deadends": 3,
+    "mass_imbal": 2369,
+    "mi_frac": 0.4876
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4527,
+    "deadends": 1,
+    "mass_imbal": 2160,
+    "mi_frac": 0.4771
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000195675.1",
+   "n_rxn": 3173,
+   "n_internal": 2730,
+   "n_met": 2050,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 446,
+   "mi_frac": 0.1406,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0011,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0011,
+   "fba_growth_as_shipped": 95.2986,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.001098901098901099,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5830959164292497
+  }
+ },
+ "GCF_000195955.2": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4296,
+    "deadends": 8,
+    "mass_imbal": 2170,
+    "mi_frac": 0.5051
+   },
+   "meteor_clean": {
+    "n_rxn": 3938,
+    "deadends": 0,
+    "mass_imbal": 1977,
+    "mi_frac": 0.502
+   },
+   "baseline_dpz": {
+    "n_rxn": 5395,
+    "deadends": 14,
+    "mass_imbal": 2667,
+    "mi_frac": 0.4943
+   },
+   "meteor_dpz": {
+    "n_rxn": 6174,
+    "deadends": 3,
+    "mass_imbal": 2793,
+    "mi_frac": 0.4524
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4932,
+    "deadends": 15,
+    "mass_imbal": 2346,
+    "mi_frac": 0.4757
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4668,
+    "deadends": 2,
+    "mass_imbal": 2179,
+    "mi_frac": 0.4668
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000195955.2",
+   "n_rxn": 1329,
+   "n_internal": 1166,
+   "n_met": 939,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 165,
+   "mi_frac": 0.1242,
+   "mass_imbal_internal": 2,
+   "mi_frac_internal": 0.0017,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 2,
+   "mi_frac_internal_genuine": 0.0017,
+   "fba_growth_as_shipped": 58.3998,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0017152658662092624,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.3973941368078176
+  }
+ },
+ "GCF_000237205.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 2356,
+    "deadends": 4,
+    "mass_imbal": 1249,
+    "mi_frac": 0.5301
+   },
+   "meteor_clean": {
+    "n_rxn": 2239,
+    "deadends": 0,
+    "mass_imbal": 1181,
+    "mi_frac": 0.5275
+   },
+   "baseline_dpz": {
+    "n_rxn": 3463,
+    "deadends": 3,
+    "mass_imbal": 1830,
+    "mi_frac": 0.5284
+   },
+   "meteor_dpz": {
+    "n_rxn": 4140,
+    "deadends": 1,
+    "mass_imbal": 2062,
+    "mi_frac": 0.4981
+   },
+   "baseline_enzbert": {
+    "n_rxn": 2704,
+    "deadends": 2,
+    "mass_imbal": 1458,
+    "mi_frac": 0.5392
+   },
+   "meteor_enzbert": {
+    "n_rxn": 2598,
+    "deadends": 1,
+    "mass_imbal": 1367,
+    "mi_frac": 0.5262
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000237205.1",
+   "n_rxn": 1662,
+   "n_internal": 1447,
+   "n_met": 1183,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 217,
+   "mi_frac": 0.1306,
+   "mass_imbal_internal": 2,
+   "mi_frac_internal": 0.0014,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 2,
+   "mi_frac_internal_genuine": 0.0014,
+   "fba_growth_as_shipped": 73.8752,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.00138217000691085,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.41799709724238027
+  }
+ },
+ "GCF_000237305.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4064,
+    "deadends": 10,
+    "mass_imbal": 2082,
+    "mi_frac": 0.5123
+   },
+   "meteor_clean": {
+    "n_rxn": 3677,
+    "deadends": 0,
+    "mass_imbal": 1869,
+    "mi_frac": 0.5083
+   },
+   "baseline_dpz": {
+    "n_rxn": 7059,
+    "deadends": 15,
+    "mass_imbal": 3301,
+    "mi_frac": 0.4676
+   },
+   "meteor_dpz": {
+    "n_rxn": 6986,
+    "deadends": 3,
+    "mass_imbal": 3117,
+    "mi_frac": 0.4462
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4968,
+    "deadends": 24,
+    "mass_imbal": 2485,
+    "mi_frac": 0.5002
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5120,
+    "deadends": 3,
+    "mass_imbal": 2393,
+    "mi_frac": 0.4674
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000237305.1",
+   "n_rxn": 3023,
+   "n_internal": 2643,
+   "n_met": 1921,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 383,
+   "mi_frac": 0.1267,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0011,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0011,
+   "fba_growth_as_shipped": 105.1548,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0011350737797956867,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.49333333333333335
+  }
+ },
+ "GCF_000258405.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3156,
+    "deadends": 4,
+    "mass_imbal": 1654,
+    "mi_frac": 0.5241
+   },
+   "meteor_clean": {
+    "n_rxn": 2833,
+    "deadends": 0,
+    "mass_imbal": 1474,
+    "mi_frac": 0.5203
+   },
+   "baseline_dpz": {
+    "n_rxn": 4682,
+    "deadends": 3,
+    "mass_imbal": 2419,
+    "mi_frac": 0.5167
+   },
+   "meteor_dpz": {
+    "n_rxn": 4906,
+    "deadends": 1,
+    "mass_imbal": 2396,
+    "mi_frac": 0.4884
+   },
+   "baseline_enzbert": {
+    "n_rxn": 3602,
+    "deadends": 4,
+    "mass_imbal": 1869,
+    "mi_frac": 0.5189
+   },
+   "meteor_enzbert": {
+    "n_rxn": 3311,
+    "deadends": 0,
+    "mass_imbal": 1719,
+    "mi_frac": 0.5192
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000258405.1",
+   "n_rxn": 2367,
+   "n_internal": 2069,
+   "n_met": 1561,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 301,
+   "mi_frac": 0.1272,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0014,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0014,
+   "fba_growth_as_shipped": 77.5882,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0014499758337361043,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6532258064516129
+  }
+ },
+ "GCF_000331005.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4667,
+    "deadends": 8,
+    "mass_imbal": 2398,
+    "mi_frac": 0.5138
+   },
+   "meteor_clean": {
+    "n_rxn": 4224,
+    "deadends": 0,
+    "mass_imbal": 2148,
+    "mi_frac": 0.5085
+   },
+   "baseline_dpz": {
+    "n_rxn": 7097,
+    "deadends": 11,
+    "mass_imbal": 3284,
+    "mi_frac": 0.4627
+   },
+   "meteor_dpz": {
+    "n_rxn": 7361,
+    "deadends": 3,
+    "mass_imbal": 3231,
+    "mi_frac": 0.4389
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5844,
+    "deadends": 15,
+    "mass_imbal": 2752,
+    "mi_frac": 0.4709
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5611,
+    "deadends": 1,
+    "mass_imbal": 2585,
+    "mi_frac": 0.4607
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000331005.1",
+   "n_rxn": 3129,
+   "n_internal": 2736,
+   "n_met": 2009,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 397,
+   "mi_frac": 0.1269,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0015,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0015,
+   "fba_growth_as_shipped": 77.5824,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0014619883040935672,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.4697368421052632
+  }
+ },
+ "GCF_000758665.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4092,
+    "deadends": 7,
+    "mass_imbal": 2045,
+    "mi_frac": 0.4998
+   },
+   "meteor_clean": {
+    "n_rxn": 3728,
+    "deadends": 1,
+    "mass_imbal": 1816,
+    "mi_frac": 0.4871
+   },
+   "baseline_dpz": {
+    "n_rxn": 5774,
+    "deadends": 10,
+    "mass_imbal": 2787,
+    "mi_frac": 0.4827
+   },
+   "meteor_dpz": {
+    "n_rxn": 6134,
+    "deadends": 3,
+    "mass_imbal": 2797,
+    "mi_frac": 0.456
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5039,
+    "deadends": 6,
+    "mass_imbal": 2498,
+    "mi_frac": 0.4957
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4647,
+    "deadends": 1,
+    "mass_imbal": 2262,
+    "mi_frac": 0.4868
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000758665.1",
+   "n_rxn": 2731,
+   "n_internal": 2379,
+   "n_met": 1742,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 355,
+   "mi_frac": 0.13,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0013,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0013,
+   "fba_growth_as_shipped": 87.9367,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0012610340479192938,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6479113384484229
+  }
+ },
+ "GCF_000813125.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4328,
+    "deadends": 9,
+    "mass_imbal": 2131,
+    "mi_frac": 0.4924
+   },
+   "meteor_clean": {
+    "n_rxn": 4023,
+    "deadends": 1,
+    "mass_imbal": 1940,
+    "mi_frac": 0.4822
+   },
+   "baseline_dpz": {
+    "n_rxn": 5321,
+    "deadends": 10,
+    "mass_imbal": 2607,
+    "mi_frac": 0.4899
+   },
+   "meteor_dpz": {
+    "n_rxn": 5481,
+    "deadends": 3,
+    "mass_imbal": 2576,
+    "mi_frac": 0.47
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4572,
+    "deadends": 5,
+    "mass_imbal": 2273,
+    "mi_frac": 0.4972
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4248,
+    "deadends": 1,
+    "mass_imbal": 2061,
+    "mi_frac": 0.4852
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000813125.1",
+   "n_rxn": 2476,
+   "n_internal": 2166,
+   "n_met": 1603,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 311,
+   "mi_frac": 0.1256,
+   "mass_imbal_internal": 1,
+   "mi_frac_internal": 0.0005,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 1,
+   "mi_frac_internal_genuine": 0.0005,
+   "fba_growth_as_shipped": 112.6028,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0004616805170821791,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6065727699530516
+  }
+ },
+ "GCF_000816885.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4525,
+    "deadends": 6,
+    "mass_imbal": 2270,
+    "mi_frac": 0.5017
+   },
+   "meteor_clean": {
+    "n_rxn": 3933,
+    "deadends": 1,
+    "mass_imbal": 1948,
+    "mi_frac": 0.4953
+   },
+   "baseline_dpz": {
+    "n_rxn": 6028,
+    "deadends": 11,
+    "mass_imbal": 2804,
+    "mi_frac": 0.4652
+   },
+   "meteor_dpz": {
+    "n_rxn": 5990,
+    "deadends": 3,
+    "mass_imbal": 2661,
+    "mi_frac": 0.4442
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4715,
+    "deadends": 3,
+    "mass_imbal": 2361,
+    "mi_frac": 0.5007
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4398,
+    "deadends": 1,
+    "mass_imbal": 2157,
+    "mi_frac": 0.4905
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000816885.1",
+   "n_rxn": 2924,
+   "n_internal": 2565,
+   "n_met": 1926,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 362,
+   "mi_frac": 0.1238,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0012,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0012,
+   "fba_growth_as_shipped": 78.455,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0011695906432748538,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5523632993512512
+  }
+ },
+ "GCF_000833375.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3571,
+    "deadends": 6,
+    "mass_imbal": 1865,
+    "mi_frac": 0.5223
+   },
+   "meteor_clean": {
+    "n_rxn": 3188,
+    "deadends": 1,
+    "mass_imbal": 1653,
+    "mi_frac": 0.5185
+   },
+   "baseline_dpz": {
+    "n_rxn": 4036,
+    "deadends": 3,
+    "mass_imbal": 2095,
+    "mi_frac": 0.5191
+   },
+   "meteor_dpz": {
+    "n_rxn": 3958,
+    "deadends": 1,
+    "mass_imbal": 1975,
+    "mi_frac": 0.499
+   },
+   "baseline_enzbert": {
+    "n_rxn": 3357,
+    "deadends": 1,
+    "mass_imbal": 1773,
+    "mi_frac": 0.5282
+   },
+   "meteor_enzbert": {
+    "n_rxn": 3085,
+    "deadends": 1,
+    "mass_imbal": 1605,
+    "mi_frac": 0.5203
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_000833375.1",
+   "n_rxn": 2218,
+   "n_internal": 1937,
+   "n_met": 1526,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 282,
+   "mi_frac": 0.1271,
+   "mass_imbal_internal": 1,
+   "mi_frac_internal": 0.0005,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 1,
+   "mi_frac_internal_genuine": 0.0005,
+   "fba_growth_as_shipped": 68.7893,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0005162622612287042,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6190998902305159
+  }
+ },
+ "GCF_001189295.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4072,
+    "deadends": 11,
+    "mass_imbal": 2101,
+    "mi_frac": 0.516
+   },
+   "meteor_clean": {
+    "n_rxn": 3611,
+    "deadends": 1,
+    "mass_imbal": 1844,
+    "mi_frac": 0.5107
+   },
+   "baseline_dpz": {
+    "n_rxn": 6821,
+    "deadends": 13,
+    "mass_imbal": 3190,
+    "mi_frac": 0.4677
+   },
+   "meteor_dpz": {
+    "n_rxn": 7103,
+    "deadends": 3,
+    "mass_imbal": 3139,
+    "mi_frac": 0.4419
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4942,
+    "deadends": 9,
+    "mass_imbal": 2481,
+    "mi_frac": 0.502
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4514,
+    "deadends": 1,
+    "mass_imbal": 2222,
+    "mi_frac": 0.4922
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_001189295.1",
+   "n_rxn": 2946,
+   "n_internal": 2585,
+   "n_met": 1924,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 366,
+   "mi_frac": 0.1242,
+   "mass_imbal_internal": 5,
+   "mi_frac_internal": 0.0019,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 5,
+   "mi_frac_internal_genuine": 0.0019,
+   "fba_growth_as_shipped": 51.4551,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0019342359767891683,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5601851851851852
+  }
+ },
+ "GCF_001272835.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 883,
+    "deadends": 0,
+    "mass_imbal": 513,
+    "mi_frac": 0.581
+   },
+   "meteor_clean": {
+    "n_rxn": 1019,
+    "deadends": 0,
+    "mass_imbal": 562,
+    "mi_frac": 0.5515
+   },
+   "baseline_dpz": {
+    "n_rxn": 1175,
+    "deadends": 1,
+    "mass_imbal": 658,
+    "mi_frac": 0.56
+   },
+   "meteor_dpz": {
+    "n_rxn": 1582,
+    "deadends": 0,
+    "mass_imbal": 877,
+    "mi_frac": 0.5544
+   },
+   "baseline_enzbert": {
+    "n_rxn": 1004,
+    "deadends": 0,
+    "mass_imbal": 570,
+    "mi_frac": 0.5677
+   },
+   "meteor_enzbert": {
+    "n_rxn": 1176,
+    "deadends": 0,
+    "mass_imbal": 644,
+    "mi_frac": 0.5476
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_001272835.1",
+   "n_rxn": 930,
+   "n_internal": 779,
+   "n_met": 695,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 152,
+   "mi_frac": 0.1634,
+   "mass_imbal_internal": 1,
+   "mi_frac_internal": 0.0013,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 1,
+   "mi_frac_internal_genuine": 0.0013,
+   "fba_growth_as_shipped": 56.1262,
+   "seconds": 0.0
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0012836970474967907,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.23979591836734693
+  }
+ },
+ "GCF_001427935.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4829,
+    "deadends": 8,
+    "mass_imbal": 2350,
+    "mi_frac": 0.4866
+   },
+   "meteor_clean": {
+    "n_rxn": 4250,
+    "deadends": 1,
+    "mass_imbal": 2024,
+    "mi_frac": 0.4762
+   },
+   "baseline_dpz": {
+    "n_rxn": 5939,
+    "deadends": 13,
+    "mass_imbal": 2839,
+    "mi_frac": 0.478
+   },
+   "meteor_dpz": {
+    "n_rxn": 6298,
+    "deadends": 3,
+    "mass_imbal": 2874,
+    "mi_frac": 0.4563
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4913,
+    "deadends": 4,
+    "mass_imbal": 2401,
+    "mi_frac": 0.4887
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4597,
+    "deadends": 1,
+    "mass_imbal": 2204,
+    "mi_frac": 0.4794
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_001427935.1",
+   "n_rxn": 2234,
+   "n_internal": 1970,
+   "n_met": 1375,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 266,
+   "mi_frac": 0.1191,
+   "mass_imbal_internal": 2,
+   "mi_frac_internal": 0.001,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 2,
+   "mi_frac_internal_genuine": 0.001,
+   "fba_growth_as_shipped": 28.2965,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0010152284263959391,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5347593582887701
+  }
+ },
+ "GCF_001544575.2": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 5316,
+    "deadends": 8,
+    "mass_imbal": 2619,
+    "mi_frac": 0.4927
+   },
+   "meteor_clean": {
+    "n_rxn": 4768,
+    "deadends": 0,
+    "mass_imbal": 2311,
+    "mi_frac": 0.4847
+   },
+   "baseline_dpz": {
+    "n_rxn": 7146,
+    "deadends": 15,
+    "mass_imbal": 3308,
+    "mi_frac": 0.4629
+   },
+   "meteor_dpz": {
+    "n_rxn": 7369,
+    "deadends": 3,
+    "mass_imbal": 3239,
+    "mi_frac": 0.4395
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5865,
+    "deadends": 9,
+    "mass_imbal": 2793,
+    "mi_frac": 0.4762
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5483,
+    "deadends": 1,
+    "mass_imbal": 2533,
+    "mi_frac": 0.462
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_001544575.2",
+   "n_rxn": 3595,
+   "n_internal": 3132,
+   "n_met": 2257,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 466,
+   "mi_frac": 0.1296,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.001,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.001,
+   "fba_growth_as_shipped": 92.3794,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0009578544061302681,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.7946936197094125
+  }
+ },
+ "GCF_001682855.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3899,
+    "deadends": 7,
+    "mass_imbal": 1927,
+    "mi_frac": 0.4942
+   },
+   "meteor_clean": {
+    "n_rxn": 3573,
+    "deadends": 1,
+    "mass_imbal": 1738,
+    "mi_frac": 0.4864
+   },
+   "baseline_dpz": {
+    "n_rxn": 5629,
+    "deadends": 14,
+    "mass_imbal": 2740,
+    "mi_frac": 0.4868
+   },
+   "meteor_dpz": {
+    "n_rxn": 5920,
+    "deadends": 3,
+    "mass_imbal": 2733,
+    "mi_frac": 0.4617
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4517,
+    "deadends": 7,
+    "mass_imbal": 2237,
+    "mi_frac": 0.4952
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4224,
+    "deadends": 1,
+    "mass_imbal": 2043,
+    "mi_frac": 0.4837
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_001682855.1",
+   "n_rxn": 2530,
+   "n_internal": 2191,
+   "n_met": 1603,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 343,
+   "mi_frac": 0.1356,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0018,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0018,
+   "fba_growth_as_shipped": 87.4058,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0018256503879507074,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6452866861030127
+  }
+ },
+ "GCF_001721185.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4684,
+    "deadends": 6,
+    "mass_imbal": 2307,
+    "mi_frac": 0.4925
+   },
+   "meteor_clean": {
+    "n_rxn": 4198,
+    "deadends": 1,
+    "mass_imbal": 2035,
+    "mi_frac": 0.4848
+   },
+   "baseline_dpz": {
+    "n_rxn": 5520,
+    "deadends": 5,
+    "mass_imbal": 2666,
+    "mi_frac": 0.483
+   },
+   "meteor_dpz": {
+    "n_rxn": 5483,
+    "deadends": 1,
+    "mass_imbal": 2540,
+    "mi_frac": 0.4633
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4607,
+    "deadends": 6,
+    "mass_imbal": 2282,
+    "mi_frac": 0.4953
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4241,
+    "deadends": 1,
+    "mass_imbal": 2064,
+    "mi_frac": 0.4867
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_001721185.1",
+   "n_rxn": 2785,
+   "n_internal": 2366,
+   "n_met": 1801,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 423,
+   "mi_frac": 0.1519,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0017,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0017,
+   "fba_growth_as_shipped": 98.0,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0016906170752324597,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6338797814207651
+  }
+ },
+ "GCF_002257695.2": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3266,
+    "deadends": 7,
+    "mass_imbal": 1684,
+    "mi_frac": 0.5156
+   },
+   "meteor_clean": {
+    "n_rxn": 3117,
+    "deadends": 1,
+    "mass_imbal": 1587,
+    "mi_frac": 0.5091
+   },
+   "baseline_dpz": {
+    "n_rxn": 5056,
+    "deadends": 4,
+    "mass_imbal": 2529,
+    "mi_frac": 0.5002
+   },
+   "meteor_dpz": {
+    "n_rxn": 5655,
+    "deadends": 1,
+    "mass_imbal": 2641,
+    "mi_frac": 0.467
+   },
+   "baseline_enzbert": {
+    "n_rxn": 3980,
+    "deadends": 2,
+    "mass_imbal": 2039,
+    "mi_frac": 0.5123
+   },
+   "meteor_enzbert": {
+    "n_rxn": 3856,
+    "deadends": 1,
+    "mass_imbal": 1939,
+    "mi_frac": 0.5029
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_002257695.2",
+   "n_rxn": 2715,
+   "n_internal": 2377,
+   "n_met": 1713,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 342,
+   "mi_frac": 0.126,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0017,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0017,
+   "fba_growth_as_shipped": 119.5113,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0016827934371055953,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.39447731755424065
+  }
+ },
+ "GCF_002260525.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 5134,
+    "deadends": 5,
+    "mass_imbal": 2519,
+    "mi_frac": 0.4907
+   },
+   "meteor_clean": {
+    "n_rxn": 4553,
+    "deadends": 1,
+    "mass_imbal": 2187,
+    "mi_frac": 0.4803
+   },
+   "baseline_dpz": {
+    "n_rxn": 6700,
+    "deadends": 13,
+    "mass_imbal": 3125,
+    "mi_frac": 0.4664
+   },
+   "meteor_dpz": {
+    "n_rxn": 6804,
+    "deadends": 1,
+    "mass_imbal": 3009,
+    "mi_frac": 0.4422
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5472,
+    "deadends": 7,
+    "mass_imbal": 2620,
+    "mi_frac": 0.4788
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4993,
+    "deadends": 1,
+    "mass_imbal": 2329,
+    "mi_frac": 0.4665
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_002260525.1",
+   "n_rxn": 3042,
+   "n_internal": 2663,
+   "n_met": 1966,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 384,
+   "mi_frac": 0.1262,
+   "mass_imbal_internal": 5,
+   "mi_frac_internal": 0.0019,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 5,
+   "mi_frac_internal_genuine": 0.0019,
+   "fba_growth_as_shipped": 94.4997,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.001877581674802854,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5921926910299004
+  }
+ },
+ "GCF_003019295.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 2525,
+    "deadends": 5,
+    "mass_imbal": 1382,
+    "mi_frac": 0.5473
+   },
+   "meteor_clean": {
+    "n_rxn": 2326,
+    "deadends": 1,
+    "mass_imbal": 1251,
+    "mi_frac": 0.5378
+   },
+   "baseline_dpz": {
+    "n_rxn": 3553,
+    "deadends": 2,
+    "mass_imbal": 1906,
+    "mi_frac": 0.5364
+   },
+   "meteor_dpz": {
+    "n_rxn": 3721,
+    "deadends": 1,
+    "mass_imbal": 1933,
+    "mi_frac": 0.5195
+   },
+   "baseline_enzbert": {
+    "n_rxn": 2534,
+    "deadends": 2,
+    "mass_imbal": 1386,
+    "mi_frac": 0.547
+   },
+   "meteor_enzbert": {
+    "n_rxn": 2578,
+    "deadends": 1,
+    "mass_imbal": 1400,
+    "mi_frac": 0.5431
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_003019295.1",
+   "n_rxn": 1894,
+   "n_internal": 1634,
+   "n_met": 1358,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 264,
+   "mi_frac": 0.1394,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0024,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0024,
+   "fba_growth_as_shipped": 42.6795,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0024479804161566705,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.4447334200260078
+  }
+ },
+ "GCF_003121295.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3930,
+    "deadends": 9,
+    "mass_imbal": 2012,
+    "mi_frac": 0.512
+   },
+   "meteor_clean": {
+    "n_rxn": 3558,
+    "deadends": 0,
+    "mass_imbal": 1797,
+    "mi_frac": 0.5051
+   },
+   "baseline_dpz": {
+    "n_rxn": 6739,
+    "deadends": 13,
+    "mass_imbal": 3162,
+    "mi_frac": 0.4692
+   },
+   "meteor_dpz": {
+    "n_rxn": 6780,
+    "deadends": 3,
+    "mass_imbal": 3004,
+    "mi_frac": 0.4431
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4822,
+    "deadends": 14,
+    "mass_imbal": 2396,
+    "mi_frac": 0.4969
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4581,
+    "deadends": 0,
+    "mass_imbal": 2238,
+    "mi_frac": 0.4885
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_003121295.1",
+   "n_rxn": 2897,
+   "n_internal": 2542,
+   "n_met": 1866,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 358,
+   "mi_frac": 0.1236,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0012,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0012,
+   "fba_growth_as_shipped": 101.7222,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0011801730920535012,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.48204022988505746
+  }
+ },
+ "GCF_003324715.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3832,
+    "deadends": 6,
+    "mass_imbal": 1951,
+    "mi_frac": 0.5091
+   },
+   "meteor_clean": {
+    "n_rxn": 3466,
+    "deadends": 0,
+    "mass_imbal": 1748,
+    "mi_frac": 0.5043
+   },
+   "baseline_dpz": {
+    "n_rxn": 6015,
+    "deadends": 11,
+    "mass_imbal": 2840,
+    "mi_frac": 0.4722
+   },
+   "meteor_dpz": {
+    "n_rxn": 6014,
+    "deadends": 3,
+    "mass_imbal": 2725,
+    "mi_frac": 0.4531
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4950,
+    "deadends": 4,
+    "mass_imbal": 2397,
+    "mi_frac": 0.4842
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4853,
+    "deadends": 0,
+    "mass_imbal": 2316,
+    "mi_frac": 0.4772
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_003324715.1",
+   "n_rxn": 2740,
+   "n_internal": 2412,
+   "n_met": 1793,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 334,
+   "mi_frac": 0.1219,
+   "mass_imbal_internal": 6,
+   "mi_frac_internal": 0.0025,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 6,
+   "mi_frac_internal_genuine": 0.0025,
+   "fba_growth_as_shipped": 92.0489,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0024875621890547263,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6175637393767706
+  }
+ },
+ "GCF_003605405.2": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4778,
+    "deadends": 8,
+    "mass_imbal": 2281,
+    "mi_frac": 0.4774
+   },
+   "meteor_clean": {
+    "n_rxn": 4452,
+    "deadends": 1,
+    "mass_imbal": 2092,
+    "mi_frac": 0.4699
+   },
+   "baseline_dpz": {
+    "n_rxn": 5710,
+    "deadends": 15,
+    "mass_imbal": 2688,
+    "mi_frac": 0.4708
+   },
+   "meteor_dpz": {
+    "n_rxn": 5923,
+    "deadends": 3,
+    "mass_imbal": 2680,
+    "mi_frac": 0.4525
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4370,
+    "deadends": 6,
+    "mass_imbal": 2224,
+    "mi_frac": 0.5089
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4568,
+    "deadends": 1,
+    "mass_imbal": 2141,
+    "mi_frac": 0.4687
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_003605405.2",
+   "n_rxn": 2619,
+   "n_internal": 2300,
+   "n_met": 1677,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 321,
+   "mi_frac": 0.1226,
+   "mass_imbal_internal": 2,
+   "mi_frac_internal": 0.0009,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 2,
+   "mi_frac_internal_genuine": 0.0009,
+   "fba_growth_as_shipped": 53.053,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0008695652173913044,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6619160728424386
+  }
+ },
+ "GCF_003626845.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4179,
+    "deadends": 7,
+    "mass_imbal": 2008,
+    "mi_frac": 0.4805
+   },
+   "meteor_clean": {
+    "n_rxn": 3522,
+    "deadends": 1,
+    "mass_imbal": 1770,
+    "mi_frac": 0.5026
+   },
+   "baseline_dpz": {
+    "n_rxn": 5618,
+    "deadends": 3,
+    "mass_imbal": 2807,
+    "mi_frac": 0.4996
+   },
+   "meteor_dpz": {
+    "n_rxn": 6135,
+    "deadends": 3,
+    "mass_imbal": 2779,
+    "mi_frac": 0.453
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4328,
+    "deadends": 5,
+    "mass_imbal": 2212,
+    "mi_frac": 0.5111
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4107,
+    "deadends": 1,
+    "mass_imbal": 2061,
+    "mi_frac": 0.5018
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_003626845.1",
+   "n_rxn": 2456,
+   "n_internal": 2159,
+   "n_met": 1607,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 300,
+   "mi_frac": 0.1221,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0014,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0014,
+   "fba_growth_as_shipped": 86.8737,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0013895321908290875,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5196471531676022
+  }
+ },
+ "GCF_004307055.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 5017,
+    "deadends": 8,
+    "mass_imbal": 2514,
+    "mi_frac": 0.5011
+   },
+   "meteor_clean": {
+    "n_rxn": 4442,
+    "deadends": 0,
+    "mass_imbal": 2188,
+    "mi_frac": 0.4926
+   },
+   "baseline_dpz": {
+    "n_rxn": 6973,
+    "deadends": 13,
+    "mass_imbal": 3224,
+    "mi_frac": 0.4624
+   },
+   "meteor_dpz": {
+    "n_rxn": 7184,
+    "deadends": 3,
+    "mass_imbal": 3153,
+    "mi_frac": 0.4389
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5397,
+    "deadends": 14,
+    "mass_imbal": 2667,
+    "mi_frac": 0.4942
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5484,
+    "deadends": 3,
+    "mass_imbal": 2546,
+    "mi_frac": 0.4643
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_004307055.1",
+   "n_rxn": 3108,
+   "n_internal": 2717,
+   "n_met": 2010,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 396,
+   "mi_frac": 0.1274,
+   "mass_imbal_internal": 5,
+   "mi_frac_internal": 0.0018,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 5,
+   "mi_frac_internal_genuine": 0.0018,
+   "fba_growth_as_shipped": 52.5169,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.001840264998159735,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5657620041753654
+  }
+ },
+ "GCF_006094295.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4796,
+    "deadends": 11,
+    "mass_imbal": 2257,
+    "mi_frac": 0.4706
+   },
+   "meteor_clean": {
+    "n_rxn": 4475,
+    "deadends": 1,
+    "mass_imbal": 2092,
+    "mi_frac": 0.4675
+   },
+   "baseline_dpz": {
+    "n_rxn": 5948,
+    "deadends": 11,
+    "mass_imbal": 2767,
+    "mi_frac": 0.4652
+   },
+   "meteor_dpz": {
+    "n_rxn": 6170,
+    "deadends": 3,
+    "mass_imbal": 2738,
+    "mi_frac": 0.4438
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4629,
+    "deadends": 7,
+    "mass_imbal": 2320,
+    "mi_frac": 0.5012
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4235,
+    "deadends": 1,
+    "mass_imbal": 2107,
+    "mi_frac": 0.4975
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_006094295.1",
+   "n_rxn": 2499,
+   "n_internal": 2167,
+   "n_met": 1581,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 335,
+   "mi_frac": 0.1341,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0014,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0014,
+   "fba_growth_as_shipped": 120.5734,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0013844023996308261,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.471976401179941
+  }
+ },
+ "GCF_008152325.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 2711,
+    "deadends": 5,
+    "mass_imbal": 1413,
+    "mi_frac": 0.5212
+   },
+   "meteor_clean": {
+    "n_rxn": 2624,
+    "deadends": 1,
+    "mass_imbal": 1350,
+    "mi_frac": 0.5145
+   },
+   "baseline_dpz": {
+    "n_rxn": 3740,
+    "deadends": 2,
+    "mass_imbal": 1949,
+    "mi_frac": 0.5211
+   },
+   "meteor_dpz": {
+    "n_rxn": 4148,
+    "deadends": 1,
+    "mass_imbal": 2062,
+    "mi_frac": 0.4971
+   },
+   "baseline_enzbert": {
+    "n_rxn": 2984,
+    "deadends": 2,
+    "mass_imbal": 1547,
+    "mi_frac": 0.5184
+   },
+   "meteor_enzbert": {
+    "n_rxn": 2885,
+    "deadends": 1,
+    "mass_imbal": 1473,
+    "mi_frac": 0.5106
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_008152325.1",
+   "n_rxn": 1792,
+   "n_internal": 1556,
+   "n_met": 1209,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 238,
+   "mi_frac": 0.1328,
+   "mass_imbal_internal": 2,
+   "mi_frac_internal": 0.0013,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 2,
+   "mi_frac_internal_genuine": 0.0013,
+   "fba_growth_as_shipped": 74.461,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0012853470437017994,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.40298507462686567
+  }
+ },
+ "GCF_008244845.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 5469,
+    "deadends": 7,
+    "mass_imbal": 2614,
+    "mi_frac": 0.478
+   },
+   "meteor_clean": {
+    "n_rxn": 4908,
+    "deadends": 1,
+    "mass_imbal": 2306,
+    "mi_frac": 0.4698
+   },
+   "baseline_dpz": {
+    "n_rxn": 6139,
+    "deadends": 10,
+    "mass_imbal": 2871,
+    "mi_frac": 0.4677
+   },
+   "meteor_dpz": {
+    "n_rxn": 5867,
+    "deadends": 3,
+    "mass_imbal": 2661,
+    "mi_frac": 0.4536
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5214,
+    "deadends": 3,
+    "mass_imbal": 2510,
+    "mi_frac": 0.4814
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4797,
+    "deadends": 1,
+    "mass_imbal": 2260,
+    "mi_frac": 0.4711
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_008244845.1",
+   "n_rxn": 2978,
+   "n_internal": 2554,
+   "n_met": 1876,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 428,
+   "mi_frac": 0.1437,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0016,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0016,
+   "fba_growth_as_shipped": 139.1242,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0015661707126076742,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6874598070739549
+  }
+ },
+ "GCF_008639165.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4243,
+    "deadends": 10,
+    "mass_imbal": 2163,
+    "mi_frac": 0.5098
+   },
+   "meteor_clean": {
+    "n_rxn": 3919,
+    "deadends": 1,
+    "mass_imbal": 1979,
+    "mi_frac": 0.505
+   },
+   "baseline_dpz": {
+    "n_rxn": 6949,
+    "deadends": 10,
+    "mass_imbal": 3236,
+    "mi_frac": 0.4657
+   },
+   "meteor_dpz": {
+    "n_rxn": 6944,
+    "deadends": 3,
+    "mass_imbal": 3088,
+    "mi_frac": 0.4447
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4970,
+    "deadends": 10,
+    "mass_imbal": 2494,
+    "mi_frac": 0.5018
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5168,
+    "deadends": 1,
+    "mass_imbal": 2415,
+    "mi_frac": 0.4673
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_008639165.1",
+   "n_rxn": 3061,
+   "n_internal": 2682,
+   "n_met": 1941,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 384,
+   "mi_frac": 0.1254,
+   "mass_imbal_internal": 5,
+   "mi_frac_internal": 0.0019,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 5,
+   "mi_frac_internal_genuine": 0.0019,
+   "fba_growth_as_shipped": 84.0493,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0018642803877703207,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6190102120974077
+  }
+ },
+ "GCF_008931305.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4297,
+    "deadends": 9,
+    "mass_imbal": 2225,
+    "mi_frac": 0.5178
+   },
+   "meteor_clean": {
+    "n_rxn": 3882,
+    "deadends": 0,
+    "mass_imbal": 1989,
+    "mi_frac": 0.5124
+   },
+   "baseline_dpz": {
+    "n_rxn": 6820,
+    "deadends": 14,
+    "mass_imbal": 3178,
+    "mi_frac": 0.466
+   },
+   "meteor_dpz": {
+    "n_rxn": 6918,
+    "deadends": 3,
+    "mass_imbal": 3068,
+    "mi_frac": 0.4435
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5236,
+    "deadends": 9,
+    "mass_imbal": 2627,
+    "mi_frac": 0.5017
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4945,
+    "deadends": 1,
+    "mass_imbal": 2426,
+    "mi_frac": 0.4906
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_008931305.1",
+   "n_rxn": 3085,
+   "n_internal": 2706,
+   "n_met": 1960,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 382,
+   "mi_frac": 0.1238,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0011,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0011,
+   "fba_growth_as_shipped": 105.7184,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0011086474501108647,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5600268276324615
+  }
+ },
+ "GCF_013365535.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3917,
+    "deadends": 8,
+    "mass_imbal": 1903,
+    "mi_frac": 0.4858
+   },
+   "meteor_clean": {
+    "n_rxn": 3709,
+    "deadends": 1,
+    "mass_imbal": 1778,
+    "mi_frac": 0.4794
+   },
+   "baseline_dpz": {
+    "n_rxn": 5090,
+    "deadends": 8,
+    "mass_imbal": 2529,
+    "mi_frac": 0.4969
+   },
+   "meteor_dpz": {
+    "n_rxn": 5599,
+    "deadends": 1,
+    "mass_imbal": 2653,
+    "mi_frac": 0.4738
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4014,
+    "deadends": 6,
+    "mass_imbal": 2071,
+    "mi_frac": 0.5159
+   },
+   "meteor_enzbert": {
+    "n_rxn": 3812,
+    "deadends": 1,
+    "mass_imbal": 1924,
+    "mi_frac": 0.5047
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_013365535.1",
+   "n_rxn": 1724,
+   "n_internal": 1541,
+   "n_met": 1058,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 183,
+   "mi_frac": 0.1061,
+   "mass_imbal_internal": 0,
+   "mi_frac_internal": 0.0,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 0,
+   "mi_frac_internal_genuine": 0.0,
+   "fba_growth_as_shipped": 50.7593,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.4462915601023018
+  }
+ },
+ "GCF_015277775.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3996,
+    "deadends": 11,
+    "mass_imbal": 2055,
+    "mi_frac": 0.5143
+   },
+   "meteor_clean": {
+    "n_rxn": 3641,
+    "deadends": 1,
+    "mass_imbal": 1859,
+    "mi_frac": 0.5106
+   },
+   "baseline_dpz": {
+    "n_rxn": 6674,
+    "deadends": 6,
+    "mass_imbal": 3129,
+    "mi_frac": 0.4688
+   },
+   "meteor_dpz": {
+    "n_rxn": 6970,
+    "deadends": 3,
+    "mass_imbal": 3078,
+    "mi_frac": 0.4416
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4538,
+    "deadends": 6,
+    "mass_imbal": 2296,
+    "mi_frac": 0.5059
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4306,
+    "deadends": 1,
+    "mass_imbal": 2150,
+    "mi_frac": 0.4993
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_015277775.1",
+   "n_rxn": 2856,
+   "n_internal": 2497,
+   "n_met": 1843,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 363,
+   "mi_frac": 0.1271,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0016,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0016,
+   "fba_growth_as_shipped": 87.7184,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0016019223067681217,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.7223548130469372
+  }
+ },
+ "GCF_017916255.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3961,
+    "deadends": 9,
+    "mass_imbal": 2020,
+    "mi_frac": 0.51
+   },
+   "meteor_clean": {
+    "n_rxn": 3571,
+    "deadends": 0,
+    "mass_imbal": 1818,
+    "mi_frac": 0.5091
+   },
+   "baseline_dpz": {
+    "n_rxn": 6855,
+    "deadends": 17,
+    "mass_imbal": 3209,
+    "mi_frac": 0.4681
+   },
+   "meteor_dpz": {
+    "n_rxn": 6890,
+    "deadends": 3,
+    "mass_imbal": 3068,
+    "mi_frac": 0.4453
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4812,
+    "deadends": 16,
+    "mass_imbal": 2424,
+    "mi_frac": 0.5037
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4576,
+    "deadends": 2,
+    "mass_imbal": 2252,
+    "mi_frac": 0.4921
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_017916255.1",
+   "n_rxn": 2865,
+   "n_internal": 2513,
+   "n_met": 1877,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 355,
+   "mi_frac": 0.1239,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0012,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0012,
+   "fba_growth_as_shipped": 106.6696,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.001193792280143255,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5351796407185628
+  }
+ },
+ "GCF_018732145.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3799,
+    "deadends": 8,
+    "mass_imbal": 1959,
+    "mi_frac": 0.5157
+   },
+   "meteor_clean": {
+    "n_rxn": 3511,
+    "deadends": 0,
+    "mass_imbal": 1785,
+    "mi_frac": 0.5084
+   },
+   "baseline_dpz": {
+    "n_rxn": 5554,
+    "deadends": 9,
+    "mass_imbal": 2736,
+    "mi_frac": 0.4926
+   },
+   "meteor_dpz": {
+    "n_rxn": 6161,
+    "deadends": 3,
+    "mass_imbal": 2781,
+    "mi_frac": 0.4514
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4445,
+    "deadends": 4,
+    "mass_imbal": 2258,
+    "mi_frac": 0.508
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4623,
+    "deadends": 1,
+    "mass_imbal": 2175,
+    "mi_frac": 0.4705
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_018732145.1",
+   "n_rxn": 2793,
+   "n_internal": 2454,
+   "n_met": 1849,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 343,
+   "mi_frac": 0.1228,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0016,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0016,
+   "fba_growth_as_shipped": 65.4804,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0016299918500407497,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5656350053361793
+  }
+ },
+ "GCF_019856495.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3683,
+    "deadends": 7,
+    "mass_imbal": 1860,
+    "mi_frac": 0.505
+   },
+   "meteor_clean": {
+    "n_rxn": 3427,
+    "deadends": 1,
+    "mass_imbal": 1720,
+    "mi_frac": 0.5019
+   },
+   "baseline_dpz": {
+    "n_rxn": 4951,
+    "deadends": 3,
+    "mass_imbal": 2361,
+    "mi_frac": 0.4769
+   },
+   "meteor_dpz": {
+    "n_rxn": 5075,
+    "deadends": 3,
+    "mass_imbal": 2332,
+    "mi_frac": 0.4595
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4385,
+    "deadends": 3,
+    "mass_imbal": 2111,
+    "mi_frac": 0.4814
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4143,
+    "deadends": 1,
+    "mass_imbal": 1958,
+    "mi_frac": 0.4726
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_019856495.1",
+   "n_rxn": 2252,
+   "n_internal": 1989,
+   "n_met": 1492,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 265,
+   "mi_frac": 0.1177,
+   "mass_imbal_internal": 2,
+   "mi_frac_internal": 0.001,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 2,
+   "mi_frac_internal_genuine": 0.001,
+   "fba_growth_as_shipped": 88.8397,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.001005530417295123,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5683962264150944
+  }
+ },
+ "GCF_021278985.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 5897,
+    "deadends": 9,
+    "mass_imbal": 2692,
+    "mi_frac": 0.4565
+   },
+   "meteor_clean": {
+    "n_rxn": 4871,
+    "deadends": 1,
+    "mass_imbal": 2287,
+    "mi_frac": 0.4695
+   },
+   "baseline_dpz": {
+    "n_rxn": 6605,
+    "deadends": 14,
+    "mass_imbal": 2976,
+    "mi_frac": 0.4506
+   },
+   "meteor_dpz": {
+    "n_rxn": 6309,
+    "deadends": 3,
+    "mass_imbal": 2774,
+    "mi_frac": 0.4397
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5615,
+    "deadends": 6,
+    "mass_imbal": 2594,
+    "mi_frac": 0.462
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5178,
+    "deadends": 1,
+    "mass_imbal": 2338,
+    "mi_frac": 0.4515
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_021278985.1",
+   "n_rxn": 2965,
+   "n_internal": 2542,
+   "n_met": 1838,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 426,
+   "mi_frac": 0.1437,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0012,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0012,
+   "fba_growth_as_shipped": 126.1691,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0011801730920535012,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.7739771965124078
+  }
+ },
+ "GCF_022406515.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 2826,
+    "deadends": 6,
+    "mass_imbal": 1474,
+    "mi_frac": 0.5216
+   },
+   "meteor_clean": {
+    "n_rxn": 2609,
+    "deadends": 1,
+    "mass_imbal": 1344,
+    "mi_frac": 0.5151
+   },
+   "baseline_dpz": {
+    "n_rxn": 3827,
+    "deadends": 10,
+    "mass_imbal": 1947,
+    "mi_frac": 0.5088
+   },
+   "meteor_dpz": {
+    "n_rxn": 4351,
+    "deadends": 3,
+    "mass_imbal": 2110,
+    "mi_frac": 0.4849
+   },
+   "baseline_enzbert": {
+    "n_rxn": 3382,
+    "deadends": 4,
+    "mass_imbal": 1737,
+    "mi_frac": 0.5136
+   },
+   "meteor_enzbert": {
+    "n_rxn": 3240,
+    "deadends": 1,
+    "mass_imbal": 1635,
+    "mi_frac": 0.5046
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_022406515.1",
+   "n_rxn": 1852,
+   "n_internal": 1608,
+   "n_met": 1219,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 247,
+   "mi_frac": 0.1334,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0019,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0019,
+   "fba_growth_as_shipped": 54.5857,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0018656716417910447,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.43190661478599224
+  }
+ },
+ "GCF_024519395.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 5725,
+    "deadends": 9,
+    "mass_imbal": 2694,
+    "mi_frac": 0.4706
+   },
+   "meteor_clean": {
+    "n_rxn": 5077,
+    "deadends": 1,
+    "mass_imbal": 2357,
+    "mi_frac": 0.4643
+   },
+   "baseline_dpz": {
+    "n_rxn": 6259,
+    "deadends": 15,
+    "mass_imbal": 2918,
+    "mi_frac": 0.4662
+   },
+   "meteor_dpz": {
+    "n_rxn": 6006,
+    "deadends": 3,
+    "mass_imbal": 2705,
+    "mi_frac": 0.4504
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5332,
+    "deadends": 5,
+    "mass_imbal": 2567,
+    "mi_frac": 0.4814
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4915,
+    "deadends": 1,
+    "mass_imbal": 2322,
+    "mi_frac": 0.4724
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_024519395.1",
+   "n_rxn": 2980,
+   "n_internal": 2556,
+   "n_met": 1859,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 428,
+   "mi_frac": 0.1436,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0016,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0016,
+   "fba_growth_as_shipped": 141.4846,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.001564945226917058,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.7115260785576304
+  }
+ },
+ "GCF_032924845.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4304,
+    "deadends": 7,
+    "mass_imbal": 2193,
+    "mi_frac": 0.5095
+   },
+   "meteor_clean": {
+    "n_rxn": 3707,
+    "deadends": 1,
+    "mass_imbal": 1874,
+    "mi_frac": 0.5055
+   },
+   "baseline_dpz": {
+    "n_rxn": 6087,
+    "deadends": 14,
+    "mass_imbal": 2884,
+    "mi_frac": 0.4738
+   },
+   "meteor_dpz": {
+    "n_rxn": 6113,
+    "deadends": 3,
+    "mass_imbal": 2776,
+    "mi_frac": 0.4541
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5107,
+    "deadends": 4,
+    "mass_imbal": 2435,
+    "mi_frac": 0.4768
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4849,
+    "deadends": 0,
+    "mass_imbal": 2273,
+    "mi_frac": 0.4688
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_032924845.1",
+   "n_rxn": 2926,
+   "n_internal": 2553,
+   "n_met": 1913,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 379,
+   "mi_frac": 0.1295,
+   "mass_imbal_internal": 6,
+   "mi_frac_internal": 0.0024,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 6,
+   "mi_frac_internal_genuine": 0.0024,
+   "fba_growth_as_shipped": 70.1091,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0023501762632197414,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5874125874125874
+  }
+ },
+ "GCF_039535865.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 1786,
+    "deadends": 7,
+    "mass_imbal": 1009,
+    "mi_frac": 0.5649
+   },
+   "meteor_clean": {
+    "n_rxn": 1840,
+    "deadends": 0,
+    "mass_imbal": 1012,
+    "mi_frac": 0.55
+   },
+   "baseline_dpz": {
+    "n_rxn": 3872,
+    "deadends": 3,
+    "mass_imbal": 2086,
+    "mi_frac": 0.5387
+   },
+   "meteor_dpz": {
+    "n_rxn": 4443,
+    "deadends": 2,
+    "mass_imbal": 2242,
+    "mi_frac": 0.5046
+   },
+   "baseline_enzbert": {
+    "n_rxn": 2740,
+    "deadends": 4,
+    "mass_imbal": 1511,
+    "mi_frac": 0.5515
+   },
+   "meteor_enzbert": {
+    "n_rxn": 2757,
+    "deadends": 0,
+    "mass_imbal": 1503,
+    "mi_frac": 0.5452
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_039535865.1",
+   "n_rxn": 2090,
+   "n_internal": 1802,
+   "n_met": 1506,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 290,
+   "mi_frac": 0.1388,
+   "mass_imbal_internal": 2,
+   "mi_frac_internal": 0.0011,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 2,
+   "mi_frac_internal_genuine": 0.0011,
+   "fba_growth_as_shipped": 64.9901,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0011098779134295228,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.3714689265536723
+  }
+ },
+ "GCF_045039055.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 2861,
+    "deadends": 7,
+    "mass_imbal": 1460,
+    "mi_frac": 0.5103
+   },
+   "meteor_clean": {
+    "n_rxn": 2625,
+    "deadends": 1,
+    "mass_imbal": 1325,
+    "mi_frac": 0.5048
+   },
+   "baseline_dpz": {
+    "n_rxn": 4144,
+    "deadends": 7,
+    "mass_imbal": 2090,
+    "mi_frac": 0.5043
+   },
+   "meteor_dpz": {
+    "n_rxn": 4373,
+    "deadends": 1,
+    "mass_imbal": 2107,
+    "mi_frac": 0.4818
+   },
+   "baseline_enzbert": {
+    "n_rxn": 3426,
+    "deadends": 4,
+    "mass_imbal": 1722,
+    "mi_frac": 0.5026
+   },
+   "meteor_enzbert": {
+    "n_rxn": 3228,
+    "deadends": 1,
+    "mass_imbal": 1606,
+    "mi_frac": 0.4975
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_045039055.1",
+   "n_rxn": 2016,
+   "n_internal": 1736,
+   "n_met": 1338,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 282,
+   "mi_frac": 0.1399,
+   "mass_imbal_internal": 2,
+   "mi_frac_internal": 0.0012,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 2,
+   "mi_frac_internal_genuine": 0.0012,
+   "fba_growth_as_shipped": 106.8162,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.001152073732718894,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.4815695600475624
+  }
+ },
+ "GCF_045207185.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4211,
+    "deadends": 7,
+    "mass_imbal": 2184,
+    "mi_frac": 0.5186
+   },
+   "meteor_clean": {
+    "n_rxn": 3869,
+    "deadends": 0,
+    "mass_imbal": 1991,
+    "mi_frac": 0.5146
+   },
+   "baseline_dpz": {
+    "n_rxn": 6791,
+    "deadends": 17,
+    "mass_imbal": 3162,
+    "mi_frac": 0.4656
+   },
+   "meteor_dpz": {
+    "n_rxn": 6742,
+    "deadends": 3,
+    "mass_imbal": 3004,
+    "mi_frac": 0.4456
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5132,
+    "deadends": 8,
+    "mass_imbal": 2560,
+    "mi_frac": 0.4988
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4821,
+    "deadends": 1,
+    "mass_imbal": 2362,
+    "mi_frac": 0.4899
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_045207185.1",
+   "n_rxn": 2957,
+   "n_internal": 2609,
+   "n_met": 1868,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 352,
+   "mi_frac": 0.119,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0015,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0015,
+   "fba_growth_as_shipped": 105.9653,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0015331544653123803,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.631430584918957
+  }
+ },
+ "GCF_045286965.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4384,
+    "deadends": 10,
+    "mass_imbal": 2224,
+    "mi_frac": 0.5073
+   },
+   "meteor_clean": {
+    "n_rxn": 3975,
+    "deadends": 0,
+    "mass_imbal": 1993,
+    "mi_frac": 0.5014
+   },
+   "baseline_dpz": {
+    "n_rxn": 6259,
+    "deadends": 12,
+    "mass_imbal": 3060,
+    "mi_frac": 0.4889
+   },
+   "meteor_dpz": {
+    "n_rxn": 7005,
+    "deadends": 3,
+    "mass_imbal": 3105,
+    "mi_frac": 0.4433
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5099,
+    "deadends": 12,
+    "mass_imbal": 2544,
+    "mi_frac": 0.4989
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4788,
+    "deadends": 1,
+    "mass_imbal": 2353,
+    "mi_frac": 0.4914
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_045286965.1",
+   "n_rxn": 3095,
+   "n_internal": 2708,
+   "n_met": 1964,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 391,
+   "mi_frac": 0.1263,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0015,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0015,
+   "fba_growth_as_shipped": 106.396,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0014771048744460858,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6912840984697272
+  }
+ },
+ "GCF_045348045.1": {
+  "organism": "S.aureus",
+  "gem": "iYS854",
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3678,
+    "deadends": 4,
+    "mass_imbal": 1766,
+    "mi_frac": 0.4802
+   },
+   "meteor_clean": {
+    "n_rxn": 3550,
+    "deadends": 1,
+    "mass_imbal": 1695,
+    "mi_frac": 0.4775
+   },
+   "baseline_dpz": {
+    "n_rxn": 4525,
+    "deadends": 15,
+    "mass_imbal": 2220,
+    "mi_frac": 0.4906
+   },
+   "meteor_dpz": {
+    "n_rxn": 4553,
+    "deadends": 3,
+    "mass_imbal": 2173,
+    "mi_frac": 0.4773
+   },
+   "baseline_enzbert": {
+    "n_rxn": 3599,
+    "deadends": 4,
+    "mass_imbal": 1828,
+    "mi_frac": 0.5079
+   },
+   "meteor_enzbert": {
+    "n_rxn": 3384,
+    "deadends": 1,
+    "mass_imbal": 1695,
+    "mi_frac": 0.5009
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_045348045.1",
+   "n_rxn": 1625,
+   "n_internal": 1398,
+   "n_met": 1110,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 229,
+   "mi_frac": 0.1409,
+   "mass_imbal_internal": 2,
+   "mi_frac_internal": 0.0014,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 2,
+   "mi_frac_internal_genuine": 0.0014,
+   "fba_growth_as_shipped": 78.0139,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.001430615164520744,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.4
+  },
+  "curated_bigg": {
+   "label": "iYS854",
+   "n_rxn": 1455,
+   "n_internal": 1197,
+   "n_met": 1335,
+   "objective_reaction_ids": [
+    "BIOMASS_iYS_wild_type"
+   ],
+   "n_met_noformula": 118,
+   "met_formula_cov": 0.9116,
+   "deadends": 63,
+   "mass_imbal": 482,
+   "mi_frac": 0.3313,
+   "mass_imbal_internal": 224,
+   "mi_frac_internal": 0.1871,
+   "mi_internal_due_to_missing_formula": 61,
+   "mi_internal_genuine": 163,
+   "mi_frac_internal_genuine": 0.1362,
+   "fba_growth_as_shipped": 1.3602,
+   "seconds": 0.1
+  }
+ },
+ "GCF_045571375.1": {
+  "organism": "P.putida",
+  "gem": "iJN1463",
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 5469,
+    "deadends": 6,
+    "mass_imbal": 2584,
+    "mi_frac": 0.4725
+   },
+   "meteor_clean": {
+    "n_rxn": 4904,
+    "deadends": 1,
+    "mass_imbal": 2272,
+    "mi_frac": 0.4633
+   },
+   "baseline_dpz": {
+    "n_rxn": 6526,
+    "deadends": 14,
+    "mass_imbal": 3031,
+    "mi_frac": 0.4644
+   },
+   "meteor_dpz": {
+    "n_rxn": 6516,
+    "deadends": 3,
+    "mass_imbal": 2886,
+    "mi_frac": 0.4429
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5480,
+    "deadends": 4,
+    "mass_imbal": 2617,
+    "mi_frac": 0.4776
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4998,
+    "deadends": 1,
+    "mass_imbal": 2328,
+    "mi_frac": 0.4658
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_045571375.1",
+   "n_rxn": 3007,
+   "n_internal": 2624,
+   "n_met": 1985,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 387,
+   "mi_frac": 0.1287,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0015,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0015,
+   "fba_growth_as_shipped": 92.4287,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.001524390243902439,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6489675516224189
+  },
+  "curated_bigg": {
+   "label": "iJN1463",
+   "n_rxn": 2927,
+   "n_internal": 2544,
+   "n_met": 2153,
+   "objective_reaction_ids": [
+    "BIOMASS_KT2440_WT3"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 85,
+   "mass_imbal": 392,
+   "mi_frac": 0.1339,
+   "mass_imbal_internal": 9,
+   "mi_frac_internal": 0.0035,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 9,
+   "mi_frac_internal_genuine": 0.0035,
+   "fba_growth_as_shipped": 0.5861,
+   "seconds": 0.2
+  }
+ },
+ "GCF_045712965.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4469,
+    "deadends": 7,
+    "mass_imbal": 2244,
+    "mi_frac": 0.5021
+   },
+   "meteor_clean": {
+    "n_rxn": 4000,
+    "deadends": 1,
+    "mass_imbal": 1971,
+    "mi_frac": 0.4928
+   },
+   "baseline_dpz": {
+    "n_rxn": 5629,
+    "deadends": 11,
+    "mass_imbal": 2735,
+    "mi_frac": 0.4859
+   },
+   "meteor_dpz": {
+    "n_rxn": 5494,
+    "deadends": 3,
+    "mass_imbal": 2555,
+    "mi_frac": 0.4651
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4816,
+    "deadends": 3,
+    "mass_imbal": 2393,
+    "mi_frac": 0.4969
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4463,
+    "deadends": 1,
+    "mass_imbal": 2177,
+    "mi_frac": 0.4878
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_045712965.1",
+   "n_rxn": 2851,
+   "n_internal": 2503,
+   "n_met": 1852,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 352,
+   "mi_frac": 0.1235,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0016,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0016,
+   "fba_growth_as_shipped": 82.3377,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0015980823012385138,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5125223613595706
+  }
+ },
+ "GCF_046591535.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4161,
+    "deadends": 8,
+    "mass_imbal": 1997,
+    "mi_frac": 0.4799
+   },
+   "meteor_clean": {
+    "n_rxn": 3853,
+    "deadends": 1,
+    "mass_imbal": 1811,
+    "mi_frac": 0.47
+   },
+   "baseline_dpz": {
+    "n_rxn": 5386,
+    "deadends": 15,
+    "mass_imbal": 2690,
+    "mi_frac": 0.4994
+   },
+   "meteor_dpz": {
+    "n_rxn": 5472,
+    "deadends": 3,
+    "mass_imbal": 2565,
+    "mi_frac": 0.4688
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4133,
+    "deadends": 6,
+    "mass_imbal": 2132,
+    "mi_frac": 0.5158
+   },
+   "meteor_enzbert": {
+    "n_rxn": 3962,
+    "deadends": 1,
+    "mass_imbal": 1961,
+    "mi_frac": 0.495
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_046591535.1",
+   "n_rxn": 2473,
+   "n_internal": 2171,
+   "n_met": 1621,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 307,
+   "mi_frac": 0.1241,
+   "mass_imbal_internal": 5,
+   "mi_frac_internal": 0.0023,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 5,
+   "mi_frac_internal_genuine": 0.0023,
+   "fba_growth_as_shipped": 70.4591,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0023030861354214646,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6241438356164384
+  }
+ },
+ "GCF_047219265.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 6110,
+    "deadends": 11,
+    "mass_imbal": 2759,
+    "mi_frac": 0.4516
+   },
+   "meteor_clean": {
+    "n_rxn": 5452,
+    "deadends": 1,
+    "mass_imbal": 2424,
+    "mi_frac": 0.4446
+   },
+   "baseline_dpz": {
+    "n_rxn": 6506,
+    "deadends": 14,
+    "mass_imbal": 2909,
+    "mi_frac": 0.4471
+   },
+   "meteor_dpz": {
+    "n_rxn": 6386,
+    "deadends": 3,
+    "mass_imbal": 2761,
+    "mi_frac": 0.4324
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5685,
+    "deadends": 7,
+    "mass_imbal": 2600,
+    "mi_frac": 0.4573
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5245,
+    "deadends": 1,
+    "mass_imbal": 2350,
+    "mi_frac": 0.448
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_047219265.1",
+   "n_rxn": 2916,
+   "n_internal": 2496,
+   "n_met": 1823,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 424,
+   "mi_frac": 0.1454,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0016,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0016,
+   "fba_growth_as_shipped": 124.2821,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0016025641025641025,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.7768595041322314
+  }
+ },
+ "GCF_047301005.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 2627,
+    "deadends": 7,
+    "mass_imbal": 1371,
+    "mi_frac": 0.5219
+   },
+   "meteor_clean": {
+    "n_rxn": 2484,
+    "deadends": 1,
+    "mass_imbal": 1271,
+    "mi_frac": 0.5117
+   },
+   "baseline_dpz": {
+    "n_rxn": 3703,
+    "deadends": 3,
+    "mass_imbal": 1905,
+    "mi_frac": 0.5144
+   },
+   "meteor_dpz": {
+    "n_rxn": 3933,
+    "deadends": 1,
+    "mass_imbal": 1971,
+    "mi_frac": 0.5011
+   },
+   "baseline_enzbert": {
+    "n_rxn": 2914,
+    "deadends": 4,
+    "mass_imbal": 1549,
+    "mi_frac": 0.5316
+   },
+   "meteor_enzbert": {
+    "n_rxn": 2860,
+    "deadends": 1,
+    "mass_imbal": 1503,
+    "mi_frac": 0.5255
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_047301005.1",
+   "n_rxn": 1954,
+   "n_internal": 1704,
+   "n_met": 1338,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 251,
+   "mi_frac": 0.1285,
+   "mass_imbal_internal": 1,
+   "mi_frac_internal": 0.0006,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 1,
+   "mi_frac_internal_genuine": 0.0006,
+   "fba_growth_as_shipped": 119.939,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0005868544600938967,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.3812375249500998
+  }
+ },
+ "GCF_047946945.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4455,
+    "deadends": 7,
+    "mass_imbal": 2286,
+    "mi_frac": 0.5131
+   },
+   "meteor_clean": {
+    "n_rxn": 3949,
+    "deadends": 0,
+    "mass_imbal": 2001,
+    "mi_frac": 0.5067
+   },
+   "baseline_dpz": {
+    "n_rxn": 6129,
+    "deadends": 11,
+    "mass_imbal": 2830,
+    "mi_frac": 0.4617
+   },
+   "meteor_dpz": {
+    "n_rxn": 6172,
+    "deadends": 3,
+    "mass_imbal": 2743,
+    "mi_frac": 0.4444
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5188,
+    "deadends": 6,
+    "mass_imbal": 2488,
+    "mi_frac": 0.4796
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4851,
+    "deadends": 0,
+    "mass_imbal": 2255,
+    "mi_frac": 0.4649
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_047946945.1",
+   "n_rxn": 3161,
+   "n_internal": 2756,
+   "n_met": 2034,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 410,
+   "mi_frac": 0.1297,
+   "mass_imbal_internal": 5,
+   "mi_frac_internal": 0.0018,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 5,
+   "mi_frac_internal_genuine": 0.0018,
+   "fba_growth_as_shipped": 127.3879,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.00181422351233672,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5677200902934537
+  }
+ },
+ "GCF_049860565.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3135,
+    "deadends": 7,
+    "mass_imbal": 1653,
+    "mi_frac": 0.5273
+   },
+   "meteor_clean": {
+    "n_rxn": 2958,
+    "deadends": 1,
+    "mass_imbal": 1543,
+    "mi_frac": 0.5216
+   },
+   "baseline_dpz": {
+    "n_rxn": 4543,
+    "deadends": 8,
+    "mass_imbal": 2301,
+    "mi_frac": 0.5065
+   },
+   "meteor_dpz": {
+    "n_rxn": 5075,
+    "deadends": 1,
+    "mass_imbal": 2454,
+    "mi_frac": 0.4835
+   },
+   "baseline_enzbert": {
+    "n_rxn": 3730,
+    "deadends": 6,
+    "mass_imbal": 1972,
+    "mi_frac": 0.5287
+   },
+   "meteor_enzbert": {
+    "n_rxn": 3585,
+    "deadends": 1,
+    "mass_imbal": 1869,
+    "mi_frac": 0.5213
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_049860565.1",
+   "n_rxn": 2527,
+   "n_internal": 2218,
+   "n_met": 1603,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 310,
+   "mi_frac": 0.1227,
+   "mass_imbal_internal": 1,
+   "mi_frac_internal": 0.0005,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 1,
+   "mi_frac_internal_genuine": 0.0005,
+   "fba_growth_as_shipped": 103.5731,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0004508566275924256,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5780911062906724
+  }
+ },
+ "GCF_050157305.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4191,
+    "deadends": 6,
+    "mass_imbal": 2149,
+    "mi_frac": 0.5128
+   },
+   "meteor_clean": {
+    "n_rxn": 3746,
+    "deadends": 1,
+    "mass_imbal": 1887,
+    "mi_frac": 0.5037
+   },
+   "baseline_dpz": {
+    "n_rxn": 4988,
+    "deadends": 9,
+    "mass_imbal": 2499,
+    "mi_frac": 0.501
+   },
+   "meteor_dpz": {
+    "n_rxn": 5104,
+    "deadends": 3,
+    "mass_imbal": 2450,
+    "mi_frac": 0.48
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4056,
+    "deadends": 3,
+    "mass_imbal": 2098,
+    "mi_frac": 0.5173
+   },
+   "meteor_enzbert": {
+    "n_rxn": 3728,
+    "deadends": 1,
+    "mass_imbal": 1887,
+    "mi_frac": 0.5062
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_050157305.1",
+   "n_rxn": 2690,
+   "n_internal": 2267,
+   "n_met": 1863,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 425,
+   "mi_frac": 0.158,
+   "mass_imbal_internal": 2,
+   "mi_frac_internal": 0.0009,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 2,
+   "mi_frac_internal_genuine": 0.0009,
+   "fba_growth_as_shipped": 88.8937,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.000882223202470225,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5407830342577488
+  }
+ },
+ "GCF_050233995.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 2491,
+    "deadends": 5,
+    "mass_imbal": 1363,
+    "mi_frac": 0.5472
+   },
+   "meteor_clean": {
+    "n_rxn": 2340,
+    "deadends": 1,
+    "mass_imbal": 1258,
+    "mi_frac": 0.5376
+   },
+   "baseline_dpz": {
+    "n_rxn": 3615,
+    "deadends": 2,
+    "mass_imbal": 1945,
+    "mi_frac": 0.538
+   },
+   "meteor_dpz": {
+    "n_rxn": 3728,
+    "deadends": 1,
+    "mass_imbal": 1934,
+    "mi_frac": 0.5188
+   },
+   "baseline_enzbert": {
+    "n_rxn": 2614,
+    "deadends": 2,
+    "mass_imbal": 1435,
+    "mi_frac": 0.549
+   },
+   "meteor_enzbert": {
+    "n_rxn": 2466,
+    "deadends": 1,
+    "mass_imbal": 1330,
+    "mi_frac": 0.5393
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_050233995.1",
+   "n_rxn": 1971,
+   "n_internal": 1706,
+   "n_met": 1361,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 270,
+   "mi_frac": 0.137,
+   "mass_imbal_internal": 5,
+   "mi_frac_internal": 0.0029,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 5,
+   "mi_frac_internal_genuine": 0.0029,
+   "fba_growth_as_shipped": 53.2559,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0029308323563892145,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.4519230769230769
+  }
+ },
+ "GCF_051043275.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4743,
+    "deadends": 8,
+    "mass_imbal": 2394,
+    "mi_frac": 0.5047
+   },
+   "meteor_clean": {
+    "n_rxn": 4142,
+    "deadends": 0,
+    "mass_imbal": 2060,
+    "mi_frac": 0.4973
+   },
+   "baseline_dpz": {
+    "n_rxn": 6382,
+    "deadends": 14,
+    "mass_imbal": 3100,
+    "mi_frac": 0.4857
+   },
+   "meteor_dpz": {
+    "n_rxn": 6939,
+    "deadends": 3,
+    "mass_imbal": 3066,
+    "mi_frac": 0.4419
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5136,
+    "deadends": 6,
+    "mass_imbal": 2538,
+    "mi_frac": 0.4942
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5225,
+    "deadends": 1,
+    "mass_imbal": 2402,
+    "mi_frac": 0.4597
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_051043275.1",
+   "n_rxn": 3211,
+   "n_internal": 2818,
+   "n_met": 2062,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 398,
+   "mi_frac": 0.1239,
+   "mass_imbal_internal": 5,
+   "mi_frac_internal": 0.0018,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 5,
+   "mi_frac_internal_genuine": 0.0018,
+   "fba_growth_as_shipped": 110.1742,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0017743080198722497,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5273885350318471
+  }
+ },
+ "GCF_051903345.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 5033,
+    "deadends": 7,
+    "mass_imbal": 2528,
+    "mi_frac": 0.5023
+   },
+   "meteor_clean": {
+    "n_rxn": 4444,
+    "deadends": 0,
+    "mass_imbal": 2207,
+    "mi_frac": 0.4966
+   },
+   "baseline_dpz": {
+    "n_rxn": 7037,
+    "deadends": 14,
+    "mass_imbal": 3263,
+    "mi_frac": 0.4637
+   },
+   "meteor_dpz": {
+    "n_rxn": 7077,
+    "deadends": 3,
+    "mass_imbal": 3092,
+    "mi_frac": 0.4369
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5310,
+    "deadends": 8,
+    "mass_imbal": 2648,
+    "mi_frac": 0.4987
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5321,
+    "deadends": 1,
+    "mass_imbal": 2462,
+    "mi_frac": 0.4627
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_051903345.1",
+   "n_rxn": 3488,
+   "n_internal": 3046,
+   "n_met": 2204,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 446,
+   "mi_frac": 0.1279,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0013,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0013,
+   "fba_growth_as_shipped": 94.4536,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0013131976362442547,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6761778367617783
+  }
+ },
+ "GCF_051904065.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3176,
+    "deadends": 8,
+    "mass_imbal": 1618,
+    "mi_frac": 0.5094
+   },
+   "meteor_clean": {
+    "n_rxn": 3051,
+    "deadends": 1,
+    "mass_imbal": 1533,
+    "mi_frac": 0.5025
+   },
+   "baseline_dpz": {
+    "n_rxn": 4738,
+    "deadends": 6,
+    "mass_imbal": 2336,
+    "mi_frac": 0.493
+   },
+   "meteor_dpz": {
+    "n_rxn": 5197,
+    "deadends": 1,
+    "mass_imbal": 2414,
+    "mi_frac": 0.4645
+   },
+   "baseline_enzbert": {
+    "n_rxn": 3705,
+    "deadends": 3,
+    "mass_imbal": 1856,
+    "mi_frac": 0.5009
+   },
+   "meteor_enzbert": {
+    "n_rxn": 3449,
+    "deadends": 1,
+    "mass_imbal": 1704,
+    "mi_frac": 0.4941
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_051904065.1",
+   "n_rxn": 2218,
+   "n_internal": 1943,
+   "n_met": 1424,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 280,
+   "mi_frac": 0.1262,
+   "mass_imbal_internal": 5,
+   "mi_frac_internal": 0.0026,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 5,
+   "mi_frac_internal_genuine": 0.0026,
+   "fba_growth_as_shipped": 85.5302,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0025733401955738548,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.4954710144927536
+  }
+ },
+ "GCF_051904745.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 5472,
+    "deadends": 7,
+    "mass_imbal": 2616,
+    "mi_frac": 0.4781
+   },
+   "meteor_clean": {
+    "n_rxn": 4895,
+    "deadends": 1,
+    "mass_imbal": 2300,
+    "mi_frac": 0.4699
+   },
+   "baseline_dpz": {
+    "n_rxn": 6097,
+    "deadends": 10,
+    "mass_imbal": 2854,
+    "mi_frac": 0.4681
+   },
+   "meteor_dpz": {
+    "n_rxn": 5786,
+    "deadends": 3,
+    "mass_imbal": 2631,
+    "mi_frac": 0.4547
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5169,
+    "deadends": 4,
+    "mass_imbal": 2495,
+    "mi_frac": 0.4827
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4747,
+    "deadends": 1,
+    "mass_imbal": 2243,
+    "mi_frac": 0.4725
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_051904745.1",
+   "n_rxn": 2961,
+   "n_internal": 2539,
+   "n_met": 1869,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 426,
+   "mi_frac": 0.1439,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0016,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0016,
+   "fba_growth_as_shipped": 139.5127,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0015754233950374162,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.7148648648648649
+  }
+ },
+ "GCF_051905015.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3097,
+    "deadends": 6,
+    "mass_imbal": 1607,
+    "mi_frac": 0.5189
+   },
+   "meteor_clean": {
+    "n_rxn": 2965,
+    "deadends": 1,
+    "mass_imbal": 1518,
+    "mi_frac": 0.512
+   },
+   "baseline_dpz": {
+    "n_rxn": 4722,
+    "deadends": 2,
+    "mass_imbal": 2344,
+    "mi_frac": 0.4964
+   },
+   "meteor_dpz": {
+    "n_rxn": 5340,
+    "deadends": 1,
+    "mass_imbal": 2519,
+    "mi_frac": 0.4717
+   },
+   "baseline_enzbert": {
+    "n_rxn": 3646,
+    "deadends": 3,
+    "mass_imbal": 1836,
+    "mi_frac": 0.5036
+   },
+   "meteor_enzbert": {
+    "n_rxn": 3481,
+    "deadends": 1,
+    "mass_imbal": 1730,
+    "mi_frac": 0.497
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_051905015.1",
+   "n_rxn": 2171,
+   "n_internal": 1903,
+   "n_met": 1424,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 272,
+   "mi_frac": 0.1253,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0021,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0021,
+   "fba_growth_as_shipped": 118.2542,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0021019442984760903,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6039603960396039
+  }
+ },
+ "GCF_054027555.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3063,
+    "deadends": 6,
+    "mass_imbal": 1596,
+    "mi_frac": 0.5211
+   },
+   "meteor_clean": {
+    "n_rxn": 2862,
+    "deadends": 1,
+    "mass_imbal": 1467,
+    "mi_frac": 0.5126
+   },
+   "baseline_dpz": {
+    "n_rxn": 4398,
+    "deadends": 2,
+    "mass_imbal": 2254,
+    "mi_frac": 0.5125
+   },
+   "meteor_dpz": {
+    "n_rxn": 5028,
+    "deadends": 1,
+    "mass_imbal": 2447,
+    "mi_frac": 0.4867
+   },
+   "baseline_enzbert": {
+    "n_rxn": 3560,
+    "deadends": 2,
+    "mass_imbal": 1865,
+    "mi_frac": 0.5239
+   },
+   "meteor_enzbert": {
+    "n_rxn": 3531,
+    "deadends": 1,
+    "mass_imbal": 1818,
+    "mi_frac": 0.5149
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_054027555.1",
+   "n_rxn": 2380,
+   "n_internal": 2072,
+   "n_met": 1555,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 309,
+   "mi_frac": 0.1298,
+   "mass_imbal_internal": 1,
+   "mi_frac_internal": 0.0005,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 1,
+   "mi_frac_internal_genuine": 0.0005,
+   "fba_growth_as_shipped": 80.9283,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.00048262548262548264,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5633652822151225
+  }
+ },
+ "GCF_055387645.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 3160,
+    "deadends": 7,
+    "mass_imbal": 1603,
+    "mi_frac": 0.5073
+   },
+   "meteor_clean": {
+    "n_rxn": 2965,
+    "deadends": 1,
+    "mass_imbal": 1487,
+    "mi_frac": 0.5015
+   },
+   "baseline_dpz": {
+    "n_rxn": 4333,
+    "deadends": 11,
+    "mass_imbal": 2133,
+    "mi_frac": 0.4923
+   },
+   "meteor_dpz": {
+    "n_rxn": 4555,
+    "deadends": 3,
+    "mass_imbal": 2175,
+    "mi_frac": 0.4775
+   },
+   "baseline_enzbert": {
+    "n_rxn": 3426,
+    "deadends": 4,
+    "mass_imbal": 1710,
+    "mi_frac": 0.4991
+   },
+   "meteor_enzbert": {
+    "n_rxn": 3230,
+    "deadends": 1,
+    "mass_imbal": 1588,
+    "mi_frac": 0.4916
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_055387645.1",
+   "n_rxn": 2063,
+   "n_internal": 1784,
+   "n_met": 1349,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 282,
+   "mi_frac": 0.1367,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0017,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0017,
+   "fba_growth_as_shipped": 82.9061,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0016816143497757848,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.369620253164557
+  }
+ },
+ "GCF_055390245.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 2465,
+    "deadends": 6,
+    "mass_imbal": 1314,
+    "mi_frac": 0.5331
+   },
+   "meteor_clean": {
+    "n_rxn": 2292,
+    "deadends": 1,
+    "mass_imbal": 1216,
+    "mi_frac": 0.5305
+   },
+   "baseline_dpz": {
+    "n_rxn": 3099,
+    "deadends": 4,
+    "mass_imbal": 1623,
+    "mi_frac": 0.5237
+   },
+   "meteor_dpz": {
+    "n_rxn": 3435,
+    "deadends": 1,
+    "mass_imbal": 1757,
+    "mi_frac": 0.5115
+   },
+   "baseline_enzbert": {
+    "n_rxn": 2654,
+    "deadends": 7,
+    "mass_imbal": 1423,
+    "mi_frac": 0.5362
+   },
+   "meteor_enzbert": {
+    "n_rxn": 2538,
+    "deadends": 1,
+    "mass_imbal": 1340,
+    "mi_frac": 0.528
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_055390245.1",
+   "n_rxn": 1516,
+   "n_internal": 1294,
+   "n_met": 1106,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 224,
+   "mi_frac": 0.1478,
+   "mass_imbal_internal": 2,
+   "mi_frac_internal": 0.0015,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 2,
+   "mi_frac_internal_genuine": 0.0015,
+   "fba_growth_as_shipped": 35.8831,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0015455950540958269,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.3873343151693667
+  }
+ },
+ "GCF_055589305.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4372,
+    "deadends": 9,
+    "mass_imbal": 2243,
+    "mi_frac": 0.513
+   },
+   "meteor_clean": {
+    "n_rxn": 4024,
+    "deadends": 0,
+    "mass_imbal": 2066,
+    "mi_frac": 0.5134
+   },
+   "baseline_dpz": {
+    "n_rxn": 6731,
+    "deadends": 13,
+    "mass_imbal": 3269,
+    "mi_frac": 0.4857
+   },
+   "meteor_dpz": {
+    "n_rxn": 7234,
+    "deadends": 3,
+    "mass_imbal": 3202,
+    "mi_frac": 0.4426
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5251,
+    "deadends": 7,
+    "mass_imbal": 2614,
+    "mi_frac": 0.4978
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5398,
+    "deadends": 1,
+    "mass_imbal": 2507,
+    "mi_frac": 0.4644
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_055589305.1",
+   "n_rxn": 3197,
+   "n_internal": 2800,
+   "n_met": 2005,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 400,
+   "mi_frac": 0.1251,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0011,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0011,
+   "fba_growth_as_shipped": 89.0016,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0010714285714285715,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5780189959294437
+  }
+ },
+ "GCF_056489225.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 5423,
+    "deadends": 7,
+    "mass_imbal": 2596,
+    "mi_frac": 0.4787
+   },
+   "meteor_clean": {
+    "n_rxn": 4823,
+    "deadends": 1,
+    "mass_imbal": 2267,
+    "mi_frac": 0.47
+   },
+   "baseline_dpz": {
+    "n_rxn": 6038,
+    "deadends": 10,
+    "mass_imbal": 2828,
+    "mi_frac": 0.4684
+   },
+   "meteor_dpz": {
+    "n_rxn": 5762,
+    "deadends": 3,
+    "mass_imbal": 2613,
+    "mi_frac": 0.4535
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5142,
+    "deadends": 4,
+    "mass_imbal": 2483,
+    "mi_frac": 0.4829
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4729,
+    "deadends": 1,
+    "mass_imbal": 2239,
+    "mi_frac": 0.4735
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_056489225.1",
+   "n_rxn": 2937,
+   "n_internal": 2512,
+   "n_met": 1864,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 429,
+   "mi_frac": 0.1461,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0016,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0016,
+   "fba_growth_as_shipped": 140.2333,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0015923566878980893,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6861702127659575
+  }
+ },
+ "GCF_057457595.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4664,
+    "deadends": 5,
+    "mass_imbal": 2361,
+    "mi_frac": 0.5062
+   },
+   "meteor_clean": {
+    "n_rxn": 4182,
+    "deadends": 1,
+    "mass_imbal": 2079,
+    "mi_frac": 0.4971
+   },
+   "baseline_dpz": {
+    "n_rxn": 5424,
+    "deadends": 9,
+    "mass_imbal": 2669,
+    "mi_frac": 0.4921
+   },
+   "meteor_dpz": {
+    "n_rxn": 5925,
+    "deadends": 3,
+    "mass_imbal": 2649,
+    "mi_frac": 0.4471
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4665,
+    "deadends": 2,
+    "mass_imbal": 2360,
+    "mi_frac": 0.5059
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4254,
+    "deadends": 1,
+    "mass_imbal": 2111,
+    "mi_frac": 0.4962
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_057457595.1",
+   "n_rxn": 2840,
+   "n_internal": 2405,
+   "n_met": 1953,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 441,
+   "mi_frac": 0.1553,
+   "mass_imbal_internal": 6,
+   "mi_frac_internal": 0.0025,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 6,
+   "mi_frac_internal_genuine": 0.0025,
+   "fba_growth_as_shipped": 118.3857,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.002494802494802495,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.48563218390804597
+  }
+ },
+ "GCF_057838145.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4021,
+    "deadends": 6,
+    "mass_imbal": 1932,
+    "mi_frac": 0.4805
+   },
+   "meteor_clean": {
+    "n_rxn": 3825,
+    "deadends": 0,
+    "mass_imbal": 1815,
+    "mi_frac": 0.4745
+   },
+   "baseline_dpz": {
+    "n_rxn": 5092,
+    "deadends": 12,
+    "mass_imbal": 2487,
+    "mi_frac": 0.4884
+   },
+   "meteor_dpz": {
+    "n_rxn": 5837,
+    "deadends": 3,
+    "mass_imbal": 2644,
+    "mi_frac": 0.453
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4145,
+    "deadends": 4,
+    "mass_imbal": 2080,
+    "mi_frac": 0.5018
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4486,
+    "deadends": 1,
+    "mass_imbal": 2088,
+    "mi_frac": 0.4654
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_057838145.1",
+   "n_rxn": 2769,
+   "n_internal": 2450,
+   "n_met": 1786,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 321,
+   "mi_frac": 0.1159,
+   "mass_imbal_internal": 2,
+   "mi_frac_internal": 0.0008,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 2,
+   "mi_frac_internal_genuine": 0.0008,
+   "fba_growth_as_shipped": 88.6005,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0008163265306122449,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.308502024291498
+  }
+ },
+ "GCF_058182495.1": {
+  "organism": "B.subtilis",
+  "gem": "iYO844",
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4538,
+    "deadends": 11,
+    "mass_imbal": 2237,
+    "mi_frac": 0.4929
+   },
+   "meteor_clean": {
+    "n_rxn": 4105,
+    "deadends": 1,
+    "mass_imbal": 2005,
+    "mi_frac": 0.4884
+   },
+   "baseline_dpz": {
+    "n_rxn": 5230,
+    "deadends": 10,
+    "mass_imbal": 2565,
+    "mi_frac": 0.4904
+   },
+   "meteor_dpz": {
+    "n_rxn": 5802,
+    "deadends": 3,
+    "mass_imbal": 2620,
+    "mi_frac": 0.4516
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4875,
+    "deadends": 8,
+    "mass_imbal": 2369,
+    "mi_frac": 0.4859
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4502,
+    "deadends": 1,
+    "mass_imbal": 2170,
+    "mi_frac": 0.482
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_058182495.1",
+   "n_rxn": 2368,
+   "n_internal": 2042,
+   "n_met": 1556,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 328,
+   "mi_frac": 0.1385,
+   "mass_imbal_internal": 2,
+   "mi_frac_internal": 0.001,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 2,
+   "mi_frac_internal_genuine": 0.001,
+   "fba_growth_as_shipped": 70.1466,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0009794319294809011,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6543933054393305
+  },
+  "curated_bigg": {
+   "label": "iYO844",
+   "n_rxn": 1250,
+   "n_internal": 1020,
+   "n_met": 990,
+   "objective_reaction_ids": [
+    "BIOMASS_BS_10"
+   ],
+   "n_met_noformula": 51,
+   "met_formula_cov": 0.9485,
+   "deadends": 122,
+   "mass_imbal": 287,
+   "mi_frac": 0.2296,
+   "mass_imbal_internal": 57,
+   "mi_frac_internal": 0.0559,
+   "mi_internal_due_to_missing_formula": 47,
+   "mi_internal_genuine": 10,
+   "mi_frac_internal_genuine": 0.0098,
+   "fba_growth_as_shipped": 0.118,
+   "seconds": 0.1
+  }
+ },
+ "GCF_058435815.1": {
+  "organism": "K.pneumoniae",
+  "gem": "iYL1228",
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 5879,
+    "deadends": 8,
+    "mass_imbal": 2785,
+    "mi_frac": 0.4737
+   },
+   "meteor_clean": {
+    "n_rxn": 5233,
+    "deadends": 1,
+    "mass_imbal": 2427,
+    "mi_frac": 0.4638
+   },
+   "baseline_dpz": {
+    "n_rxn": 7048,
+    "deadends": 14,
+    "mass_imbal": 3156,
+    "mi_frac": 0.4478
+   },
+   "meteor_dpz": {
+    "n_rxn": 6716,
+    "deadends": 3,
+    "mass_imbal": 2926,
+    "mi_frac": 0.4357
+   },
+   "baseline_enzbert": {
+    "n_rxn": 6089,
+    "deadends": 5,
+    "mass_imbal": 2818,
+    "mi_frac": 0.4628
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5590,
+    "deadends": 1,
+    "mass_imbal": 2521,
+    "mi_frac": 0.451
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_058435815.1",
+   "n_rxn": 2804,
+   "n_internal": 2424,
+   "n_met": 1685,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 382,
+   "mi_frac": 0.1362,
+   "mass_imbal_internal": 2,
+   "mi_frac_internal": 0.0008,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 2,
+   "mi_frac_internal_genuine": 0.0008,
+   "fba_growth_as_shipped": 82.3327,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0008250825082508251,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6781056966369252
+  },
+  "curated_bigg": {
+   "label": "iYL1228",
+   "n_rxn": 2262,
+   "n_internal": 1970,
+   "n_met": 1658,
+   "objective_reaction_ids": [
+    "BIOMASS_"
+   ],
+   "n_met_noformula": 1658,
+   "met_formula_cov": 0.0,
+   "deadends": 87,
+   "mass_imbal": 2262,
+   "mi_frac": 1.0,
+   "mass_imbal_internal": 1970,
+   "mi_frac_internal": 1.0,
+   "mi_internal_due_to_missing_formula": 1970,
+   "mi_internal_genuine": 0,
+   "mi_frac_internal_genuine": 0.0,
+   "fba_growth_as_shipped": 1.0426,
+   "seconds": 0.1
+  }
+ },
+ "GCF_058436375.1": {
+  "organism": "E.coli",
+  "gem": "iML1515",
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 6064,
+    "deadends": 10,
+    "mass_imbal": 2751,
+    "mi_frac": 0.4537
+   },
+   "meteor_clean": {
+    "n_rxn": 5439,
+    "deadends": 1,
+    "mass_imbal": 2423,
+    "mi_frac": 0.4455
+   },
+   "baseline_dpz": {
+    "n_rxn": 6639,
+    "deadends": 16,
+    "mass_imbal": 2986,
+    "mi_frac": 0.4498
+   },
+   "meteor_dpz": {
+    "n_rxn": 6435,
+    "deadends": 3,
+    "mass_imbal": 2788,
+    "mi_frac": 0.4333
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5793,
+    "deadends": 6,
+    "mass_imbal": 2656,
+    "mi_frac": 0.4585
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5357,
+    "deadends": 1,
+    "mass_imbal": 2413,
+    "mi_frac": 0.4504
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_058436375.1",
+   "n_rxn": 2960,
+   "n_internal": 2531,
+   "n_met": 1846,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 434,
+   "mi_frac": 0.1466,
+   "mass_imbal_internal": 5,
+   "mi_frac_internal": 0.002,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 5,
+   "mi_frac_internal_genuine": 0.002,
+   "fba_growth_as_shipped": 121.688,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0019755037534571317,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.7310513447432763
+  },
+  "curated_bigg": {
+   "label": "iML1515",
+   "n_rxn": 2712,
+   "n_internal": 2373,
+   "n_met": 1877,
+   "objective_reaction_ids": [
+    "BIOMASS_Ec_iML1515_core_75p37M"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 63,
+   "mass_imbal": 340,
+   "mi_frac": 0.1254,
+   "mass_imbal_internal": 1,
+   "mi_frac_internal": 0.0004,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 1,
+   "mi_frac_internal_genuine": 0.0004,
+   "fba_growth_as_shipped": 0.877,
+   "seconds": 0.2
+  }
+ },
+ "GCF_058448535.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 5129,
+    "deadends": 8,
+    "mass_imbal": 2588,
+    "mi_frac": 0.5046
+   },
+   "meteor_clean": {
+    "n_rxn": 4565,
+    "deadends": 1,
+    "mass_imbal": 2259,
+    "mi_frac": 0.4949
+   },
+   "baseline_dpz": {
+    "n_rxn": 6827,
+    "deadends": 16,
+    "mass_imbal": 3179,
+    "mi_frac": 0.4657
+   },
+   "meteor_dpz": {
+    "n_rxn": 6866,
+    "deadends": 3,
+    "mass_imbal": 3043,
+    "mi_frac": 0.4432
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5837,
+    "deadends": 6,
+    "mass_imbal": 2775,
+    "mi_frac": 0.4754
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5304,
+    "deadends": 1,
+    "mass_imbal": 2457,
+    "mi_frac": 0.4632
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_058448535.1",
+   "n_rxn": 3131,
+   "n_internal": 2750,
+   "n_met": 1971,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 386,
+   "mi_frac": 0.1233,
+   "mass_imbal_internal": 5,
+   "mi_frac_internal": 0.0018,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 5,
+   "mi_frac_internal_genuine": 0.0018,
+   "fba_growth_as_shipped": 79.1741,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0018181818181818182,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.7122026093630084
+  }
+ },
+ "GCF_058449135.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4994,
+    "deadends": 12,
+    "mass_imbal": 2314,
+    "mi_frac": 0.4634
+   },
+   "meteor_clean": {
+    "n_rxn": 4581,
+    "deadends": 1,
+    "mass_imbal": 2091,
+    "mi_frac": 0.4565
+   },
+   "baseline_dpz": {
+    "n_rxn": 5658,
+    "deadends": 13,
+    "mass_imbal": 2762,
+    "mi_frac": 0.4882
+   },
+   "meteor_dpz": {
+    "n_rxn": 6304,
+    "deadends": 3,
+    "mass_imbal": 2819,
+    "mi_frac": 0.4472
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4985,
+    "deadends": 8,
+    "mass_imbal": 2459,
+    "mi_frac": 0.4933
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4598,
+    "deadends": 1,
+    "mass_imbal": 2233,
+    "mi_frac": 0.4856
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_058449135.1",
+   "n_rxn": 2585,
+   "n_internal": 2270,
+   "n_met": 1620,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 316,
+   "mi_frac": 0.1222,
+   "mass_imbal_internal": 1,
+   "mi_frac_internal": 0.0004,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 1,
+   "mi_frac_internal_genuine": 0.0004,
+   "fba_growth_as_shipped": 88.3715,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0004405286343612335,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5946564885496183
+  }
+ },
+ "GCF_900105045.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4076,
+    "deadends": 6,
+    "mass_imbal": 1974,
+    "mi_frac": 0.4843
+   },
+   "meteor_clean": {
+    "n_rxn": 3778,
+    "deadends": 0,
+    "mass_imbal": 1802,
+    "mi_frac": 0.477
+   },
+   "baseline_dpz": {
+    "n_rxn": 5036,
+    "deadends": 12,
+    "mass_imbal": 2463,
+    "mi_frac": 0.4891
+   },
+   "meteor_dpz": {
+    "n_rxn": 5818,
+    "deadends": 3,
+    "mass_imbal": 2614,
+    "mi_frac": 0.4493
+   },
+   "baseline_enzbert": {
+    "n_rxn": 4199,
+    "deadends": 4,
+    "mass_imbal": 2113,
+    "mi_frac": 0.5032
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4016,
+    "deadends": 1,
+    "mass_imbal": 1987,
+    "mi_frac": 0.4948
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_900105045.1",
+   "n_rxn": 2787,
+   "n_internal": 2455,
+   "n_met": 1810,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 336,
+   "mi_frac": 0.1206,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0016,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0016,
+   "fba_growth_as_shipped": 71.2072,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.001629327902240326,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.5358490566037736
+  }
+ },
+ "GCF_900112135.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4742,
+    "deadends": 7,
+    "mass_imbal": 2387,
+    "mi_frac": 0.5034
+   },
+   "meteor_clean": {
+    "n_rxn": 4218,
+    "deadends": 0,
+    "mass_imbal": 2094,
+    "mi_frac": 0.4964
+   },
+   "baseline_dpz": {
+    "n_rxn": 5665,
+    "deadends": 11,
+    "mass_imbal": 2752,
+    "mi_frac": 0.4858
+   },
+   "meteor_dpz": {
+    "n_rxn": 6348,
+    "deadends": 3,
+    "mass_imbal": 2813,
+    "mi_frac": 0.4431
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5214,
+    "deadends": 6,
+    "mass_imbal": 2496,
+    "mi_frac": 0.4787
+   },
+   "meteor_enzbert": {
+    "n_rxn": 4874,
+    "deadends": 1,
+    "mass_imbal": 2275,
+    "mi_frac": 0.4668
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_900112135.1",
+   "n_rxn": 2960,
+   "n_internal": 2584,
+   "n_met": 1905,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 380,
+   "mi_frac": 0.1284,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0015,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0015,
+   "fba_growth_as_shipped": 88.3549,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0015479876160990713,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.710455764075067
+  }
+ },
+ "GCF_902859785.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 4890,
+    "deadends": 7,
+    "mass_imbal": 2457,
+    "mi_frac": 0.5025
+   },
+   "meteor_clean": {
+    "n_rxn": 4355,
+    "deadends": 0,
+    "mass_imbal": 2151,
+    "mi_frac": 0.4939
+   },
+   "baseline_dpz": {
+    "n_rxn": 6904,
+    "deadends": 13,
+    "mass_imbal": 3206,
+    "mi_frac": 0.4644
+   },
+   "meteor_dpz": {
+    "n_rxn": 7143,
+    "deadends": 3,
+    "mass_imbal": 3131,
+    "mi_frac": 0.4383
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5715,
+    "deadends": 6,
+    "mass_imbal": 2727,
+    "mi_frac": 0.4772
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5388,
+    "deadends": 1,
+    "mass_imbal": 2499,
+    "mi_frac": 0.4638
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_902859785.1",
+   "n_rxn": 3573,
+   "n_internal": 3099,
+   "n_met": 2261,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 478,
+   "mi_frac": 0.1338,
+   "mass_imbal_internal": 4,
+   "mi_frac_internal": 0.0013,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 4,
+   "mi_frac_internal_genuine": 0.0013,
+   "fba_growth_as_shipped": 85.7959,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0012907389480477573,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.6425576519916143
+  }
+ },
+ "GCF_963281165.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 2456,
+    "deadends": 5,
+    "mass_imbal": 1292,
+    "mi_frac": 0.5261
+   },
+   "meteor_clean": {
+    "n_rxn": 2261,
+    "deadends": 1,
+    "mass_imbal": 1171,
+    "mi_frac": 0.5179
+   },
+   "baseline_dpz": {
+    "n_rxn": 3556,
+    "deadends": 2,
+    "mass_imbal": 1861,
+    "mi_frac": 0.5233
+   },
+   "meteor_dpz": {
+    "n_rxn": 3607,
+    "deadends": 1,
+    "mass_imbal": 1813,
+    "mi_frac": 0.5026
+   },
+   "baseline_enzbert": {
+    "n_rxn": 3038,
+    "deadends": 2,
+    "mass_imbal": 1575,
+    "mi_frac": 0.5184
+   },
+   "meteor_enzbert": {
+    "n_rxn": 2819,
+    "deadends": 1,
+    "mass_imbal": 1435,
+    "mi_frac": 0.509
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_963281165.1",
+   "n_rxn": 1561,
+   "n_internal": 1361,
+   "n_met": 1083,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 203,
+   "mi_frac": 0.13,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0022,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0022,
+   "fba_growth_as_shipped": 112.6142,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.002204261572373255,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.4340659340659341
+  }
+ },
+ "GCF_976997305.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 5233,
+    "deadends": 8,
+    "mass_imbal": 2584,
+    "mi_frac": 0.4938
+   },
+   "meteor_clean": {
+    "n_rxn": 5027,
+    "deadends": 1,
+    "mass_imbal": 2318,
+    "mi_frac": 0.4611
+   },
+   "baseline_dpz": {
+    "n_rxn": 6838,
+    "deadends": 15,
+    "mass_imbal": 3151,
+    "mi_frac": 0.4608
+   },
+   "meteor_dpz": {
+    "n_rxn": 6844,
+    "deadends": 3,
+    "mass_imbal": 3036,
+    "mi_frac": 0.4436
+   },
+   "baseline_enzbert": {
+    "n_rxn": 5606,
+    "deadends": 4,
+    "mass_imbal": 2665,
+    "mi_frac": 0.4754
+   },
+   "meteor_enzbert": {
+    "n_rxn": 5202,
+    "deadends": 1,
+    "mass_imbal": 2404,
+    "mi_frac": 0.4621
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_976997305.1",
+   "n_rxn": 3158,
+   "n_internal": 2758,
+   "n_met": 2018,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 405,
+   "mi_frac": 0.1282,
+   "mass_imbal_internal": 5,
+   "mi_frac_internal": 0.0018,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 5,
+   "mi_frac_internal_genuine": 0.0018,
+   "fba_growth_as_shipped": 113.6603,
+   "seconds": 0.2
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0018129079042784628,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.649536647009267
+  }
+ },
+ "GCF_978047615.1": {
+  "organism": null,
+  "gem": null,
+  "table1": {
+   "baseline_clean": {
+    "n_rxn": 2943,
+    "deadends": 6,
+    "mass_imbal": 1582,
+    "mi_frac": 0.5375
+   },
+   "meteor_clean": {
+    "n_rxn": 2657,
+    "deadends": 1,
+    "mass_imbal": 1413,
+    "mi_frac": 0.5318
+   },
+   "baseline_dpz": {
+    "n_rxn": 3645,
+    "deadends": 4,
+    "mass_imbal": 1888,
+    "mi_frac": 0.518
+   },
+   "meteor_dpz": {
+    "n_rxn": 3785,
+    "deadends": 1,
+    "mass_imbal": 1918,
+    "mi_frac": 0.5067
+   },
+   "baseline_enzbert": {
+    "n_rxn": 3071,
+    "deadends": 3,
+    "mass_imbal": 1627,
+    "mi_frac": 0.5298
+   },
+   "meteor_enzbert": {
+    "n_rxn": 2847,
+    "deadends": 1,
+    "mass_imbal": 1483,
+    "mi_frac": 0.5209
+   }
+  },
+  "carveme": {
+   "label": "CarveMe_GCF_978047615.1",
+   "n_rxn": 1876,
+   "n_internal": 1624,
+   "n_met": 1303,
+   "objective_reaction_ids": [
+    "Growth"
+   ],
+   "n_met_noformula": 0,
+   "met_formula_cov": 1.0,
+   "deadends": 0,
+   "mass_imbal": 255,
+   "mi_frac": 0.1359,
+   "mass_imbal_internal": 3,
+   "mi_frac_internal": 0.0018,
+   "mi_internal_due_to_missing_formula": 0,
+   "mi_internal_genuine": 3,
+   "mi_frac_internal_genuine": 0.0018,
+   "fba_growth_as_shipped": 68.133,
+   "seconds": 0.1
+  },
+  "carveme_memote_existing": {
+   "memote_mass_balance_metric": 0.0018472906403940886,
+   "memote_deadends_metric": 0.0,
+   "memote_unbounded_metric": 0.39271255060728744
+  }
+ }
+}

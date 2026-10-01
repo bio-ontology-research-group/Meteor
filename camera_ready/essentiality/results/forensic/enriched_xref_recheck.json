@@ -1,0 +1,40 @@
+{
+ "coverage_report": {
+  "salmonella": {
+   "n_rxn": 2545,
+   "n_direct": 1819,
+   "n_via_bigg": 460,
+   "n_via_kegg": 5,
+   "n_unresolved": 261,
+   "n_seed_ids_total": 4160
+  },
+  "kpneumoniae": {
+   "n_rxn": 2262,
+   "n_direct": 1747,
+   "n_via_bigg": 446,
+   "n_via_kegg": 4,
+   "n_unresolved": 65,
+   "n_seed_ids_total": 4100
+  },
+  "pputida": {
+   "n_rxn": 2927,
+   "n_direct": 1420,
+   "n_via_bigg": 274,
+   "n_via_kegg": 16,
+   "n_unresolved": 1217,
+   "n_seed_ids_total": 3481
+  }
+ },
+ "nobackup_enriched": {
+  "n": 95,
+  "present": 5,
+  "pct_present": 5.2631578947368425,
+  "pct_absent": 94.73684210526316
+ },
+ "control_enriched": {
+  "n": 25332,
+  "present": 7643,
+  "pct_present": 30.171324806568766,
+  "pct_absent": 69.82867519343124
+ }
+}

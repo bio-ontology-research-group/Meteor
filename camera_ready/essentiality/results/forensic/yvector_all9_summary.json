@@ -1,0 +1,125 @@
+{
+ "salmonella_clean": {
+  "n_meteor": 2687,
+  "n_thresh": 2626,
+  "n_only_thresh": 56,
+  "n_only_meteor": 117,
+  "n_euk_only_thresh": 2,
+  "n_euk_only_meteor": 2,
+  "euk_only_thresh_rxns": {
+   "rxn30382_c": "L-Glutamate 5-Semialdehyde Dehydratase, Reversible, Mitochondrial",
+   "rxn34494_c": "Deoxynucleotide Carrier (Datp), Mitochondrial"
+  },
+  "elapsed_s": 147.0
+ },
+ "salmonella_dpz": {
+  "n_meteor": 3318,
+  "n_thresh": 3015,
+  "n_only_thresh": 52,
+  "n_only_meteor": 355,
+  "n_euk_only_thresh": 4,
+  "n_euk_only_meteor": 0,
+  "euk_only_thresh_rxns": {
+   "rxn13096_c": "Thiamine Diphosphate Transport  (Mitochondrial Membrane)",
+   "rxn13344_c": "Inositol-1,3,4,5-Triphosphate 6-Kinase, Nucleus",
+   "rxn34494_c": "Deoxynucleotide Carrier (Datp), Mitochondrial",
+   "rxn34495_c": "Deoxynucleotide Carrier (Dctp), Mitochondrial"
+  },
+  "elapsed_s": 158.1
+ },
+ "salmonella_enzbert": {
+  "n_meteor": 2614,
+  "n_thresh": 2521,
+  "n_only_thresh": 50,
+  "n_only_meteor": 143,
+  "n_euk_only_thresh": 2,
+  "n_euk_only_meteor": 3,
+  "euk_only_thresh_rxns": {
+   "rxn34494_c": "Deoxynucleotide Carrier (Datp), Mitochondrial",
+   "rxn34495_c": "Deoxynucleotide Carrier (Dctp), Mitochondrial"
+  },
+  "elapsed_s": 201.3
+ },
+ "kpneumoniae_clean": {
+  "n_meteor": 2876,
+  "n_thresh": 2843,
+  "n_only_thresh": 73,
+  "n_only_meteor": 106,
+  "n_euk_only_thresh": 1,
+  "n_euk_only_meteor": 2,
+  "euk_only_thresh_rxns": {
+   "rxn34494_c": "Deoxynucleotide Carrier (Datp), Mitochondrial"
+  },
+  "elapsed_s": 188.7
+ },
+ "kpneumoniae_dpz": {
+  "n_meteor": 3859,
+  "n_thresh": 3573,
+  "n_only_thresh": 60,
+  "n_only_meteor": 346,
+  "n_euk_only_thresh": 3,
+  "n_euk_only_meteor": 0,
+  "euk_only_thresh_rxns": {
+   "rxn13096_c": "Thiamine Diphosphate Transport  (Mitochondrial Membrane)",
+   "rxn34494_c": "Deoxynucleotide Carrier (Datp), Mitochondrial",
+   "rxn34495_c": "Deoxynucleotide Carrier (Dctp), Mitochondrial"
+  },
+  "elapsed_s": 136.2
+ },
+ "kpneumoniae_enzbert": {
+  "n_meteor": 3136,
+  "n_thresh": 3043,
+  "n_only_thresh": 54,
+  "n_only_meteor": 147,
+  "n_euk_only_thresh": 2,
+  "n_euk_only_meteor": 4,
+  "euk_only_thresh_rxns": {
+   "rxn34494_c": "Deoxynucleotide Carrier (Datp), Mitochondrial",
+   "rxn34495_c": "Deoxynucleotide Carrier (Dctp), Mitochondrial"
+  },
+  "elapsed_s": 171.0
+ },
+ "pputida_clean": {
+  "n_meteor": 2683,
+  "n_thresh": 2658,
+  "n_only_thresh": 62,
+  "n_only_meteor": 87,
+  "n_euk_only_thresh": 4,
+  "n_euk_only_meteor": 1,
+  "euk_only_thresh_rxns": {
+   "rxn09768_c": "Dihydropteroate Mitochondrial Transport Via Diffusion",
+   "rxn13096_c": "Thiamine Diphosphate Transport  (Mitochondrial Membrane)",
+   "rxn34494_c": "Deoxynucleotide Carrier (Datp), Mitochondrial",
+   "rxn34495_c": "Deoxynucleotide Carrier (Dctp), Mitochondrial"
+  },
+  "elapsed_s": 278.1
+ },
+ "pputida_dpz": {
+  "n_meteor": 3698,
+  "n_thresh": 3176,
+  "n_only_thresh": 43,
+  "n_only_meteor": 565,
+  "n_euk_only_thresh": 3,
+  "n_euk_only_meteor": 0,
+  "euk_only_thresh_rxns": {
+   "rxn13096_c": "Thiamine Diphosphate Transport  (Mitochondrial Membrane)",
+   "rxn34494_c": "Deoxynucleotide Carrier (Datp), Mitochondrial",
+   "rxn34495_c": "Deoxynucleotide Carrier (Dctp), Mitochondrial"
+  },
+  "elapsed_s": 143.5
+ },
+ "pputida_enzbert": {
+  "n_meteor": 2734,
+  "n_thresh": 2661,
+  "n_only_thresh": 80,
+  "n_only_meteor": 153,
+  "n_euk_only_thresh": 3,
+  "n_euk_only_meteor": 0,
+  "euk_only_thresh_rxns": {
+   "rxn09422_c": "Fatty Acyl-Acp Synthase (N-C8:0Acp), Mitochondrial, Lumped Reaction",
+   "rxn13096_c": "Thiamine Diphosphate Transport  (Mitochondrial Membrane)",
+   "rxn34494_c": "Deoxynucleotide Carrier (Datp), Mitochondrial"
+  },
+  "elapsed_s": 144.6
+ }
+}

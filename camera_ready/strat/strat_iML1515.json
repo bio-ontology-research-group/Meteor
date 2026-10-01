@@ -1,0 +1,199 @@
+[
+ {
+  "organism": "E.coli",
+  "gem": "iML1515",
+  "gcf": "GCF_058436375.1",
+  "gem_ec": 865,
+  "gem_ec_skeleton_expressible": 863,
+  "gem_ec_unreachable_by_skeleton": 2,
+  "predictors": {
+   "clean": {
+    "vocab_size_4digit": 5235,
+    "n_proteins": 5231,
+    "gem_in_vocab": 732,
+    "gem_out_vocab": 133,
+    "gem_out_vocab_but_skeleton_expressible": 133,
+    "recall_all": {
+     "meteor": 0.867,
+     "baseline": 0.69
+    },
+    "recall_in_vocab": {
+     "meteor": 0.892,
+     "baseline": 0.816
+    },
+    "recall_out_vocab": {
+     "meteor": 0.729,
+     "baseline": 0.0
+    },
+    "recall_out_vocab_skeleton_expressible": {
+     "meteor": 0.729,
+     "baseline": 0.0
+    },
+    "n_gem_recovered_only_via_skeleton": 97,
+    "by_conf_bin": {
+     "0": {
+      "n_gem": 134,
+      "meteor": 0.724,
+      "baseline": 0.0,
+      "n_meteor_hit": 97
+     },
+     "(0,0.1)": {
+      "n_gem": 124,
+      "meteor": 0.476,
+      "baseline": 0.0,
+      "n_meteor_hit": 59
+     },
+     "[0.1,0.5)": {
+      "n_gem": 10,
+      "meteor": 0.6,
+      "baseline": 0.0,
+      "n_meteor_hit": 6
+     },
+     "[0.5,1]": {
+      "n_gem": 597,
+      "meteor": 0.985,
+      "baseline": 1.0,
+      "n_meteor_hit": 588
+     }
+    },
+    "dark_proteome": {
+     "frac_proteins_max_lt_0.1": 0.692,
+     "frac_proteins_max4digit_lt_0.1": 0.694,
+     "frac_proteins_max_lt_0.3": 0.721,
+     "frac_proteins_max4digit_lt_0.3": 0.723,
+     "frac_proteins_max_lt_0.5": 0.737,
+     "frac_proteins_max4digit_lt_0.5": 0.738
+    },
+    "meteor_n_ec": 1388,
+    "baseline_n_ec": 1139,
+    "meteor_n_ec_out_vocab": 195,
+    "sec": 48.4
+   },
+   "dpz": {
+    "vocab_size_4digit": 2829,
+    "n_proteins": 5231,
+    "gem_in_vocab": 745,
+    "gem_out_vocab": 120,
+    "gem_out_vocab_but_skeleton_expressible": 120,
+    "recall_all": {
+     "meteor": 0.905,
+     "baseline": 0.689
+    },
+    "recall_in_vocab": {
+     "meteor": 0.933,
+     "baseline": 0.8
+    },
+    "recall_out_vocab": {
+     "meteor": 0.733,
+     "baseline": 0.0
+    },
+    "recall_out_vocab_skeleton_expressible": {
+     "meteor": 0.733,
+     "baseline": 0.0
+    },
+    "n_gem_recovered_only_via_skeleton": 88,
+    "by_conf_bin": {
+     "0": {
+      "n_gem": 176,
+      "meteor": 0.761,
+      "baseline": 0.0,
+      "n_meteor_hit": 134
+     },
+     "(0,0.1)": {
+      "n_gem": 22,
+      "meteor": 0.545,
+      "baseline": 0.0,
+      "n_meteor_hit": 12
+     },
+     "[0.1,0.5)": {
+      "n_gem": 71,
+      "meteor": 0.69,
+      "baseline": 0.0,
+      "n_meteor_hit": 49
+     },
+     "[0.5,1]": {
+      "n_gem": 596,
+      "meteor": 0.987,
+      "baseline": 1.0,
+      "n_meteor_hit": 588
+     }
+    },
+    "dark_proteome": {
+     "frac_proteins_max_lt_0.1": 0.031,
+     "frac_proteins_max4digit_lt_0.1": 0.033,
+     "frac_proteins_max_lt_0.3": 0.374,
+     "frac_proteins_max4digit_lt_0.3": 0.376,
+     "frac_proteins_max_lt_0.5": 0.573,
+     "frac_proteins_max4digit_lt_0.5": 0.575
+    },
+    "meteor_n_ec": 1614,
+    "baseline_n_ec": 1164,
+    "meteor_n_ec_out_vocab": 345,
+    "sec": 101.2
+   },
+   "enzbert": {
+    "vocab_size_4digit": 4746,
+    "n_proteins": 5231,
+    "gem_in_vocab": 698,
+    "gem_out_vocab": 167,
+    "gem_out_vocab_but_skeleton_expressible": 167,
+    "recall_all": {
+     "meteor": 0.815,
+     "baseline": 0.614
+    },
+    "recall_in_vocab": {
+     "meteor": 0.848,
+     "baseline": 0.761
+    },
+    "recall_out_vocab": {
+     "meteor": 0.677,
+     "baseline": 0.0
+    },
+    "recall_out_vocab_skeleton_expressible": {
+     "meteor": 0.677,
+     "baseline": 0.0
+    },
+    "n_gem_recovered_only_via_skeleton": 113,
+    "by_conf_bin": {
+     "0": {
+      "n_gem": 168,
+      "meteor": 0.673,
+      "baseline": 0.0,
+      "n_meteor_hit": 113
+     },
+     "(0,0.1)": {
+      "n_gem": 149,
+      "meteor": 0.423,
+      "baseline": 0.0,
+      "n_meteor_hit": 63
+     },
+     "[0.1,0.5)": {
+      "n_gem": 17,
+      "meteor": 0.412,
+      "baseline": 0.0,
+      "n_meteor_hit": 7
+     },
+     "[0.5,1]": {
+      "n_gem": 531,
+      "meteor": 0.983,
+      "baseline": 1.0,
+      "n_meteor_hit": 522
+     }
+    },
+    "dark_proteome": {
+     "frac_proteins_max_lt_0.1": 0.508,
+     "frac_proteins_max4digit_lt_0.1": 0.511,
+     "frac_proteins_max_lt_0.3": 0.607,
+     "frac_proteins_max4digit_lt_0.3": 0.609,
+     "frac_proteins_max_lt_0.5": 0.663,
+     "frac_proteins_max4digit_lt_0.5": 0.665
+    },
+    "meteor_n_ec": 1359,
+    "baseline_n_ec": 1015,
+    "meteor_n_ec_out_vocab": 223,
+    "sec": 48.7
+   }
+  },
+  "sec": 201.5
+ }
+]

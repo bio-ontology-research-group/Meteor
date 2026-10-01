@@ -1,0 +1,20 @@
+{
+ "gem": "iJN1463",
+ "n_rxn_model": 2927,
+ "n_genes": 1462,
+ "wt_growth": 0.5861,
+ "medium": "model default (as shipped in BiGG)",
+ "arm": "iJN1463",
+ "n_genes_model": 1462,
+ "n_genes_mapped": 1462,
+ "n_genes_with_ref": 1440,
+ "n_pred_essential": 263,
+ "TP": 107,
+ "FP": 155,
+ "FN": 103,
+ "TN": 1075,
+ "precision": 0.408,
+ "recall": 0.51,
+ "MCC": 0.351,
+ "accuracy": 0.821
+}

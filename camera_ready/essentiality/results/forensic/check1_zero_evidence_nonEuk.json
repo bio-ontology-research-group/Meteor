@@ -1,0 +1,917 @@
+{
+ "top_keywords": [
+  [
+   "exchange",
+   108
+  ],
+  [
+   "reaction",
+   96
+  ],
+  [
+   "transport",
+   45
+  ],
+  [
+   "periplasm",
+   19
+  ],
+  [
+   "extracellular",
+   17
+  ],
+  [
+   "mg2+-atpase",
+   17
+  ],
+  [
+   "acid",
+   12
+  ],
+  [
+   "proton",
+   10
+  ],
+  [
+   "symport",
+   10
+  ],
+  [
+   "fatty",
+   10
+  ],
+  [
+   "rxn0-2162.cp",
+   9
+  ],
+  [
+   "trans-rxn-141.cp",
+   9
+  ],
+  [
+   "trans-rxnavi-26584.ce.brachyexp.siroheme_siroheme",
+   9
+  ],
+  [
+   "cpd00152_e",
+   9
+  ],
+  [
+   "cpd00115_e",
+   9
+  ],
+  [
+   "cpd26148_e",
+   9
+  ],
+  [
+   "cpd00177_e",
+   9
+  ],
+  [
+   "rxn0-16.cp",
+   7
+  ],
+  [
+   "diffusion",
+   7
+  ],
+  [
+   "chloride",
+   6
+  ],
+  [
+   "antiport",
+   6
+  ],
+  [
+   "calcium",
+   6
+  ],
+  [
+   "ca+2",
+   6
+  ],
+  [
+   "tetrathionate",
+   6
+  ],
+  [
+   "reductase",
+   6
+  ],
+  [
+   "r_light_rxn_1",
+   6
+  ],
+  [
+   "cpd01414_e",
+   6
+  ],
+  [
+   "cpd00533_e",
+   6
+  ],
+  [
+   "cpd00356_e",
+   6
+  ],
+  [
+   "system",
+   5
+  ],
+  [
+   "extermal",
+   5
+  ],
+  [
+   "8-diaminononanoate",
+   5
+  ],
+  [
+   "biosynthesis",
+   5
+  ],
+  [
+   "cpd00764_e",
+   5
+  ],
+  [
+   "cpd26657_e",
+   5
+  ],
+  [
+   "oxidation",
+   5
+  ],
+  [
+   "reductase:",
+   5
+  ],
+  [
+   "oneidensis",
+   5
+  ],
+  [
+   "dehydrogenase",
+   5
+  ],
+  [
+   "cellobiose",
+   5
+  ]
+ ],
+ "n_examples": 301,
+ "examples": [
+  {
+   "combo": "salmonella_clean",
+   "rxn": "rxn05166_c",
+   "name": "Rxnbwi-115367.Ce"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "rxn05313_c",
+   "name": "Phosphate Transport In/Out Via Three Na+ Symporter"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "rxn05722_c",
+   "name": "Trimetaphosphate Transport In Via Proton Symport"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "rxn08152_c",
+   "name": "Rxn0-2162.Cp"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "rxn08190_c",
+   "name": "Cobinamide Transport Via Ton System (Extermal)"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "rxn08923_c",
+   "name": "Trans-Rxn-141.Cp"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "rxn08947_c",
+   "name": "Rxn0-16.Cp"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "rxn09689_c",
+   "name": "Transport Of 7,8-Diaminononanoate, Extracellular"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "rxn10101_c",
+   "name": "Fatty Acid Biosynthesis (N-C18:1)"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "rxn15503_c",
+   "name": "R04975"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "rxn18344_c",
+   "name": "Mg2+-Atpase"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "rxn18352_c",
+   "name": "Mg2+-Atpase"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "rxn29728_c",
+   "name": "Trans-Rxnavi-26584.Ce.Brachyexp.Siroheme_Siroheme"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "rxn29907_c",
+   "name": "Trans-Rxnbwi-115630.Ce.Maizeexp.Oh-Myristoyl_Oh-Myristoyl"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "rxn30474_c",
+   "name": "Chloride Ion Transport Out Via Antiport"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "rxn32722_c",
+   "name": "-"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "rxn33129_c",
+   "name": "Fadsyn-Rxn.D"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "rxn33223_c",
+   "name": "-"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "rxn33386_c",
+   "name": "Aminoacetone:Oxygen Oxidoreductase(Deaminating)"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "EX_cpd00764_e",
+   "name": "Exchange reaction for cpd00764_e"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "EX_cpd00152_e",
+   "name": "Exchange reaction for cpd00152_e"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "EX_cpd03422_e",
+   "name": "Exchange reaction for cpd03422_e"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "EX_cpd00115_e",
+   "name": "Exchange reaction for cpd00115_e"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "EX_cpd26148_e",
+   "name": "Exchange reaction for cpd26148_e"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "EX_cpd00793_e",
+   "name": "Exchange reaction for cpd00793_e"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "EX_cpd00177_e",
+   "name": "Exchange reaction for cpd00177_e"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "EX_cpd01695_e",
+   "name": "Exchange reaction for cpd01695_e"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "EX_cpd02835_e",
+   "name": "Exchange reaction for cpd02835_e"
+  },
+  {
+   "combo": "salmonella_clean",
+   "rxn": "EX_cpd26657_e",
+   "name": "Exchange reaction for cpd26657_e"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "rxn05206_c",
+   "name": "Trans-Rxn-187.Ce"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "rxn08152_c",
+   "name": "Rxn0-2162.Cp"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "rxn08186_c",
+   "name": "Calcium (Ca+2) Transport Via Diffusion (Extracellular To Periplasm)"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "rxn08190_c",
+   "name": "Cobinamide Transport Via Ton System (Extermal)"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "rxn08923_c",
+   "name": "Trans-Rxn-141.Cp"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "rxn08947_c",
+   "name": "Rxn0-16.Cp"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "rxn08998_c",
+   "name": "Nitrite Transport In Via Proton Symport, Reversible (Periplasm)"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "rxn10101_c",
+   "name": "Fatty Acid Biosynthesis (N-C18:1)"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "rxn13699_c",
+   "name": "Fatty Acid Oxidation (Octadecanoate:Ubiquinone)"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "rxn13752_c",
+   "name": "Tetrathionate Reductase"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "rxn15503_c",
+   "name": "R04975"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "rxn18344_c",
+   "name": "Mg2+-Atpase"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "rxn18352_c",
+   "name": "Mg2+-Atpase"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "rxn29146_c",
+   "name": "Trans-Rxn0-278.Cp"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "rxn29728_c",
+   "name": "Trans-Rxnavi-26584.Ce.Brachyexp.Siroheme_Siroheme"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "rxn31584_c",
+   "name": "R_Light_Rxn_1"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "rxn31926_c",
+   "name": "-"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "rxn32722_c",
+   "name": "-"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "rxn33386_c",
+   "name": "Aminoacetone:Oxygen Oxidoreductase(Deaminating)"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "rxn38791_c",
+   "name": "Biotin Transport (Plasma Membrane)"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "EX_cpd00152_e",
+   "name": "Exchange reaction for cpd00152_e"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "EX_cpd03422_e",
+   "name": "Exchange reaction for cpd03422_e"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "EX_cpd00115_e",
+   "name": "Exchange reaction for cpd00115_e"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "EX_cpd03126_e",
+   "name": "Exchange reaction for cpd03126_e"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "EX_cpd26148_e",
+   "name": "Exchange reaction for cpd26148_e"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "EX_cpd01414_e",
+   "name": "Exchange reaction for cpd01414_e"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "EX_cpd00533_e",
+   "name": "Exchange reaction for cpd00533_e"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "EX_cpd00177_e",
+   "name": "Exchange reaction for cpd00177_e"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "EX_cpd14958_e",
+   "name": "Exchange reaction for cpd14958_e"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "EX_cpd00356_e",
+   "name": "Exchange reaction for cpd00356_e"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "EX_cpd26657_e",
+   "name": "Exchange reaction for cpd26657_e"
+  },
+  {
+   "combo": "salmonella_dpz",
+   "rxn": "EX_cpd00056_e",
+   "name": "Tpp exchange"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn05206_c",
+   "name": "Trans-Rxn-187.Ce"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn05722_c",
+   "name": "Trimetaphosphate Transport In Via Proton Symport"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn08152_c",
+   "name": "Rxn0-2162.Cp"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn08186_c",
+   "name": "Calcium (Ca+2) Transport Via Diffusion (Extracellular To Periplasm)"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn08923_c",
+   "name": "Trans-Rxn-141.Cp"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn08998_c",
+   "name": "Nitrite Transport In Via Proton Symport, Reversible (Periplasm)"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn09689_c",
+   "name": "Transport Of 7,8-Diaminononanoate, Extracellular"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn13679_c",
+   "name": "Co(Iii) Reductase: S. Oneidensis"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn13699_c",
+   "name": "Fatty Acid Oxidation (Octadecanoate:Ubiquinone)"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn13752_c",
+   "name": "Tetrathionate Reductase"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn13895_c",
+   "name": "Proline Dehydrogenase"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn18343_c",
+   "name": "Mg2+-Atpase"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn18344_c",
+   "name": "Mg2+-Atpase"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn19488_c",
+   "name": "7,8-Dihydrofolate Synthetase"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn22005_c",
+   "name": "Pyrroline-5-Carboxylic Acid Dehydrogenase"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn29728_c",
+   "name": "Trans-Rxnavi-26584.Ce.Brachyexp.Siroheme_Siroheme"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn29907_c",
+   "name": "Trans-Rxnbwi-115630.Ce.Maizeexp.Oh-Myristoyl_Oh-Myristoyl"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn30253_c",
+   "name": "Cellobiose Transport (Extracellular To Periplasm)"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn30474_c",
+   "name": "Chloride Ion Transport Out Via Antiport"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn31180_c",
+   "name": "R_Tcp25"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn31584_c",
+   "name": "R_Light_Rxn_1"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn32646_c",
+   "name": "-"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "rxn33223_c",
+   "name": "-"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "EX_cpd26147_e",
+   "name": "Exchange reaction for cpd26147_e"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "EX_cpd00764_e",
+   "name": "Exchange reaction for cpd00764_e"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "EX_cpd00152_e",
+   "name": "Exchange reaction for cpd00152_e"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "EX_cpd00115_e",
+   "name": "Exchange reaction for cpd00115_e"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "EX_cpd26148_e",
+   "name": "Exchange reaction for cpd26148_e"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "EX_cpd00793_e",
+   "name": "Exchange reaction for cpd00793_e"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "EX_cpd01414_e",
+   "name": "Exchange reaction for cpd01414_e"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "EX_cpd00533_e",
+   "name": "Exchange reaction for cpd00533_e"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "EX_cpd00177_e",
+   "name": "Exchange reaction for cpd00177_e"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "EX_cpd01695_e",
+   "name": "Exchange reaction for cpd01695_e"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "EX_cpd02835_e",
+   "name": "Exchange reaction for cpd02835_e"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "EX_cpd00356_e",
+   "name": "Exchange reaction for cpd00356_e"
+  },
+  {
+   "combo": "salmonella_enzbert",
+   "rxn": "EX_cpd17005_e",
+   "name": "Co3+ exchange"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn05313_c",
+   "name": "Phosphate Transport In/Out Via Three Na+ Symporter"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn08152_c",
+   "name": "Rxn0-2162.Cp"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn08190_c",
+   "name": "Cobinamide Transport Via Ton System (Extermal)"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn08193_c",
+   "name": "Cob(1)Alamin Transport Via Ton System (Extermal)"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn08554_c",
+   "name": "Glycero-3-Phosphocholine Transport Via Diffusion (Extracellular To Periplasm)"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn08923_c",
+   "name": "Trans-Rxn-141.Cp"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn08944_c",
+   "name": "S-Methylmethionine Permease (Periplasm)"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn08947_c",
+   "name": "Rxn0-16.Cp"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn09689_c",
+   "name": "Transport Of 7,8-Diaminononanoate, Extracellular"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn10099_c",
+   "name": "Fatty Acid Biosynthesis (N-C16:0)"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn18344_c",
+   "name": "Mg2+-Atpase"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn18352_c",
+   "name": "Mg2+-Atpase"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn28198_c",
+   "name": "Rxn-11632.M"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn29728_c",
+   "name": "Trans-Rxnavi-26584.Ce.Brachyexp.Siroheme_Siroheme"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn29907_c",
+   "name": "Trans-Rxnbwi-115630.Ce.Maizeexp.Oh-Myristoyl_Oh-Myristoyl"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn30002_c",
+   "name": "Cytochrome Oxidase Bo3 (Ubiquinol-8: 4 Protons) (Periplasm)"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn30474_c",
+   "name": "Chloride Ion Transport Out Via Antiport"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn30534_c",
+   "name": "Tetrathionate Reductase"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn31926_c",
+   "name": "-"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn31927_c",
+   "name": "-"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn32646_c",
+   "name": "-"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn32722_c",
+   "name": "-"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn35471_c",
+   "name": "5-Amino-6-(1-D-Ribitylamino)Uracil Synthase"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn35472_c",
+   "name": "Dimethylbenzimidazole-Riboflavin Conversion"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "rxn39476_c",
+   "name": ""
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "EX_cpd02027_e",
+   "name": "Exchange reaction for cpd02027_e"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "EX_cpd00764_e",
+   "name": "Exchange reaction for cpd00764_e"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "EX_cpd00152_e",
+   "name": "Exchange reaction for cpd00152_e"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "EX_cpd03422_e",
+   "name": "Exchange reaction for cpd03422_e"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "EX_cpd00115_e",
+   "name": "Exchange reaction for cpd00115_e"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "EX_cpd03126_e",
+   "name": "Exchange reaction for cpd03126_e"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "EX_cpd26148_e",
+   "name": "Exchange reaction for cpd26148_e"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "EX_cpd00793_e",
+   "name": "Exchange reaction for cpd00793_e"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "EX_cpd01414_e",
+   "name": "Exchange reaction for cpd01414_e"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "EX_cpd00177_e",
+   "name": "Exchange reaction for cpd00177_e"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "EX_cpd00635_e",
+   "name": "Exchange reaction for cpd00635_e"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "EX_cpd02835_e",
+   "name": "Exchange reaction for cpd02835_e"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "EX_cpd00507_e",
+   "name": "Exchange reaction for cpd00507_e"
+  },
+  {
+   "combo": "kpneumoniae_clean",
+   "rxn": "EX_cpd26657_e",
+   "name": "Exchange reaction for cpd26657_e"
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "rxn": "rxn08152_c",
+   "name": "Rxn0-2162.Cp"
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "rxn": "rxn08186_c",
+   "name": "Calcium (Ca+2) Transport Via Diffusion (Extracellular To Periplasm)"
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "rxn": "rxn08190_c",
+   "name": "Cobinamide Transport Via Ton System (Extermal)"
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "rxn": "rxn08923_c",
+   "name": "Trans-Rxn-141.Cp"
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "rxn": "rxn08947_c",
+   "name": "Rxn0-16.Cp"
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "rxn": "rxn09997_c",
+   "name": "4-Amino-5-Hydroxymethyl-2-Methylpyrimidine Synthetase"
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "rxn": "rxn10101_c",
+   "name": "Fatty Acid Biosynthesis (N-C18:1)"
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "rxn": "rxn10643_c",
+   "name": "Fatty Acid Oxidation (Octadecenoate)"
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "rxn": "rxn13699_c",
+   "name": "Fatty Acid Oxidation (Octadecanoate:Ubiquinone)"
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "rxn": "rxn15503_c",
+   "name": "R04975"
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "rxn": "rxn18344_c",
+   "name": "Mg2+-Atpase"
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "rxn": "rxn18352_c",
+   "name": "Mg2+-Atpase"
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "rxn": "rxn29146_c",
+   "name": "Trans-Rxn0-278.Cp"
+  },
+  {
+   "combo": "kpneumoniae_dpz",
+   "rxn": "rxn29728_c",
+   "name": "Trans-Rxnavi-26584.Ce.Brachyexp.Siroheme_Siroheme"
+  }
+ ]
+}

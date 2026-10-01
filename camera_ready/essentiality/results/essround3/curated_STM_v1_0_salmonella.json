@@ -1,0 +1,20 @@
+{
+ "gem": "STM_v1_0",
+ "n_rxn_model": 2545,
+ "n_genes": 1271,
+ "wt_growth": 0.4778,
+ "medium": "model default (as shipped in BiGG)",
+ "arm": "STM_v1_0",
+ "n_genes_model": 1271,
+ "n_genes_mapped": 1238,
+ "n_genes_with_ref": 1238,
+ "n_pred_essential": 202,
+ "TP": 77,
+ "FP": 121,
+ "FN": 71,
+ "TN": 969,
+ "precision": 0.389,
+ "recall": 0.52,
+ "MCC": 0.362,
+ "accuracy": 0.845
+}

@@ -1,0 +1,17 @@
+{
+ "n_panel": 108,
+ "n_with_memote": 108,
+ "missing": [],
+ "carveme_memote_mass_balance_metric": {
+  "mean": 0.0015,
+  "median": 0.0015,
+  "min": 0.0,
+  "max": 0.0059
+ },
+ "carveme_memote_deadends_metric": {
+  "mean": 0.0,
+  "median": 0.0,
+  "min": 0.0,
+  "max": 0.0
+ }
+}

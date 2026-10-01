@@ -1,0 +1,14 @@
+{
+ "nobackup_enriched_combined": {
+  "n": 95,
+  "present": 18,
+  "pct_present": 18.9,
+  "pct_absent": 81.1
+ },
+ "control_enriched_combined": {
+  "n": 25332,
+  "present": 18683,
+  "pct_present": 73.8,
+  "pct_absent": 26.2
+ }
+}

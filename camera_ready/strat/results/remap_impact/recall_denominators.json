@@ -1,0 +1,114 @@
+{
+ "none": {
+  "rows": [
+   {
+    "organism": "E.coli",
+    "gem_ec": 865,
+    "table3_R": 0.9052,
+    "samepred_R": 0.8162,
+    "n_ec_active": 1614,
+    "n_ec_rxnmapped": 1491
+   },
+   {
+    "organism": "Salmonella",
+    "gem_ec": 846,
+    "table3_R": 0.8983,
+    "samepred_R": 0.8121,
+    "n_ec_active": 1577,
+    "n_ec_rxnmapped": 1459
+   },
+   {
+    "organism": "K.pneumoniae",
+    "gem_ec": 870,
+    "table3_R": 0.9092,
+    "samepred_R": 0.823,
+    "n_ec_active": 1673,
+    "n_ec_rxnmapped": 1549
+   },
+   {
+    "organism": "P.putida",
+    "gem_ec": 816,
+    "table3_R": 0.8689,
+    "samepred_R": 0.7721,
+    "n_ec_active": 1625,
+    "n_ec_rxnmapped": 1502
+   },
+   {
+    "organism": "S.aureus",
+    "gem_ec": 530,
+    "table3_R": 0.8358,
+    "samepred_R": 0.7057,
+    "n_ec_active": 1212,
+    "n_ec_rxnmapped": 1104
+   },
+   {
+    "organism": "B.subtilis",
+    "gem_ec": 623,
+    "table3_R": 0.8876,
+    "samepred_R": 0.7753,
+    "n_ec_active": 1424,
+    "n_ec_rxnmapped": 1309
+   }
+  ],
+  "mean": {
+   "table3_R": 0.8842,
+   "samepred_R": 0.7841
+  }
+ },
+ "pkl": {
+  "rows": [
+   {
+    "organism": "E.coli",
+    "gem_ec": 851,
+    "table3_R": 0.9119,
+    "samepred_R": 0.8508,
+    "n_ec_active": 1546,
+    "n_ec_rxnmapped": 1491
+   },
+   {
+    "organism": "Salmonella",
+    "gem_ec": 835,
+    "table3_R": 0.9054,
+    "samepred_R": 0.8443,
+    "n_ec_active": 1514,
+    "n_ec_rxnmapped": 1459
+   },
+   {
+    "organism": "K.pneumoniae",
+    "gem_ec": 856,
+    "table3_R": 0.9147,
+    "samepred_R": 0.8551,
+    "n_ec_active": 1605,
+    "n_ec_rxnmapped": 1549
+   },
+   {
+    "organism": "P.putida",
+    "gem_ec": 800,
+    "table3_R": 0.8738,
+    "samepred_R": 0.8113,
+    "n_ec_active": 1554,
+    "n_ec_rxnmapped": 1502
+   },
+   {
+    "organism": "S.aureus",
+    "gem_ec": 523,
+    "table3_R": 0.8413,
+    "samepred_R": 0.7438,
+    "n_ec_active": 1162,
+    "n_ec_rxnmapped": 1104
+   },
+   {
+    "organism": "B.subtilis",
+    "gem_ec": 615,
+    "table3_R": 0.8943,
+    "samepred_R": 0.8114,
+    "n_ec_active": 1365,
+    "n_ec_rxnmapped": 1309
+   }
+  ],
+  "mean": {
+   "table3_R": 0.8902,
+   "samepred_R": 0.8195
+  }
+ }
+}

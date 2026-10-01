@@ -1,0 +1,656 @@
+{
+ "none": {
+  "rows": [
+   {
+    "organism": "E.coli",
+    "W": 93,
+    "recovered_meteor": 61,
+    "recovered_topK": 50,
+    "recovered_baseline_gapfill": 46,
+    "recall_W_baseline_gapfill": 0.4946
+   },
+   {
+    "organism": "Salmonella",
+    "W": 84,
+    "recovered_meteor": 47,
+    "recovered_topK": 36,
+    "recovered_baseline_gapfill": 38,
+    "recall_W_baseline_gapfill": 0.4524
+   },
+   {
+    "organism": "K.pneumoniae",
+    "W": 90,
+    "recovered_meteor": 57,
+    "recovered_topK": 44,
+    "recovered_baseline_gapfill": 43,
+    "recall_W_baseline_gapfill": 0.4778
+   },
+   {
+    "organism": "P.putida",
+    "W": 119,
+    "recovered_meteor": 73,
+    "recovered_topK": 66,
+    "recovered_baseline_gapfill": 57,
+    "recall_W_baseline_gapfill": 0.479
+   },
+   {
+    "organism": "S.aureus",
+    "W": 122,
+    "recovered_meteor": 64,
+    "recovered_topK": 52,
+    "recovered_baseline_gapfill": 53,
+    "recall_W_baseline_gapfill": 0.4344
+   },
+   {
+    "organism": "B.subtilis",
+    "W": 102,
+    "recovered_meteor": 66,
+    "recovered_topK": 47,
+    "recovered_baseline_gapfill": 56,
+    "recall_W_baseline_gapfill": 0.549
+   }
+  ],
+  "pooled": {
+   "W": 610,
+   "meteor": 368,
+   "topK": 295,
+   "baseline_gapfill": 293
+  }
+ },
+ "pkl": {
+  "rows": [
+   {
+    "organism": "E.coli",
+    "W": 96,
+    "recovered_meteor": 62,
+    "recovered_topK": 52,
+    "recovered_baseline_gapfill": 46,
+    "recall_W_baseline_gapfill": 0.4792
+   },
+   {
+    "organism": "Salmonella",
+    "W": 87,
+    "recovered_meteor": 48,
+    "recovered_topK": 38,
+    "recovered_baseline_gapfill": 38,
+    "recall_W_baseline_gapfill": 0.4368
+   },
+   {
+    "organism": "K.pneumoniae",
+    "W": 93,
+    "recovered_meteor": 58,
+    "recovered_topK": 46,
+    "recovered_baseline_gapfill": 43,
+    "recall_W_baseline_gapfill": 0.4624
+   },
+   {
+    "organism": "P.putida",
+    "W": 125,
+    "recovered_meteor": 79,
+    "recovered_topK": 72,
+    "recovered_baseline_gapfill": 57,
+    "recall_W_baseline_gapfill": 0.456
+   },
+   {
+    "organism": "S.aureus",
+    "W": 128,
+    "recovered_meteor": 68,
+    "recovered_topK": 57,
+    "recovered_baseline_gapfill": 53,
+    "recall_W_baseline_gapfill": 0.4141
+   },
+   {
+    "organism": "B.subtilis",
+    "W": 110,
+    "recovered_meteor": 70,
+    "recovered_topK": 52,
+    "recovered_baseline_gapfill": 56,
+    "recall_W_baseline_gapfill": 0.5091
+   }
+  ],
+  "pooled": {
+   "W": 639,
+   "meteor": 385,
+   "topK": 317,
+   "baseline_gapfill": 293
+  }
+ },
+ "detail": {
+  "none": {
+   "seed_restricted": {
+    "rows": [
+     {
+      "organism": "E.coli",
+      "W": 93,
+      "hits_meteor": 61,
+      "hits_baseline": 46,
+      "hits_topK": 50,
+      "recallW_meteor": 0.6559,
+      "recallW_baseline": 0.4946,
+      "precision_meteor": 0.4735,
+      "precision_baseline": 0.507,
+      "n_meteor": 1491,
+      "n_baseline": 1365,
+      "baseline_W_hits_via_gapfill_only": 0
+     },
+     {
+      "organism": "Salmonella",
+      "W": 84,
+      "hits_meteor": 47,
+      "hits_baseline": 38,
+      "hits_topK": 36,
+      "recallW_meteor": 0.5595,
+      "recallW_baseline": 0.4524,
+      "precision_meteor": 0.4709,
+      "precision_baseline": 0.4985,
+      "n_meteor": 1459,
+      "n_baseline": 1358,
+      "baseline_W_hits_via_gapfill_only": 0
+     },
+     {
+      "organism": "K.pneumoniae",
+      "W": 90,
+      "hits_meteor": 57,
+      "hits_baseline": 43,
+      "hits_topK": 44,
+      "recallW_meteor": 0.6333,
+      "recallW_baseline": 0.4778,
+      "precision_meteor": 0.4622,
+      "precision_baseline": 0.4909,
+      "n_meteor": 1549,
+      "n_baseline": 1430,
+      "baseline_W_hits_via_gapfill_only": 0
+     },
+     {
+      "organism": "P.putida",
+      "W": 119,
+      "hits_meteor": 73,
+      "hits_baseline": 57,
+      "hits_topK": 66,
+      "recallW_meteor": 0.6134,
+      "recallW_baseline": 0.479,
+      "precision_meteor": 0.4194,
+      "precision_baseline": 0.4734,
+      "n_meteor": 1502,
+      "n_baseline": 1297,
+      "baseline_W_hits_via_gapfill_only": 0
+     },
+     {
+      "organism": "S.aureus",
+      "W": 122,
+      "hits_meteor": 64,
+      "hits_baseline": 53,
+      "hits_topK": 52,
+      "recallW_meteor": 0.5246,
+      "recallW_baseline": 0.4344,
+      "precision_meteor": 0.3388,
+      "precision_baseline": 0.3556,
+      "n_meteor": 1104,
+      "n_baseline": 1018,
+      "baseline_W_hits_via_gapfill_only": 1
+     },
+     {
+      "organism": "B.subtilis",
+      "W": 102,
+      "hits_meteor": 66,
+      "hits_baseline": 56,
+      "hits_topK": 47,
+      "recallW_meteor": 0.6471,
+      "recallW_baseline": 0.549,
+      "precision_meteor": 0.369,
+      "precision_baseline": 0.4024,
+      "n_meteor": 1309,
+      "n_baseline": 1173,
+      "baseline_W_hits_via_gapfill_only": 0
+     }
+    ],
+    "pooled_W": 610,
+    "pooled_hits": {
+     "meteor": 368,
+     "baseline": 293,
+     "topK": 295
+    },
+    "mean_sd": {
+     "recallW_meteor": [
+      0.6056,
+      0.0525
+     ],
+     "recallW_baseline": [
+      0.4812,
+      0.0395
+     ],
+     "precision_meteor": [
+      0.4223,
+      0.0573
+     ],
+     "precision_baseline": [
+      0.4546,
+      0.0614
+     ]
+    },
+    "n_meteor_gt_baseline_recallW": 6
+   },
+   "all_ancestors": {
+    "rows": [
+     {
+      "organism": "E.coli",
+      "W": 93,
+      "hits_meteor": 61,
+      "hits_baseline": 46,
+      "hits_topK": 34,
+      "recallW_meteor": 0.6559,
+      "recallW_baseline": 0.4946,
+      "precision_meteor": 0.4735,
+      "precision_baseline": 0.507,
+      "n_meteor": 1491,
+      "n_baseline": 1365,
+      "baseline_W_hits_via_gapfill_only": 0
+     },
+     {
+      "organism": "Salmonella",
+      "W": 84,
+      "hits_meteor": 47,
+      "hits_baseline": 38,
+      "hits_topK": 23,
+      "recallW_meteor": 0.5595,
+      "recallW_baseline": 0.4524,
+      "precision_meteor": 0.4709,
+      "precision_baseline": 0.4985,
+      "n_meteor": 1459,
+      "n_baseline": 1358,
+      "baseline_W_hits_via_gapfill_only": 0
+     },
+     {
+      "organism": "K.pneumoniae",
+      "W": 90,
+      "hits_meteor": 57,
+      "hits_baseline": 43,
+      "hits_topK": 32,
+      "recallW_meteor": 0.6333,
+      "recallW_baseline": 0.4778,
+      "precision_meteor": 0.4622,
+      "precision_baseline": 0.4909,
+      "n_meteor": 1549,
+      "n_baseline": 1430,
+      "baseline_W_hits_via_gapfill_only": 0
+     },
+     {
+      "organism": "P.putida",
+      "W": 119,
+      "hits_meteor": 73,
+      "hits_baseline": 57,
+      "hits_topK": 48,
+      "recallW_meteor": 0.6134,
+      "recallW_baseline": 0.479,
+      "precision_meteor": 0.4194,
+      "precision_baseline": 0.4734,
+      "n_meteor": 1502,
+      "n_baseline": 1297,
+      "baseline_W_hits_via_gapfill_only": 0
+     },
+     {
+      "organism": "S.aureus",
+      "W": 123,
+      "hits_meteor": 64,
+      "hits_baseline": 53,
+      "hits_topK": 41,
+      "recallW_meteor": 0.5203,
+      "recallW_baseline": 0.4309,
+      "precision_meteor": 0.3388,
+      "precision_baseline": 0.3556,
+      "n_meteor": 1104,
+      "n_baseline": 1018,
+      "baseline_W_hits_via_gapfill_only": 1
+     },
+     {
+      "organism": "B.subtilis",
+      "W": 103,
+      "hits_meteor": 66,
+      "hits_baseline": 56,
+      "hits_topK": 36,
+      "recallW_meteor": 0.6408,
+      "recallW_baseline": 0.5437,
+      "precision_meteor": 0.369,
+      "precision_baseline": 0.4024,
+      "n_meteor": 1309,
+      "n_baseline": 1173,
+      "baseline_W_hits_via_gapfill_only": 0
+     }
+    ],
+    "pooled_W": 612,
+    "pooled_hits": {
+     "meteor": 368,
+     "baseline": 293,
+     "topK": 214
+    },
+    "mean_sd": {
+     "recallW_meteor": [
+      0.6039,
+      0.0529
+     ],
+     "recallW_baseline": [
+      0.4797,
+      0.0386
+     ],
+     "precision_meteor": [
+      0.4223,
+      0.0573
+     ],
+     "precision_baseline": [
+      0.4546,
+      0.0614
+     ]
+    },
+    "n_meteor_gt_baseline_recallW": 6
+   }
+  },
+  "pkl": {
+   "seed_restricted": {
+    "rows": [
+     {
+      "organism": "E.coli",
+      "W": 96,
+      "hits_meteor": 62,
+      "hits_baseline": 46,
+      "hits_topK": 52,
+      "recallW_meteor": 0.6458,
+      "recallW_baseline": 0.4792,
+      "precision_meteor": 0.4856,
+      "precision_baseline": 0.5187,
+      "n_meteor": 1491,
+      "n_baseline": 1365,
+      "baseline_W_hits_via_gapfill_only": 0
+     },
+     {
+      "organism": "Salmonella",
+      "W": 87,
+      "hits_meteor": 48,
+      "hits_baseline": 38,
+      "hits_topK": 38,
+      "recallW_meteor": 0.5517,
+      "recallW_baseline": 0.4368,
+      "precision_meteor": 0.4832,
+      "precision_baseline": 0.5103,
+      "n_meteor": 1459,
+      "n_baseline": 1358,
+      "baseline_W_hits_via_gapfill_only": 0
+     },
+     {
+      "organism": "K.pneumoniae",
+      "W": 93,
+      "hits_meteor": 58,
+      "hits_baseline": 43,
+      "hits_topK": 46,
+      "recallW_meteor": 0.6237,
+      "recallW_baseline": 0.4624,
+      "precision_meteor": 0.4726,
+      "precision_baseline": 0.5007,
+      "n_meteor": 1549,
+      "n_baseline": 1430,
+      "baseline_W_hits_via_gapfill_only": 0
+     },
+     {
+      "organism": "P.putida",
+      "W": 125,
+      "hits_meteor": 79,
+      "hits_baseline": 57,
+      "hits_topK": 72,
+      "recallW_meteor": 0.632,
+      "recallW_baseline": 0.456,
+      "precision_meteor": 0.4321,
+      "precision_baseline": 0.4827,
+      "n_meteor": 1502,
+      "n_baseline": 1297,
+      "baseline_W_hits_via_gapfill_only": 0
+     },
+     {
+      "organism": "S.aureus",
+      "W": 128,
+      "hits_meteor": 68,
+      "hits_baseline": 53,
+      "hits_topK": 57,
+      "recallW_meteor": 0.5312,
+      "recallW_baseline": 0.4141,
+      "precision_meteor": 0.3524,
+      "precision_baseline": 0.3654,
+      "n_meteor": 1104,
+      "n_baseline": 1018,
+      "baseline_W_hits_via_gapfill_only": 1
+     },
+     {
+      "organism": "B.subtilis",
+      "W": 110,
+      "hits_meteor": 70,
+      "hits_baseline": 56,
+      "hits_topK": 52,
+      "recallW_meteor": 0.6364,
+      "recallW_baseline": 0.5091,
+      "precision_meteor": 0.3812,
+      "precision_baseline": 0.4118,
+      "n_meteor": 1309,
+      "n_baseline": 1173,
+      "baseline_W_hits_via_gapfill_only": 0
+     }
+    ],
+    "pooled_W": 639,
+    "pooled_hits": {
+     "meteor": 385,
+     "baseline": 293,
+     "topK": 317
+    },
+    "mean_sd": {
+     "recallW_meteor": [
+      0.6035,
+      0.049
+     ],
+     "recallW_baseline": [
+      0.4596,
+      0.033
+     ],
+     "precision_meteor": [
+      0.4345,
+      0.0566
+     ],
+     "precision_baseline": [
+      0.4649,
+      0.0621
+     ]
+    },
+    "n_meteor_gt_baseline_recallW": 6
+   },
+   "all_ancestors": {
+    "rows": [
+     {
+      "organism": "E.coli",
+      "W": 107,
+      "hits_meteor": 62,
+      "hits_baseline": 46,
+      "hits_topK": 40,
+      "recallW_meteor": 0.5794,
+      "recallW_baseline": 0.4299,
+      "precision_meteor": 0.4856,
+      "precision_baseline": 0.5187,
+      "n_meteor": 1491,
+      "n_baseline": 1365,
+      "baseline_W_hits_via_gapfill_only": 0
+     },
+     {
+      "organism": "Salmonella",
+      "W": 98,
+      "hits_meteor": 48,
+      "hits_baseline": 38,
+      "hits_topK": 29,
+      "recallW_meteor": 0.4898,
+      "recallW_baseline": 0.3878,
+      "precision_meteor": 0.4832,
+      "precision_baseline": 0.5103,
+      "n_meteor": 1459,
+      "n_baseline": 1358,
+      "baseline_W_hits_via_gapfill_only": 0
+     },
+     {
+      "organism": "K.pneumoniae",
+      "W": 103,
+      "hits_meteor": 58,
+      "hits_baseline": 43,
+      "hits_topK": 39,
+      "recallW_meteor": 0.5631,
+      "recallW_baseline": 0.4175,
+      "precision_meteor": 0.4726,
+      "precision_baseline": 0.5007,
+      "n_meteor": 1549,
+      "n_baseline": 1430,
+      "baseline_W_hits_via_gapfill_only": 0
+     },
+     {
+      "organism": "P.putida",
+      "W": 135,
+      "hits_meteor": 79,
+      "hits_baseline": 57,
+      "hits_topK": 57,
+      "recallW_meteor": 0.5852,
+      "recallW_baseline": 0.4222,
+      "precision_meteor": 0.4321,
+      "precision_baseline": 0.4827,
+      "n_meteor": 1502,
+      "n_baseline": 1297,
+      "baseline_W_hits_via_gapfill_only": 0
+     },
+     {
+      "organism": "S.aureus",
+      "W": 143,
+      "hits_meteor": 68,
+      "hits_baseline": 53,
+      "hits_topK": 51,
+      "recallW_meteor": 0.4755,
+      "recallW_baseline": 0.3706,
+      "precision_meteor": 0.3524,
+      "precision_baseline": 0.3654,
+      "n_meteor": 1104,
+      "n_baseline": 1018,
+      "baseline_W_hits_via_gapfill_only": 1
+     },
+     {
+      "organism": "B.subtilis",
+      "W": 124,
+      "hits_meteor": 70,
+      "hits_baseline": 56,
+      "hits_topK": 49,
+      "recallW_meteor": 0.5645,
+      "recallW_baseline": 0.4516,
+      "precision_meteor": 0.3812,
+      "precision_baseline": 0.4118,
+      "n_meteor": 1309,
+      "n_baseline": 1173,
+      "baseline_W_hits_via_gapfill_only": 0
+     }
+    ],
+    "pooled_W": 710,
+    "pooled_hits": {
+     "meteor": 385,
+     "baseline": 293,
+     "topK": 265
+    },
+    "mean_sd": {
+     "recallW_meteor": [
+      0.5429,
+      0.0477
+     ],
+     "recallW_baseline": [
+      0.4133,
+      0.0294
+     ],
+     "precision_meteor": [
+      0.4345,
+      0.0566
+     ],
+     "precision_baseline": [
+      0.4649,
+      0.0621
+     ]
+    },
+    "n_meteor_gt_baseline_recallW": 6
+   }
+  }
+ },
+ "why_baseline_constant": [
+  {
+   "organism": "E.coli",
+   "W_none": 93,
+   "W_pkl": 96,
+   "new_W_after_remap": 3,
+   "new_W_hit_by_baseline": 0,
+   "new_W_hit_by_meteor": 1,
+   "baseline_hits_none": 46,
+   "baseline_hits_pkl": 46,
+   "baseline_obsolete_ecs_in_set": 0,
+   "meteor_obsolete_ecs_in_set": 0,
+   "baseline_hits_lost_by_merge": 0
+  },
+  {
+   "organism": "Salmonella",
+   "W_none": 84,
+   "W_pkl": 87,
+   "new_W_after_remap": 3,
+   "new_W_hit_by_baseline": 0,
+   "new_W_hit_by_meteor": 1,
+   "baseline_hits_none": 38,
+   "baseline_hits_pkl": 38,
+   "baseline_obsolete_ecs_in_set": 0,
+   "meteor_obsolete_ecs_in_set": 0,
+   "baseline_hits_lost_by_merge": 0
+  },
+  {
+   "organism": "K.pneumoniae",
+   "W_none": 90,
+   "W_pkl": 93,
+   "new_W_after_remap": 3,
+   "new_W_hit_by_baseline": 0,
+   "new_W_hit_by_meteor": 1,
+   "baseline_hits_none": 43,
+   "baseline_hits_pkl": 43,
+   "baseline_obsolete_ecs_in_set": 0,
+   "meteor_obsolete_ecs_in_set": 0,
+   "baseline_hits_lost_by_merge": 0
+  },
+  {
+   "organism": "P.putida",
+   "W_none": 119,
+   "W_pkl": 125,
+   "new_W_after_remap": 6,
+   "new_W_hit_by_baseline": 0,
+   "new_W_hit_by_meteor": 6,
+   "baseline_hits_none": 57,
+   "baseline_hits_pkl": 57,
+   "baseline_obsolete_ecs_in_set": 0,
+   "meteor_obsolete_ecs_in_set": 0,
+   "baseline_hits_lost_by_merge": 0
+  },
+  {
+   "organism": "S.aureus",
+   "W_none": 122,
+   "W_pkl": 128,
+   "new_W_after_remap": 6,
+   "new_W_hit_by_baseline": 0,
+   "new_W_hit_by_meteor": 4,
+   "baseline_hits_none": 53,
+   "baseline_hits_pkl": 53,
+   "baseline_obsolete_ecs_in_set": 0,
+   "meteor_obsolete_ecs_in_set": 0,
+   "baseline_hits_lost_by_merge": 0
+  },
+  {
+   "organism": "B.subtilis",
+   "W_none": 102,
+   "W_pkl": 110,
+   "new_W_after_remap": 8,
+   "new_W_hit_by_baseline": 0,
+   "new_W_hit_by_meteor": 4,
+   "baseline_hits_none": 56,
+   "baseline_hits_pkl": 56,
+   "baseline_obsolete_ecs_in_set": 0,
+   "meteor_obsolete_ecs_in_set": 0,
+   "baseline_hits_lost_by_merge": 0
+  }
+ ]
+}

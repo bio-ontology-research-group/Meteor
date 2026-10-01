@@ -1,0 +1,258 @@
+locus tag,gene,reason for essentiality,Subtiwiki essential gene,strand,frame,start,end,regulation,product,COG class,COG category
+BSU00010,dnaA,NT,Yes,leading,1,410,1750,Spo0A_rep. ,chromosomal replication initiator protein DnaA,L,"replication, recombination and repair"
+BSU00020,dnaN,NT,Yes,leading,1,1939,3075,Spo0A_rep. ,DNA polymerase III (beta subunit),L,"replication, recombination and repair"
+BSU00060,gyrB,NT,Yes,leading,1,4867,6783,,DNA gyrase (subunit B),L,"replication, recombination and repair"
+BSU00070,gyrA,NT,Yes,leading,1,6994,9459,,DNA gyrase (subunit A),L,"replication, recombination and repair"
+BSU00130,serS,NT,Yes,leading,1,20880,22157,T-box_antitermination. ,seryl-tRNA synthetase,J,"translation, ribosomal structure and biogenesis"
+BSU00190,dnaX,NT,Yes,leading,1,26814,28505,,DNA polymerase III (gamma and tau subunits),L,"replication, recombination and repair"
+BSU00280,tmk,NT,Yes,leading,1,39159,39797,,thymidylate kinase,F,nucleotide transport and metabolism
+BSU00310,holB,NT,Yes,leading,1,40665,41654,,DNA polymerase III delta' subunit,L,"replication, recombination and repair"
+BSU00380,metS,NT,Yes,leading,1,45633,47627,Spo0A_rep. ,methionyl-tRNA synthetase,J,"translation, ribosomal structure and biogenesis"
+BSU00460,ispE,NT,Yes,leading,1,53516,54385,,4-(cytidine 5'-diphospho)-2-C-methyl-D-erythritol kinase,I,lipid transport and metabolism 
+BSU00500,gcaD (glmU),NT,Yes,leading,1,56352,57722,stringent response_neg. ,bifunctional glucosamine-1-phosphate N-acetyltransferase/UDP-N-acetylglucosamine pyrophosphorylase,M,cell wall/membrane/envelope biogenesis
+BSU00510,prs,NT,Yes,leading,1,57745,58698,stringent response_neg. ,phosphoribosylpyrophosphate synthetase,F,nucleotide transport and metabolism
+BSU00530,pth,NT,Yes,leading,1,59504,60070,SigB. ,peptidyl-tRNA hydrolase,J,"translation, ribosomal structure and biogenesis"
+BSU00620,divIC,NT,Yes,leading,1,69168,69545,SigE.sigM.sigW.sigX. ,cell-division initiation protein,D,"cell cycle control, cell division, chromosome partitioning"
+BSU00670,tilS,NT,Yes,leading,1,74929,76347,SigM. ,tRNA(ile2) lysidine synthetase,J,"translation, ribosomal structure and biogenesis"
+BSU00770,sul (folP),NC,No,leading,1,85737,86594,,dihydropteroate synthase,H,coenzyme transport and metabolism
+BSU00780,folB,NC,No,leading,1,86587,86949,,dihydroneopterin aldolase,H,coenzyme transport and metabolism
+BSU00790,folK,NC,No,leading,1,86946,87449,..,"7,8-dihydro-6-hydroxymethylpterin pyrophosphokinase",H,coenzyme transport and metabolism
+BSU00820,lysS,NT,Yes,leading,1,88727,90226,,lysyl-tRNA synthetase,J,"translation, ribosomal structure and biogenesis"
+BSU00900,ispD,NT,Yes,leading,1,109789,110487,SigB.sigM.,"2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase, nonmevalonate isoprenoid pathway",I,lipid transport and metabolism 
+BSU00910,ispF,NT,Yes,leading,1,110480,110956,SigB. ,"2-C-methyl-D-erythritol-2,4-cyclodiphosphate synthase",I,lipid transport and metabolism 
+BSU00920,gltX,NT,Yes,leading,1,111047,112498,,glutamyl-tRNA synthetase,J,"translation, ribosomal structure and biogenesis"
+BSU00940,cysS,NT,Yes,leading,1,113450,114850,T-box_antitermination. ,cysteinyl-tRNA synthetase,J,"translation, ribosomal structure and biogenesis"
+BSU01000,secE,NT,Yes,leading,1,117532,117711,,preprotein translocase subunit,U,"intracellular trafficking, secretion, and vesicular transport "
+BSU01040,rplJ,NT,Yes,leading,1,120061,120561,stringent response_neg. ,ribosomal protein L10 (BL5),J,"translation, ribosomal structure and biogenesis"
+BSU01050,rplL,NT,Yes,leading,1,120607,120978,stringent response_neg. ,ribosomal protein L12 (BL9),J,"translation, ribosomal structure and biogenesis"
+BSU01070,rpoB,NT,Yes,leading,1,121919,125500,stringent response_neg. ,RNA polymerase (beta subunit),K,transcription
+BSU01080,rpoC,NT,Yes,leading,1,125562,129161,stringent response_neg. ,RNA polymerase (beta' subunit),K,transcription
+BSU01100,rpsL,NT,Yes,leading,1,129702,130118,stringent response_neg. ,ribosomal protein S12 (BS12),J,"translation, ribosomal structure and biogenesis"
+BSU01110,rpsG,NT,Yes,leading,1,130160,130630,stringent response_neg. ,ribosomal protein S7 (BS7),J,"translation, ribosomal structure and biogenesis"
+BSU01120,fusA,NT,Yes,leading,1,130684,132762,stringent response_neg. ,elongation factor G,J,"translation, ribosomal structure and biogenesis"
+BSU01130,tufA,NT,Yes,leading,1,132882,134072,stringent response_neg. ,elongation factor Tu,J,"translation, ribosomal structure and biogenesis"
+BSU01150,rpsJ,NT,Yes,leading,1,135364,135672,stringent response_neg. ,ribosomal protein S10 (BS13),J,"translation, ribosomal structure and biogenesis"
+BSU01160,rplC,NT,Yes,leading,1,135712,136341,stringent response_neg. ,ribosomal protein L3 (BL3),J,"translation, ribosomal structure and biogenesis"
+BSU01170,rplD,NT,Yes,leading,1,136369,136992,stringent response_neg. ,ribosomal protein L4,J,"translation, ribosomal structure and biogenesis"
+BSU01180,rplW,NT,No,leading,1,136992,137279,stringent response_neg. ,ribosomal protein L23,J,"translation, ribosomal structure and biogenesis"
+BSU01190,rplB,NT,Yes,leading,1,137311,138144,stringent response_neg. ,ribosomal protein L2 (BL2),J,"translation, ribosomal structure and biogenesis"
+BSU01200,rpsS,NT,Yes,leading,1,138202,138480,stringent response_neg. ,ribosomal protein S19 (BS19),J,"translation, ribosomal structure and biogenesis"
+BSU01210,rplV,NT,No,leading,1,138497,138838,stringent response_neg,ribosomal protein L22 (BL17),J,"translation, ribosomal structure and biogenesis"
+BSU01220,rpsC,NT,Yes,leading,1,138842,139498,stringent response_neg. ,ribosomal protein S3 (BS3),J,"translation, ribosomal structure and biogenesis"
+BSU01230,rplP,NT,Yes,leading,1,139500,139934,stringent response_neg. ,ribosomal protein L16,J,"translation, ribosomal structure and biogenesis"
+BSU01250,rpsQ,NT,Yes,leading,1,140147,140410,stringent response_neg. ,ribosomal protein S17 (BS16),J,"translation, ribosomal structure and biogenesis"
+BSU01260,rplNA,NT,Yes,leading,1,140451,140819,stringent response_neg. ,ribosomal protein L14,J,"translation, ribosomal structure and biogenesis"
+BSU01270,rplX,NT,Yes,leading,1,140857,141168,stringent response_neg. ,ribosomal protein L24 (BL23),J,"translation, ribosomal structure and biogenesis"
+BSU01280,rplE,NT,Yes,leading,1,141195,141734,stringent response_neg. ,ribosomal protein L5 (BL6),J,"translation, ribosomal structure and biogenesis"
+BSU01290,rpsNA,NT,Yes,leading,1,141757,141942,stringent response_neg. ,ribosomal protein S14,J,"translation, ribosomal structure and biogenesis"
+BSU01300,rpsH,NT,Yes,leading,1,141974,142372,stringent response_neg. ,ribosomal protein S8 (BS8),J,"translation, ribosomal structure and biogenesis"
+BSU01310,rplF,NT,Yes,leading,1,142402,142941,stringent response_neg. ,ribosomal protein L6 (BL8),J,"translation, ribosomal structure and biogenesis"
+BSU01320,rplR,NT,Yes,leading,1,142974,143336,stringent response_neg. ,ribosomal protein L18,J,"translation, ribosomal structure and biogenesis"
+BSU01330,rpsE,NT,Yes,leading,1,143361,143861,stringent response_neg. ,ribosomal protein S5,J,"translation, ribosomal structure and biogenesis"
+BSU01340,rpmD,NT,Yes,leading,1,143875,144054,stringent response_neg. ,ribosomal protein L30 (BL27),J,"translation, ribosomal structure and biogenesis"
+BSU01360,secY,NT,Yes,leading,1,144527,145822,stringent response_neg. ,preprotein translocase subunit,U,"intracellular trafficking, secretion, and vesicular transport "
+BSU01370,adk,NT,Yes,leading,1,145877,146530,stringent response_neg. ,adenylate kinase,F,nucleotide transport and metabolism
+BSU01390,infA,NT,Yes,leading,1,147585,147803,stringent response_neg. ,initiation factor IF-I,J,"translation, ribosomal structure and biogenesis"
+BSU01410,rpsM,NT,Yes,leading,1,147973,148338,stringent response_neg. ,ribosomal protein S13,J,"translation, ribosomal structure and biogenesis"
+BSU01420,rpsK,NT,Yes,leading,1,148359,148754,stringent response_neg. ,ribosomal protein S11 (BS11),J,"translation, ribosomal structure and biogenesis"
+BSU01430,rpoA,NT,Yes,leading,1,148931,149875,stringent response_neg. ,RNA polymerase (alpha subunit),K,transcription
+BSU01440,rplQ,NT,Yes,leading,1,149953,150315,stringent response_neg. ,ribosomal protein L17 (BL15),J,"translation, ribosomal structure and biogenesis"
+BSU01490,rplM,NT,Yes,leading,1,153842,154279,stringent response_neg. ,ribosomal protein L13,J,"translation, ribosomal structure and biogenesis"
+BSU01500,rpsI,NT,Yes,leading,1,154300,154692,stringent response_neg. ,ribosomal protein S9,J,"translation, ribosomal structure and biogenesis"
+BSU01770,glmM,NT,Yes,leading,1,198497,199843,,phosphoglucosamine mutase,M,cell wall/membrane/envelope biogenesis
+BSU01780,glmS,NT,Yes,leading,1,200277,202079,glmS ribozyme_RNA cleavage. ,L-glutamine-D-fructose-6-phosphate amidotransferase,M,cell wall/membrane/envelope biogenesis
+BSU03130,nadE,NT,Yes,leading,1,338288,339106,SigB. ,ammonium-dependent NAD+ synthetase,H,coenzyme transport and metabolism
+BSU03150,aroK,NC,No,leading,1,340025,340585,..,shikimate kinase,H,coenzyme transport and metabolism; amino acid transport and metabolism 
+BSU04560,ddl,NT,Yes,leading,1,508248,509312,SigM. ,D-alanyl-D-alanine ligase A,M,cell wall/membrane/envelope biogenesis
+BSU04570,murF,NT,Yes,leading,1,509384,510757,SigM. ,"UDP-N-acetylmuramoylalanyl-D-glutamyl-2,6-diaminopimelate-D-alanyl-D-alanine ligase",M,cell wall/membrane/envelope biogenesis
+BSU04620,acpS,NT,Yes,leading,1,515710,516075,,holo-acyl carrier protein synthase,I,lipid transport and metabolism 
+BSU04640,alrA,NT,Yes,leading,1,517372,518541,,D-alanine racemase,M,cell wall/membrane/envelope biogenesis
+BSU05920,ydiC (tsaB),NT,Yes,leading,1,642111,642800,,tRNA(NNU) t(6)A37 threonylcarbamoyladenosine modification; protease involved in TsaD function,J,"translation, ribosomal structure and biogenesis"
+BSU05940,gcp (tsaD),NT,Yes,leading,1,643258,644298,,tRNA(NNU) t(6)A37 threonylcarbamoyladenosine modification; glycation binding protein,J,"translation, ribosomal structure and biogenesis"
+BSU06020,groES,NT,Yes,leading,1,649903,650187,HrcA_rep. ,chaperonin small subunit,O,"posttranslational modification, protein turnover, chaperones "
+BSU06030,groEL,NT,Yes,leading,1,650234,651868,HrcA_rep. ,chaperonin large subunit,O,"posttranslational modification, protein turnover, chaperones "
+BSU06060,ydiO (bsuMA),NT,Yes,leading,1,655223,656506,LexA_rep. ,DNA-methyltransferase (cytosine-specific),L,"replication, recombination and repair"
+BSU06070,ydiP (bsuMB),NT,Yes,leading,1,656528,657697,LexA_rep. ,DNA-methyltransferase (cytosine-specific),L,"replication, recombination and repair"
+BSU06610,pcrA,NT,Yes,leading,1,719370,721589,LexA_rep. ,ATP-dependent DNA helicase,L,"replication, recombination and repair"
+BSU06620,ligA,NT,Yes,leading,1,721613,723619,LexA_rep. ,DNA ligase,L,"replication, recombination and repair"
+BSU06670,gatC,NT,Yes,leading,1,728732,729022,,glutamyl-tRNA(Gln) amidotransferase (subunit C),J,"translation, ribosomal structure and biogenesis"
+BSU06680,gatA,NT,Yes,leading,1,729038,730495,,glutamyl-tRNA(Gln) amidotransferase (subunit A),J,"translation, ribosomal structure and biogenesis"
+BSU06690,gatB,NT,Yes,leading,1,730509,731939,,glutamyl-tRNA(Gln) amidotransferase (subunit B),J,"translation, ribosomal structure and biogenesis"
+BSU06811,yezG,NT,No,lagging,-1,747079,747534,,anti-toxin of YeeF,,
+BSU09510,yhdL,NT,Yes,lagging,-1,1028511,1029587,SigM. ,negative regulator of the activity of sigma-M,,
+BSU09540,plsC,NT,Yes,leading,1,1031395,1031994,sigB.FapR_rep.,1-acylglycerol-phosphate (1-acyl-G3P) acyltransferase,I,lipid transport and metabolism 
+BSU09950,prsA,NT,Yes,lagging,-1,1070364,1071242,,molecular chaperone lipoprotein,O,"posttranslational modification, protein turnover, chaperones "
+BSU11340,fabF,NT,Yes,leading,1,1209183,1210424,SigW.FapR_rep. ,beta-ketoacyl-acyl carrier protein synthase II,I,lipid transport and metabolism 
+BSU11420,trpS,NT,Yes,lagging,-1,1218113,1219105,T-box_antitermination. ,tryptophanyl-tRNA synthetase,J,"translation, ribosomal structure and biogenesis"
+BSU11610,ppnKA,NT,Yes,leading,1,1237660,1238460,,inorganic polyphosphate/ATP-NAD kinase,H,coenzyme transport and metabolism
+BSU12510,xre,NT,No,lagging,-1,1321329,1321670,,Phage PBSX transcriptional regulator,K,transcription
+BSU13300,mgtE,NC,No,leading,1,1396013,1397368,M-box_termination. ,magnesium transporter,P,inorganic ion transport and metabolism
+BSU14000,patA,NT,Yes,lagging,-1,1471857,1473038,..,"N-acetyl-L,L-diaminopimelate aminotransferase",M,cell wall/membrane/envelope biogenesis; amino acid transport and metabolism 
+BSU14180,dapH,NT,Yes,leading,1,1488973,1489683,,tetrahydrodipicolinate N-acetyltransferase,M,cell wall/membrane/envelope biogenesis; amino acid transport and metabolism 
+BSU14190,dapL (dapI),NT,Yes,leading,1,1489753,1490877,,N-acetyl-diaminopimelate deacetylase,M,cell wall/membrane/envelope biogenesis; amino acid transport and metabolism 
+BSU14530,rnjA,NT,Yes,lagging,-1,1523118,1524785,,ribonuclease J1,J,"translation, ribosomal structure and biogenesis"
+BSU14840,ylaN,NT,Yes,leading,1,1552412,1552693,..,conserved hypothetical protein,S,function unknown
+BSU14850,ftsW,NT,Yes,leading,1,1552899,1554110,YofA_act. ,cell-division protein,D,"cell cycle control, cell division, chromosome partitioning"
+BSU15020,coaD,NT,No,leading,1,1570078,1570563,,phosphopantetheine adenylyltransferase,H,coenzyme transport and metabolism
+BSU15150,ftsL,NT,Yes,leading,1,1581597,1581950,,cell-division protein,D,"cell cycle control, cell division, chromosome partitioning"
+BSU15160,pbpB,NT,Yes,leading,1,1581947,1584097,,penicillin-binding protein 2B,DM,"cell cycle control, cell division, chromosome partitioning, cell wall/membrane/envelope biogenesis"
+BSU15180,murE,NT,Yes,leading,1,1586330,1587814,stringent response_neg. ,"UDP-N-acetylmuramoylalanyl-D-glutamate-2,6-diaminopimelate ligase",M,cell wall/membrane/envelope biogenesis
+BSU15190,mraY,NT,Yes,leading,1,1587926,1588900,,phospho-N-acetylmuramoyl-pentapeptide transferase,M,cell wall/membrane/envelope biogenesis
+BSU15200,murD,NT,Yes,leading,1,1588901,1590256,,UDP-N-acetylmuramoylalanyl-D-glutamate ligase,M,cell wall/membrane/envelope biogenesis
+BSU15220,murG,NT,Yes,leading,1,1591540,1592631,SigE.SpoIIID_rep. ,UDP-N-acetylglucosamine-N-acetylmuramyl-(pentapeptide)pyrophosphoryl-undecaprenol N-acetylglucosamine transferase,M,cell wall/membrane/envelope biogenesis
+BSU15230,murB,NT,Yes,leading,1,1592663,1593574,SigE.sigM.SpoIIID_rep.,UDP-N-acetylenolpyruvoylglucosamine reductase,M,cell wall/membrane/envelope biogenesis
+BSU15240,divIB,NT,Yes,leading,1,1593704,1594495,SigE.SigM.SpoIIID_rep. ,cell-division initiation protein,M,cell wall/membrane/envelope biogenesis
+BSU15280,ftsA,NT,No,leading,1,1596474,1597796,SigH.WalR_act. ,cell-division protein essential fo Z-ring assembly,D,"cell cycle control, cell division, chromosome partitioning"
+BSU15290,ftsZ,NT,Yes,leading,1,1597832,1598980,SigH.WalR_act. ,cell-division initiation protein,D,"cell cycle control, cell division, chromosome partitioning"
+BSU15430,ileS,NT,Yes,leading,1,1613357,1616122,T-box_antitermination. ,isoleucyl-tRNA synthetase,J,"translation, ribosomal structure and biogenesis"
+BSU15680,gmk,NT,Yes,leading,1,1641949,1642563,,guanylate kinase,F,nucleotide transport and metabolism
+BSU15700,coaBC,NC,No,leading,1,1642851,1644071,..,coenzyme A biosynthesis bifunctional protein CoaBC; phosphopantothenoylcysteine synthetase/decarboxylase,H,coenzyme transport and metabolism
+BSU15710,priA,NT,Yes,leading,1,1644068,1646485,,primosomal replication factor Y (primosomal protein N'),L,"replication, recombination and repair"
+BSU15890,plsX,NT,Yes,leading,1,1662547,1663548,ComA_act.FapR_rep. ,phosphate:acyl-ACP acyltransferase,I,lipid transport and metabolism 
+BSU15900,fabD,NT,Yes,leading,1,1663567,1664520,ComA_act.FapR_rep. ,malonyl CoA:acyl carrier protein transacylase,I,lipid transport and metabolism 
+BSU15910,fabG,NT,Yes,leading,1,1664513,1665253,ComA_act.FapR_rep. ,beta-ketoacyl-acyl carrier protein reductase,I,lipid transport and metabolism
+BSU15920,acpA,NT,Yes,leading,1,1665337,1665570,FapR_rep. ,acyl carrier protein,I,lipid transport and metabolism 
+BSU15930,rnc,NT,Yes,leading,1,1665710,1666459,stringent response_neg. ,ribonuclease III,J,"translation, ribosomal structure and biogenesis"
+BSU15940,smc,NT,Yes,leading,1,1666560,1670120,,chromosome condensation and segregation SMC ATPase,D,"cell cycle control, cell division, chromosome partitioning"
+BSU15950,ftsY,NT,No,leading,1,1670140,1671129,SigK.GerE_act. ,signal recognition particle (docking protein),U,"intracellular trafficking, secretion, and vesicular transport "
+BSU15980,ffh,NT,Yes,leading,1,1672174,1673514,,signal recognition particle-like (SRP) GTPase,U,"intracellular trafficking, secretion, and vesicular transport "
+BSU15990,rpsP,NT,Yes,leading,1,1673620,1673892,stringent response_neg. ,ribosomal protein S16 (BS17),J,"translation, ribosomal structure and biogenesis"
+BSU16030,trmD,NT,Yes,leading,1,1675171,1675902,,tRNA(m1G37)methyltransferase,J,"translation, ribosomal structure and biogenesis"
+BSU16040,rplS,NT,Yes,leading,1,1676042,1676389,stringent response_neg. ,ribosomal protein L19,J,"translation, ribosomal structure and biogenesis"
+BSU16050,rbgA,NT,Yes,leading,1,1676532,1677380,,ribosome biogenesis GTPase A,J,"translation, ribosomal structure and biogenesis"
+BSU16490,rpsB,NT,Yes,leading,1,1717933,1718673,stringent response_neg. ,ribosomal protein S2,J,"translation, ribosomal structure and biogenesis"
+BSU16500,tsf,NT,Yes,leading,1,1718775,1719656,stringent response_neg. ,elongation factor Ts,J,"translation, ribosomal structure and biogenesis"
+BSU16510,pyrH,NT,No,leading,1,1719802,1720524,stringent response_neg. ,uridylate kinase,F,nucleotide transport and metabolism
+BSU16520,frr,NT,Yes,leading,1,1720526,1721083,stringent response_neg. ,ribosome recycling factor,J,"translation, ribosomal structure and biogenesis"
+BSU16530,uppS,NT,Yes,leading,1,1721214,1721996,,undecaprenyl pyrophosphate synthase,M,cell wall/membrane/envelope biogenesis
+BSU16540,cdsA,NT,Yes,leading,1,1722000,1722809,,phosphatidate cytidylyltransferase (CDP-diglyceride synthase),I,lipid transport and metabolism 
+BSU16550,dxr,NT,Yes,leading,1,1722871,1724022,,1-deoxy-D-xylulose-5-phosphate reductoisomerase,I,lipid transport and metabolism 
+BSU16570,proS,NT,Yes,leading,1,1725330,1727024,,prolyl-tRNA synthetase,J,"translation, ribosomal structure and biogenesis"
+BSU16580,polC,NT,Yes,leading,1,1727133,1731446,,DNA polymerase III (alpha subunit),L,"replication, recombination and repair"
+BSU16600,nusA,NT,Yes,leading,1,1732281,1733396,stringent response_neg. ,transcription translation coupling factor involved in Rho-dependent transcription termination,K,transcription
+BSU16630,infB,NT,Yes,leading,1,1734009,1736159,stringent response_neg. ,initiation factor IF-2,J,"translation, ribosomal structure and biogenesis"
+BSU16670,ribC,NT,Yes,leading,1,1737834,1738784,,bifunctional riboflavin kinase FAD synthase,H,coenzyme transport and metabolism
+BSU16680,rpsO,NT,Yes,leading,1,1738941,1739210,,ribosomal protein S15 (BS18),J,"translation, ribosomal structure and biogenesis"
+BSU16750,asd,NT,Yes,leading,1,1745991,1747031,SigK. ,aspartate-semialdehyde dehydrogenase,M,cell wall/membrane/envelope biogenesis; amino acid transport and metabolism 
+BSU16760,dapG,NT,No,leading,1,1747123,1748337,SigK. ,aspartokinase I (alpha and beta subunits),M,cell wall/membrane/envelope biogenesis; amino acid transport and metabolism 
+BSU16770,dapA,NT,Yes,leading,1,1748368,1749240,SigK. ,dihydrodipicolinate synthase,M,cell wall/membrane/envelope biogenesis; amino acid transport and metabolism 
+BSU16920,pgsA,NT,Yes,leading,1,1762623,1763204,,CDP-diacylglycerol-glycerol-3-phosphate 3-phosphatidyltransferase,I,lipid transport and metabolism 
+BSU17370,nrdI,NT,Yes,leading,1,1868617,1869009,ResD_act. ,co-factor of ribonucleotide diphosphate reductase,F,nucleotide transport and metabolism
+BSU17380,nrdE,NT,Yes,leading,1,1868969,1871071,ResD_act. ,ribonucleoside-diphosphate reductase (major subunit),F,nucleotide transport and metabolism
+BSU17390,nrdF,NT,Yes,leading,1,1871089,1872078,ResD_act. ,ribonucleoside-diphosphate reductase (minor subunit),F,nucleotide transport and metabolism
+BSU17910,yneF,NT,No,leading,1,1922549,1922767,Spo0A_act. ,conserved hypothetical protein,S,function unknown
+BSU18070,plsY,NT,Yes,lagging,-1,1931920,1932501,,acylphosphate:glycerol-3-phosphate acyltransferase,I,lipid transport and metabolism 
+BSU18090,parE,NT,Yes,leading,1,1933477,1935444,LexA_rep. ,subunit B of DNA topoisomerase IV,L,"replication, recombination and repair"
+BSU18100,parC,NT,Yes,leading,1,1935448,1937868,LexA_rep. ,subunit A of DNA topoisomerase IV,L,"replication, recombination and repair"
+BSU21810,dfrA,NT,Yes,leading,-1,2296603,2297109,,dihydrofolate reductase,H,coenzyme transport and metabolism
+BSU22350,dnaD,NT,Yes,leading,-1,2345433,2346131,,DNA-remodelling primosomal protein,L,"replication, recombination and repair"
+BSU22440,birA,NT,Yes,leading,-1,2354918,2355895,,biotin acetyl-CoA-carboxylase ligase and biotin regulon repressor,I,lipid transport and metabolism ; coenzyme transport and metabolism; transcription
+BSU22450,cca,NT,Yes,leading,-1,2355880,2357073,,tRNA nucleotidyltransferase,J,"translation, ribosomal structure and biogenesis"
+BSU22490,dapB,NT,Yes,leading,-1,2359340,2360143,,"(4S)-4-hydroxy-2,3,4,5-tetrahydro-(2S)-dipicolinic acid (HTPA) dehydratase reductase",M,cell wall/membrane/envelope biogenesis; amino acid transport and metabolism 
+BSU22600,aroE,NC,No,leading,-1,2367954,2369240,TRAPtermination,3-phosphoshikimate 1-carboxyvinyltransferase (5-enolpyruvoylshikimate-3-phosphate synthase),H,coenzyme transport and metabolism; amino acid transport and metabolism 
+BSU22710,aroF,NC,No,leading,-1,2379100,2380272,,chorismate synthase,H,coenzyme transport and metabolism; amino acid transport and metabolism 
+BSU22780,folEA,NC,No,leading,-1,2384783,2385355,..,GTP cyclohydrolase I,H,coenzyme transport and metabolism
+BSU22790,hbs,NT,Yes,leading,-1,2385543,2385821,SigH.LexA_rep. ,non-specific DNA-binding protein HBsu; signal recognition particle-like (SRP) component,L,"replication, recombination and repair"
+BSU22840,engA (der),NT,Yes,leading,-1,2390206,2391516,,GTPase essential for ribosome 50S subunit assembly,J,"translation, ribosomal structure and biogenesis"
+BSU22890,cmk,NT,Yes,leading,-1,2396045,2396719,..,cytidylate kinase,F,nucleotide transport and metabolism
+BSU23220,scpA,NT,Yes,leading,-1,2425831,2426586,stringent response_neg. ,chromosome condensation and partitioning factor,L,"replication, recombination and repair"
+BSU23840,rnz,NT,Yes,leading,-1,2478006,2478929,,ribonuclease Z,J,"translation, ribosomal structure and biogenesis"
+BSU24270,dxs,NT,Yes,leading,-1,2523713,2525614,stringent response_neg. ,1-deoxyxylulose-5-phosphate synthase,I,lipid transport and metabolism; coenzyme transport and metabolism
+BSU24340,accC,NT,Yes,leading,-1,2530354,2531706,,acetyl-CoA carboxylase subunit (biotin carboxylase subunit),I,lipid transport and metabolism 
+BSU24350,accB,NT,Yes,leading,-1,2531718,2532197,,acetyl-CoA carboxylase subunit (biotin carboxyl carrier subunit),I,lipid transport and metabolism 
+BSU25070,ispG,NT,Yes,lagging,1,2589123,2590256,SigE. ,4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate synthase),I,lipid transport and metabolism 
+BSU25160,ispH,NT,Yes,lagging,1,2596535,2597479,,1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase,I,lipid transport and metabolism 
+BSU25200,sigA,NT,Yes,leading,-1,2600214,2601329,SigD.SigH. ,RNA polymerase major sigma-43 factor (sigma-A),K,transcription
+BSU25210,dnaG,NT,Yes,leading,-1,2601528,2603339,SigH.Spo0A_rep. ,DNA primase,L,"replication, recombination and repair"
+BSU25260,glyS,NT,Yes,leading,-1,2605730,2607769,T-box_antitermination. ,glycyl-tRNA synthetase (beta subunit),J,"translation, ribosomal structure and biogenesis"
+BSU25270,glyQ,NT,Yes,leading,-1,2607762,2608649,T-box_antitermination. ,glycyl-tRNA synthetase (alpha subunit),J,"translation, ribosomal structure and biogenesis"
+BSU25290,era,NT,Yes,leading,-1,2610041,2610946,SigB. ,GTP-binding protein,J,"translation, ribosomal structure and biogenesis"
+BSU25560,holA,NT,Yes,leading,-1,2636096,2637139,,DNA polymerase delta subunit,L,"replication, recombination and repair"
+BSU25640,nadD,NT,Yes,leading,-1,2643765,2644334,,nicotinate-nucleotide adenylyltransferase,H,coenzyme transport and metabolism
+BSU25680,yqeG,NT,No,leading,-1,2646594,2647112,,putative hydrolase,R,general function prediction only 
+BSU25870,yqcF (rttF),NT,No,lagging,1,2662712,2663290,Spo0A_act. ,antitoxin factor of ribonuclease toxin RttG; skin element,,
+BSU26350,yqaE (sknR),NT,Yes,lagging,1,2698893,2699243,,putative transcriptional regulator (Xre family); skin element,K,transcription
+BSU27410,alaS,NT,Yes,leading,-1,2798174,2800810,T-box_antitermination. ,alanyl-tRNA synthetase,J,"translation, ribosomal structure and biogenesis"
+BSU27500,trmU (mnmA),NT,Yes,leading,-1,2809413,2810528,stringent response_neg. ,tRNA 2-thiouridylase,J,"translation, ribosomal structure and biogenesis"
+BSU27510,iscS (iscSA),NT,Yes,leading,-1,2810559,2811698,stringent response_neg. ,cysteine desulfurase involved in tRNA thiolation,O,"posttranslational modification, protein turnover, chaperones; translation, ribosomal structure and biogenesis"
+BSU27550,aspS,NT,Yes,leading,-1,2814743,2816521,T-box_antitermination. ,aspartyl-tRNA synthetase,J,"translation, ribosomal structure and biogenesis"
+BSU27560,hisS,NT,Yes,leading,-1,2816535,2817809,T-box_antitermination. ,histidyl-tRNA synthetase,J,"translation, ribosomal structure and biogenesis"
+BSU27920,obg,NT,Yes,leading,-1,2852661,2853947,,GTPase involved in cell partioning and DNA repair,J,"translation, ribosomal structure and biogenesis"
+BSU27940,rpmA,NT,Yes,leading,-1,2854880,2855164,,ribosomal protein L27 (BL24),J,"translation, ribosomal structure and biogenesis"
+BSU27950,ysxB,NT,No,leading,-1,2855177,2855515,stringent response_neg. ,conserved hypothetical protein,J,"translation, ribosomal structure and biogenesis"
+BSU27960,rplU,NT,Yes,leading,-1,2855518,2855826,stringent response_neg. ,ribosomal protein L21 (BL20),J,"translation, ribosomal structure and biogenesis"
+BSU28010,mreD,NT,Yes,leading,-1,2859317,2859835,SigM. ,cell-shape determining protein,M,cell wall/membrane/envelope biogenesis
+BSU28020,mreC,NT,Yes,leading,-1,2859832,2860704,SigM. ,cell-shape determining protein,M,cell wall/membrane/envelope biogenesis
+BSU28030,mreB,NT,Yes,leading,-1,2860735,2861748,SigM. ,cell-shape determining protein,M,cell wall/membrane/envelope biogenesis
+BSU28080,folC,NC,No,leading,-1,2865312,2866604,T-box_antitermination. ,folyl-polyglutamate synthase,H,coenzyme transport and metabolism
+BSU28090,valS,NT,Yes,leading,-1,2866664,2869306,T-box_antitermination. ,valyl-tRNA synthetase,J,"translation, ribosomal structure and biogenesis"
+BSU28190,ysxC,NT,Yes,leading,-1,2879882,2880469,CtsR_rep. ,GTPase involved in ribosome 50S subunit assembly,J,"translation, ribosomal structure and biogenesis"
+BSU28390,racE,NT,Yes,leading,-1,2903217,2904035,,glutamate racemase,M,cell wall/membrane/envelope biogenesis
+BSU28500,trxA,NT,Yes,leading,-1,2913024,2913338,SigB.CtsR_rep.Spx_act. ,thioredoxin,O,"posttranslational modification, protein turnover, chaperones "
+BSU28630,pheT,NT,Yes,leading,-1,2927008,2929422,T-box_antitermination. ,phenylalanyl-tRNA synthetase (beta subunit),J,"translation, ribosomal structure and biogenesis"
+BSU28640,pheS,NT,Yes,leading,-1,2929438,2930472,T-box_antitermination. ,phenylalanyl-tRNA synthetase (alpha subunit),J,"translation, ribosomal structure and biogenesis"
+BSU28850,rplT,NT,Yes,leading,-1,2952224,2952583,stringent response_neg.RplT_termination. ,ribosomal protein L20,J,"translation, ribosomal structure and biogenesis"
+BSU28870,infC,NT,Yes,leading,-1,2952828,2953349,stringent response_neg.RplT_termination. ,initiation factor IF-3,J,"translation, ribosomal structure and biogenesis"
+BSU28980,dnaI,NT,Yes,leading,-1,2963185,2964120,,helicase loader,L,"replication, recombination and repair"
+BSU28990,dnaB,NT,Yes,leading,-1,2964148,2965566,,helicase loading protein; replication initiation membrane attachment protein,L,"replication, recombination and repair"
+BSU29060,coaE,NT,Yes,leading,-1,2970922,2971515,,dephosphocoenzyme A kinase,H,coenzyme transport and metabolism
+BSU29200,accA,NT,Yes,leading,-1,2987731,2988708,Spo0A_act. ,acetyl-CoA carboxylase (carboxyltransferase alpha subunit),I,lipid transport and metabolism 
+BSU29210,accD,NT,Yes,leading,-1,2988693,2989565,Spo0A_act. ,acetyl-CoA carboxylase (carboxyltransferase beta subunit),I,lipid transport and metabolism 
+BSU29230,dnaE,NT,Yes,leading,-1,2991269,2994616,LexA_rep. ,"DNA polymerase III (alpha subunit), DnaE3",L,"replication, recombination and repair"
+BSU29660,rpsD,NT,Yes,lagging,1,3035730,3036332,stringent response_neg. ,ribosomal protein S4 (BS4),J,"translation, ribosomal structure and biogenesis"
+BSU29670,tyrS,NT,Yes,leading,-1,3036603,3037871,T-box_antitermination. ,tyrosyl-tRNA synthetase,J,"translation, ribosomal structure and biogenesis"
+BSU29790,murC,NT,Yes,leading,-1,3048177,3049475,,UDP-N-acetyl muramate-alanine ligase,M,cell wall/membrane/envelope biogenesis
+BSU30320,leuS,NT,Yes,leading,-1,3102629,3105043,T-box_antitermination. ,leucyl-tRNA synthetase,J,"translation, ribosomal structure and biogenesis"
+BSU30550,metK,NT,Yes,leading,-1,3127825,3129027,S-box_termination. ,S-adenosylmethionine synthetase,H,coenzyme transport and metabolism
+BSU30780,menC,NT,Yes,leading,-1,3146238,3147353,,O-succinylbenzoate-CoA synthase,H,coenzyme transport and metabolism
+BSU30790,menE,NT,Yes,leading,-1,3147350,3148810,,O-succinylbenzoic acid-CoA ligase,H,coenzyme transport and metabolism
+BSU30800,menB,NT,Yes,leading,-1,3148901,3149716,,dihydroxynapthoic acid synthetase,H,coenzyme transport and metabolism
+BSU30820,menD,NT,Yes,leading,-1,3150563,3152305,,2-oxoglutarate decarboxylase and 2-succinyl-5-enolpyruvyl-6-hydroxy-3-cyclohexene-1-carboxylic-acid synthase,H,coenzyme transport and metabolism
+BSU31600,mrpA,NT,Yes,lagging,1,3246598,3249003,,sodium transporter component of a Na+/H+ antiporter,P,inorganic ion transport and metabolism
+BSU31610,mrpB,NT,Yes,lagging,1,3248996,3249427,,Na+/H+ antiporter complex,P,inorganic ion transport and metabolism
+BSU31620,mrpC,NT,Yes,lagging,1,3249427,3249768,,component of Na+/H+ antiporter,P,inorganic ion transport and metabolism
+BSU31630,mrpD,NT,Yes,lagging,1,3249761,3251242,,proton transporter component of Na+/H+ antiporter,P,inorganic ion transport and metabolism
+BSU31640,mrpE,NC,No,lagging,1,3251248,3251724,,non essential component of Na+/H+ antiporter,P,inorganic ion transport and metabolism
+BSU31650,mrpF,NT,Yes,lagging,1,3251724,3252008,,efflux transporter for Na+ and cholate,P,inorganic ion transport and metabolism
+BSU31660,mrpG,NC,No,lagging,1,3251992,3252366,,non essential component of Na+/H+ antiporter,P,inorganic ion transport and metabolism
+BSU31750,pncB,NT,Yes,leading,-1,3259403,3260875,,nicotinate phosphoribosyltransferase,H,coenzyme transport and metabolism
+BSU32110,yumC,NT,Yes,lagging,1,3301586,3302584,,ferredoxin-NADP+ reductase,O,"posttranslational modification, protein turnover, chaperones "
+BSU32170,dapF,NT,Yes,leading,-1,3306040,3306894,,diaminopimelate epimerase,M,cell wall/membrane/envelope biogenesis; amino acid transport and metabolism 
+BSU32670,sufB,NT,Yes,leading,-1,3355593,3356990,,FeS cluster formation protein,O,"posttranslational modification, protein turnover, chaperones "
+BSU32680,iscU (sufU),NT,Yes,leading,-1,3357011,3357454,,iron-sulfur cluster assembly sulfur-transfer protein (Zn(2+)-dependent),O,"posttranslational modification, protein turnover, chaperones"
+BSU32690,sufS,NT,Yes,leading,-1,3357444,3358664,,cysteine desulfurase,O,"posttranslational modification, protein turnover, chaperones "
+BSU32700,sufD,NT,Yes,leading,-1,3358664,3359977,,FeS assembly protein SufD,O,"posttranslational modification, protein turnover, chaperones "
+BSU32710,sufC,NT,Yes,leading,-1,3359995,3360780,,"sulfur mobilizing ABC protein, ATPase",O,"posttranslational modification, protein turnover, chaperones "
+BSU33900,eno,NC,Yes,leading,-1,3476555,3477847,CggR_rep. ,enolase,G,carbohydrate transport and metabolism
+BSU33910,pgm,NC,Yes,leading,-1,3477877,3479412,CggR_rep. ,phosphoglycerate mutase,G,carbohydrate transport and metabolism
+BSU33940,gapA,NC,Yes,leading,-1,3481698,3482705,CggR_rep. ,glyceraldehyde-3-phosphate dehydrogenase,G,carbohydrate transport and metabolism
+BSU34790,trxB,NT,Yes,leading,-1,3573207,3574157,Spx_act. ,thioredoxin reductase,O,"posttranslational modification, protein turnover, chaperones "
+BSU35290,prfB,NT,Yes,leading,-1,3627139,3628240,,peptide chain release factor 2,J,"translation, ribosomal structure and biogenesis"
+BSU35300,secA,NT,Yes,leading,-1,3628310,3630835,,translocase binding subunit (ATPase),U,"intracellular trafficking, secretion, and vesicular transport "
+BSU35530,tagO,NT,Yes,leading,-1,3648654,3649730,,UDP-N-acetylglucosamine:undecaprenyl-P N-acetylglucosaminyl-1-P transferase,M,cell wall/membrane/envelope biogenesis
+BSU35600,tuaB,NC,No,leading,-1,3656752,3658203,PhoP_act. ,putative exporter involved in biosynthesis of teichuronic acid,M,cell wall/membrane/envelope biogenesis
+BSU35660,mnaA,NT,Yes,leading,-1,3664241,3665383,,UDP-N-acetylmannosamine 2-epimerase,M,cell wall/membrane/envelope biogenesis
+BSU35700,tagH,NT,Yes,leading,-1,3673564,3675147,,ATP-binding teichoic acid precursor transporter component,M,cell wall/membrane/envelope biogenesis
+BSU35710,tagG,NT,Yes,leading,-1,3675167,3675994,,teichoic acid precursors permease,M,cell wall/membrane/envelope biogenesis
+BSU35720,tagF,NT,Yes,leading,-1,3676159,3678399,WalR_act.PhoP_rep. ,CDP-glycerol:polyglycerol phosphate glycero-phosphotransferase (poly(glycerol phosphate) polymerase),M,cell wall/membrane/envelope biogenesis
+BSU35740,tagD,NT,Yes,leading,-1,3680581,3680970,WalR_act.PhoP_rep. ,glycerol-3-phosphate cytidylyltransferase,M,cell wall/membrane/envelope biogenesis
+BSU35750,tagA,NT,Yes,lagging,1,3681370,3682140,WalR_act.PhoP_rep. ,"N-acetylmannosamine (ManNAc) C4 hydroxyl of a membrane-anchored N-acetylglucosaminyl diphospholipid (GlcNAc-pp-undecaprenyl, lipid I) glycosyltransferase",M,cell wall/membrane/envelope biogenesis
+BSU35760,tagB,NT,Yes,lagging,1,3682173,3683318,WalR_act.PhoP_rep. ,"teichoic acid primase, CDP-glycerol:N-acetyl-beta-d-mannosaminyl-1,4-N-acetyl-d-glucosaminyldiphosphoundecaprenyl glycerophosphotransferase",M,cell wall/membrane/envelope biogenesis
+BSU36370,fabZ,NT,Yes,leading,-1,3743732,3744157,,beta-hydroxyacyl-[acyl carrier protein] dehydratase,I,lipid transport and metabolism 
+BSU36410,mbl,>50 mutants were obtained but they might have mutation at rsgI ,No,leading,-1,3748255,3747254,SigE.stringent responsenegative regulation.,MreB-like morphogen,M,cell wall/membrane/envelope biogenesis
+BSU36760,murAA,NT,Yes,leading,-1,3777949,3779259,,UDP-N-acetylglucosamine 1-carboxyvinyltransferase,M,cell wall/membrane/envelope biogenesis
+BSU37010,prfA,NT,Yes,leading,-1,3797085,3798155,,peptide chain release factor 1,J,"translation, ribosomal structure and biogenesis"
+BSU37150,pyrG,NT,Yes,leading,-1,3810693,3812300,,CTP synthetase,F,nucleotide transport and metabolism
+BSU37330,argS,NT,Yes,leading,-1,3833650,3835320,,arginyl-tRNA synthetase,J,"translation, ribosomal structure and biogenesis"
+BSU38120,rodA,NT,Yes,leading,-1,3912332,3913513,SigM. ,factor involved in extension of the lateral walls of the cell,M,cell wall/membrane/envelope biogenesis
+BSU38490,menA,NC,Yes,leading,-1,3950726,3951661,,"1,4-dihydroxy-2-naphthoate octaprenyltransferase",H,coenzyme transport and metabolism
+BSU38690,yxlC,> 100 mutants were obtained but all of them might have mutation at sigY,Yes,leading,-1,3969999,3970319,SigY.,sigma-Y antisigma factor,,
+BSU39220,yxxG (wapI),NT,No,leading,-1,4023054,4023482,DegU_repress.YvrHb_act.,antitoxin of WapA tRNase,,
+BSU39290,yxxD (rtbE),NT,No,leading,-1,4036344,4036787,..,antitoxin factor of the RttD-RttE toxin-antitoxin system,,
+BSU40400,walK,NT,Yes,leading,-1,4151853,4153688,..,two-component sensor histidine kinase [YycG],T,signal transduction mechanisms 
+BSU40410,walR,NT,Yes,leading,-1,4153696,4154403,,two-component response regulator [YycF],K,transcription
+BSU40440,dnaC,NT,Yes,leading,-1,4157471,4158835,,replicative DNA helicase,L,"replication, recombination and repair"
+BSU40550,ppaC,NT,Yes,lagging,1,4168204,4169133,,inorganic pyrophosphatase,C,energy production and conversion
+BSU40890,rpsR,NT,Yes,leading,-1,4198603,4198842,ComK_act.stringent response_neg. ,ribosomal protein S18,J,"translation, ribosomal structure and biogenesis"
+BSU40900,ssbA,NT,Yes,leading,-1,4198886,4199404,ComK_act.stringent response_neg. ,single-strand DNA-binding protein,L,"replication, recombination and repair"
+BSU41050,rnpA,NT,Yes,leading,-1,4214753,4215103,,protein component of ribonuclease P (RNase P) (substrate specificity),J,"translation, ribosomal structure and biogenesis"

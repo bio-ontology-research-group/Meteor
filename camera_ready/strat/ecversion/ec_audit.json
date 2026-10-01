@@ -1,0 +1,1566 @@
+{
+ "table": {
+  "n_entries": 1309,
+  "n_keys_full": 1128,
+  "n_vals_full": 1070,
+  "n_keys_that_are_also_values_chain": 14,
+  "n_self_map": 0,
+  "n_targets_distinct": 1070,
+  "n_chains_gt1": 15,
+  "n_deleted_entries": "0 (dict old->new only; EC 'deleted' entries cannot be represented and are absent)"
+ },
+ "seedr2ec": {
+  "n_raw_distinct": 7356,
+  "n_full": 6598,
+  "n_partial": 758,
+  "n_full_missing_from_anc": 509,
+  "missing_breakdown": {
+   "n": 509,
+   "obsolete_key": 503,
+   "obsolete_key_target_in_anc": 503,
+   "obsolete_key_target_in_seed": 376,
+   "is_current_target_of_transfer": 0,
+   "not_in_table": 6,
+   "partial": 0,
+   "examples_obsolete": [
+    "1.1.1.155->1.1.1.87",
+    "1.1.1.158->1.3.1.98",
+    "1.1.1.204->1.17.1.4",
+    "1.1.1.222->1.1.1.110",
+    "1.1.1.246->4.2.1.139",
+    "1.1.1.314->1.14.14.95",
+    "1.1.1.32->1.1.1.1",
+    "1.1.1.33->1.1.1.2"
+   ]
+  },
+  "n_seed_full_obsolete_keys_total": 503,
+  "n_anc_entries_obsolete_keys": 1,
+  "n_anc_full": 7021
+ },
+ "organisms": {
+  "E.coli": {
+   "gem": "iML1515",
+   "gcf": "GCF_058436375.1",
+   "gem_ec": 865,
+   "gem_ec_obsolete_keys": 89,
+   "gem_ec_targets": 127,
+   "gem_ec_after_canon": 851,
+   "gem_obsolete_examples": [
+    "1.1.99.5->1.1.5.3",
+    "1.11.1.15->1.11.1.29",
+    "1.17.1.2->1.17.7.4",
+    "1.18.99.1->1.12.7.2",
+    "1.3.1.26->1.17.1.8",
+    "1.3.99.22->1.3.98.3",
+    "1.3.99.3->1.3.8.9",
+    "1.4.3.6->1.4.3.22",
+    "1.4.99.1->1.4.99.6",
+    "1.4.99.4->1.4.9.2"
+   ],
+   "gem_ec_not_in_anc": 90,
+   "preds": {
+    "dpz": {
+     "vocab": 2789,
+     "vocab_obsolete_keys": 124,
+     "vocab_targets": 513,
+     "vocab_after_canon": 2702,
+     "vocab_not_in_anc": 124,
+     "vocab_partial_cols": 13,
+     "n_cols_extract_pred_remapped": 124,
+     "active_minus_anc": {
+      "n": 123,
+      "obsolete_key": 123,
+      "obsolete_key_target_in_anc": 123,
+      "obsolete_key_target_in_seed": 75,
+      "is_current_target_of_transfer": 0,
+      "not_in_table": 0,
+      "partial": 0,
+      "examples_obsolete": [
+       "1.1.1.158->1.3.1.98",
+       "1.1.1.204->1.17.1.4",
+       "1.1.5.6->1.17.5.3",
+       "1.1.99.11->1.1.5.14",
+       "1.1.99.16->1.1.5.4",
+       "1.1.99.25->1.1.5.8",
+       "1.1.99.5->1.1.5.3",
+       "1.14.13.165->1.14.14.47"
+      ]
+     },
+     "active_minus_anc_after_canon_in_R": 106,
+     "active_minus_anc_in_R_before": 77,
+     "active_minus_anc_after_canon_in_vocab": 100,
+     "active_minus_anc_in_vocab_before": 57,
+     "out_vocab_before": 121,
+     "out_vocab_after_canon": 107,
+     "out_vocab_rescued_by_canon": 13,
+     "arms": {
+      "B": {
+       "recall_before": 0.689,
+       "recall_after_canon": 0.7485,
+       "hits_before": 596,
+       "hits_after": 637,
+       "n_R_after": 851,
+       "misses_becoming_hits": 51
+      },
+      "M-act": {
+       "recall_before": 0.9052,
+       "recall_after_canon": 0.9119,
+       "hits_before": 783,
+       "hits_after": 776,
+       "n_R_after": 851,
+       "misses_becoming_hits": 6
+      },
+      "M-rxn": {
+       "recall_before": 0.8162,
+       "recall_after_canon": 0.8508,
+       "hits_before": 706,
+       "hits_after": 724,
+       "n_R_after": 851,
+       "misses_becoming_hits": 31
+      },
+      "S": {
+       "recall_before": 0.5457,
+       "recall_after_canon": 0.5699,
+       "hits_before": 472,
+       "hits_after": 485,
+       "n_R_after": 851,
+       "misses_becoming_hits": 22
+      },
+      "S-allSEED": {
+       "recall_before": 0.5642,
+       "recall_after_canon": 0.5711,
+       "hits_before": 488,
+       "hits_after": 486,
+       "n_R_after": 851,
+       "misses_becoming_hits": 7
+      }
+     }
+    },
+    "clean": {
+     "vocab": 5203,
+     "vocab_obsolete_keys": 31,
+     "vocab_targets": 892,
+     "vocab_after_canon": 5199,
+     "vocab_not_in_anc": 31,
+     "vocab_partial_cols": 39,
+     "n_cols_extract_pred_remapped": 31,
+     "active_minus_anc": {
+      "n": 107,
+      "obsolete_key": 107,
+      "obsolete_key_target_in_anc": 107,
+      "obsolete_key_target_in_seed": 60,
+      "is_current_target_of_transfer": 0,
+      "not_in_table": 0,
+      "partial": 0,
+      "examples_obsolete": [
+       "1.1.1.158->1.3.1.98",
+       "1.1.1.204->1.17.1.4",
+       "1.1.1.222->1.1.1.110",
+       "1.1.5.6->1.17.5.3",
+       "1.1.99.11->1.1.5.14",
+       "1.1.99.16->1.1.5.4",
+       "1.1.99.5->1.1.5.3",
+       "1.3.3.1->1.3.98.1"
+      ]
+     },
+     "active_minus_anc_after_canon_in_R": 98,
+     "active_minus_anc_in_R_before": 73,
+     "active_minus_anc_after_canon_in_vocab": 92,
+     "active_minus_anc_in_vocab_before": 0,
+     "out_vocab_before": 133,
+     "out_vocab_after_canon": 58,
+     "out_vocab_rescued_by_canon": 75,
+     "arms": {
+      "B": {
+       "recall_before": 0.6902,
+       "recall_after_canon": 0.7474,
+       "hits_before": 597,
+       "hits_after": 636,
+       "n_R_after": 851,
+       "misses_becoming_hits": 48
+      },
+      "M-act": {
+       "recall_before": 0.8671,
+       "recall_after_canon": 0.8754,
+       "hits_before": 750,
+       "hits_after": 745,
+       "n_R_after": 851,
+       "misses_becoming_hits": 4
+      },
+      "M-rxn": {
+       "recall_before": 0.7827,
+       "recall_after_canon": 0.8132,
+       "hits_before": 677,
+       "hits_after": 692,
+       "n_R_after": 851,
+       "misses_becoming_hits": 24
+      },
+      "S": {
+       "recall_before": 0.5457,
+       "recall_after_canon": 0.5699,
+       "hits_before": 472,
+       "hits_after": 485,
+       "n_R_after": 851,
+       "misses_becoming_hits": 22
+      },
+      "S-allSEED": {
+       "recall_before": 0.5642,
+       "recall_after_canon": 0.5711,
+       "hits_before": 488,
+       "hits_after": 486,
+       "n_R_after": 851,
+       "misses_becoming_hits": 7
+      }
+     }
+    },
+    "enzbert": {
+     "vocab": 4714,
+     "vocab_obsolete_keys": 28,
+     "vocab_targets": 827,
+     "vocab_after_canon": 4712,
+     "vocab_not_in_anc": 29,
+     "vocab_partial_cols": 29,
+     "n_cols_extract_pred_remapped": 28,
+     "active_minus_anc": {
+      "n": 111,
+      "obsolete_key": 111,
+      "obsolete_key_target_in_anc": 111,
+      "obsolete_key_target_in_seed": 64,
+      "is_current_target_of_transfer": 0,
+      "not_in_table": 0,
+      "partial": 0,
+      "examples_obsolete": [
+       "1.1.1.158->1.3.1.98",
+       "1.1.1.204->1.17.1.4",
+       "1.1.5.6->1.17.5.3",
+       "1.1.99.11->1.1.5.14",
+       "1.1.99.16->1.1.5.4",
+       "1.1.99.5->1.1.5.3",
+       "1.14.13.165->1.14.14.47",
+       "1.14.13.72->1.14.18.9"
+      ]
+     },
+     "active_minus_anc_after_canon_in_R": 99,
+     "active_minus_anc_in_R_before": 74,
+     "active_minus_anc_after_canon_in_vocab": 99,
+     "active_minus_anc_in_vocab_before": 1,
+     "out_vocab_before": 167,
+     "out_vocab_after_canon": 91,
+     "out_vocab_rescued_by_canon": 76,
+     "arms": {
+      "B": {
+       "recall_before": 0.6139,
+       "recall_after_canon": 0.6651,
+       "hits_before": 531,
+       "hits_after": 566,
+       "n_R_after": 851,
+       "misses_becoming_hits": 43
+      },
+      "M-act": {
+       "recall_before": 0.815,
+       "recall_after_canon": 0.8237,
+       "hits_before": 705,
+       "hits_after": 701,
+       "n_R_after": 851,
+       "misses_becoming_hits": 5
+      },
+      "M-rxn": {
+       "recall_before": 0.7295,
+       "recall_after_canon": 0.7603,
+       "hits_before": 631,
+       "hits_after": 647,
+       "n_R_after": 851,
+       "misses_becoming_hits": 25
+      },
+      "S": {
+       "recall_before": 0.5457,
+       "recall_after_canon": 0.5699,
+       "hits_before": 472,
+       "hits_after": 485,
+       "n_R_after": 851,
+       "misses_becoming_hits": 22
+      },
+      "S-allSEED": {
+       "recall_before": 0.5642,
+       "recall_after_canon": 0.5711,
+       "hits_before": 488,
+       "hits_after": 486,
+       "n_R_after": 851,
+       "misses_becoming_hits": 7
+      }
+     }
+    }
+   }
+  },
+  "Salmonella": {
+   "gem": "STM_v1_0",
+   "gcf": "GCF_000006945.2",
+   "gem_ec": 846,
+   "gem_ec_obsolete_keys": 86,
+   "gem_ec_targets": 111,
+   "gem_ec_after_canon": 835,
+   "gem_obsolete_examples": [
+    "1.1.99.5->1.1.5.3",
+    "1.11.1.15->1.11.1.29",
+    "1.17.1.2->1.17.7.4",
+    "1.18.99.1->1.12.7.2",
+    "1.3.1.26->1.17.1.8",
+    "1.3.99.22->1.3.98.3",
+    "1.3.99.3->1.3.8.9",
+    "1.4.3.6->1.4.3.22",
+    "1.4.99.1->1.4.99.6",
+    "1.5.1.12->1.2.1.88"
+   ],
+   "gem_ec_not_in_anc": 87,
+   "preds": {
+    "dpz": {
+     "vocab": 2789,
+     "vocab_obsolete_keys": 124,
+     "vocab_targets": 513,
+     "vocab_after_canon": 2702,
+     "vocab_not_in_anc": 124,
+     "vocab_partial_cols": 13,
+     "n_cols_extract_pred_remapped": 124,
+     "active_minus_anc": {
+      "n": 118,
+      "obsolete_key": 118,
+      "obsolete_key_target_in_anc": 118,
+      "obsolete_key_target_in_seed": 70,
+      "is_current_target_of_transfer": 0,
+      "not_in_table": 0,
+      "partial": 0,
+      "examples_obsolete": [
+       "1.1.1.158->1.3.1.98",
+       "1.1.99.11->1.1.5.14",
+       "1.1.99.25->1.1.5.8",
+       "1.1.99.5->1.1.5.3",
+       "1.14.13.3->1.14.14.9",
+       "1.14.99.36->1.13.11.63",
+       "1.2.1.2->1.17.1.9",
+       "1.2.99.2->1.2.7.4"
+      ]
+     },
+     "active_minus_anc_after_canon_in_R": 98,
+     "active_minus_anc_in_R_before": 73,
+     "active_minus_anc_after_canon_in_vocab": 96,
+     "active_minus_anc_in_vocab_before": 56,
+     "out_vocab_before": 111,
+     "out_vocab_after_canon": 99,
+     "out_vocab_rescued_by_canon": 12,
+     "arms": {
+      "B": {
+       "recall_before": 0.7069,
+       "recall_after_canon": 0.7641,
+       "hits_before": 598,
+       "hits_after": 638,
+       "n_R_after": 835,
+       "misses_becoming_hits": 49
+      },
+      "M-act": {
+       "recall_before": 0.8983,
+       "recall_after_canon": 0.9054,
+       "hits_before": 760,
+       "hits_after": 756,
+       "n_R_after": 835,
+       "misses_becoming_hits": 6
+      },
+      "M-rxn": {
+       "recall_before": 0.8121,
+       "recall_after_canon": 0.8443,
+       "hits_before": 687,
+       "hits_after": 705,
+       "n_R_after": 835,
+       "misses_becoming_hits": 28
+      },
+      "S": {
+       "recall_before": 0.5579,
+       "recall_after_canon": 0.582,
+       "hits_before": 472,
+       "hits_after": 486,
+       "n_R_after": 835,
+       "misses_becoming_hits": 22
+      },
+      "S-allSEED": {
+       "recall_before": 0.5768,
+       "recall_after_canon": 0.5832,
+       "hits_before": 488,
+       "hits_after": 487,
+       "n_R_after": 835,
+       "misses_becoming_hits": 7
+      }
+     }
+    },
+    "clean": {
+     "vocab": 5203,
+     "vocab_obsolete_keys": 31,
+     "vocab_targets": 892,
+     "vocab_after_canon": 5199,
+     "vocab_not_in_anc": 31,
+     "vocab_partial_cols": 39,
+     "n_cols_extract_pred_remapped": 31,
+     "active_minus_anc": {
+      "n": 105,
+      "obsolete_key": 104,
+      "obsolete_key_target_in_anc": 104,
+      "obsolete_key_target_in_seed": 57,
+      "is_current_target_of_transfer": 0,
+      "not_in_table": 1,
+      "partial": 0,
+      "examples_obsolete": [
+       "1.1.1.158->1.3.1.98",
+       "1.1.5.6->1.17.5.3",
+       "1.1.99.11->1.1.5.14",
+       "1.1.99.5->1.1.5.3",
+       "1.14.13.3->1.14.14.9",
+       "1.3.3.1->1.3.98.1",
+       "1.3.99.22->1.3.98.3",
+       "1.5.1.29->1.5.1.41"
+      ]
+     },
+     "active_minus_anc_after_canon_in_R": 95,
+     "active_minus_anc_in_R_before": 73,
+     "active_minus_anc_after_canon_in_vocab": 89,
+     "active_minus_anc_in_vocab_before": 0,
+     "out_vocab_before": 127,
+     "out_vocab_after_canon": 55,
+     "out_vocab_rescued_by_canon": 72,
+     "arms": {
+      "B": {
+       "recall_before": 0.6974,
+       "recall_after_canon": 0.7461,
+       "hits_before": 590,
+       "hits_after": 623,
+       "n_R_after": 835,
+       "misses_becoming_hits": 41
+      },
+      "M-act": {
+       "recall_before": 0.87,
+       "recall_after_canon": 0.8743,
+       "hits_before": 736,
+       "hits_after": 730,
+       "n_R_after": 835,
+       "misses_becoming_hits": 2
+      },
+      "M-rxn": {
+       "recall_before": 0.7837,
+       "recall_after_canon": 0.812,
+       "hits_before": 663,
+       "hits_after": 678,
+       "n_R_after": 835,
+       "misses_becoming_hits": 23
+      },
+      "S": {
+       "recall_before": 0.5579,
+       "recall_after_canon": 0.582,
+       "hits_before": 472,
+       "hits_after": 486,
+       "n_R_after": 835,
+       "misses_becoming_hits": 22
+      },
+      "S-allSEED": {
+       "recall_before": 0.5768,
+       "recall_after_canon": 0.5832,
+       "hits_before": 488,
+       "hits_after": 487,
+       "n_R_after": 835,
+       "misses_becoming_hits": 7
+      }
+     }
+    },
+    "enzbert": {
+     "vocab": 4714,
+     "vocab_obsolete_keys": 28,
+     "vocab_targets": 827,
+     "vocab_after_canon": 4712,
+     "vocab_not_in_anc": 29,
+     "vocab_partial_cols": 29,
+     "n_cols_extract_pred_remapped": 28,
+     "active_minus_anc": {
+      "n": 108,
+      "obsolete_key": 108,
+      "obsolete_key_target_in_anc": 108,
+      "obsolete_key_target_in_seed": 61,
+      "is_current_target_of_transfer": 0,
+      "not_in_table": 0,
+      "partial": 0,
+      "examples_obsolete": [
+       "1.1.1.158->1.3.1.98",
+       "1.1.5.6->1.17.5.3",
+       "1.1.99.11->1.1.5.14",
+       "1.1.99.5->1.1.5.3",
+       "1.14.13.165->1.14.14.47",
+       "1.14.13.3->1.14.14.9",
+       "1.14.13.72->1.14.18.9",
+       "1.14.99.36->1.13.11.63"
+      ]
+     },
+     "active_minus_anc_after_canon_in_R": 95,
+     "active_minus_anc_in_R_before": 72,
+     "active_minus_anc_after_canon_in_vocab": 96,
+     "active_minus_anc_in_vocab_before": 1,
+     "out_vocab_before": 161,
+     "out_vocab_after_canon": 88,
+     "out_vocab_rescued_by_canon": 73,
+     "arms": {
+      "B": {
+       "recall_before": 0.6194,
+       "recall_after_canon": 0.6647,
+       "hits_before": 524,
+       "hits_after": 555,
+       "n_R_after": 835,
+       "misses_becoming_hits": 38
+      },
+      "M-act": {
+       "recall_before": 0.8061,
+       "recall_after_canon": 0.812,
+       "hits_before": 682,
+       "hits_after": 678,
+       "n_R_after": 835,
+       "misses_becoming_hits": 4
+      },
+      "M-rxn": {
+       "recall_before": 0.721,
+       "recall_after_canon": 0.7473,
+       "hits_before": 610,
+       "hits_after": 624,
+       "n_R_after": 835,
+       "misses_becoming_hits": 22
+      },
+      "S": {
+       "recall_before": 0.5579,
+       "recall_after_canon": 0.582,
+       "hits_before": 472,
+       "hits_after": 486,
+       "n_R_after": 835,
+       "misses_becoming_hits": 22
+      },
+      "S-allSEED": {
+       "recall_before": 0.5768,
+       "recall_after_canon": 0.5832,
+       "hits_before": 488,
+       "hits_after": 487,
+       "n_R_after": 835,
+       "misses_becoming_hits": 7
+      }
+     }
+    }
+   }
+  },
+  "K.pneumoniae": {
+   "gem": "iYL1228",
+   "gcf": "GCF_058435815.1",
+   "gem_ec": 870,
+   "gem_ec_obsolete_keys": 87,
+   "gem_ec_targets": 119,
+   "gem_ec_after_canon": 856,
+   "gem_obsolete_examples": [
+    "1.1.99.5->1.1.5.3",
+    "1.11.1.15->1.11.1.29",
+    "1.16.8.1->2.5.1.17",
+    "1.17.1.2->1.17.7.4",
+    "1.3.1.26->1.17.1.8",
+    "1.3.99.22->1.3.98.3",
+    "1.3.99.3->1.3.8.9",
+    "1.4.3.6->1.4.3.22",
+    "1.4.99.1->1.4.99.6",
+    "1.4.99.4->1.4.9.2"
+   ],
+   "gem_ec_not_in_anc": 88,
+   "preds": {
+    "dpz": {
+     "vocab": 2789,
+     "vocab_obsolete_keys": 124,
+     "vocab_targets": 513,
+     "vocab_after_canon": 2702,
+     "vocab_not_in_anc": 124,
+     "vocab_partial_cols": 13,
+     "n_cols_extract_pred_remapped": 124,
+     "active_minus_anc": {
+      "n": 124,
+      "obsolete_key": 124,
+      "obsolete_key_target_in_anc": 124,
+      "obsolete_key_target_in_seed": 76,
+      "is_current_target_of_transfer": 0,
+      "not_in_table": 0,
+      "partial": 0,
+      "examples_obsolete": [
+       "1.1.1.158->1.3.1.98",
+       "1.1.1.204->1.17.1.4",
+       "1.1.1.5->1.1.1.304",
+       "1.1.99.11->1.1.5.14",
+       "1.1.99.16->1.1.5.4",
+       "1.1.99.25->1.1.5.8",
+       "1.1.99.5->1.1.5.3",
+       "1.14.11.34->1.14.20.7"
+      ]
+     },
+     "active_minus_anc_after_canon_in_R": 100,
+     "active_minus_anc_in_R_before": 75,
+     "active_minus_anc_after_canon_in_vocab": 101,
+     "active_minus_anc_in_vocab_before": 55,
+     "out_vocab_before": 110,
+     "out_vocab_after_canon": 97,
+     "out_vocab_rescued_by_canon": 12,
+     "arms": {
+      "B": {
+       "recall_before": 0.708,
+       "recall_after_canon": 0.7664,
+       "hits_before": 616,
+       "hits_after": 656,
+       "n_R_after": 856,
+       "misses_becoming_hits": 50
+      },
+      "M-act": {
+       "recall_before": 0.9092,
+       "recall_after_canon": 0.9147,
+       "hits_before": 791,
+       "hits_after": 783,
+       "n_R_after": 856,
+       "misses_becoming_hits": 5
+      },
+      "M-rxn": {
+       "recall_before": 0.823,
+       "recall_after_canon": 0.8551,
+       "hits_before": 716,
+       "hits_after": 732,
+       "n_R_after": 856,
+       "misses_becoming_hits": 29
+      },
+      "S": {
+       "recall_before": 0.5494,
+       "recall_after_canon": 0.5724,
+       "hits_before": 478,
+       "hits_after": 490,
+       "n_R_after": 856,
+       "misses_becoming_hits": 20
+      },
+      "S-allSEED": {
+       "recall_before": 0.5678,
+       "recall_after_canon": 0.5748,
+       "hits_before": 494,
+       "hits_after": 492,
+       "n_R_after": 856,
+       "misses_becoming_hits": 7
+      }
+     }
+    },
+    "clean": {
+     "vocab": 5203,
+     "vocab_obsolete_keys": 31,
+     "vocab_targets": 892,
+     "vocab_after_canon": 5199,
+     "vocab_not_in_anc": 31,
+     "vocab_partial_cols": 39,
+     "n_cols_extract_pred_remapped": 31,
+     "active_minus_anc": {
+      "n": 114,
+      "obsolete_key": 113,
+      "obsolete_key_target_in_anc": 113,
+      "obsolete_key_target_in_seed": 66,
+      "is_current_target_of_transfer": 0,
+      "not_in_table": 1,
+      "partial": 0,
+      "examples_obsolete": [
+       "1.1.1.158->1.3.1.98",
+       "1.1.1.5->1.1.1.304",
+       "1.1.5.6->1.17.5.3",
+       "1.1.99.11->1.1.5.14",
+       "1.1.99.16->1.1.5.4",
+       "1.1.99.25->1.1.5.8",
+       "1.1.99.5->1.1.5.3",
+       "1.14.13.3->1.14.14.9"
+      ]
+     },
+     "active_minus_anc_after_canon_in_R": 96,
+     "active_minus_anc_in_R_before": 74,
+     "active_minus_anc_after_canon_in_vocab": 98,
+     "active_minus_anc_in_vocab_before": 0,
+     "out_vocab_before": 129,
+     "out_vocab_after_canon": 57,
+     "out_vocab_rescued_by_canon": 72,
+     "arms": {
+      "B": {
+       "recall_before": 0.7069,
+       "recall_after_canon": 0.7617,
+       "hits_before": 615,
+       "hits_after": 652,
+       "n_R_after": 856,
+       "misses_becoming_hits": 47
+      },
+      "M-act": {
+       "recall_before": 0.8759,
+       "recall_after_canon": 0.8808,
+       "hits_before": 762,
+       "hits_after": 754,
+       "n_R_after": 856,
+       "misses_becoming_hits": 3
+      },
+      "M-rxn": {
+       "recall_before": 0.7908,
+       "recall_after_canon": 0.8213,
+       "hits_before": 688,
+       "hits_after": 703,
+       "n_R_after": 856,
+       "misses_becoming_hits": 26
+      },
+      "S": {
+       "recall_before": 0.5494,
+       "recall_after_canon": 0.5724,
+       "hits_before": 478,
+       "hits_after": 490,
+       "n_R_after": 856,
+       "misses_becoming_hits": 20
+      },
+      "S-allSEED": {
+       "recall_before": 0.5678,
+       "recall_after_canon": 0.5748,
+       "hits_before": 494,
+       "hits_after": 492,
+       "n_R_after": 856,
+       "misses_becoming_hits": 7
+      }
+     }
+    },
+    "enzbert": {
+     "vocab": 4714,
+     "vocab_obsolete_keys": 28,
+     "vocab_targets": 827,
+     "vocab_after_canon": 4712,
+     "vocab_not_in_anc": 29,
+     "vocab_partial_cols": 29,
+     "n_cols_extract_pred_remapped": 28,
+     "active_minus_anc": {
+      "n": 113,
+      "obsolete_key": 113,
+      "obsolete_key_target_in_anc": 113,
+      "obsolete_key_target_in_seed": 66,
+      "is_current_target_of_transfer": 0,
+      "not_in_table": 0,
+      "partial": 0,
+      "examples_obsolete": [
+       "1.1.1.158->1.3.1.98",
+       "1.1.1.5->1.1.1.304",
+       "1.1.5.6->1.17.5.3",
+       "1.1.99.11->1.1.5.14",
+       "1.1.99.16->1.1.5.4",
+       "1.1.99.25->1.1.5.8",
+       "1.1.99.5->1.1.5.3",
+       "1.14.13.165->1.14.14.47"
+      ]
+     },
+     "active_minus_anc_after_canon_in_R": 95,
+     "active_minus_anc_in_R_before": 73,
+     "active_minus_anc_after_canon_in_vocab": 101,
+     "active_minus_anc_in_vocab_before": 1,
+     "out_vocab_before": 160,
+     "out_vocab_after_canon": 87,
+     "out_vocab_rescued_by_canon": 73,
+     "arms": {
+      "B": {
+       "recall_before": 0.631,
+       "recall_after_canon": 0.6811,
+       "hits_before": 549,
+       "hits_after": 583,
+       "n_R_after": 856,
+       "misses_becoming_hits": 42
+      },
+      "M-act": {
+       "recall_before": 0.8161,
+       "recall_after_canon": 0.8213,
+       "hits_before": 710,
+       "hits_after": 703,
+       "n_R_after": 856,
+       "misses_becoming_hits": 4
+      },
+      "M-rxn": {
+       "recall_before": 0.7322,
+       "recall_after_canon": 0.7593,
+       "hits_before": 637,
+       "hits_after": 650,
+       "n_R_after": 856,
+       "misses_becoming_hits": 24
+      },
+      "S": {
+       "recall_before": 0.5494,
+       "recall_after_canon": 0.5724,
+       "hits_before": 478,
+       "hits_after": 490,
+       "n_R_after": 856,
+       "misses_becoming_hits": 20
+      },
+      "S-allSEED": {
+       "recall_before": 0.5678,
+       "recall_after_canon": 0.5748,
+       "hits_before": 494,
+       "hits_after": 492,
+       "n_R_after": 856,
+       "misses_becoming_hits": 7
+      }
+     }
+    }
+   }
+  },
+  "P.putida": {
+   "gem": "iJN1463",
+   "gcf": "GCF_045571375.1",
+   "gem_ec": 816,
+   "gem_ec_obsolete_keys": 90,
+   "gem_ec_targets": 113,
+   "gem_ec_after_canon": 800,
+   "gem_obsolete_examples": [
+    "1.1.99.25->1.1.5.8",
+    "1.11.1.15->1.11.1.29",
+    "1.14.99.3->1.14.14.18",
+    "1.17.1.2->1.17.7.4",
+    "1.2.1.2->1.17.1.9",
+    "1.3.1.26->1.17.1.8",
+    "1.3.99.10->1.3.8.4",
+    "1.3.99.2->1.3.8.1",
+    "1.3.99.22->1.3.98.3",
+    "1.3.99.3->1.3.8.9"
+   ],
+   "gem_ec_not_in_anc": 91,
+   "preds": {
+    "dpz": {
+     "vocab": 2789,
+     "vocab_obsolete_keys": 124,
+     "vocab_targets": 513,
+     "vocab_after_canon": 2702,
+     "vocab_not_in_anc": 124,
+     "vocab_partial_cols": 13,
+     "n_cols_extract_pred_remapped": 124,
+     "active_minus_anc": {
+      "n": 123,
+      "obsolete_key": 123,
+      "obsolete_key_target_in_anc": 123,
+      "obsolete_key_target_in_seed": 75,
+      "is_current_target_of_transfer": 0,
+      "not_in_table": 0,
+      "partial": 0,
+      "examples_obsolete": [
+       "1.1.1.158->1.3.1.98",
+       "1.1.1.204->1.17.1.4",
+       "1.1.99.11->1.1.5.14",
+       "1.1.99.16->1.1.5.4",
+       "1.1.99.25->1.1.5.8",
+       "1.1.99.5->1.1.5.3",
+       "1.14.13.3->1.14.14.9",
+       "1.14.99.36->1.13.11.63"
+      ]
+     },
+     "active_minus_anc_after_canon_in_R": 101,
+     "active_minus_anc_in_R_before": 79,
+     "active_minus_anc_after_canon_in_vocab": 100,
+     "active_minus_anc_in_vocab_before": 57,
+     "out_vocab_before": 119,
+     "out_vocab_after_canon": 107,
+     "out_vocab_rescued_by_canon": 11,
+     "arms": {
+      "B": {
+       "recall_before": 0.6373,
+       "recall_after_canon": 0.6975,
+       "hits_before": 520,
+       "hits_after": 558,
+       "n_R_after": 800,
+       "misses_becoming_hits": 51
+      },
+      "M-act": {
+       "recall_before": 0.8689,
+       "recall_after_canon": 0.8738,
+       "hits_before": 709,
+       "hits_after": 699,
+       "n_R_after": 800,
+       "misses_becoming_hits": 6
+      },
+      "M-rxn": {
+       "recall_before": 0.7721,
+       "recall_after_canon": 0.8113,
+       "hits_before": 630,
+       "hits_after": 649,
+       "n_R_after": 800,
+       "misses_becoming_hits": 35
+      },
+      "S": {
+       "recall_before": 0.5098,
+       "recall_after_canon": 0.5375,
+       "hits_before": 416,
+       "hits_after": 430,
+       "n_R_after": 800,
+       "misses_becoming_hits": 26
+      },
+      "S-allSEED": {
+       "recall_before": 0.5331,
+       "recall_after_canon": 0.5387,
+       "hits_before": 435,
+       "hits_after": 431,
+       "n_R_after": 800,
+       "misses_becoming_hits": 8
+      }
+     }
+    },
+    "clean": {
+     "vocab": 5203,
+     "vocab_obsolete_keys": 31,
+     "vocab_targets": 892,
+     "vocab_after_canon": 5199,
+     "vocab_not_in_anc": 31,
+     "vocab_partial_cols": 39,
+     "n_cols_extract_pred_remapped": 31,
+     "active_minus_anc": {
+      "n": 107,
+      "obsolete_key": 107,
+      "obsolete_key_target_in_anc": 107,
+      "obsolete_key_target_in_seed": 60,
+      "is_current_target_of_transfer": 0,
+      "not_in_table": 0,
+      "partial": 0,
+      "examples_obsolete": [
+       "1.1.1.158->1.3.1.98",
+       "1.1.5.6->1.17.5.3",
+       "1.1.99.11->1.1.5.14",
+       "1.1.99.16->1.1.5.4",
+       "1.1.99.25->1.1.5.8",
+       "1.17.1.7->1.2.1.91",
+       "1.2.99.4->1.2.98.1",
+       "1.3.3.1->1.3.98.1"
+      ]
+     },
+     "active_minus_anc_after_canon_in_R": 96,
+     "active_minus_anc_in_R_before": 75,
+     "active_minus_anc_after_canon_in_vocab": 92,
+     "active_minus_anc_in_vocab_before": 0,
+     "out_vocab_before": 134,
+     "out_vocab_after_canon": 59,
+     "out_vocab_rescued_by_canon": 75,
+     "arms": {
+      "B": {
+       "recall_before": 0.6054,
+       "recall_after_canon": 0.6587,
+       "hits_before": 494,
+       "hits_after": 527,
+       "n_R_after": 800,
+       "misses_becoming_hits": 45
+      },
+      "M-act": {
+       "recall_before": 0.7941,
+       "recall_after_canon": 0.8013,
+       "hits_before": 648,
+       "hits_after": 641,
+       "n_R_after": 800,
+       "misses_becoming_hits": 6
+      },
+      "M-rxn": {
+       "recall_before": 0.7022,
+       "recall_after_canon": 0.7288,
+       "hits_before": 573,
+       "hits_after": 583,
+       "n_R_after": 800,
+       "misses_becoming_hits": 22
+      },
+      "S": {
+       "recall_before": 0.5098,
+       "recall_after_canon": 0.5375,
+       "hits_before": 416,
+       "hits_after": 430,
+       "n_R_after": 800,
+       "misses_becoming_hits": 26
+      },
+      "S-allSEED": {
+       "recall_before": 0.5331,
+       "recall_after_canon": 0.5387,
+       "hits_before": 435,
+       "hits_after": 431,
+       "n_R_after": 800,
+       "misses_becoming_hits": 8
+      }
+     }
+    },
+    "enzbert": {
+     "vocab": 4714,
+     "vocab_obsolete_keys": 28,
+     "vocab_targets": 827,
+     "vocab_after_canon": 4712,
+     "vocab_not_in_anc": 29,
+     "vocab_partial_cols": 29,
+     "n_cols_extract_pred_remapped": 28,
+     "active_minus_anc": {
+      "n": 106,
+      "obsolete_key": 106,
+      "obsolete_key_target_in_anc": 106,
+      "obsolete_key_target_in_seed": 59,
+      "is_current_target_of_transfer": 0,
+      "not_in_table": 0,
+      "partial": 0,
+      "examples_obsolete": [
+       "1.1.1.158->1.3.1.98",
+       "1.1.1.204->1.17.1.4",
+       "1.1.5.6->1.17.5.3",
+       "1.1.99.11->1.1.5.14",
+       "1.1.99.16->1.1.5.4",
+       "1.1.99.25->1.1.5.8",
+       "1.1.99.5->1.1.5.3",
+       "1.14.13.165->1.14.14.47"
+      ]
+     },
+     "active_minus_anc_after_canon_in_R": 93,
+     "active_minus_anc_in_R_before": 73,
+     "active_minus_anc_after_canon_in_vocab": 94,
+     "active_minus_anc_in_vocab_before": 1,
+     "out_vocab_before": 167,
+     "out_vocab_after_canon": 89,
+     "out_vocab_rescued_by_canon": 78,
+     "arms": {
+      "B": {
+       "recall_before": 0.5735,
+       "recall_after_canon": 0.625,
+       "hits_before": 468,
+       "hits_after": 500,
+       "n_R_after": 800,
+       "misses_becoming_hits": 42
+      },
+      "M-act": {
+       "recall_before": 0.7819,
+       "recall_after_canon": 0.7913,
+       "hits_before": 638,
+       "hits_after": 633,
+       "n_R_after": 800,
+       "misses_becoming_hits": 7
+      },
+      "M-rxn": {
+       "recall_before": 0.6924,
+       "recall_after_canon": 0.72,
+       "hits_before": 565,
+       "hits_after": 576,
+       "n_R_after": 800,
+       "misses_becoming_hits": 23
+      },
+      "S": {
+       "recall_before": 0.5098,
+       "recall_after_canon": 0.5375,
+       "hits_before": 416,
+       "hits_after": 430,
+       "n_R_after": 800,
+       "misses_becoming_hits": 26
+      },
+      "S-allSEED": {
+       "recall_before": 0.5331,
+       "recall_after_canon": 0.5387,
+       "hits_before": 435,
+       "hits_after": 431,
+       "n_R_after": 800,
+       "misses_becoming_hits": 8
+      }
+     }
+    }
+   }
+  },
+  "S.aureus": {
+   "gem": "iYS854",
+   "gcf": "GCF_045348045.1",
+   "gem_ec": 530,
+   "gem_ec_obsolete_keys": 75,
+   "gem_ec_targets": 71,
+   "gem_ec_after_canon": 523,
+   "gem_obsolete_examples": [
+    "1.11.1.15->1.11.1.29",
+    "1.2.1.2->1.17.1.9",
+    "1.3.1.26->1.17.1.8",
+    "1.3.99.11->1.3.5.2",
+    "1.3.99.2->1.3.8.1",
+    "1.4.3.6->1.4.3.22",
+    "1.5.1.12->1.2.1.88",
+    "1.5.99.8->1.5.5.2",
+    "1.6.4.5->1.8.1.9",
+    "2.4.2.11->6.3.4.21"
+   ],
+   "gem_ec_not_in_anc": 76,
+   "preds": {
+    "dpz": {
+     "vocab": 2789,
+     "vocab_obsolete_keys": 124,
+     "vocab_targets": 513,
+     "vocab_after_canon": 2702,
+     "vocab_not_in_anc": 124,
+     "vocab_partial_cols": 13,
+     "n_cols_extract_pred_remapped": 124,
+     "active_minus_anc": {
+      "n": 108,
+      "obsolete_key": 108,
+      "obsolete_key_target_in_anc": 108,
+      "obsolete_key_target_in_seed": 61,
+      "is_current_target_of_transfer": 0,
+      "not_in_table": 0,
+      "partial": 0,
+      "examples_obsolete": [
+       "1.1.1.158->1.3.1.98",
+       "1.1.1.5->1.1.1.304",
+       "1.1.99.11->1.1.5.14",
+       "1.1.99.16->1.1.5.4",
+       "1.1.99.5->1.1.5.3",
+       "1.14.99.36->1.13.11.63",
+       "1.2.1.2->1.17.1.9",
+       "1.3.3.1->1.3.98.1"
+      ]
+     },
+     "active_minus_anc_after_canon_in_R": 82,
+     "active_minus_anc_in_R_before": 69,
+     "active_minus_anc_after_canon_in_vocab": 85,
+     "active_minus_anc_in_vocab_before": 52,
+     "out_vocab_before": 78,
+     "out_vocab_after_canon": 67,
+     "out_vocab_rescued_by_canon": 11,
+     "arms": {
+      "B": {
+       "recall_before": 0.5377,
+       "recall_after_canon": 0.5985,
+       "hits_before": 285,
+       "hits_after": 313,
+       "n_R_after": 523,
+       "misses_becoming_hits": 35
+      },
+      "M-act": {
+       "recall_before": 0.8358,
+       "recall_after_canon": 0.8413,
+       "hits_before": 443,
+       "hits_after": 440,
+       "n_R_after": 523,
+       "misses_becoming_hits": 4
+      },
+      "M-rxn": {
+       "recall_before": 0.7057,
+       "recall_after_canon": 0.7438,
+       "hits_before": 374,
+       "hits_after": 389,
+       "n_R_after": 523,
+       "misses_becoming_hits": 22
+      },
+      "S": {
+       "recall_before": 0.4981,
+       "recall_after_canon": 0.522,
+       "hits_before": 264,
+       "hits_after": 273,
+       "n_R_after": 523,
+       "misses_becoming_hits": 15
+      },
+      "S-allSEED": {
+       "recall_before": 0.5245,
+       "recall_after_canon": 0.5296,
+       "hits_before": 278,
+       "hits_after": 277,
+       "n_R_after": 523,
+       "misses_becoming_hits": 5
+      }
+     }
+    },
+    "clean": {
+     "vocab": 5203,
+     "vocab_obsolete_keys": 31,
+     "vocab_targets": 892,
+     "vocab_after_canon": 5199,
+     "vocab_not_in_anc": 31,
+     "vocab_partial_cols": 39,
+     "n_cols_extract_pred_remapped": 31,
+     "active_minus_anc": {
+      "n": 94,
+      "obsolete_key": 93,
+      "obsolete_key_target_in_anc": 93,
+      "obsolete_key_target_in_seed": 46,
+      "is_current_target_of_transfer": 0,
+      "not_in_table": 1,
+      "partial": 0,
+      "examples_obsolete": [
+       "1.1.1.158->1.3.1.98",
+       "1.1.1.5->1.1.1.304",
+       "1.1.99.11->1.1.5.14",
+       "1.1.99.16->1.1.5.4",
+       "1.1.99.5->1.1.5.3",
+       "1.14.13.165->1.14.14.47",
+       "1.2.1.2->1.17.1.9",
+       "1.3.3.1->1.3.98.1"
+      ]
+     },
+     "active_minus_anc_after_canon_in_R": 76,
+     "active_minus_anc_in_R_before": 68,
+     "active_minus_anc_after_canon_in_vocab": 78,
+     "active_minus_anc_in_vocab_before": 0,
+     "out_vocab_before": 99,
+     "out_vocab_after_canon": 37,
+     "out_vocab_rescued_by_canon": 62,
+     "arms": {
+      "B": {
+       "recall_before": 0.4396,
+       "recall_after_canon": 0.4837,
+       "hits_before": 233,
+       "hits_after": 253,
+       "n_R_after": 523,
+       "misses_becoming_hits": 27
+      },
+      "M-act": {
+       "recall_before": 0.7075,
+       "recall_after_canon": 0.7094,
+       "hits_before": 375,
+       "hits_after": 371,
+       "n_R_after": 523,
+       "misses_becoming_hits": 3
+      },
+      "M-rxn": {
+       "recall_before": 0.5792,
+       "recall_after_canon": 0.6119,
+       "hits_before": 307,
+       "hits_after": 320,
+       "n_R_after": 523,
+       "misses_becoming_hits": 20
+      },
+      "S": {
+       "recall_before": 0.4981,
+       "recall_after_canon": 0.522,
+       "hits_before": 264,
+       "hits_after": 273,
+       "n_R_after": 523,
+       "misses_becoming_hits": 15
+      },
+      "S-allSEED": {
+       "recall_before": 0.5245,
+       "recall_after_canon": 0.5296,
+       "hits_before": 278,
+       "hits_after": 277,
+       "n_R_after": 523,
+       "misses_becoming_hits": 5
+      }
+     }
+    },
+    "enzbert": {
+     "vocab": 4714,
+     "vocab_obsolete_keys": 28,
+     "vocab_targets": 827,
+     "vocab_after_canon": 4712,
+     "vocab_not_in_anc": 29,
+     "vocab_partial_cols": 29,
+     "n_cols_extract_pred_remapped": 28,
+     "active_minus_anc": {
+      "n": 99,
+      "obsolete_key": 99,
+      "obsolete_key_target_in_anc": 99,
+      "obsolete_key_target_in_seed": 52,
+      "is_current_target_of_transfer": 0,
+      "not_in_table": 0,
+      "partial": 0,
+      "examples_obsolete": [
+       "1.1.1.158->1.3.1.98",
+       "1.1.1.5->1.1.1.304",
+       "1.1.99.11->1.1.5.14",
+       "1.1.99.16->1.1.5.4",
+       "1.1.99.5->1.1.5.3",
+       "1.14.13.165->1.14.14.47",
+       "1.14.99.36->1.13.11.63",
+       "1.2.1.2->1.17.1.9"
+      ]
+     },
+     "active_minus_anc_after_canon_in_R": 79,
+     "active_minus_anc_in_R_before": 68,
+     "active_minus_anc_after_canon_in_vocab": 87,
+     "active_minus_anc_in_vocab_before": 1,
+     "out_vocab_before": 116,
+     "out_vocab_after_canon": 52,
+     "out_vocab_rescued_by_canon": 64,
+     "arms": {
+      "B": {
+       "recall_before": 0.4887,
+       "recall_after_canon": 0.5354,
+       "hits_before": 259,
+       "hits_after": 280,
+       "n_R_after": 523,
+       "misses_becoming_hits": 28
+      },
+      "M-act": {
+       "recall_before": 0.7698,
+       "recall_after_canon": 0.7744,
+       "hits_before": 408,
+       "hits_after": 405,
+       "n_R_after": 523,
+       "misses_becoming_hits": 4
+      },
+      "M-rxn": {
+       "recall_before": 0.6415,
+       "recall_after_canon": 0.6692,
+       "hits_before": 340,
+       "hits_after": 350,
+       "n_R_after": 523,
+       "misses_becoming_hits": 17
+      },
+      "S": {
+       "recall_before": 0.4981,
+       "recall_after_canon": 0.522,
+       "hits_before": 264,
+       "hits_after": 273,
+       "n_R_after": 523,
+       "misses_becoming_hits": 15
+      },
+      "S-allSEED": {
+       "recall_before": 0.5245,
+       "recall_after_canon": 0.5296,
+       "hits_before": 278,
+       "hits_after": 277,
+       "n_R_after": 523,
+       "misses_becoming_hits": 5
+      }
+     }
+    }
+   }
+  },
+  "B.subtilis": {
+   "gem": "iYO844",
+   "gcf": "GCF_058182495.1",
+   "gem_ec": 623,
+   "gem_ec_obsolete_keys": 80,
+   "gem_ec_targets": 86,
+   "gem_ec_after_canon": 615,
+   "gem_obsolete_examples": [
+    "1.17.1.2->1.17.7.4",
+    "1.2.1.2->1.17.1.9",
+    "1.3.1.26->1.17.1.8",
+    "1.3.99.11->1.3.5.2",
+    "1.3.99.2->1.3.8.1",
+    "1.3.99.3->1.3.8.9",
+    "1.5.1.12->1.2.1.88",
+    "1.5.99.8->1.5.5.2",
+    "1.6.4.5->1.8.1.9",
+    "1.9.3.1->7.1.1.9"
+   ],
+   "gem_ec_not_in_anc": 80,
+   "preds": {
+    "dpz": {
+     "vocab": 2789,
+     "vocab_obsolete_keys": 124,
+     "vocab_targets": 513,
+     "vocab_after_canon": 2702,
+     "vocab_not_in_anc": 124,
+     "vocab_partial_cols": 13,
+     "n_cols_extract_pred_remapped": 124,
+     "active_minus_anc": {
+      "n": 115,
+      "obsolete_key": 115,
+      "obsolete_key_target_in_anc": 115,
+      "obsolete_key_target_in_seed": 67,
+      "is_current_target_of_transfer": 0,
+      "not_in_table": 0,
+      "partial": 0,
+      "examples_obsolete": [
+       "1.1.1.158->1.3.1.98",
+       "1.1.1.204->1.17.1.4",
+       "1.1.1.5->1.1.1.304",
+       "1.1.99.11->1.1.5.14",
+       "1.1.99.5->1.1.5.3",
+       "1.14.13.3->1.14.14.9",
+       "1.14.99.36->1.13.11.63",
+       "1.2.1.2->1.17.1.9"
+      ]
+     },
+     "active_minus_anc_after_canon_in_R": 90,
+     "active_minus_anc_in_R_before": 70,
+     "active_minus_anc_after_canon_in_vocab": 92,
+     "active_minus_anc_in_vocab_before": 55,
+     "out_vocab_before": 90,
+     "out_vocab_after_canon": 78,
+     "out_vocab_rescued_by_canon": 12,
+     "arms": {
+      "B": {
+       "recall_before": 0.6116,
+       "recall_after_canon": 0.6715,
+       "hits_before": 381,
+       "hits_after": 413,
+       "n_R_after": 615,
+       "misses_becoming_hits": 39
+      },
+      "M-act": {
+       "recall_before": 0.8876,
+       "recall_after_canon": 0.8943,
+       "hits_before": 553,
+       "hits_after": 550,
+       "n_R_after": 615,
+       "misses_becoming_hits": 4
+      },
+      "M-rxn": {
+       "recall_before": 0.7753,
+       "recall_after_canon": 0.8114,
+       "hits_before": 483,
+       "hits_after": 499,
+       "n_R_after": 615,
+       "misses_becoming_hits": 23
+      },
+      "S": {
+       "recall_before": 0.5538,
+       "recall_after_canon": 0.5772,
+       "hits_before": 345,
+       "hits_after": 355,
+       "n_R_after": 615,
+       "misses_becoming_hits": 15
+      },
+      "S-allSEED": {
+       "recall_before": 0.5746,
+       "recall_after_canon": 0.5837,
+       "hits_before": 358,
+       "hits_after": 359,
+       "n_R_after": 615,
+       "misses_becoming_hits": 6
+      }
+     }
+    },
+    "clean": {
+     "vocab": 5203,
+     "vocab_obsolete_keys": 31,
+     "vocab_targets": 892,
+     "vocab_after_canon": 5199,
+     "vocab_not_in_anc": 31,
+     "vocab_partial_cols": 39,
+     "n_cols_extract_pred_remapped": 31,
+     "active_minus_anc": {
+      "n": 102,
+      "obsolete_key": 102,
+      "obsolete_key_target_in_anc": 102,
+      "obsolete_key_target_in_seed": 55,
+      "is_current_target_of_transfer": 0,
+      "not_in_table": 0,
+      "partial": 0,
+      "examples_obsolete": [
+       "1.1.1.158->1.3.1.98",
+       "1.1.1.204->1.17.1.4",
+       "1.1.99.11->1.1.5.14",
+       "1.14.13.165->1.14.14.47",
+       "1.14.13.3->1.14.14.9",
+       "1.2.1.2->1.17.1.9",
+       "1.2.99.4->1.2.98.1",
+       "1.3.3.1->1.3.98.1"
+      ]
+     },
+     "active_minus_anc_after_canon_in_R": 85,
+     "active_minus_anc_in_R_before": 67,
+     "active_minus_anc_after_canon_in_vocab": 87,
+     "active_minus_anc_in_vocab_before": 0,
+     "out_vocab_before": 107,
+     "out_vocab_after_canon": 41,
+     "out_vocab_rescued_by_canon": 66,
+     "arms": {
+      "B": {
+       "recall_before": 0.5891,
+       "recall_after_canon": 0.6407,
+       "hits_before": 367,
+       "hits_after": 394,
+       "n_R_after": 615,
+       "misses_becoming_hits": 33
+      },
+      "M-act": {
+       "recall_before": 0.825,
+       "recall_after_canon": 0.8325,
+       "hits_before": 514,
+       "hits_after": 512,
+       "n_R_after": 615,
+       "misses_becoming_hits": 4
+      },
+      "M-rxn": {
+       "recall_before": 0.7175,
+       "recall_after_canon": 0.748,
+       "hits_before": 447,
+       "hits_after": 460,
+       "n_R_after": 615,
+       "misses_becoming_hits": 19
+      },
+      "S": {
+       "recall_before": 0.5538,
+       "recall_after_canon": 0.5772,
+       "hits_before": 345,
+       "hits_after": 355,
+       "n_R_after": 615,
+       "misses_becoming_hits": 15
+      },
+      "S-allSEED": {
+       "recall_before": 0.5746,
+       "recall_after_canon": 0.5837,
+       "hits_before": 358,
+       "hits_after": 359,
+       "n_R_after": 615,
+       "misses_becoming_hits": 6
+      }
+     }
+    },
+    "enzbert": {
+     "vocab": 4714,
+     "vocab_obsolete_keys": 28,
+     "vocab_targets": 827,
+     "vocab_after_canon": 4712,
+     "vocab_not_in_anc": 29,
+     "vocab_partial_cols": 29,
+     "n_cols_extract_pred_remapped": 28,
+     "active_minus_anc": {
+      "n": 107,
+      "obsolete_key": 107,
+      "obsolete_key_target_in_anc": 107,
+      "obsolete_key_target_in_seed": 60,
+      "is_current_target_of_transfer": 0,
+      "not_in_table": 0,
+      "partial": 0,
+      "examples_obsolete": [
+       "1.1.1.155->1.1.1.87",
+       "1.1.1.158->1.3.1.98",
+       "1.1.1.204->1.17.1.4",
+       "1.1.99.11->1.1.5.14",
+       "1.1.99.5->1.1.5.3",
+       "1.14.13.165->1.14.14.47",
+       "1.14.13.3->1.14.14.9",
+       "1.14.99.36->1.13.11.63"
+      ]
+     },
+     "active_minus_anc_after_canon_in_R": 87,
+     "active_minus_anc_in_R_before": 68,
+     "active_minus_anc_after_canon_in_vocab": 95,
+     "active_minus_anc_in_vocab_before": 1,
+     "out_vocab_before": 126,
+     "out_vocab_after_canon": 59,
+     "out_vocab_rescued_by_canon": 67,
+     "arms": {
+      "B": {
+       "recall_before": 0.5666,
+       "recall_after_canon": 0.6098,
+       "hits_before": 353,
+       "hits_after": 375,
+       "n_R_after": 615,
+       "misses_becoming_hits": 29
+      },
+      "M-act": {
+       "recall_before": 0.8186,
+       "recall_after_canon": 0.826,
+       "hits_before": 510,
+       "hits_after": 508,
+       "n_R_after": 615,
+       "misses_becoming_hits": 5
+      },
+      "M-rxn": {
+       "recall_before": 0.7095,
+       "recall_after_canon": 0.7398,
+       "hits_before": 442,
+       "hits_after": 455,
+       "n_R_after": 615,
+       "misses_becoming_hits": 20
+      },
+      "S": {
+       "recall_before": 0.5538,
+       "recall_after_canon": 0.5772,
+       "hits_before": 345,
+       "hits_after": 355,
+       "n_R_after": 615,
+       "misses_becoming_hits": 15
+      },
+      "S-allSEED": {
+       "recall_before": 0.5746,
+       "recall_after_canon": 0.5837,
+       "hits_before": 358,
+       "hits_after": 359,
+       "n_R_after": 615,
+       "misses_becoming_hits": 6
+      }
+     }
+    }
+   }
+  }
+ }
+}

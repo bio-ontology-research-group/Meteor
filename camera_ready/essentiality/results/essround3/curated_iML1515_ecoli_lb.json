@@ -1,0 +1,20 @@
+{
+ "gem": "iML1515",
+ "n_rxn_model": 2712,
+ "n_genes": 1516,
+ "wt_growth": 0.877,
+ "medium": "model default (as shipped in BiGG)",
+ "arm": "iML1515",
+ "n_genes_model": 1516,
+ "n_genes_mapped": 1516,
+ "n_genes_with_ref": 1441,
+ "n_pred_essential": 196,
+ "TP": 91,
+ "FP": 90,
+ "FN": 24,
+ "TN": 1236,
+ "precision": 0.503,
+ "recall": 0.791,
+ "MCC": 0.592,
+ "accuracy": 0.921
+}

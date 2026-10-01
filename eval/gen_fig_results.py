@@ -1,8 +1,8 @@
 """Fig 2: multi-panel results figure for METEOR (PSB 2027 camera-ready).
 Reproducible: python eval/gen_fig_results.py  (run from the repository root)
 All data read-only from results/table1_v2/pergenome/*.json (panels a,d)
-and per-organism values transcribed from Supplementary Tables S19 and S18
-(panel b; no per-organism raw file exists for the baseline arm).
+panel b: results/toolcompare/weakreal.json (threshold+repair and METEOR arms)
+and results/weakreal_matched.json (size-matched top-K arm).
 Panel c: results/recovery_4arm/*.json (108 genomes, produced by
 eval/recovery_ablation.py). Panel d: results/table1_v2 and
 results/skeleton_ablation_summary.json.
@@ -131,31 +131,40 @@ def panel_a(ax):
     return verify
 
 # ============================================================== Panel B: sub-threshold recall/precision
-# Transcribed from Supplementary Table S19 (baseline, METEOR recall) and Table S18
-# (METEOR + top-K recall and precision, per organism). Baseline per-organism PRECISION is not available anywhere in
-# the deposited materials -- only the pooled mean (0.455) is reported in the supplement -- so the
-# baseline arm is drawn using per-organism recall (Supplementary Table S19) at the pooled mean precision,
-# and this substitution is flagged explicitly in the plot and in provenance.
+# Per-organism values read from the deposited results:
+#   threshold+repair and METEOR arms: results/toolcompare/weakreal.json
+#     (W_recovery.{baseline,meteor}, precision.{baseline,meteor}); these are the
+#     values behind main-text Table 1 (recall 0.480 / 0.604, precision 0.455 / 0.422).
+#   size-matched top-K arm: results/weakreal_matched.json (recall_W_topK, precision_topK).
+WEAKREAL_JSON = os.path.join(ROOT, "results/toolcompare/weakreal.json")
+WEAKREAL_MATCHED_JSON = os.path.join(ROOT, "results/weakreal_matched.json")
 ORGS_B = ["E. coli", "Salmonella", "K. pneumoniae", "P. putida", "S. aureus", "B. subtilis"]
 MARKERS_B = ["o", "s", "^", "D", "v", "P"]
-# recall_W: baseline (Supplementary Table S19), METEOR & topK recall+precision (Supplementary Table S18)
-B_baseline_recall = [0.495, 0.452, 0.478, 0.479, 0.431, 0.544]
-B_meteor_recall =   [0.656, 0.560, 0.633, 0.613, 0.525, 0.647]
-B_meteor_prec =     [0.474, 0.471, 0.462, 0.419, 0.339, 0.369]
-B_topk_recall =     [0.538, 0.429, 0.489, 0.555, 0.426, 0.461]
-B_topk_prec =       [0.432, 0.433, 0.425, 0.390, 0.305, 0.326]
-B_BASELINE_MEAN_PREC = 0.455  # pooled/mean only -- no per-organism value exists in deposited data
+_WR = {e["organism"]: e for e in json.load(open(WEAKREAL_JSON))}
+_WM = {r["organism"]: r for r in json.load(open(WEAKREAL_MATCHED_JSON))["rows"]}
+_KEYS_B = [o.replace(" ", "") for o in ORGS_B]  # JSON spells "E.coli", "K.pneumoniae", ...
+assert set(_KEYS_B) == set(_WR) == set(_WM), (sorted(_WR), sorted(_WM))
+B_baseline_recall = [_WR[k]["W_recovery"]["baseline"] for k in _KEYS_B]
+B_baseline_prec =   [_WR[k]["precision"]["baseline"] for k in _KEYS_B]
+B_meteor_recall =   [_WR[k]["W_recovery"]["meteor"] for k in _KEYS_B]
+B_meteor_prec =     [_WR[k]["precision"]["meteor"] for k in _KEYS_B]
+B_topk_recall =     [_WM[k]["recall_W_topK"] for k in _KEYS_B]
+B_topk_prec =       [_WM[k]["precision_topK"] for k in _KEYS_B]
+# stars must equal main-text Table 1 and the Section 3.2 top-K comparison
+for _vals, _want in [(B_meteor_recall, 0.604), (B_meteor_prec, 0.422), (B_baseline_recall, 0.480),
+                     (B_baseline_prec, 0.455), (B_topk_recall, 0.483)]:
+    assert round(float(np.mean(_vals)), 3) == _want, (_vals, _want)
 
 def panel_b(ax):
     for i, org in enumerate(ORGS_B):
-        pts = [(B_baseline_recall[i], B_BASELINE_MEAN_PREC, COL["thr"]),
+        pts = [(B_baseline_recall[i], B_baseline_prec[i], COL["thr"]),
                (B_topk_recall[i], B_topk_prec[i], COL["topk"]),
                (B_meteor_recall[i], B_meteor_prec[i], COL["meteor"])]
         xs = [p[0] for p in pts]; ys = [p[1] for p in pts]
         ax.plot(xs + [xs[0]], ys + [ys[0]], color=COL["pair"], lw=0.5, alpha=0.5, zorder=1)
         for x, y, c in pts:
             ax.scatter([x], [y], marker=MARKERS_B[i], s=18, color=c, edgecolors="white", linewidths=0.3, zorder=3)
-    for x_arr, y_arr, c, lab in [(B_baseline_recall, [B_BASELINE_MEAN_PREC]*6, COL["thr"], "threshold+repair"),
+    for x_arr, y_arr, c, lab in [(B_baseline_recall, B_baseline_prec, COL["thr"], "threshold+repair"),
                                    (B_topk_recall, B_topk_prec, COL["topk"], "size-matched top-K"),
                                    (B_meteor_recall, B_meteor_prec, COL["meteor"], "METEOR")]:
         mx, my = float(np.mean(x_arr)), float(np.mean(y_arr))
@@ -176,7 +185,7 @@ def panel_b(ax):
     extra_correct = 77; extra_total = 773
     marg_prec = extra_correct / extra_total
     org_handles = [Line2D([0], [0], marker=MARKERS_B[i], color="gray", linestyle="none", markersize=4, label=ORGS_B[i]) for i in range(6)]
-    method_handles = [Line2D([0], [0], marker="*", color="none", markerfacecolor=COL["thr"], markeredgecolor="black", markeredgewidth=0.4, markersize=7.5, label="threshold+repair* (mean)"),
+    method_handles = [Line2D([0], [0], marker="*", color="none", markerfacecolor=COL["thr"], markeredgecolor="black", markeredgewidth=0.4, markersize=7.5, label="threshold+repair (mean)"),
                        Line2D([0], [0], marker="*", color="none", markerfacecolor=COL["topk"], markeredgecolor="black", markeredgewidth=0.4, markersize=7.5, label="size-matched top-K (mean)"),
                        Line2D([0], [0], marker="*", color="none", markerfacecolor=COL["meteor"], markeredgecolor="black", markeredgewidth=0.4, markersize=7.5, label="METEOR (mean)")]
     # Structurally non-overlapping placement: organism legend outside on the right,
@@ -187,20 +196,18 @@ def panel_b(ax):
     ax.add_artist(leg1)
     leg2 = ax.legend(handles=method_handles, fontsize=6.2, frameon=False, loc="upper left", ncol=1,
                       handletextpad=0.4, handlelength=1.0, labelspacing=0.4, bbox_to_anchor=(1.0, 0.56))
-    ax._panel_b_note = ax.text(1.01, 0.08, "*threshold+repair precision:\npooled mean only, no\nper-organism value deposited",
-            transform=ax.transAxes, fontsize=5.8, va="top", ha="left", style="italic", color="dimgray")
     ax._legends_to_check = (leg1, leg2)
-    pooled_meteor = f"{368}/{612}"; pooled_repair = f"{293}/{612}"
-    return dict(pooled_meteor=pooled_meteor, pooled_repair=pooled_repair, marginal_precision=round(marg_prec, 3),
+    return dict(marginal_precision=round(marg_prec, 3),
+                meteor_recall=B_meteor_recall, meteor_precision=B_meteor_prec,
+                baseline_recall=B_baseline_recall, baseline_precision=B_baseline_prec,
+                topk_recall=B_topk_recall, topk_precision=B_topk_prec,
                 meteor_recall_mean=round(float(np.mean(B_meteor_recall)), 3),
                 meteor_precision_mean=round(float(np.mean(B_meteor_prec)), 3),
+                baseline_recall_mean=round(float(np.mean(B_baseline_recall)), 3),
+                baseline_precision_mean=round(float(np.mean(B_baseline_prec)), 3),
                 topk_recall_mean=round(float(np.mean(B_topk_recall)), 3),
                 topk_precision_mean=round(float(np.mean(B_topk_prec)), 3),
-                baseline_recall_mean=round(float(np.mean(B_baseline_recall)), 3),
-                note="main text abstract/Sec3.2 give METEOR recall as 0.604 (Supplementary Table S19, Wilson-CI table); "
-                     "this per-organism panel (Supplementary Table S18) uses 0.606 -- the two supplementary tables "
-                     "report slightly different mean recall (0.604 vs 0.606) for what the text describes as the same "
-                     "quantity; both values and the discrepancy are reported here rather than silently reconciled.")
+                source="weakreal.json (baseline, METEOR); weakreal_matched.json (top-K)")
 
 # ============================================================== Panel C: perturbation stability (decoy)
 # Source: results/recovery_4arm/*.json (108 genomes; produced by eval/recovery_ablation.py).
@@ -276,7 +283,8 @@ ARM_ORDER = [("baseline_dpz", "Threshold τ=0.5"), ("abl_skelonly", "Skeleton + 
 _SKEL_ABL_SUMMARY = json.load(open(os.path.join(ROOT, "results/skeleton_ablation_summary.json")))
 REPAIR_INFO = {
     "Skeleton + medium only": f"{_SKEL_ABL_SUMMARY['skelonly']['repaired']}/{_SKEL_ABL_SUMMARY['skelonly']['n']} repaired",
-    "METEOR (full)": f"{_SKEL_ABL_SUMMARY['full']['repaired']}/{_SKEL_ABL_SUMMARY['full']['n']} repaired",
+    # METEOR (full) deliberately has no repair count here: this re-solve batch (2/108)
+    # differs from the one behind Table S1 (3/108 for DeepProZyme-vanilla).
 }
 
 def panel_d(ax):
@@ -391,7 +399,7 @@ def panel_d(ax):
         ax.plot([x_end, x_end], [dim_y - tick_h, dim_y + tick_h], color=DIM_COLOR, lw=0.8, zorder=6)
     ax.plot([x_skel, x_full], [dim_y, dim_y], color=DIM_COLOR, lw=0.8, zorder=6)
     dim_ann = ax.text((x_skel + x_full) / 2, dim_y + tick_h + 0.15,
-                       f"+{n_diff} evidence-selected\n(skeleton-only vs. full)",
+                       f"+{n_diff} reactions\n(full vs. skeleton only)",
                        fontsize=6.2, ha="center", va="bottom", color=DIM_COLOR, zorder=7,
                        bbox=dict(boxstyle="round,pad=0.15", facecolor="white", edgecolor="none", alpha=0.9))
     ax._panel_d_annotations.append(dim_ann)
@@ -515,7 +523,7 @@ def ticklabel_boxable(ax):
 overlap_report = {}
 ax_b = axes_by_label["b"]
 leg1, leg2 = ax_b._legends_to_check
-ok_b, coll_b = check_no_overlap(fig, [("species_legend", leg1), ("method_legend", leg2), ("footnote", ax_b._panel_b_note)], "panel_b (combined fig)")
+ok_b, coll_b = check_no_overlap(fig, [("species_legend", leg1), ("method_legend", leg2)], "panel_b (combined fig)")
 overlap_report["panel_b_combined"] = dict(ok=ok_b, collisions=coll_b)
 
 ax_d = axes_by_label["d"]
@@ -595,7 +603,7 @@ overlap_report["panel_d_annotation_bounds_combined"] = dict(ok=ok_d_bounds, viol
 # only checks artists *within* one panel against each other or against that same
 # panel's own axes bounds).
 ax_a = axes_by_label["a"]
-cross_panel_boxable = list(panel_label_artists) + [("panel_a_note", ax_a._panel_a_note), ("panel_b_note", ax_b._panel_b_note),
+cross_panel_boxable = list(panel_label_artists) + [("panel_a_note", ax_a._panel_a_note),
                                                      ("panel_c_caption", ax_c._panel_c_caption)] + \
                       ax_d._panel_d_within_bounds
 ok_cross, coll_cross = check_no_overlap(fig, cross_panel_boxable, "cross-panel titles/captions vs panel labels (combined fig)")
@@ -618,7 +626,7 @@ for ax, fn, lab in zip(axes.flat, panel_fns, panel_labels):
     fig_i.tight_layout()
     if lab == "b":
         leg1_i, leg2_i = ax_i._legends_to_check
-        ok_bi, coll_bi = check_no_overlap(fig_i, [("species_legend", leg1_i), ("method_legend", leg2_i), ("footnote", ax_i._panel_b_note)], "panel_b (standalone fig2b.pdf)")
+        ok_bi, coll_bi = check_no_overlap(fig_i, [("species_legend", leg1_i), ("method_legend", leg2_i)], "panel_b (standalone fig2b.pdf)")
         overlap_report["panel_b_standalone"] = dict(ok=ok_bi, collisions=coll_bi)
     if lab == "d":
         d_boxable_i = [(f"annotation_{i}", a) for i, a in enumerate(ax_i._panel_d_annotations)]

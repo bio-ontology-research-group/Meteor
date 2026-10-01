@@ -1,0 +1,18 @@
+{
+ "GS_MM_glc__gess-ecol.csv": {
+  "meteor_mean_mcc": 0.302,
+  "thresh_mean_mcc": 0.3
+ },
+ "GS_MM_glc__PEC": {
+  "meteor_mean_mcc": 0.052,
+  "thresh_mean_mcc": 0.105
+ },
+ "LB_marinos__gess-ecol.csv": {
+  "meteor_mean_mcc": 0.248,
+  "thresh_mean_mcc": 0.266
+ },
+ "LB_marinos__PEC": {
+  "meteor_mean_mcc": 0.064,
+  "thresh_mean_mcc": 0.127
+ }
+}

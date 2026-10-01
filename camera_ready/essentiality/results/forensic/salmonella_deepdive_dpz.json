@@ -1,0 +1,271 @@
+{
+ "group_a": [
+  {
+   "protein": "NP_460202.1",
+   "locus": "SL1344_1170",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9996742010116577,
+   "score_bin": "[0.5,1]",
+   "product": "adenylosuccinate lyase"
+  },
+  {
+   "protein": "NP_459805.1",
+   "locus": "SL1344_0803",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.7189713716506958,
+   "score_bin": "[0.5,1]",
+   "product": "glutamine ABC transporter ATP-binding protein GlnQ"
+  },
+  {
+   "protein": "NP_463003.1",
+   "locus": "SL1344_4073",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9999929666519165,
+   "score_bin": "[0.5,1]",
+   "product": "argininosuccinate lyase"
+  },
+  {
+   "protein": "NP_461936.1",
+   "locus": "SL1344_2997",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.7710897922515869,
+   "score_bin": "[0.5,1]",
+   "product": "acetyl-CoA C-acetyltransferase"
+  },
+  {
+   "protein": "NP_460666.1",
+   "locus": "SL1344_1639",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9999690055847168,
+   "score_bin": "[0.5,1]",
+   "product": "orotidine-5'-phosphate decarboxylase"
+  },
+  {
+   "protein": "NP_463045.1",
+   "locus": "SL1344_4115",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9999940395355225,
+   "score_bin": "[0.5,1]",
+   "product": "bifunctional phosphoribosylaminoimidazolecarboxamide formyltransferase/IMP cyclohydrolase"
+  },
+  {
+   "protein": "NP_463044.1",
+   "locus": "SL1344_4114",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9999933838844299,
+   "score_bin": "[0.5,1]",
+   "product": "phosphoribosylamine--glycine ligase"
+  },
+  {
+   "protein": "NP_461422.1",
+   "locus": "SL1344_2450",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9996112585067749,
+   "score_bin": "[0.5,1]",
+   "product": "phosphoribosylaminoimidazolesuccinocarboxamide synthase"
+  },
+  {
+   "protein": "NP_461435.1",
+   "locus": "SL1344_2463",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9999722838401794,
+   "score_bin": "[0.5,1]",
+   "product": "phosphoribosylglycinamide formyltransferase"
+  },
+  {
+   "protein": "NP_462633.1",
+   "locus": "SL1344_3699",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9998775720596313,
+   "score_bin": "[0.5,1]",
+   "product": "orotate phosphoribosyltransferase"
+  },
+  {
+   "protein": "NP_461500.1",
+   "locus": "SL1344_2527",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9957454800605774,
+   "score_bin": "[0.5,1]",
+   "product": "phosphoribosylformylglycinamidine synthase"
+  },
+  {
+   "protein": "NP_461434.3",
+   "locus": "SL1344_2462",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9998232126235962,
+   "score_bin": "[0.5,1]",
+   "product": "phosphoribosylformylglycinamidine cyclo-ligase"
+  },
+  {
+   "protein": "NP_461304.1",
+   "locus": "SL1344_2331",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9992035031318665,
+   "score_bin": "[0.5,1]",
+   "product": "amidophosphoribosyltransferase"
+  },
+  {
+   "protein": "NP_462202.3",
+   "locus": "SL1344_3262",
+   "ref_truth": false,
+   "meteor_call": true,
+   "thresh_call": false,
+   "max_score": 0.9965749979019165,
+   "score_bin": "[0.5,1]",
+   "product": "argininosuccinate synthase"
+  },
+  {
+   "protein": "NP_459625.1",
+   "locus": "SL1344_0621",
+   "ref_truth": true,
+   "meteor_call": false,
+   "thresh_call": true,
+   "max_score": 0.9997336268424988,
+   "score_bin": "[0.5,1]",
+   "product": "lipoyl synthase"
+  }
+ ],
+ "score_bin_dist": {
+  "[0.5,1]": 15
+ },
+ "group_b": [
+  {
+   "protein": "NP_460978.1",
+   "locus": "SL1344_2009",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "NP_460975.1",
+   "locus": "SL1344_2006",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "NP_462986.1",
+   "locus": "SL1344_4055",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "NP_463053.3",
+   "locus": "SL1344_4123",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "NP_460974.1",
+   "locus": "SL1344_2005",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "NP_460970.1",
+   "locus": "SL1344_2001",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "NP_460973.1",
+   "locus": "SL1344_2004",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "NP_460972.1",
+   "locus": "SL1344_2003",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "NP_459627.3",
+   "locus": "SL1344_0623",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "NP_462380.1",
+   "locus": "SL1344_3444",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "NP_463432.1",
+   "locus": "SL1344_4503",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "NP_460969.1",
+   "locus": "SL1344_2000",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "NP_459772.1",
+   "locus": "SL1344_0771",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "NP_460971.1",
+   "locus": "SL1344_2002",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "NP_462981.1",
+   "locus": "SL1344_4049",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  },
+  {
+   "protein": "NP_460977.1",
+   "locus": "SL1344_2008",
+   "ref_truth": false,
+   "meteor_call": false,
+   "thresh_call": true
+  }
+ ]
+}

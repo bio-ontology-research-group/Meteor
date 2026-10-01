@@ -1,0 +1,317 @@
+{
+ "meteor/clean": {
+  "n_common_model": 1105,
+  "n_common_and_joyce119": 97,
+  "n_correct_direction": 9,
+  "n_flip_wrong_direction": 0,
+  "n_joyce_gene_not_flipped": 88,
+  "correct_genes": [
+   [
+    "b2021",
+    "hisC"
+   ],
+   [
+    "b2024",
+    "hisA"
+   ],
+   [
+    "b2020",
+    "hisD"
+   ],
+   [
+    "b4006",
+    "purH"
+   ],
+   [
+    "b2026",
+    "hisI"
+   ],
+   [
+    "b3941",
+    "metF"
+   ],
+   [
+    "b2022",
+    "hisB"
+   ],
+   [
+    "b0386",
+    "proC"
+   ],
+   [
+    "b3939",
+    "metB"
+   ]
+  ],
+  "wrong_direction_genes": []
+ },
+ "meteor/dpz": {
+  "n_common_model": 1728,
+  "n_common_and_joyce119": 105,
+  "n_correct_direction": 6,
+  "n_flip_wrong_direction": 5,
+  "n_joyce_gene_not_flipped": 94,
+  "correct_genes": [
+   [
+    "b3941",
+    "metF"
+   ],
+   [
+    "b2026",
+    "hisI"
+   ],
+   [
+    "b2022",
+    "hisB"
+   ],
+   [
+    "b3939",
+    "metB"
+   ],
+   [
+    "b2021",
+    "hisC"
+   ],
+   [
+    "b2024",
+    "hisA"
+   ]
+  ],
+  "wrong_direction_genes": [
+   [
+    "b2312",
+    "purF"
+   ],
+   [
+    "b4005",
+    "purD"
+   ],
+   [
+    "b2499",
+    "purM"
+   ],
+   [
+    "b2476",
+    "purC"
+   ],
+   [
+    "b2557",
+    "purL"
+   ]
+  ]
+ },
+ "meteor/enzbert": {
+  "n_common_model": 1414,
+  "n_common_and_joyce119": 95,
+  "n_correct_direction": 15,
+  "n_flip_wrong_direction": 2,
+  "n_joyce_gene_not_flipped": 78,
+  "correct_genes": [
+   [
+    "b2838",
+    "lysA"
+   ],
+   [
+    "b0386",
+    "proC"
+   ],
+   [
+    "b2020",
+    "hisD"
+   ],
+   [
+    "b2312",
+    "purF"
+   ],
+   [
+    "b4005",
+    "purD"
+   ],
+   [
+    "b3941",
+    "metF"
+   ],
+   [
+    "b2499",
+    "purM"
+   ],
+   [
+    "b2476",
+    "purC"
+   ],
+   [
+    "b1262",
+    "trpC"
+   ],
+   [
+    "b2599",
+    "pheA"
+   ],
+   [
+    "b3939",
+    "metB"
+   ],
+   [
+    "b2557",
+    "purL"
+   ],
+   [
+    "b2021",
+    "hisC"
+   ],
+   [
+    "b2024",
+    "hisA"
+   ],
+   [
+    "b3058",
+    "folB"
+   ]
+  ],
+  "wrong_direction_genes": [
+   [
+    "b3771",
+    "ilvD"
+   ],
+   [
+    "b3774",
+    "ilvC"
+   ]
+  ]
+ },
+ "thresh/clean": {
+  "n_common_model": 1111,
+  "n_common_and_joyce119": 97,
+  "n_correct_direction": 8,
+  "n_flip_wrong_direction": 1,
+  "n_joyce_gene_not_flipped": 88,
+  "correct_genes": [
+   [
+    "b2021",
+    "hisC"
+   ],
+   [
+    "b2024",
+    "hisA"
+   ],
+   [
+    "b2020",
+    "hisD"
+   ],
+   [
+    "b0242",
+    "proB"
+   ],
+   [
+    "b4006",
+    "purH"
+   ],
+   [
+    "b2026",
+    "hisI"
+   ],
+   [
+    "b0243",
+    "proA"
+   ],
+   [
+    "b2022",
+    "hisB"
+   ]
+  ],
+  "wrong_direction_genes": [
+   [
+    "b3957",
+    "argE"
+   ]
+  ]
+ },
+ "thresh/dpz": {
+  "n_common_model": 1732,
+  "n_common_and_joyce119": 105,
+  "n_correct_direction": 14,
+  "n_flip_wrong_direction": 0,
+  "n_joyce_gene_not_flipped": 91,
+  "correct_genes": [
+   [
+    "b1062",
+    "pyrC"
+   ],
+   [
+    "b4006",
+    "purH"
+   ],
+   [
+    "b0386",
+    "proC"
+   ],
+   [
+    "b3642",
+    "pyrE"
+   ],
+   [
+    "b2312",
+    "purF"
+   ],
+   [
+    "b4005",
+    "purD"
+   ],
+   [
+    "b2499",
+    "purM"
+   ],
+   [
+    "b2476",
+    "purC"
+   ],
+   [
+    "b2026",
+    "hisI"
+   ],
+   [
+    "b2022",
+    "hisB"
+   ],
+   [
+    "b2557",
+    "purL"
+   ],
+   [
+    "b2021",
+    "hisC"
+   ],
+   [
+    "b2024",
+    "hisA"
+   ],
+   [
+    "b1281",
+    "pyrF"
+   ]
+  ],
+  "wrong_direction_genes": []
+ },
+ "thresh/enzbert": {
+  "n_common_model": 1419,
+  "n_common_and_joyce119": 96,
+  "n_correct_direction": 3,
+  "n_flip_wrong_direction": 0,
+  "n_joyce_gene_not_flipped": 93,
+  "correct_genes": [
+   [
+    "b2551",
+    "glyA"
+   ],
+   [
+    "b0386",
+    "proC"
+   ],
+   [
+    "b2827",
+    "thyA"
+   ]
+  ],
+  "wrong_direction_genes": []
+ }
+}

@@ -146,12 +146,13 @@
 \node[lb, anchor=west] at (13.63,-0.22) {added by gap-fill};
 \node[off, minimum width=0.42cm, minimum height=0.22cm] at (13.35,-0.58) {};
 \node[lb, anchor=west] at (13.63,-0.58) {not selected};
-\node[lb, anchor=north west, text width=3.3cm, align=left] at (13.1,-1.1) {Scores schematic; cost signs and cut-offs follow Eq.~\ref{eq:evw} at $\mu=3$, $p=2$.};
-\node[note, text width=7.95cm, minimum height=0.86cm] at (0.00,-3.53) {\callout{1}\ {\bfseries Weak multi-step route vs.\ unsupported shortcut}\\ Gap-fill takes R4 (fewer flux-carrying steps). METEOR takes R2\,+\,R3: each step with $w\ge0.01$ costs ${\le}\,7.6$, the unsupported one ${\approx}\,16.1$.};
-\node[note, text width=7.95cm, minimum height=0.86cm] at (8.51,-3.53) {\callout{2}\ {\bfseries Evidence split across paralogues}\\ Each protein is below 0.5; noisy-OR lifts R6 above $w\approx0.61$, where cost turns negative, so it is kept although growth does not need it.};
-\node[note, text width=7.95cm, minimum height=0.86cm] at (0.00,-4.49) {\callout{3}\ {\bfseries No evidence anywhere}\\ Both add R7: growth overrides cost. In real networks the shared skeleton supplies such reactions.};
-\node[note, text width=7.95cm, minimum height=0.86cm] at (8.51,-4.49) {\callout{4}\ {\bfseries Weak call that growth does not need}\\ For $0.5<w<0.61$ the threshold keeps R8 (dead end X); its cost is positive, so METEOR adds it only if growth needs it.};
+% \node[lb, anchor=north west, text width=3.3cm, align=left] at (13.1,-1.1) {Scores schematic; cost signs and cut-offs follow Eq.~\ref{eq:evw} at $\mu=3$, $p=2$.};
+\node[note, text width=7.95cm, minimum height=0.5cm] at (0.00,-3.53) {\callout{1}\ {\bfseries Weak route vs.\ unsupported shortcut:} gap-fill adds R4; METEOR takes R2\,+\,R3 (costs $1.2$ and $1.5$) over R4 (${\approx}\,16.1$).};
+\node[note, text width=7.95cm, minimum height=0.5cm] at (8.51,-3.53) {\callout{2}\ {\bfseries Evidence split across paralogues:} noisy-OR lifts R6 to $w=0.64$ (cost ${<}\,0$), so METEOR keeps it although growth does not need it.};
+\node[note, text width=7.95cm, minimum height=0.5cm] at (0.00,-4.15) {\callout{3}\ {\bfseries No evidence:} both add R7; growth overrides cost.};
+\node[note, text width=7.95cm, minimum height=0.5cm] at (8.51,-4.15) {\callout{4}\ {\bfseries Weak call that growth does not need:} the threshold keeps R8 ($w=0.55$, dead end X); METEOR skips it because its cost is positive.};
 %% ---- panel b: pipeline ----
+\begin{scope}[yshift=0.62cm]
 \node[font=\normalsize\bfseries, anchor=west, inner sep=0pt] at (-0.05,-5.77) {b};
 \node[font=\fc, text=cDk, anchor=west, inner sep=0pt] at (0.3,-5.77) {METEOR pipeline};
 \node[stepbox, minimum width=5.2cm, minimum height=2.8cm] (s1) at (0.00,-6.07) {};
@@ -211,7 +212,7 @@
 \node[lb, text=cDk, anchor=west] at (2.85,-7.35) {R2};
 \fill[cBlue] (3.30,-7.43) rectangle ++(0.660,0.16);
 \node[lb, anchor=west] at (3.98,-7.35) {0.44};
-\node[lb, text=cDk, anchor=west] at (2.85,-7.71) {R3};
+\node[lb, text=cDk, anchor=west] at (2.85,-7.71) {R4};
 \node[lb, anchor=west] at (3.32,-7.71) {0.00};
 \node[lb, anchor=north west, text width=4.9cm, align=left] at (0.12,-8.09) {top-5 ECs per protein, then noisy-OR:\\[2.5pt]$w_j=1-\prod_{p,\,e\in M(j)}(1-E_{p,e})$};
 \begin{axis}[at={(6.45cm,-7.97cm)}, anchor=south west,
@@ -234,7 +235,7 @@
   \fill[cBlue] (axis cs:0.6114,0) circle (1.1pt);
   \node[font=\fa, text=cBlue, anchor=south west, inner sep=1pt] at (axis cs:0.6114,0) {0.61};
 \end{axis}
-\node[lb, anchor=north west, text width=5.05cm, align=left] at (5.86,-8.33) {$c_j=-\log\bigl[(w_j{+}\epsilon)/(1{-}w_j{+}\epsilon)\bigr]+\mu(1-w_j)^p$\\default $p=2$, $\mu=3$; no evidence: $c\approx16.1$};
+\node[lb, anchor=north west, text width=5.05cm, align=left] at (5.86,-8.33) {$c_j=-\log\bigl[(w_j{+}\epsilon)/(1{-}w_j{+}\epsilon)\bigr]+\mu(1-w_j)^p$};
 \node[lb, anchor=west] at (11.72,-6.59) {108-genome mean, DeepProZyme-vanilla};
 \node[lb, text=cDk, anchor=south west] at (11.72,-7.09) {candidate set $17{,}545$ of $47{,}880$ SEED};
 \fill[cSegA] (11.740,-7.43) rectangle ++(3.485,0.32);
@@ -246,8 +247,6 @@
 \node[lb, anchor=west] at (11.90,-7.87) {skeleton with evidence $2{,}838$};
 \fill[cBlue] (11.74,-8.19) rectangle ++(0.14,0.14);
 \node[lb, anchor=west] at (11.90,-8.12) {evidence outside skeleton $1{,}970$};
-\fill[cNavy] (11.74,-8.70) rectangle ++(0.854,0.32);
-\node[lb, text=cDk, anchor=west] at (12.62,-8.54) {selected by METEOR $3{,}121$};
 \draw[flow] (5.2,-7.17) -- node[lb, above] {$w_j$} (5.78,-7.17);
 \draw[flow] (10.98,-7.17) -- node[lb, above] {$c_j$} (11.56,-7.17);
 \node[stepbox, minimum width=5.2cm, minimum height=1.5cm] (s4) at (11.56,-9.27) {};
@@ -258,18 +257,19 @@
 \coordinate (chkE) at (11.15,-10.02); \coordinate (chkW) at (7.55,-10.02); \coordinate (chkS) at (9.35,-10.77);
 \node[font=\fa, text=cTxt, align=center, inner sep=0pt] at (9.35,-10.02) {{\bfseries Post-solve check}\\FBA on induced\\submodel: grows?};
 \draw[flow] (11.56,-10.02) -- (chkE);
-\node[ystar] (ys) at (5.55,-10.02) {{\fb\bfseries Selected set $y^\star$}\\[1pt]growth-feasible\\reaction repertoire;\\primary output};
+\node[ystar] (ys) at (5.55,-10.02) {{\fb\bfseries Selected set $y^\star$}\\[1pt]growth-feasible;\\primary output};
 \draw[flow] (chkW) -- node[lb, above] {yes} (ys.east);
 \node[stepbox, minimum width=4.1cm, minimum height=1.5cm] (s5) at (0,-9.27) {};
 \node[hd] at (0.15,-9.49) {5\enspace Per-EC feedback (Eq.~\ref{eq:update})};
-\node[lb, text=cDk, anchor=north west, align=left, text width=4.0cm] at (0.1,-9.67) {$E^{\mathrm{new}}_{p,e}=E_{p,e}\pm\alpha E_{p,e}(1-E_{p,e})$\\[1pt]$+$ if EC $e$ has a selected reaction, $-$ otherwise; $\alpha=0.4$};
+\node[lb, text=cDk, anchor=north west, align=left, text width=4.0cm] at (0.1,-9.67) {$E^{\mathrm{new}}_{p,e}=E_{p,e}\pm\alpha E_{p,e}(1-E_{p,e})$\\[1pt]$+$ if EC $e$ has a selected reaction, $-$ otherwise};
 \draw[flow] (ys.west) -- (4.1,-10.02);
 \node[lb, anchor=north west, text width=4.2cm, align=left] at (0,-10.82) {Output $E^{\mathrm{new}}\in[0,1]^{N\times C}$: same proteins and ECs as the input};
-\node[repair] (rep) at (9.35,-11.44) {LP repair: add flux-minimal bridging reactions\\77 of $1{,}296$ raw solutions ($5.9\%$)};
+\node[repair] (rep) at (9.35,-11.44) {LP repair};
 \draw[flowd] (chkS) -- node[lb, right] {no} (rep.north);
 \draw[flowd] (rep.west) -| (ys.south);
+\end{scope}
 \end{tikzpicture}
-\caption{METEOR versus threshold-then-gap-fill. (a)~Toy network with invented
+\caption{METEOR vs.\ threshold-then-gap-fill. (a)~Toy network with invented
 scores: from the same evidence, a per-protein cut-off and a set-level cost select
 different reactions (cases 1--4). (b)~The pipeline; step~3 shows per-genome means on
 the DeepProZyme-vanilla panel. The selected set $y^\star$ is the primary output and is

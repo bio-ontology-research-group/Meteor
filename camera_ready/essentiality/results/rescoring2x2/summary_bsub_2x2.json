@@ -1,0 +1,18 @@
+{
+ "LB_marinos__gess-bsub.csv": {
+  "meteor_mean_mcc": 0.323,
+  "thresh_mean_mcc": 0.247
+ },
+ "LB_marinos__Koo2017_combined": {
+  "meteor_mean_mcc": 0.255,
+  "thresh_mean_mcc": 0.222
+ },
+ "GS_MM_glc__gess-bsub.csv": {
+  "meteor_mean_mcc": 0.325,
+  "thresh_mean_mcc": 0.239
+ },
+ "GS_MM_glc__Koo2017_combined": {
+  "meteor_mean_mcc": 0.287,
+  "thresh_mean_mcc": 0.23
+ }
+}

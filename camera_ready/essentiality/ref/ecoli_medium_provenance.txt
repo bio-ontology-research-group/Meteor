@@ -1,0 +1,92 @@
+Verification of E. coli essentiality-reference medium provenance (2026-09-17).
+Sources: PubMed full text via MCP tool (According to PubMed), PEC database
+(https://shigen.nig.ac.jp/ecoli/pec/), direct fetch.
+
+1. Baba T et al. "Construction of Escherichia coli K-12 in-frame, single-gene
+   knockout mutants: the Keio collection." Mol Syst Biol 2006;2:2006.0008.
+   PMID 16738554, PMC1681482, DOI 10.1038/msb4100050.
+
+   Verbatim, Methods ("Construction and verification of deletion mutants"):
+   "Our standard protocol usually yielded 10-1000 Km^r colonies when cells
+   were incubated aerobically at 37C on Luria broth (LB) agar containing
+   30 ug/ml kanamycin."
+   -> primary viability/essentiality screen = LB (rich) agar. 303 genes
+      "we were unable to disrupt ... candidates for essential genes"
+      (abstract) -- this is an LB-based, condition-independent criterion:
+      failure to construct a viable deletion AT ALL.
+
+   Separately (Results, "Profiling contributions of individual genes during
+   growth on rich and minimal media"):
+   "All mutants were profiled for growth yield in both rich (LB) and
+   minimal glucose MOPS media."
+   -> this is a SEPARATE, secondary quantitative fitness comparison of the
+      already-LB-viable (non-essential) mutants; it does not redefine
+      "essential," it characterizes conditional growth differences among
+      genes that already passed the LB viability bar.
+
+2. Yamamoto N et al. "Update on the Keio collection of Escherichia coli
+   single-gene deletion mutants." Mol Syst Biol 2009;5:335. PMID 20029369,
+   PMC2824493, DOI 10.1038/msb.2009.92.
+
+   Verbatim: "...some ORFs reported as essential in the PEC database are
+   nonessential, at least not in the genetic background of our host E. coli
+   K-12 BW25113 during aerobic growth at 37C on LB agar."
+   -> confirms PEC and Keio share the same LB-agar-based essentiality
+      criterion, and that this is explicitly the comparison condition used
+      to validate/update the Keio essential-gene candidate list.
+
+3. Monk JM et al. "iML1515, a knowledgebase that computes Escherichia coli
+   traits." Nat Biotechnol 2017;35(10):904-908. PMID 29020004, PMC6521705,
+   DOI 10.1038/nbt.3956. (= gapseq paper's ref 107, the citation gess-ecol.csv
+   traces to.)
+
+   Verbatim: "[Biolog-style growth] screens for the entire KEIO collection
+   (3,892 gene knockouts) grown on 16 different carbon sources... We
+   identified 345 genes that were essential in at least 1 of 16 conditions.
+   188 genes were essential in all conditions, and 157 were essential in
+   specific conditions. The iML1515 knowledgebase predicted gene
+   essentiality in 16 conditions with an accuracy of 93.4%..."
+   -> this is a DIFFERENT, condition-specific (M9-type minimal, varying
+      carbon source) essentiality dataset, run only on the subset of genes
+      that survived LB construction (i.e., built ON TOP of Keio's LB-based
+      list, not instead of it).
+
+CONCLUSION for Q1: layered, not a single answer.
+  - The classic Keio/PEC "essential" bar (the ~287-303-gene list) is
+    LB/rich-medium-based: "could not construct a viable deletion at all."
+  - Monk 2017 (gapseq's own cited source) ran an ADDITIONAL M9-carbon-source
+    screen on the (LB-viable) remainder, producing condition-specific
+    essentiality (188-345 genes) -- this is likely closer to what
+    gess-ecol.csv's "ess.experimental" reflects, since gapseq cites Monk
+    2017 specifically, and gess-ecol.csv's count (234 of 1355 rows marked
+    essential, restricted to genes present in the compared GEMs) does not
+    match Baba's ~303 or PEC's 287 (whole-genome), nor Monk's 188/345
+    (whole 3892-gene Keio-viable set) exactly -- consistent with a further
+    GEM-gene-only restriction of one of these lists, most plausibly Monk's
+    M9-based data given the citation chain, but this was not opened/verified
+    row-by-row (gess-ecol.csv itself carries no provenance column).
+  - So: gapseq's GS_MM_glc choice for scoring the RECONSTRUCTED MODEL likely
+    DOES match the medium of the specific experimental dataset it cites
+    (Monk 2017, M9/carbon-source screens) -- this is probably NOT a
+    mismatch, contrary to the initial suspicion. It is the PEC/Baba
+    LB-based list (a DIFFERENT, stricter, condition-independent
+    essentiality bar) that would give the "genuinely rich-medium" E. coli
+    comparison the user wants for the LB-vs-LB, M9-vs-M9 test.
+
+4. PEC (Profiling of E. coli Chromosome), https://shigen.nig.ac.jp/ecoli/pec/
+   Direct download, NO gate: https://shigen.nig.ac.jp/ecoli/pec/download/files/PECData.dat
+   (tab-separated, 4497 rows). Own methodology page (about.jsp), verbatim:
+   "when a strain having only a null type mutation in a gene (without other
+   suppressor mutations) was able to grow, even if the mutation meant that
+   the strain could grow only at a certain temperature or under certain
+   nutrient conditions, it is classified into the 'non-essential' category."
+   -> PEC's "essential" class = fails to grow under EVERY documented
+      condition across the literature it aggregates (condition-independent,
+      strictest bar) -- for the large majority of these genes the founding
+      evidence is literally "could not be disrupted on LB" (Keio), per-gene
+      PMID citations in the file trace back to Keio/related disruption
+      papers. Saved to ref/pec/PECData.dat (this directory).
+      287 essential / 4029 non-essential / 3 unknown among 4319
+      protein-coding-gene rows; genome-referenced to MG1655 (PEC's stated
+      base strain), b-numbers given directly in the "Alternative name"
+      column (e.g. b0001).

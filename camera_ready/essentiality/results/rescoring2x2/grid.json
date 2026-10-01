@@ -1,0 +1,322 @@
+{
+ "GS_MM_glc__gess-ecol.csv": {
+  "clean": {
+   "meteor": {
+    "n_genes_model": 1105,
+    "n_genes_mapped": 1023,
+    "n_genes_with_ref": 763,
+    "TP": 42,
+    "FP": 13,
+    "FN": 161,
+    "TN": 547,
+    "precision": 0.764,
+    "recall": 0.207,
+    "MCC": 0.314
+   },
+   "thresh": {
+    "n_genes_model": 1111,
+    "n_genes_mapped": 1028,
+    "n_genes_with_ref": 763,
+    "TP": 50,
+    "FP": 15,
+    "FN": 153,
+    "TN": 545,
+    "precision": 0.769,
+    "recall": 0.246,
+    "MCC": 0.347
+   }
+  },
+  "dpz": {
+   "meteor": {
+    "n_genes_model": 1728,
+    "n_genes_mapped": 1505,
+    "n_genes_with_ref": 897,
+    "TP": 33,
+    "FP": 10,
+    "FN": 177,
+    "TN": 677,
+    "precision": 0.767,
+    "recall": 0.157,
+    "MCC": 0.283
+   },
+   "thresh": {
+    "n_genes_model": 1732,
+    "n_genes_mapped": 1507,
+    "n_genes_with_ref": 898,
+    "TP": 46,
+    "FP": 17,
+    "FN": 164,
+    "TN": 671,
+    "precision": 0.73,
+    "recall": 0.219,
+    "MCC": 0.322
+   }
+  },
+  "enzbert": {
+   "meteor": {
+    "n_genes_model": 1415,
+    "n_genes_mapped": 1162,
+    "n_genes_with_ref": 768,
+    "TP": 46,
+    "FP": 20,
+    "FN": 152,
+    "TN": 550,
+    "precision": 0.697,
+    "recall": 0.232,
+    "MCC": 0.308
+   },
+   "thresh": {
+    "n_genes_model": 1419,
+    "n_genes_mapped": 1165,
+    "n_genes_with_ref": 770,
+    "TP": 35,
+    "FP": 22,
+    "FN": 163,
+    "TN": 550,
+    "precision": 0.614,
+    "recall": 0.177,
+    "MCC": 0.231
+   }
+  }
+ },
+ "GS_MM_glc__PEC": {
+  "clean": {
+   "meteor": {
+    "n_genes_model": 1105,
+    "n_genes_mapped": 1023,
+    "n_genes_with_ref": 956,
+    "TP": 11,
+    "FP": 41,
+    "FN": 110,
+    "TN": 794,
+    "precision": 0.212,
+    "recall": 0.091,
+    "MCC": 0.061
+   },
+   "thresh": {
+    "n_genes_model": 1111,
+    "n_genes_mapped": 1028,
+    "n_genes_with_ref": 960,
+    "TP": 19,
+    "FP": 42,
+    "FN": 102,
+    "TN": 797,
+    "precision": 0.311,
+    "recall": 0.157,
+    "MCC": 0.146
+   }
+  },
+  "dpz": {
+   "meteor": {
+    "n_genes_model": 1728,
+    "n_genes_mapped": 1505,
+    "n_genes_with_ref": 1424,
+    "TP": 5,
+    "FP": 37,
+    "FN": 135,
+    "TN": 1247,
+    "precision": 0.119,
+    "recall": 0.036,
+    "MCC": 0.012
+   },
+   "thresh": {
+    "n_genes_model": 1732,
+    "n_genes_mapped": 1507,
+    "n_genes_with_ref": 1426,
+    "TP": 12,
+    "FP": 45,
+    "FN": 128,
+    "TN": 1241,
+    "precision": 0.211,
+    "recall": 0.086,
+    "MCC": 0.077
+   }
+  },
+  "enzbert": {
+   "meteor": {
+    "n_genes_model": 1415,
+    "n_genes_mapped": 1162,
+    "n_genes_with_ref": 1086,
+    "TP": 13,
+    "FP": 47,
+    "FN": 105,
+    "TN": 921,
+    "precision": 0.217,
+    "recall": 0.11,
+    "MCC": 0.084
+   },
+   "thresh": {
+    "n_genes_model": 1419,
+    "n_genes_mapped": 1165,
+    "n_genes_with_ref": 1089,
+    "TP": 13,
+    "FP": 43,
+    "FN": 105,
+    "TN": 928,
+    "precision": 0.232,
+    "recall": 0.11,
+    "MCC": 0.093
+   }
+  }
+ },
+ "LB_marinos__gess-ecol.csv": {
+  "clean": {
+   "meteor": {
+    "n_genes_model": 1105,
+    "n_genes_mapped": 1023,
+    "n_genes_with_ref": 763,
+    "TP": 31,
+    "FP": 13,
+    "FN": 172,
+    "TN": 547,
+    "precision": 0.705,
+    "recall": 0.153,
+    "MCC": 0.245
+   },
+   "thresh": {
+    "n_genes_model": 1111,
+    "n_genes_mapped": 1028,
+    "n_genes_with_ref": 763,
+    "TP": 45,
+    "FP": 14,
+    "FN": 158,
+    "TN": 546,
+    "precision": 0.763,
+    "recall": 0.222,
+    "MCC": 0.325
+   }
+  },
+  "dpz": {
+   "meteor": {
+    "n_genes_model": 1728,
+    "n_genes_mapped": 1505,
+    "n_genes_with_ref": 897,
+    "TP": 39,
+    "FP": 10,
+    "FN": 171,
+    "TN": 677,
+    "precision": 0.796,
+    "recall": 0.186,
+    "MCC": 0.319
+   },
+   "thresh": {
+    "n_genes_model": 1732,
+    "n_genes_mapped": 1507,
+    "n_genes_with_ref": 898,
+    "TP": 31,
+    "FP": 15,
+    "FN": 179,
+    "TN": 673,
+    "precision": 0.674,
+    "recall": 0.148,
+    "MCC": 0.242
+   }
+  },
+  "enzbert": {
+   "meteor": {
+    "n_genes_model": 1414,
+    "n_genes_mapped": 1161,
+    "n_genes_with_ref": 767,
+    "TP": 25,
+    "FP": 18,
+    "FN": 172,
+    "TN": 552,
+    "precision": 0.581,
+    "recall": 0.127,
+    "MCC": 0.181
+   },
+   "thresh": {
+    "n_genes_model": 1419,
+    "n_genes_mapped": 1165,
+    "n_genes_with_ref": 770,
+    "TP": 33,
+    "FP": 19,
+    "FN": 165,
+    "TN": 553,
+    "precision": 0.635,
+    "recall": 0.167,
+    "MCC": 0.232
+   }
+  }
+ },
+ "LB_marinos__PEC": {
+  "clean": {
+   "meteor": {
+    "n_genes_model": 1105,
+    "n_genes_mapped": 1023,
+    "n_genes_with_ref": 956,
+    "TP": 9,
+    "FP": 32,
+    "FN": 112,
+    "TN": 803,
+    "precision": 0.22,
+    "recall": 0.074,
+    "MCC": 0.059
+   },
+   "thresh": {
+    "n_genes_model": 1111,
+    "n_genes_mapped": 1028,
+    "n_genes_with_ref": 960,
+    "TP": 21,
+    "FP": 34,
+    "FN": 100,
+    "TN": 805,
+    "precision": 0.382,
+    "recall": 0.174,
+    "MCC": 0.19
+   }
+  },
+  "dpz": {
+   "meteor": {
+    "n_genes_model": 1728,
+    "n_genes_mapped": 1505,
+    "n_genes_with_ref": 1424,
+    "TP": 11,
+    "FP": 32,
+    "FN": 129,
+    "TN": 1252,
+    "precision": 0.256,
+    "recall": 0.079,
+    "MCC": 0.093
+   },
+   "thresh": {
+    "n_genes_model": 1732,
+    "n_genes_mapped": 1507,
+    "n_genes_with_ref": 1426,
+    "TP": 12,
+    "FP": 33,
+    "FN": 128,
+    "TN": 1253,
+    "precision": 0.267,
+    "recall": 0.086,
+    "MCC": 0.102
+   }
+  },
+  "enzbert": {
+   "meteor": {
+    "n_genes_model": 1414,
+    "n_genes_mapped": 1161,
+    "n_genes_with_ref": 1085,
+    "TP": 7,
+    "FP": 34,
+    "FN": 111,
+    "TN": 933,
+    "precision": 0.171,
+    "recall": 0.059,
+    "MCC": 0.039
+   },
+   "thresh": {
+    "n_genes_model": 1419,
+    "n_genes_mapped": 1165,
+    "n_genes_with_ref": 1089,
+    "TP": 12,
+    "FP": 40,
+    "FN": 106,
+    "TN": 931,
+    "precision": 0.231,
+    "recall": 0.102,
+    "MCC": 0.088
+   }
+  }
+ }
+}

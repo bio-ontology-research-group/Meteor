@@ -1,0 +1,451 @@
+{
+ "salmonella_clean": {
+  "n_dropped_high_conf": 23,
+  "pct_both_backup": 39.1,
+  "pct_ec_alt_only": 4.3,
+  "pct_met_alt_only": 21.7,
+  "pct_no_backup_at_all": 34.8,
+  "n_no_backup_at_all": 8,
+  "examples_no_backup": [
+   {
+    "rxn": "rxn01313_c",
+    "name": "5,6,7,8-Tetrahydrobiopterin:Nad+ Oxidoreductase",
+    "score": 0.531
+   },
+   {
+    "rxn": "rxn01314_c",
+    "name": "5,6,7,8-Tetrahydrobiopterin:Nadp+ Oxidoreductase",
+    "score": 0.531
+   },
+   {
+    "rxn": "rxn05087_c",
+    "name": "5,6,7,8-Tetrahydropteridine:Nad+ Oxidoreductase",
+    "score": 0.531
+   },
+   {
+    "rxn": "rxn05088_c",
+    "name": "5,6,7,8-Tetrahydropteridine:Nadp+ Oxidoreductase",
+    "score": 0.531
+   },
+   {
+    "rxn": "rxn16511_c",
+    "name": "S-Methyl-5'-Thioinosine:Phosphate S-Methyl-5-Thio-Alpha-D-Ribosyl-Transferase",
+    "score": 0.536
+   },
+   {
+    "rxn": "rxn17245_c",
+    "name": "6,7-Dihydropteridine:Nad(P)H Oxidoreductase",
+    "score": 0.531
+   },
+   {
+    "rxn": "rxn24516_c",
+    "name": "Rxn-7909.C",
+    "score": 0.531
+   },
+   {
+    "rxn": "rxn43215_c",
+    "name": "",
+    "score": 0.518
+   }
+  ]
+ },
+ "salmonella_dpz": {
+  "n_dropped_high_conf": 16,
+  "pct_both_backup": 0.0,
+  "pct_ec_alt_only": 0.0,
+  "pct_met_alt_only": 12.5,
+  "pct_no_backup_at_all": 87.5,
+  "n_no_backup_at_all": 14,
+  "examples_no_backup": [
+   {
+    "rxn": "rxn02489_c",
+    "name": "Atp:1D-Myo-Inositol-1,3,4,6-Tetrakisphosphate 5-Phosphotransferase",
+    "score": 0.593
+   },
+   {
+    "rxn": "rxn02629_c",
+    "name": "S-Adenosyl-L-Methionine:Thiopurine S-Methyltransferase",
+    "score": 0.607
+   },
+   {
+    "rxn": "rxn04040_c",
+    "name": "Atp:1D-Myo-Inositol-1,4,5-Trisphosphate 6-Phosphotransferase",
+    "score": 0.593
+   },
+   {
+    "rxn": "rxn04041_c",
+    "name": "Atp:1D-Myo-Inositol-1,4,5-Trisphosphate 6-Phosphotransferase",
+    "score": 0.593
+   },
+   {
+    "rxn": "rxn05762_c",
+    "name": "Chloride:Hydrogen-Peroxide Oxidoreductase",
+    "score": 0.527
+   },
+   {
+    "rxn": "rxn07465_c",
+    "name": "L-2,4-Diaminobutanoate Carboxy-Lyase",
+    "score": 0.506
+   },
+   {
+    "rxn": "rxn13344_c",
+    "name": "Inositol-1,3,4,5-Triphosphate 6-Kinase, Nucleus",
+    "score": 0.593
+   },
+   {
+    "rxn": "rxn13963_c",
+    "name": "Chloride:Hydrogen-Peroxide Oxidoreductase",
+    "score": 0.527
+   },
+   {
+    "rxn": "rxn19300_c",
+    "name": "Cpo",
+    "score": 0.527
+   },
+   {
+    "rxn": "rxn21640_c",
+    "name": "Bromide Peroxidase",
+    "score": 0.525
+   }
+  ]
+ },
+ "salmonella_enzbert": {
+  "n_dropped_high_conf": 6,
+  "pct_both_backup": 0.0,
+  "pct_ec_alt_only": 0.0,
+  "pct_met_alt_only": 100.0,
+  "pct_no_backup_at_all": 0.0,
+  "n_no_backup_at_all": 0,
+  "examples_no_backup": []
+ },
+ "kpneumoniae_clean": {
+  "n_dropped_high_conf": 30,
+  "pct_both_backup": 13.3,
+  "pct_ec_alt_only": 10.0,
+  "pct_met_alt_only": 20.0,
+  "pct_no_backup_at_all": 56.7,
+  "n_no_backup_at_all": 17,
+  "examples_no_backup": [
+   {
+    "rxn": "rxn01248_c",
+    "name": "Pyridoxal:Nad+ 4-Oxidoreductase",
+    "score": 0.509
+   },
+   {
+    "rxn": "rxn01313_c",
+    "name": "5,6,7,8-Tetrahydrobiopterin:Nad+ Oxidoreductase",
+    "score": 0.5
+   },
+   {
+    "rxn": "rxn01314_c",
+    "name": "5,6,7,8-Tetrahydrobiopterin:Nadp+ Oxidoreductase",
+    "score": 0.5
+   },
+   {
+    "rxn": "rxn03852_c",
+    "name": "Udp-N-Acetyl-D-Mannosamine:N-Acetyl-Beta-D-Glucosaminyldiphosphoundecaprenol Beta-1,4-N-Acetylmannosaminyltransferase",
+    "score": 0.529
+   },
+   {
+    "rxn": "rxn04951_c",
+    "name": "Fluoroacetaldehyde:Nad+ Oxidoreductase",
+    "score": 0.528
+   },
+   {
+    "rxn": "rxn05087_c",
+    "name": "5,6,7,8-Tetrahydropteridine:Nad+ Oxidoreductase",
+    "score": 0.5
+   },
+   {
+    "rxn": "rxn05088_c",
+    "name": "5,6,7,8-Tetrahydropteridine:Nadp+ Oxidoreductase",
+    "score": 0.5
+   },
+   {
+    "rxn": "rxn05287_c",
+    "name": "Geranylgeranyl-Diphosphate:Isopentenyl-Diphosphate Transtransferase",
+    "score": 0.555
+   },
+   {
+    "rxn": "rxn06990_c",
+    "name": "Ferredoxin:Nad Oxidoreductase",
+    "score": 0.577
+   },
+   {
+    "rxn": "rxn17245_c",
+    "name": "6,7-Dihydropteridine:Nad(P)H Oxidoreductase",
+    "score": 0.5
+   }
+  ]
+ },
+ "kpneumoniae_dpz": {
+  "n_dropped_high_conf": 24,
+  "pct_both_backup": 0.0,
+  "pct_ec_alt_only": 0.0,
+  "pct_met_alt_only": 33.3,
+  "pct_no_backup_at_all": 66.7,
+  "n_no_backup_at_all": 16,
+  "examples_no_backup": [
+   {
+    "rxn": "rxn02375_c",
+    "name": "Atp:Pseudouridine 5'-Phosphotransferase",
+    "score": 0.558
+   },
+   {
+    "rxn": "rxn03492_c",
+    "name": "Precorrin-6Y:Nadp+ Oxidoreductase",
+    "score": 0.559
+   },
+   {
+    "rxn": "rxn03675_c",
+    "name": "2-Oxo-5-Methyl-Cis-Muconate Carboxy-Lyase",
+    "score": 0.52
+   },
+   {
+    "rxn": "rxn04432_c",
+    "name": "S-Adenosyl-L-Methionine:Caffeoyl-Coa 3-O-Methyltransferase",
+    "score": 0.518
+   },
+   {
+    "rxn": "rxn04935_c",
+    "name": "(R)-2-Hydroxyacid:Nadp+ Oxidoreductase",
+    "score": 0.535
+   },
+   {
+    "rxn": "rxn16495_c",
+    "name": "15-Cis-Phytoene:Plastoquinone Oxidoreductase",
+    "score": 0.525
+   },
+   {
+    "rxn": "rxn16496_c",
+    "name": "15-Cis-Phytoene:Plastoquinone Oxidoreductase",
+    "score": 0.525
+   },
+   {
+    "rxn": "rxn16497_c",
+    "name": "15,9'-Dicis-Phytofluene:Plastoquinone Oxidoreductase",
+    "score": 0.525
+   },
+   {
+    "rxn": "rxn21666_c",
+    "name": "Phytoene Desaturase (Ambiguous)",
+    "score": 0.525
+   },
+   {
+    "rxn": "rxn25188_c",
+    "name": "Rxn-8841.C",
+    "score": 0.52
+   }
+  ]
+ },
+ "kpneumoniae_enzbert": {
+  "n_dropped_high_conf": 8,
+  "pct_both_backup": 0.0,
+  "pct_ec_alt_only": 0.0,
+  "pct_met_alt_only": 50.0,
+  "pct_no_backup_at_all": 50.0,
+  "n_no_backup_at_all": 4,
+  "examples_no_backup": [
+   {
+    "rxn": "rxn04992_c",
+    "name": "1-Aminocyclopropane-1-Carboxylate Oxygenase (Ethylene-Forming)",
+    "score": 0.502
+   },
+   {
+    "rxn": "rxn07745_c",
+    "name": "R07955",
+    "score": 0.584
+   },
+   {
+    "rxn": "rxn22941_c",
+    "name": "Rxn-12485.C",
+    "score": 0.584
+   },
+   {
+    "rxn": "rxn43209_c",
+    "name": "",
+    "score": 0.592
+   }
+  ]
+ },
+ "pputida_clean": {
+  "n_dropped_high_conf": 21,
+  "pct_both_backup": 0.0,
+  "pct_ec_alt_only": 14.3,
+  "pct_met_alt_only": 19.0,
+  "pct_no_backup_at_all": 66.7,
+  "n_no_backup_at_all": 14,
+  "examples_no_backup": [
+   {
+    "rxn": "rxn00529_c",
+    "name": "L-Tyrosine Carboxy-Lyase (Tyramine-Forming)",
+    "score": 0.56
+   },
+   {
+    "rxn": "rxn00758_c",
+    "name": "Sn-Glycero-3-Phosphocholine Glycerophosphohydrolase",
+    "score": 0.52
+   },
+   {
+    "rxn": "rxn00889_c",
+    "name": "1-(Sn-Glycero-3-Phospho)-1D-Myo-Inositol Glycerophosphohydrolase",
+    "score": 0.52
+   },
+   {
+    "rxn": "rxn01073_c",
+    "name": "Sn-Glycero-3-Phosphoethanolamine Glycerophosphohydrolase",
+    "score": 0.52
+   },
+   {
+    "rxn": "rxn01122_c",
+    "name": "D-Altronate Hydro-Lyase (2-Dehydro-3-Deoxy-D-Gluconate-Forming)",
+    "score": 0.523
+   },
+   {
+    "rxn": "rxn01499_c",
+    "name": "3,4-Dihydroxy-L-Phenylalanine Carboxy-Lyase",
+    "score": 0.56
+   },
+   {
+    "rxn": "rxn03126_c",
+    "name": "Coenzyme B:Coenzyme M:Methanophenazine Oxidoreductase",
+    "score": 0.55
+   },
+   {
+    "rxn": "rxn08668_c",
+    "name": "Glycerophosphodiester Phosphodiesterase (Glycerophosphoserine)",
+    "score": 0.52
+   },
+   {
+    "rxn": "rxn08669_c",
+    "name": "Glycerophosphodiester Phosphodiesterase",
+    "score": 0.52
+   },
+   {
+    "rxn": "rxn15959_c",
+    "name": "Coenzyme B:Coenzyme M:Methanophenazine Oxidoreductase",
+    "score": 0.55
+   }
+  ]
+ },
+ "pputida_dpz": {
+  "n_dropped_high_conf": 13,
+  "pct_both_backup": 0.0,
+  "pct_ec_alt_only": 0.0,
+  "pct_met_alt_only": 23.1,
+  "pct_no_backup_at_all": 76.9,
+  "n_no_backup_at_all": 10,
+  "examples_no_backup": [
+   {
+    "rxn": "rxn01971_c",
+    "name": "Atp:D-Fructose-6-Phosphate 2-Phosphotransferase",
+    "score": 0.535
+   },
+   {
+    "rxn": "rxn03675_c",
+    "name": "2-Oxo-5-Methyl-Cis-Muconate Carboxy-Lyase",
+    "score": 0.542
+   },
+   {
+    "rxn": "rxn11728_c",
+    "name": "1,5-Anhydro-D-Mannitol:Nadp+ Oxidoreductase",
+    "score": 0.51
+   },
+   {
+    "rxn": "rxn16885_c",
+    "name": "1,5-Anhydro-D-Mannitol:Nadp+ Oxidoreductase",
+    "score": 0.51
+   },
+   {
+    "rxn": "rxn17253_c",
+    "name": "Trimethylamine Dehydrogenase",
+    "score": 0.527
+   },
+   {
+    "rxn": "rxn18926_c",
+    "name": "4-Oxalocrotonate Carboxy-Lyase",
+    "score": 0.542
+   },
+   {
+    "rxn": "rxn25188_c",
+    "name": "Rxn-8841.C",
+    "score": 0.542
+   },
+   {
+    "rxn": "rxn25839_c",
+    "name": "Atp:[This] Adenylyltransferase",
+    "score": 0.508
+   },
+   {
+    "rxn": "rxn35591_c",
+    "name": "1,5-Anhydro-D-Mannitol:Nadp+ Oxidoreductase",
+    "score": 0.51
+   },
+   {
+    "rxn": "rxn39359_c",
+    "name": "Atp:D-Fructose-6-Phosphate 2-Phosphotransferase",
+    "score": 0.535
+   }
+  ]
+ },
+ "pputida_enzbert": {
+  "n_dropped_high_conf": 34,
+  "pct_both_backup": 17.6,
+  "pct_ec_alt_only": 11.8,
+  "pct_met_alt_only": 35.3,
+  "pct_no_backup_at_all": 35.3,
+  "n_no_backup_at_all": 12,
+  "examples_no_backup": [
+   {
+    "rxn": "rxn01887_c",
+    "name": "Coniferyl Alcohol:Nadp+ Oxidoreductase",
+    "score": 0.553
+   },
+   {
+    "rxn": "rxn02189_c",
+    "name": "Cinnamyl-Alcohol:Nadp+ Oxidoreductase",
+    "score": 0.553
+   },
+   {
+    "rxn": "rxn02758_c",
+    "name": "Sinapyl Alcohol:Nadp+ Oxidoreductase",
+    "score": 0.553
+   },
+   {
+    "rxn": "rxn02814_c",
+    "name": "4-Coumaryl Alcohol:Nadp+ Oxidoreductase",
+    "score": 0.553
+   },
+   {
+    "rxn": "rxn03265_c",
+    "name": "S-Adenosyl-L-Methionine:L-Methionine S-Methyltransferase",
+    "score": 0.519
+   },
+   {
+    "rxn": "rxn03397_c",
+    "name": "Udp-L-Rhamnose:Flavonol-3-O-D-Glucoside L-Rhamnosyltransferase",
+    "score": 0.589
+   },
+   {
+    "rxn": "rxn04424_c",
+    "name": "Cinnamyl-Alcohol:Nadp+ Oxidoreductase",
+    "score": 0.553
+   },
+   {
+    "rxn": "rxn04425_c",
+    "name": "Cinnamyl-Alcohol:Nadp+ Oxidoreductase",
+    "score": 0.553
+   },
+   {
+    "rxn": "rxn09039_c",
+    "name": "2-Octaprenyl-Methoxy-Benzoq-Meth-Rxn.C",
+    "score": 0.589
+   },
+   {
+    "rxn": "rxn15783_c",
+    "name": "R08774",
+    "score": 0.589
+   }
+  ]
+ }
+}

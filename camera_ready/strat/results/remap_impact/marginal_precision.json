@@ -1,0 +1,114 @@
+{
+ "definition": "extra = sum over the six models of (|METEOR rxn-mapped EC set| - |threshold+gap-fill baseline EC set|) (dpz vanilla, 4-digit ECs, all_ancestors-restricted seedr2ec mapping, no vocabulary restriction); correct = sum of (|M & G| - |B & G|); curated sub-threshold = sum of (|M & W| - |B & W|), W = curated ECs with 0 < max DPZ score < 0.5; marginal precision = correct/extra. The 76% is NOT a property of the extra ECs: it is Table 5's mean fraction of METEOR (active_ecs, full vocabulary) false positives lying outside the 1,234-EC reference vocabulary, |(A-G)-V_ref|/|A-G| averaged over six organisms (toolcompare_ec_vocab.py meteor_fp.frac_outside = 0.760).",
+ "published": {
+  "extra": 773,
+  "correct": 77,
+  "correct_subthreshold": 75,
+  "marginal_precision": 0.1,
+  "frac_outside_refvocab": 0.76
+ },
+ "none": {
+  "extra": 773,
+  "correct": 77,
+  "correct_subthreshold": 75,
+  "marginal_precision": 0.0996,
+  "fp_outside_refvocab_frac_table5": 0.76,
+  "alt_set_difference_M_minus_B": {
+   "n": 838,
+   "correct": 83,
+   "precision": 0.099,
+   "outside_refvocab": 544,
+   "frac_outside": 0.6492
+  },
+  "per_organism": [
+   {
+    "organism": "E.coli",
+    "extra": 126,
+    "correct": 14,
+    "correct_subthreshold": 15
+   },
+   {
+    "organism": "Salmonella",
+    "extra": 101,
+    "correct": 10,
+    "correct_subthreshold": 9
+   },
+   {
+    "organism": "K.pneumoniae",
+    "extra": 119,
+    "correct": 14,
+    "correct_subthreshold": 14
+   },
+   {
+    "organism": "P.putida",
+    "extra": 205,
+    "correct": 16,
+    "correct_subthreshold": 16
+   },
+   {
+    "organism": "S.aureus",
+    "extra": 86,
+    "correct": 12,
+    "correct_subthreshold": 11
+   },
+   {
+    "organism": "B.subtilis",
+    "extra": 136,
+    "correct": 11,
+    "correct_subthreshold": 10
+   }
+  ]
+ },
+ "pkl": {
+  "extra": 773,
+  "correct": 100,
+  "correct_subthreshold": 92,
+  "marginal_precision": 0.1294,
+  "fp_outside_refvocab_frac_table5": 0.7467,
+  "alt_set_difference_M_minus_B": {
+   "n": 838,
+   "correct": 106,
+   "precision": 0.1265,
+   "outside_refvocab": 508,
+   "frac_outside": 0.6062
+  },
+  "per_organism": [
+   {
+    "organism": "E.coli",
+    "extra": 126,
+    "correct": 16,
+    "correct_subthreshold": 16
+   },
+   {
+    "organism": "Salmonella",
+    "extra": 101,
+    "correct": 12,
+    "correct_subthreshold": 10
+   },
+   {
+    "organism": "K.pneumoniae",
+    "extra": 119,
+    "correct": 16,
+    "correct_subthreshold": 15
+   },
+   {
+    "organism": "P.putida",
+    "extra": 205,
+    "correct": 23,
+    "correct_subthreshold": 22
+   },
+   {
+    "organism": "S.aureus",
+    "extra": 86,
+    "correct": 17,
+    "correct_subthreshold": 15
+   },
+   {
+    "organism": "B.subtilis",
+    "extra": 136,
+    "correct": 16,
+    "correct_subthreshold": 14
+   }
+  ]
+ }
+}
